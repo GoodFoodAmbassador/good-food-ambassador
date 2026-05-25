@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const BG = "#FAF8F3", SURFACE = "#FFFFFF", SURFACE2 = "#F4EFE4";
 const BORDER = "rgba(26,21,14,0.09)", TEXT = "#1A1714", MUTED = "#7A736A", SOFT = "#9C958D";
@@ -536,6 +536,225 @@ function QuizPage({ onNav }) {
   );
 }
 
+// ── HUB ──────────────────────────────────────────────────────────────────────
+const HUB_DARK  = "#16140F";
+const HUB_MID   = "#252118";
+const HUB_CREAM = "#F7F2E7";
+const HUB_GOLD  = "#C8960C";
+const HUB_SERIF = "'Cormorant Garamond', Georgia, serif";
+const HUB_SANS  = "'DM Sans', system-ui, sans-serif";
+
+const COMING_SOON = [
+  { num:"02", category:"Herbal Beverages",  sub:"Tisanes · Adaptogens · Botanical blends", desc:"From chamomile to ashwagandha — origin, processing, and what the wellness claims actually mean.", color:"#2A7A4A" },
+  { num:"03", category:"Natural Snacks",    sub:"Ingredients · Certifications · No greenwash", desc:"We cut through the packaging noise. Real ingredients, honest certifications, no marketing fiction.", color:"#8A4A0A" },
+  { num:"04", category:"Ancient Grains",    sub:"Einkorn · Farro · Teff · Amaranth",           desc:"The grains that were abandoned for yield. We explain what was lost and what's worth finding again.", color:"#6A5A2A" },
+];
+
+function HubPage({ onEnter, onNav }) {
+  useEffect(() => {
+    const link = document.createElement('link');
+    link.href = 'https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap';
+    link.rel = 'stylesheet';
+    document.head.appendChild(link);
+    const style = document.createElement('style');
+    style.id = 'hub-styles';
+    style.textContent = `
+      @keyframes hubFadeUp { from { opacity:0; transform:translateY(28px); } to { opacity:1; transform:translateY(0); } }
+      .hub-h1 { animation: hubFadeUp 1s cubic-bezier(0.16,1,0.3,1) 0.1s both; }
+      .hub-sub { animation: hubFadeUp 1s cubic-bezier(0.16,1,0.3,1) 0.28s both; }
+      .hub-cta { animation: hubFadeUp 1s cubic-bezier(0.16,1,0.3,1) 0.44s both; }
+      .hub-product-card { transition: transform 0.25s ease, box-shadow 0.25s ease; }
+      .hub-product-card:hover { transform: translateY(-6px); box-shadow: 0 20px 60px rgba(22,20,15,0.14); }
+      .hub-soon-card { transition: transform 0.2s ease; }
+      .hub-soon-card:hover { transform: translateY(-3px); }
+      .hub-enter-btn:hover { background: #C8960C !important; color: #16140F !important; transform: translateY(-1px); }
+      .hub-enter-btn { transition: all 0.18s ease; }
+      .hub-ghost-btn:hover { background: rgba(200,150,12,0.12) !important; }
+      .hub-ghost-btn { transition: background 0.18s ease; }
+    `;
+    document.head.appendChild(style);
+    return () => {
+      const s = document.getElementById('hub-styles');
+      if (s) s.remove();
+    };
+  }, []);
+
+  return (
+    <div style={{ fontFamily:HUB_SANS, background:HUB_CREAM, minHeight:"100vh", color:HUB_DARK, overflowX:"hidden" }}>
+
+      {/* ── TOP BAR ── */}
+      <div style={{ display:"flex", justifyContent:"space-between", alignItems:"center", padding:"20px 24px", borderBottom:`0.5px solid rgba(22,20,15,0.08)`, background:HUB_CREAM, position:"sticky", top:0, zIndex:100, backdropFilter:"blur(12px)" }}>
+        <div style={{ display:"flex", alignItems:"center", gap:8 }}>
+          <div style={{ width:28, height:28, borderRadius:6, background:HUB_DARK, display:"flex", alignItems:"center", justifyContent:"center" }}>
+            <span style={{ fontSize:14 }}>🫒</span>
+          </div>
+          <span style={{ fontFamily:HUB_SERIF, fontWeight:600, fontSize:16, letterSpacing:"0.02em", color:HUB_DARK }}>Good Food Ambassador</span>
+        </div>
+        <a href="mailto:hello@goodfoodambassador.com" style={{ fontSize:11, color:HUB_DARK, opacity:0.45, textDecoration:"none", fontWeight:400, letterSpacing:"0.04em" }}>hello@goodfoodambassador.com</a>
+      </div>
+
+      {/* ── HERO ── */}
+      <section style={{ background:HUB_DARK, padding:"80px 24px 72px", position:"relative", overflow:"hidden" }}>
+        {/* Grain texture overlay */}
+        <div style={{ position:"absolute", inset:0, backgroundImage:"url(\"data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E\")", opacity:0.6, pointerEvents:"none" }} />
+
+        {/* Eyebrow */}
+        <p style={{ fontFamily:HUB_SANS, fontSize:11, fontWeight:400, letterSpacing:"0.18em", textTransform:"uppercase", color:HUB_GOLD, margin:"0 0 28px", opacity:0.9 }}>Good Food Ambassador Group</p>
+
+        {/* Headline */}
+        <h1 className="hub-h1" style={{ fontFamily:HUB_SERIF, fontStyle:"italic", fontWeight:300, fontSize:"clamp(36px, 7vw, 58px)", lineHeight:1.1, color:HUB_CREAM, margin:"0 0 28px", maxWidth:560, letterSpacing:"-0.01em" }}>
+          Most people have never tasted what food is supposed to taste like.
+        </h1>
+
+        {/* Gold rule */}
+        <div style={{ width:48, height:1, background:HUB_GOLD, margin:"0 0 24px", opacity:0.7 }} />
+
+        {/* Subhead */}
+        <p className="hub-sub" style={{ fontFamily:HUB_SANS, fontSize:15, fontWeight:300, lineHeight:1.7, color:"rgba(247,242,231,0.7)", margin:"0 0 40px", maxWidth:480 }}>
+          We build discovery tools for people who want to eat with intention. Starting with the most misunderstood ingredient on the grocery shelf.
+        </p>
+
+        {/* CTAs */}
+        <div className="hub-cta" style={{ display:"flex", gap:12, flexWrap:"wrap" }}>
+          <button className="hub-enter-btn" onClick={onEnter} style={{ fontFamily:HUB_SANS, background:HUB_CREAM, color:HUB_DARK, border:"none", borderRadius:8, padding:"14px 28px", fontSize:14, fontWeight:500, cursor:"pointer", letterSpacing:"0.02em" }}>
+            Explore The Crush →
+          </button>
+          <button className="hub-ghost-btn" onClick={() => onNav("about")} style={{ fontFamily:HUB_SANS, background:"rgba(247,242,231,0.06)", color:HUB_CREAM, border:"0.5px solid rgba(247,242,231,0.2)", borderRadius:8, padding:"14px 24px", fontSize:14, fontWeight:400, cursor:"pointer" }}>
+            Our mission
+          </button>
+        </div>
+      </section>
+
+      {/* ── THREE PILLARS ── */}
+      <section style={{ borderBottom:`0.5px solid rgba(22,20,15,0.08)`, padding:"0 24px" }}>
+        <div style={{ display:"grid", gridTemplateColumns:"repeat(3,1fr)", maxWidth:640, margin:"0 auto" }}>
+          {[
+            { n:"Discover", s:"Find oils that match your taste, budget, and kitchen." },
+            { n:"Learn",    s:"Certifications, harvest dates, cultivars — made legible." },
+            { n:"Buy Better", s:"Verified recommendations with retailer links." },
+          ].map((p,i) => (
+            <div key={i} style={{ padding:"28px 16px 28px 0", borderRight:i<2?`0.5px solid rgba(22,20,15,0.08)`:"none", paddingLeft:i>0?16:0 }}>
+              <p style={{ fontFamily:HUB_SERIF, fontSize:16, fontWeight:600, margin:"0 0 6px", color:HUB_DARK }}>{p.n}</p>
+              <p style={{ fontFamily:HUB_SANS, fontSize:11, fontWeight:300, lineHeight:1.6, color:"#6A6458", margin:0 }}>{p.s}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* ── FEATURED PRODUCT: THE CRUSH ── */}
+      <section style={{ padding:"60px 24px" }}>
+        <div style={{ maxWidth:640, margin:"0 auto" }}>
+          <p style={{ fontFamily:HUB_SANS, fontSize:10, fontWeight:400, letterSpacing:"0.16em", textTransform:"uppercase", color:HUB_GOLD, margin:"0 0 20px" }}>Now available</p>
+          <div className="hub-product-card" style={{ background:"#FFFFFF", border:`0.5px solid rgba(22,20,15,0.08)`, borderRadius:16, padding:"32px", display:"grid", gridTemplateColumns:"1fr auto", gap:24, alignItems:"start" }}>
+            <div>
+              <p style={{ fontFamily:HUB_SANS, fontSize:10, fontWeight:500, letterSpacing:"0.14em", textTransform:"uppercase", color:"#9C958D", margin:"0 0 10px" }}>01 · Extra Virgin Olive Oil</p>
+              <h2 style={{ fontFamily:HUB_SERIF, fontStyle:"italic", fontWeight:400, fontSize:38, margin:"0 0 14px", color:HUB_DARK, letterSpacing:"-0.01em", lineHeight:1 }}>The Crush</h2>
+              <p style={{ fontFamily:HUB_SANS, fontSize:13, fontWeight:300, lineHeight:1.7, color:"#6A6458", margin:"0 0 20px", maxWidth:380 }}>
+                30 curated extra virgin olive oils — from Costco to Kalamata PDO. With a guided tasting lab, certification guide, harvest calendar, and a quiz that finds your oil.
+              </p>
+              <div style={{ display:"flex", gap:8, flexWrap:"wrap", marginBottom:24 }}>
+                {["30 oils","Tasting lab","PDO/PGI guide","Harvest calendar","Free"].map(t => (
+                  <span key={t} style={{ fontFamily:HUB_SANS, fontSize:11, fontWeight:400, padding:"4px 10px", borderRadius:20, background:"rgba(200,150,12,0.1)", color:HUB_GOLD, border:`0.5px solid rgba(200,150,12,0.25)` }}>{t}</span>
+                ))}
+              </div>
+              <button className="hub-enter-btn" onClick={onEnter} style={{ fontFamily:HUB_SANS, background:HUB_DARK, color:HUB_CREAM, border:"none", borderRadius:8, padding:"13px 24px", fontSize:13, fontWeight:500, cursor:"pointer" }}>
+                Enter The Crush →
+              </button>
+            </div>
+            {/* Bottle illustration */}
+            <svg viewBox="0 0 72 160" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ width:56, flexShrink:0, opacity:0.85 }}>
+              <rect x="28" y="2" width="16" height="22" rx="3" fill="#2D7A1F"/>
+              <rect x="24" y="0" width="24" height="10" rx="3" fill="#B87808"/>
+              <path d="M16,24 C16,14 24,10 36,10 C48,10 56,14 56,24Z" fill="#2D7A1F"/>
+              <rect x="16" y="24" width="40" height="100" rx="8" fill="#2D7A1F"/>
+              <rect x="22" y="36" width="28" height="52" rx="5" fill="#F7F2E7" opacity="0.92"/>
+              <path d="M27,52 C30,48 42,48 45,52" stroke="#2D7A1F" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+              <ellipse cx="31" cy="58" rx="5" ry="3" fill="#5CAE4A" transform="rotate(-25 31 58)"/>
+              <ellipse cx="41" cy="64" rx="5" ry="3" fill="#5CAE4A" transform="rotate(25 41 64)"/>
+              <path d="M28,68 C32,66 40,66 44,68" stroke="#2D7A1F" stroke-width="1" fill="none" stroke-linecap="round"/>
+              <rect x="18" y="28" width="5" height="60" rx="2.5" fill="white" opacity="0.15"/>
+              <path d="M16,124 L16,134 Q16,140 24,140 L48,140 Q56,140 56,134 L56,124Z" fill="#1a5c10"/>
+              <ellipse cx="36" cy="152" rx="14" ry="6" fill="#E8213A" opacity="0.9"/>
+              <path d="M22,148 C22,148 28,144 36,144 C44,144 50,148 50,148 C50,148 50,155 36,158 C22,155 22,148 22,148Z" fill="#E8213A"/>
+              <ellipse cx="29" cy="149" rx="4" ry="2.5" fill="white" opacity="0.2"/>
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      {/* ── COMING SOON ── */}
+      <section style={{ padding:"0 24px 60px" }}>
+        <div style={{ maxWidth:640, margin:"0 auto" }}>
+          <div style={{ display:"flex", alignItems:"baseline", justifyContent:"space-between", marginBottom:20 }}>
+            <p style={{ fontFamily:HUB_SERIF, fontSize:22, fontWeight:400, margin:0, color:HUB_DARK }}>What's coming</p>
+            <p style={{ fontFamily:HUB_SANS, fontSize:11, color:"#9C958D", margin:0 }}>In development</p>
+          </div>
+          <div style={{ display:"flex", flexDirection:"column", gap:10 }}>
+            {COMING_SOON.map(c => (
+              <div key={c.num} className="hub-soon-card" style={{ background:"#FFFFFF", border:`0.5px solid rgba(22,20,15,0.07)`, borderRadius:12, padding:"18px 20px", display:"flex", gap:16, alignItems:"flex-start" }}>
+                <div style={{ width:36, height:36, borderRadius:8, background:`${c.color}12`, display:"flex", alignItems:"center", justifyContent:"center", flexShrink:0, border:`0.5px solid ${c.color}20` }}>
+                  <span style={{ fontFamily:HUB_SANS, fontSize:11, fontWeight:500, color:c.color }}>{c.num}</span>
+                </div>
+                <div style={{ flex:1 }}>
+                  <div style={{ display:"flex", alignItems:"baseline", gap:10, marginBottom:4 }}>
+                    <p style={{ fontFamily:HUB_SERIF, fontSize:16, fontWeight:500, margin:0, color:HUB_DARK }}>{c.category}</p>
+                    <p style={{ fontFamily:HUB_SANS, fontSize:10, fontWeight:400, margin:0, color:"#9C958D", letterSpacing:"0.06em" }}>{c.sub}</p>
+                  </div>
+                  <p style={{ fontFamily:HUB_SANS, fontSize:12, fontWeight:300, color:"#6A6458", margin:0, lineHeight:1.6 }}>{c.desc}</p>
+                </div>
+                <span style={{ fontFamily:HUB_SANS, fontSize:10, color:"#9C958D", background:"rgba(22,20,15,0.04)", padding:"3px 8px", borderRadius:10, whiteSpace:"nowrap", flexShrink:0 }}>Soon</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── MISSION STRIP (dark) ── */}
+      <section style={{ background:HUB_DARK, padding:"60px 24px" }}>
+        <div style={{ maxWidth:560, margin:"0 auto", textAlign:"center" }}>
+          <p style={{ fontFamily:HUB_SERIF, fontStyle:"italic", fontWeight:300, fontSize:"clamp(20px,4vw,28px)", lineHeight:1.5, color:HUB_CREAM, margin:"0 0 20px" }}>
+            "Food literacy is a form of self-respect. We build tools that make the gap between ordinary and extraordinary legible — and worth caring about."
+          </p>
+          <div style={{ width:32, height:1, background:HUB_GOLD, margin:"0 auto 16px", opacity:0.6 }} />
+          <p style={{ fontFamily:HUB_SANS, fontSize:11, fontWeight:300, color:"rgba(247,242,231,0.45)", letterSpacing:"0.1em", textTransform:"uppercase", margin:0 }}>Good Food Ambassador Group LLC · New York</p>
+        </div>
+      </section>
+
+      {/* ── PARTNERS & PRESS ── */}
+      <section style={{ padding:"48px 24px", borderBottom:`0.5px solid rgba(22,20,15,0.08)` }}>
+        <div style={{ maxWidth:640, margin:"0 auto", display:"grid", gridTemplateColumns:"1fr 1fr", gap:32 }}>
+          <div>
+            <p style={{ fontFamily:HUB_SERIF, fontSize:18, fontWeight:500, margin:"0 0 8px", color:HUB_DARK }}>For brands</p>
+            <p style={{ fontFamily:HUB_SANS, fontSize:12, fontWeight:300, lineHeight:1.7, color:"#6A6458", margin:"0 0 14px" }}>Sponsorship, featured placement, and partnership inquiries welcome.</p>
+            <a href="mailto:hello@goodfoodambassador.com" style={{ fontFamily:HUB_SANS, fontSize:12, fontWeight:500, color:HUB_GOLD, textDecoration:"none" }}>hello@goodfoodambassador.com →</a>
+          </div>
+          <div>
+            <p style={{ fontFamily:HUB_SERIF, fontSize:18, fontWeight:500, margin:"0 0 8px", color:HUB_DARK }}>Press & media</p>
+            <p style={{ fontFamily:HUB_SANS, fontSize:12, fontWeight:300, lineHeight:1.7, color:"#6A6458", margin:"0 0 14px" }}>Editorial inquiries, interview requests, and media kit available on request.</p>
+            <a href="mailto:hello@goodfoodambassador.com" style={{ fontFamily:HUB_SANS, fontSize:12, fontWeight:500, color:HUB_GOLD, textDecoration:"none" }}>Get in touch →</a>
+          </div>
+        </div>
+      </section>
+
+      {/* ── FOOTER ── */}
+      <footer style={{ padding:"28px 24px", display:"flex", justifyContent:"space-between", alignItems:"center", flexWrap:"wrap", gap:12 }}>
+        <p style={{ fontFamily:HUB_SANS, fontSize:11, fontWeight:300, color:"#9C958D", margin:0 }}>© 2026 Good Food Ambassador Group LLC</p>
+        <div style={{ display:"flex", gap:20 }}>
+          {[
+            { l:"The Crush", fn:onEnter },
+            { l:"About",     fn:() => onNav("about") },
+            { l:"Privacy",   fn:() => onNav("privacy") },
+            { l:"Disclosure",fn:() => onNav("disclosure") },
+          ].map(f => (
+            <button key={f.l} onClick={f.fn} style={{ fontFamily:HUB_SANS, background:"none", border:"none", cursor:"pointer", fontSize:11, fontWeight:300, color:"#9C958D", padding:0, textDecoration:"none" }}>{f.l}</button>
+          ))}
+        </div>
+      </footer>
+
+    </div>
+  );
+}
+
 function AboutPage() {
   return (
     <div style={{ maxWidth:640, margin:"0 auto", padding:"2rem 1.2rem" }}>
@@ -610,7 +829,7 @@ function DisclosurePage() {
 }
 
 export default function App() {
-  const [page, setPage] = useState("home");
+  const [page, setPage] = useState("hub");
   const navItems = [
     { id:"home",    icon:"🏠", l:"Home" },
     { id:"lab",     icon:"🔬", l:"Taste Lab" },
@@ -620,7 +839,9 @@ export default function App() {
     { id:"academy", icon:"📚", l:"Academy" },
     { id:"about",   icon:"ℹ️",  l:"About" },
   ];
+  const isHub = page === "hub";
   function renderPage() {
+    if (page==="hub")        return <HubPage onEnter={() => setPage("home")} onNav={setPage} />;
     if (page==="home")       return <HomePage onNav={setPage} />;
     if (page==="lab")        return <LabPage />;
     if (page==="guide")      return <GuidePage />;
@@ -630,11 +851,20 @@ export default function App() {
     if (page==="about")      return <AboutPage />;
     if (page==="privacy")    return <PrivacyPage />;
     if (page==="disclosure") return <DisclosurePage />;
-    return <HomePage onNav={setPage} />;
+    return <HubPage onEnter={() => setPage("home")} onNav={setPage} />;
   }
+  if (isHub) return renderPage();
   return (
     <div style={{ fontFamily:"Georgia, 'Times New Roman', serif", background:BG, minHeight:600, maxWidth:680, margin:"0 auto", paddingBottom:88, color:TEXT }}>
-      <h2 style={{ position:"absolute", width:1, height:1, overflow:"hidden", clip:"rect(0,0,0,0)" }}>The Crush — EVOO discovery and education app</h2>
+      {/* Back to GFA hub */}
+      <div style={{ padding:"10px 16px 0", display:"flex", alignItems:"center", gap:6 }}>
+        <button onClick={() => setPage("hub")} style={{ background:"none", border:"none", cursor:"pointer", fontSize:11, color:MUTED, padding:0, display:"flex", alignItems:"center", gap:4 }}>
+          <span style={{ fontSize:10 }}>←</span>
+          <span style={{ letterSpacing:"0.06em", textTransform:"uppercase", fontSize:10 }}>Good Food Ambassador</span>
+        </button>
+        <span style={{ fontSize:10, color:MUTED, opacity:0.4 }}>/</span>
+        <span style={{ fontSize:10, color:GOLD, fontWeight:500 }}>The Crush</span>
+      </div>
       {renderPage()}
       <div style={{ textAlign:"center", padding:"8px 0 4px", display:"flex", justifyContent:"center", gap:16 }}>
         <button onClick={() => setPage("disclosure")} style={{ background:"none", border:"none", cursor:"pointer", fontSize:10, color:MUTED, opacity:0.6, textDecoration:"underline" }}>Affiliate Disclosure</button>
