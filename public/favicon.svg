@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Background -->
+  <rect width="64" height="64" rx="14" fill="#FAF8F3"/>
+
+  <!-- Bottle neck -->
+  <rect x="28" y="4" width="8" height="12" rx="2" fill="#2D7A1F"/>
+  <!-- Bottle cap -->
+  <rect x="26" y="2" width="12" height="7" rx="2" fill="#B87808"/>
+
+  <!-- Bottle shoulder -->
+  <path d="M20,16 C20,10 26,8 32,8 C38,8 44,10 44,16Z" fill="#2D7A1F"/>
+  <!-- Bottle body -->
+  <rect x="20" y="16" width="24" height="26" rx="5" fill="#2D7A1F"/>
+
+  <!-- Label -->
+  <rect x="24" y="20" width="16" height="14" rx="3" fill="#FAF8F3" opacity="0.92"/>
+  <!-- Olive leaves on label -->
+  <ellipse cx="29" cy="25" rx="3" ry="1.8" fill="#5CAE4A" transform="rotate(-30 29 25)"/>
+  <ellipse cx="35" cy="28" rx="3" ry="1.8" fill="#5CAE4A" transform="rotate(30 35 28)"/>
+  <path d="M27,28 C30,27 34,27 37,26" stroke="#2D7A1F" stroke-width="1" fill="none" stroke-linecap="round"/>
+
+  <!-- Bottle shine -->
+  <rect x="22" y="18" width="3" height="20" rx="1.5" fill="white" opacity="0.2"/>
+
+  <!-- Heart -->
+  <path d="
+    M32,62
+    C28,56 14,48 14,38
+    C14,31 19,26 25,26
+    C28,26 32,30 32,30
+    C32,30 36,26 39,26
+    C45,26 50,31 50,38
+    C50,48 36,56 32,62Z
+  " fill="#E8213A"/>
+  <!-- Heart shine -->
+  <ellipse cx="23" cy="33" rx="4" ry="3" fill="white" opacity="0.25"/>
+</svg>
