@@ -536,6 +536,79 @@ function QuizPage({ onNav }) {
   );
 }
 
+function AboutPage() {
+  return (
+    <div style={{ maxWidth:640, margin:"0 auto", padding:"2rem 1.2rem" }}>
+      <p style={{ fontWeight:700, fontSize:22, margin:"0 0 4px", color:TEXT }}>About</p>
+      <p style={{ fontSize:13, color:MUTED, margin:"0 0 2rem" }}>Good Food Ambassador Group LLC</p>
+      <div style={{ display:"flex", flexDirection:"column", gap:16 }}>
+        {[
+          { h:"Who we are", b:"Good Food Ambassador Group is a New York-based food education company. We build tools that help people understand what they are buying and eating — starting with extra virgin olive oil, one of the most misunderstood categories in the American grocery store. Our work sits at the intersection of food literacy, consumer transparency, and good taste." },
+          { h:"Why olive oil", b:"Extra virgin olive oil is a product with real quality differences, a defined international grading standard, and a measurable certification system — yet most consumers have no way to navigate it. Labels are confusing, marketing terms are misleading, and the gap between the best and worst product in the category is enormous. We built The Crush to close that gap: a practical, fact-based guide to finding, tasting, and understanding genuinely good oil." },
+          { h:"How we work", b:"Every oil in our database is selected based on publicly available certification data, independent lab testing results, harvest date transparency, and retail accessibility. We do not accept payment to include a product in our editorial recommendations. Where paid placements exist, they are clearly labeled. Our content draws on standards published by the International Olive Council, the California Olive Oil Council, the Australian Olive Oil Association, and EU PDO/PGI certification bodies." },
+          { h:"Our standard", b:"We think the best food education is specific, honest, and useful. We avoid vague health claims, unsupported rankings, and content designed to generate clicks rather than understanding. If something in the app is wrong, we want to know — contact us at hello@goodfoodambassador.com." },
+          { h:"Contact", b:"hello@goodfoodambassador.com · goodfoodambassador.com · Good Food Ambassador Group LLC, New York, USA" },
+        ].map((s,i) => (
+          <div key={i} style={{ background:SURFACE, border:`0.5px solid ${BORDER}`, borderRadius:12, padding:"16px" }}>
+            <p style={{ margin:"0 0 8px", fontWeight:600, fontSize:14, color:TEXT }}>{s.h}</p>
+            <p style={{ margin:0, fontSize:13, color:SOFT, lineHeight:1.8 }}>{s.b}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function PrivacyPage() {
+  return (
+    <div style={{ maxWidth:640, margin:"0 auto", padding:"2rem 1.2rem" }}>
+      <p style={{ fontWeight:700, fontSize:22, margin:"0 0 4px", color:TEXT }}>Privacy Policy</p>
+      <p style={{ fontSize:13, color:MUTED, margin:"0 0 2rem" }}>Good Food Ambassador Group LLC · Last updated May 2026</p>
+      <div style={{ display:"flex", flexDirection:"column", gap:16 }}>
+        {[
+          { h:"Overview", b:"Good Food Ambassador Group LLC operates goodfoodambassador.com (the 'Site'). This Privacy Policy explains what information we collect, how we use it, and your rights regarding that information. We are committed to handling your data with transparency and care." },
+          { h:"Information we collect", b:"We collect limited, anonymous usage data through Google Analytics, including pages visited, time spent on the site, general geographic region, and device type. This data is aggregated and does not identify you personally. We do not collect your name, email address, or payment information directly through this app unless you choose to subscribe to our newsletter or contact us." },
+          { h:"Cookies and analytics", b:"We use Google Analytics, which places cookies on your device to help us understand how visitors use the site. You can opt out of Google Analytics tracking by installing the Google Analytics Opt-out Browser Add-on available at tools.google.com/dlpage/gaoptout. We do not use advertising cookies or sell your data to third parties." },
+          { h:"Affiliate links", b:"This site contains affiliate links to third-party retailers including Amazon, Walmart, and others. When you click these links, you will be directed to those retailers' websites, which have their own privacy policies and data practices. We are not responsible for the privacy practices of third-party sites. Please see our Affiliate Disclosure for more information." },
+          { h:"Email communications", b:"If you subscribe to our newsletter, your email address is stored by our email service provider (Beehiiv) and used solely to send you our newsletter. We do not sell, rent, or share your email address with third parties. You can unsubscribe at any time using the link in any email we send." },
+          { h:"Data retention and security", b:"We retain analytics data for 26 months, after which it is automatically deleted. We do not store personal information beyond what is necessary to provide our services. We use industry-standard security practices to protect any data we do hold." },
+          { h:"Your rights", b:"Depending on your location, you may have rights to access, correct, or delete personal data we hold about you. To exercise these rights or ask questions about our privacy practices, contact us at hello@goodfoodambassador.com." },
+          { h:"Changes to this policy", b:"We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated date. Continued use of the site after changes constitutes acceptance of the updated policy." },
+          { h:"Contact", b:"Good Food Ambassador Group LLC · hello@goodfoodambassador.com · goodfoodambassador.com" },
+        ].map((s,i) => (
+          <div key={i} style={{ background:SURFACE, border:`0.5px solid ${BORDER}`, borderRadius:12, padding:"16px" }}>
+            <p style={{ margin:"0 0 8px", fontWeight:600, fontSize:14, color:TEXT }}>{s.h}</p>
+            <p style={{ margin:0, fontSize:13, color:SOFT, lineHeight:1.8 }}>{s.b}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function DisclosurePage() {
+  return (
+    <div style={{ maxWidth:640, margin:"0 auto", padding:"2rem 1.2rem" }}>
+      <p style={{ fontWeight:700, fontSize:22, margin:"0 0 4px", color:TEXT }}>Affiliate Disclosure</p>
+      <p style={{ fontSize:13, color:MUTED, margin:"0 0 2rem" }}>Good Food Ambassador Group LLC · Last updated May 2026</p>
+      <div style={{ display:"flex", flexDirection:"column", gap:16 }}>
+        {[
+          { h:"Our affiliate relationships", b:"Good Food Ambassador Group LLC participates in affiliate marketing programs. This means that when you click a link to a product on this site and make a purchase, we may earn a small commission at no additional cost to you. We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com. We also participate in affiliate programs offered by other retailers including Walmart, Instacart, and individual olive oil brands." },
+          { h:"How we choose what to recommend", b:"Our editorial content — the oils we feature, the information in the Academy, the Guide, and the Taste Lab — is based entirely on publicly available data, independent certifications, and verified sources. Affiliate relationships do not influence which oils we include or how we describe them. We do not accept payment to feature a product, and we do not remove products from our recommendations based on the absence of an affiliate relationship." },
+          { h:"Sponsored placements", b:"Where a brand has paid for a 'Featured' placement in our app, this will be clearly labeled with a 'Sponsored' or 'Featured' badge. Paid placements are separate from our editorial recommendations and are disclosed at the point of display." },
+          { h:"Price accuracy", b:"Prices shown in this app are based on publicly available information and change frequently. Always verify the current price on the retailer's website before purchasing. We are not responsible for price discrepancies between what is shown here and what is charged at the point of sale." },
+          { h:"Contact", b:"If you have questions about our affiliate relationships or editorial process, contact us at hello@goodfoodambassador.com." },
+        ].map((s,i) => (
+          <div key={i} style={{ background:SURFACE, border:`0.5px solid ${BORDER}`, borderRadius:12, padding:"16px" }}>
+            <p style={{ margin:"0 0 8px", fontWeight:600, fontSize:14, color:TEXT }}>{s.h}</p>
+            <p style={{ margin:0, fontSize:13, color:SOFT, lineHeight:1.8 }}>{s.b}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 export default function App() {
   const [page, setPage] = useState("home");
   const navItems = [
@@ -545,20 +618,28 @@ export default function App() {
     { id:"oils",    icon:"🫙", l:"Oils" },
     { id:"quiz",    icon:"❓", l:"Quiz" },
     { id:"academy", icon:"📚", l:"Academy" },
+    { id:"about",   icon:"ℹ️",  l:"About" },
   ];
   function renderPage() {
-    if (page==="home")    return <HomePage onNav={setPage} />;
-    if (page==="lab")     return <LabPage />;
-    if (page==="guide")   return <GuidePage />;
-    if (page==="oils")    return <OilsPage />;
-    if (page==="quiz")    return <QuizPage onNav={setPage} />;
-    if (page==="academy") return <AcademyPage />;
+    if (page==="home")       return <HomePage onNav={setPage} />;
+    if (page==="lab")        return <LabPage />;
+    if (page==="guide")      return <GuidePage />;
+    if (page==="oils")       return <OilsPage />;
+    if (page==="quiz")       return <QuizPage onNav={setPage} />;
+    if (page==="academy")    return <AcademyPage />;
+    if (page==="about")      return <AboutPage />;
+    if (page==="privacy")    return <PrivacyPage />;
+    if (page==="disclosure") return <DisclosurePage />;
     return <HomePage onNav={setPage} />;
   }
   return (
-    <div style={{ fontFamily:"Georgia, 'Times New Roman', serif", background:BG, minHeight:600, maxWidth:680, margin:"0 auto", paddingBottom:72, color:TEXT }}>
+    <div style={{ fontFamily:"Georgia, 'Times New Roman', serif", background:BG, minHeight:600, maxWidth:680, margin:"0 auto", paddingBottom:88, color:TEXT }}>
       <h2 style={{ position:"absolute", width:1, height:1, overflow:"hidden", clip:"rect(0,0,0,0)" }}>The Crush — EVOO discovery and education app</h2>
       {renderPage()}
+      <div style={{ textAlign:"center", padding:"8px 0 4px", display:"flex", justifyContent:"center", gap:16 }}>
+        <button onClick={() => setPage("disclosure")} style={{ background:"none", border:"none", cursor:"pointer", fontSize:10, color:MUTED, opacity:0.6, textDecoration:"underline" }}>Affiliate Disclosure</button>
+        <button onClick={() => setPage("privacy")} style={{ background:"none", border:"none", cursor:"pointer", fontSize:10, color:MUTED, opacity:0.6, textDecoration:"underline" }}>Privacy Policy</button>
+      </div>
       <nav style={{ position:"fixed", bottom:0, left:"50%", transform:"translateX(-50%)", width:"100%", maxWidth:680, background:"rgba(250,248,243,0.97)", borderTop:`0.5px solid ${BORDER}`, backdropFilter:"blur(12px)", display:"flex", justifyContent:"space-around", padding:"7px 0 9px" }}>
         {navItems.map(n => (
           <button key={n.id} onClick={() => setPage(n.id)} style={{ background:"none", border:"none", cursor:"pointer", display:"flex", flexDirection:"column", alignItems:"center", gap:2, padding:"3px 6px", color:page===n.id?GOLD:MUTED }}>
