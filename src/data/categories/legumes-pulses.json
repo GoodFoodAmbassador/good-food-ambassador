@@ -1,0 +1,32 @@
+{
+  "id": "legumes-pulses",
+  "name": "Legumes & Pulses",
+  "tagline": "Beans, lentils, chickpeas, and heritage varieties from smallholder farms worldwide. Among the most nutritious and land-efficient foods on the planet.",
+  "learn": {
+    "how_we_evaluate": "In this category, origin transparency and farming method are the primary signals. Legumes are among the most sustainably grown foods on the planet — they fix nitrogen and require little irrigation — but that story is often missing from the label. We look for named growing region, named variety, and honest organic or fair trade claims.",
+    "what_to_look_for": [
+      "Named country and region of origin",
+      "Named variety where relevant (Puy lentils, Castelluccio lentils, Borlotti, etc.)",
+      "Organic certification for pesticide-free growing",
+      "Fair trade or direct trade relationship disclosed for imported pulses",
+      "Harvest year or crop year on packaging"
+    ],
+    "red_flags": [
+      "No country of origin — especially for canned legumes",
+      "Generic variety names only — 'green lentils' with no origin",
+      "Organic claimed without certification mark",
+      "Long ingredient lists in canned products — legumes need only legumes, water, salt"
+    ],
+    "key_terms": [
+      {
+        "term": "IGP / PDO for legumes",
+        "definition": "Some European legumes carry geographic protection — Puy lentils (AOP), Castelluccio lentils (IGP), Fagiolina del Trasimeno. These protect variety, origin, and traditional growing methods."
+      },
+      {
+        "term": "Nitrogen fixation",
+        "definition": "Legumes fix atmospheric nitrogen through root bacteria, reducing the need for synthetic fertilisers. This makes them one of the most land-efficient and climate-friendly protein sources available."
+      }
+    ],
+    "resources": []
+  }
+}

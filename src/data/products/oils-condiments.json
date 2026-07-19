@@ -1,0 +1,1274 @@
+[
+  {
+    "id": "california-olive-ranch-evoo",
+    "status": "evaluated",
+    "product": {
+      "name": "California Olive Ranch EVOO",
+      "producer": "California Olive Ranch",
+      "origin": { "region": "California", "country": "USA" },
+      "harvest_date": "Oct 2024",
+      "certifications": ["COOC Certified"],
+      "description": "One of the most consistently fresh everyday oils on the US market. Mild and clean — works well for everyday cooking. Harvest date on every bottle."
+    },
+    "gfa": {
+      "good": {
+        "criteria": {
+          "ingredients": { "score": "✓", "note": "Pure EVOO, no additives. Ingredient list is as simple as it should be." },
+          "quality": { "score": "✓", "note": "COOC certification requires both chemical testing and sensory panel evaluation — one of the most rigorous US standards. Harvest date confirmed." }
+        }
+      },
+      "clean": {
+        "criteria": {
+          "traceability": { "score": "~", "note": "California origin confirmed. Produced from a cooperative of California growers — origin is state-level, not farm-level. No named variety or specific growing region." },
+          "packaging": { "score": "✓", "note": "Harvest date printed on every bottle. No misleading claims. Dark glass or opaque bottle." }
+        }
+      },
+      "fair": {
+        "criteria": {
+          "workers": { "score": "~", "note": "Large California cooperative. No specific fair labor disclosures or third-party social audits published." },
+          "land": { "score": "~", "note": "Not organically certified. No published sustainability or IPM disclosures." }
+        }
+      },
+      "true": {
+        "criteria": {
+          "cultural_roots": { "score": "~", "note": "California EVOO is a young tradition (modern commercial scale began in the 1990s). No named variety — limits cultural and terroir specificity." }
+        }
+      }
+    },
+    "buy": [
+      { "vendor": "Walmart", "url": "https://www.walmart.com/search?q=california+olive+ranch+evoo", "affiliate": false },
+      { "vendor": "Amazon", "url": "https://www.amazon.com/s?k=california+olive+ranch+evoo", "affiliate": false }
+    ],
+    "meta": { "date_evaluated": "December 2024", "evaluator_role": "GFA · Olive Oil Specialist" }
+  },
+
+  {
+    "id": "cobram-estate-classic",
+    "status": "evaluated",
+    "product": {
+      "name": "Cobram Estate Classic",
+      "producer": "Cobram Estate",
+      "origin": { "region": "Victoria", "country": "Australia" },
+      "harvest_date": "Jun 2024",
+      "certifications": ["AOCA Certified"],
+      "description": "Australian harvest means a fresher bottle year-round for the northern hemisphere. Light and grassy. Counter-seasonal advantage: May harvest arrives on US shelves far ahead of Mediterranean oils."
+    },
+    "gfa": {
+      "good": {
+        "criteria": {
+          "ingredients": { "score": "✓", "note": "Pure EVOO. No additives or blending agents." },
+          "quality": { "score": "✓", "note": "AOCA (Australian Olive Oil Association) certification includes chemical and sensory testing. June 2024 harvest date confirmed." }
+        }
+      },
+      "clean": {
+        "criteria": {
+          "traceability": { "score": "✓", "note": "Single estate, Victoria, Australia. Cobram Estate controls the full supply chain from grove to bottle. Estate origin is verifiable." },
+          "packaging": { "score": "✓", "note": "Harvest date on every bottle. Honest label — counter-seasonal freshness story is accurately told." }
+        }
+      },
+      "fair": {
+        "criteria": {
+          "workers": { "score": "~", "note": "Large estate operation. No published third-party labor audits. Australian labor law provides baseline protection." },
+          "land": { "score": "~", "note": "Not organically certified. No specific sustainability disclosures found." }
+        }
+      },
+      "true": {
+        "criteria": {
+          "cultural_roots": { "score": "~", "note": "Australian olive oil industry dates to the 1990s — honest about being a modern tradition rather than claiming a heritage it doesn't have. No named variety on Classic label." }
+        }
+      }
+    },
+    "buy": [
+      { "vendor": "Amazon", "url": "https://www.amazon.com/s?k=cobram+estate+classic+evoo", "affiliate": false }
+    ],
+    "meta": { "date_evaluated": "December 2024", "evaluator_role": "GFA · Olive Oil Specialist" }
+  },
+
+  {
+    "id": "trader-joes-california-estate",
+    "status": "evaluated",
+    "product": {
+      "name": "Trader Joe's California Estate EVOO",
+      "producer": "Trader Joe's (private label)",
+      "origin": { "region": "California", "country": "USA" },
+      "harvest_date": "Sep 2024",
+      "certifications": ["USDA Organic"],
+      "description": "Carries a harvest date and organic certification at an accessible price. A practical everyday choice with more label transparency than most oils at this price point."
+    },
+    "gfa": {
+      "good": {
+        "criteria": {
+          "ingredients": { "score": "✓", "note": "Pure EVOO. USDA Organic certification confirms no synthetic pesticides or inputs." },
+          "quality": { "score": "✓", "note": "Harvest date printed on bottle (Sep 2024). Organic certification provides a secondary quality checkpoint." }
+        }
+      },
+      "clean": {
+        "criteria": {
+          "traceability": { "score": "~", "note": "California origin stated. Private label — the actual grower or estate is not disclosed. No named variety." },
+          "packaging": { "score": "~", "note": "Harvest date present, which is above average for the price. Private label limits full transparency on supply chain." }
+        }
+      },
+      "fair": {
+        "criteria": {
+          "workers": { "score": "—", "note": "Private label product — Trader Joe's does not disclose grower or labor practices for this line." },
+          "land": { "score": "✓", "note": "USDA Organic certified. Farming practices verified against federal organic standards." }
+        }
+      },
+      "true": {
+        "criteria": {
+          "cultural_roots": { "score": "~", "note": "California origin acknowledged. No variety or estate named — limits terroir specificity." }
+        }
+      }
+    },
+    "buy": [
+      { "vendor": "Trader Joe's (in store)", "url": "https://www.traderjoes.com", "affiliate": false }
+    ],
+    "meta": { "date_evaluated": "December 2024", "evaluator_role": "GFA · Olive Oil Specialist" }
+  },
+
+  {
+    "id": "pompeian-robust-evoo",
+    "status": "evaluated",
+    "product": {
+      "name": "Pompeian Robust EVOO",
+      "producer": "Pompeian",
+      "origin": { "region": "Cooperative blend", "country": "USA" },
+      "harvest_date": "Oct 2024",
+      "certifications": ["NAOOA Certified"],
+      "description": "America's best-selling EVOO brand, produced by a Maryland-based olive cooperative. NAOOA-certified and consistently passes independent purity testing."
+    },
+    "gfa": {
+      "good": {
+        "criteria": {
+          "ingredients": { "score": "✓", "note": "Pure EVOO. Consistently passes independent purity testing under NAOOA certification." },
+          "quality": { "score": "~", "note": "NAOOA certification confirms grade — a useful floor, but less rigorous than COOC (no sensory panel required). Harvest date on label." }
+        }
+      },
+      "clean": {
+        "criteria": {
+          "traceability": { "score": "~", "note": "Listed as USA cooperative blend. Country of origin confirmed, but specific regions, growers, and varieties are not disclosed." },
+          "packaging": { "score": "~", "note": "Harvest date on label, which is better than average for this price. 'Cooperative blend' label is honest but not specific." }
+        }
+      },
+      "fair": {
+        "criteria": {
+          "workers": { "score": "~", "note": "Member-owned cooperative structure provides some alignment between the business and its growers. No third-party social audit published." },
+          "land": { "score": "~", "note": "Not organically certified. No sustainability disclosures." }
+        }
+      },
+      "true": {
+        "criteria": {
+          "cultural_roots": { "score": "~", "note": "US cooperative, no named variety. Honest about being a blend without overclaiming heritage or provenance." }
+        }
+      }
+    },
+    "buy": [
+      { "vendor": "Walmart", "url": "https://www.walmart.com/search?q=pompeian+robust+evoo", "affiliate": false },
+      { "vendor": "Amazon", "url": "https://www.amazon.com/s?k=pompeian+robust+evoo", "affiliate": false }
+    ],
+    "meta": { "date_evaluated": "December 2024", "evaluator_role": "GFA · Olive Oil Specialist" }
+  },
+
+  {
+    "id": "pompeian-organic-evoo",
+    "status": "evaluated",
+    "product": {
+      "name": "Pompeian Organic EVOO",
+      "producer": "Pompeian",
+      "origin": { "region": "Americas blend", "country": "Americas" },
+      "harvest_date": "Nov 2024",
+      "certifications": ["USDA Organic", "NAOOA Certified"],
+      "description": "Organic-certified version of Pompeian's everyday line. Two independent certifications provide checkpoints for both farming practices and oil grade."
+    },
+    "gfa": {
+      "good": {
+        "criteria": {
+          "ingredients": { "score": "✓", "note": "Pure EVOO. USDA Organic certification confirms no synthetic pesticide inputs at the farming level." },
+          "quality": { "score": "~", "note": "NAOOA certifies grade compliance. Organic certification addresses farming but not oil freshness or sensory quality." }
+        }
+      },
+      "clean": {
+        "criteria": {
+          "traceability": { "score": "~", "note": "'Americas blend' — very broad origin claim. No countries, regions, or varieties disclosed." },
+          "packaging": { "score": "~", "note": "Harvest date present. 'Americas blend' labeling is honest about being a blend, but lacks specificity." }
+        }
+      },
+      "fair": {
+        "criteria": {
+          "workers": { "score": "—", "note": "No grower or origin country disclosed beyond 'Americas.' Worker conditions cannot be assessed." },
+          "land": { "score": "✓", "note": "USDA Organic certified. Federal standards verified for all source farms." }
+        }
+      },
+      "true": {
+        "criteria": {
+          "cultural_roots": { "score": "~", "note": "No named origin country, region, or variety. Certified organic but lacks cultural or terroir specificity." }
+        }
+      }
+    },
+    "buy": [
+      { "vendor": "Walmart", "url": "https://www.walmart.com/search?q=pompeian+organic+evoo", "affiliate": false },
+      { "vendor": "Amazon", "url": "https://www.amazon.com/s?k=pompeian+organic+evoo", "affiliate": false }
+    ],
+    "meta": { "date_evaluated": "December 2024", "evaluator_role": "GFA · Olive Oil Specialist" }
+  },
+
+  {
+    "id": "365-small-batch-california-evoo",
+    "status": "evaluated",
+    "product": {
+      "name": "365 Small Batch California EVOO",
+      "producer": "Whole Foods Market (365)",
+      "origin": { "region": "California", "country": "USA" },
+      "harvest_date": "Nov 2024",
+      "certifications": ["Olive Oil Commission of California"],
+      "description": "Whole Foods private label, California origin, certified by the Olive Oil Commission of California. Harvest date printed on label."
+    },
+    "gfa": {
+      "good": {
+        "criteria": {
+          "ingredients": { "score": "✓", "note": "Pure EVOO. COOC certification confirms grade through chemical and sensory evaluation." },
+          "quality": { "score": "✓", "note": "COOC certification is one of the US's most rigorous voluntary standards. Harvest date on label." }
+        }
+      },
+      "clean": {
+        "criteria": {
+          "traceability": { "score": "~", "note": "California origin confirmed via COOC. Private label — specific grower, estate, and variety not disclosed on pack." },
+          "packaging": { "score": "✓", "note": "Harvest date on label. COOC certification seal present. No misleading marketing claims." }
+        }
+      },
+      "fair": {
+        "criteria": {
+          "workers": { "score": "—", "note": "Private label product. Whole Foods does not disclose grower or labor practices for this SKU." },
+          "land": { "score": "~", "note": "Not organically certified. No sustainability disclosures beyond the COOC certification." }
+        }
+      },
+      "true": {
+        "criteria": {
+          "cultural_roots": { "score": "~", "note": "California origin, no named variety. 'Small batch' claim is not independently verified — use with caution as a quality signal." }
+        }
+      }
+    },
+    "buy": [
+      { "vendor": "Whole Foods", "url": "https://www.wholefoodsmarket.com/search?text=365+small+batch+california+evoo", "affiliate": false }
+    ],
+    "meta": { "date_evaluated": "December 2024", "evaluator_role": "GFA · Olive Oil Specialist" }
+  },
+
+  {
+    "id": "terra-delyssa-first-cold-press-evoo",
+    "status": "evaluated",
+    "product": {
+      "name": "Terra Delyssa First Cold Press EVOO",
+      "producer": "Terra Delyssa",
+      "origin": { "region": "Tunisia", "country": "Tunisia" },
+      "harvest_date": "Nov 2024",
+      "certifications": ["USDA Organic", "IOC Accredited"],
+      "description": "Tunisian single-origin, hand-harvested, pressed within 4 hours of picking. Full traceability via QR code. Multiple international competition medals."
+    },
+    "gfa": {
+      "good": {
+        "criteria": {
+          "ingredients": { "score": "✓", "note": "Pure EVOO. Hand-harvested and pressed within 4 hours — minimal time between harvest and mill is a meaningful freshness signal." },
+          "quality": { "score": "✓", "note": "USDA Organic and IOC accreditation. International competition medals provide independent sensory validation. QR code links to traceability data." }
+        }
+      },
+      "clean": {
+        "criteria": {
+          "traceability": { "score": "✓", "note": "Single-origin Tunisia. QR code traceability on every bottle links to grove, harvest date, and pressing record. One of the most transparent labels in this category." },
+          "packaging": { "score": "✓", "note": "QR traceability, harvest date, and certification seals clearly presented. No inflated marketing claims." }
+        }
+      },
+      "fair": {
+        "criteria": {
+          "workers": { "score": "~", "note": "Hand-harvested, which implies direct engagement of farm workers. No published fair labor certification or third-party social audit." },
+          "land": { "score": "✓", "note": "USDA Organic certified. Organic farming standards verified independently." }
+        }
+      },
+      "true": {
+        "criteria": {
+          "cultural_roots": { "score": "✓", "note": "Tunisia has one of the world's oldest olive oil traditions — Carthaginian groves date back over 2,000 years. Hand-harvest and traditional pressing methods honored." }
+        }
+      }
+    },
+    "buy": [
+      { "vendor": "Costco", "url": "https://www.costco.com/s?keyword=terra+delyssa+evoo", "affiliate": false },
+      { "vendor": "Amazon", "url": "https://www.amazon.com/s?k=terra+delyssa+evoo", "affiliate": false }
+    ],
+    "meta": { "date_evaluated": "December 2024", "evaluator_role": "GFA · Olive Oil Specialist" }
+  },
+
+  {
+    "id": "ottavio-early-harvest-evoo",
+    "status": "evaluated",
+    "product": {
+      "name": "Ottavio Early Harvest EVOO",
+      "producer": "Ottavio",
+      "origin": { "region": "Multi-origin blend", "country": "Multiple" },
+      "harvest_date": "Oct 2024",
+      "certifications": ["Harvest date on label"],
+      "description": "Costco-exclusive 1-liter dark glass bottle. Early-harvest designation means olives were picked at color change — higher polyphenols, greener flavor."
+    },
+    "gfa": {
+      "good": {
+        "criteria": {
+          "ingredients": { "score": "✓", "note": "Pure EVOO. Early-harvest designation is meaningful — picking at color change produces higher polyphenol content and fresher flavor." },
+          "quality": { "score": "✓", "note": "Harvest date on label. Dark glass bottle protects oil from light degradation. Early harvest is a genuine quality commitment, not just a marketing term." }
+        }
+      },
+      "clean": {
+        "criteria": {
+          "traceability": { "score": "~", "note": "Multi-origin blend — exact source countries not disclosed on label. Early harvest confirmed but specific regions unknown." },
+          "packaging": { "score": "~", "note": "Harvest date on label and dark glass are positives. Multi-origin blend limits full transparency." }
+        }
+      },
+      "fair": {
+        "criteria": {
+          "workers": { "score": "—", "note": "Multi-origin blend with undisclosed sources. Labor practices cannot be assessed." },
+          "land": { "score": "~", "note": "Not organically certified. Early harvest practice suggests some agronomic intentionality, but no formal sustainability claims." }
+        }
+      },
+      "true": {
+        "criteria": {
+          "cultural_roots": { "score": "~", "note": "Early harvest is a genuine traditional quality practice, but with undisclosed origins, terroir or cultural specificity cannot be confirmed." }
+        }
+      }
+    },
+    "buy": [
+      { "vendor": "Costco", "url": "https://www.costco.com/s?keyword=ottavio+early+harvest+evoo", "affiliate": false }
+    ],
+    "meta": { "date_evaluated": "December 2024", "evaluator_role": "GFA · Olive Oil Specialist" }
+  },
+
+  {
+    "id": "california-olive-ranch-global-blend",
+    "status": "evaluated",
+    "product": {
+      "name": "California Olive Ranch Global Blend",
+      "producer": "California Olive Ranch",
+      "origin": { "region": "Multi-origin blend", "country": "USA + Other" },
+      "harvest_date": "Nov 2024",
+      "certifications": ["COOC Standards"],
+      "description": "Multi-origin blend crafted and certified by California Olive Ranch. Consistent and clean, with mild fruitiness. The most widely available COR product."
+    },
+    "gfa": {
+      "good": {
+        "criteria": {
+          "ingredients": { "score": "✓", "note": "Pure EVOO. Passes COOC grade standards." },
+          "quality": { "score": "~", "note": "COOC standards applied. However, 'Global Blend' is a step down from COR's California-only line in terms of supply chain control." }
+        }
+      },
+      "clean": {
+        "criteria": {
+          "traceability": { "score": "—", "note": "USA plus undisclosed international sources. No specific countries, regions, or varieties named. The weakest traceability of any COR product." },
+          "packaging": { "score": "~", "note": "Harvest date present. 'Global Blend' label is honest about the nature of the product, but source transparency is limited." }
+        }
+      },
+      "fair": {
+        "criteria": {
+          "workers": { "score": "—", "note": "Undisclosed international sources. Worker conditions in non-US origin countries cannot be assessed." },
+          "land": { "score": "~", "note": "Not organically certified. No land use disclosures for international blend components." }
+        }
+      },
+      "true": {
+        "criteria": {
+          "cultural_roots": { "score": "—", "note": "Multi-origin global blend with no named variety or cultural provenance. Optimised for consistency and price, not terroir." }
+        }
+      }
+    },
+    "buy": [
+      { "vendor": "Walmart", "url": "https://www.walmart.com/search?q=california+olive+ranch+global+blend", "affiliate": false },
+      { "vendor": "Amazon", "url": "https://www.amazon.com/s?k=california+olive+ranch+global+blend", "affiliate": false }
+    ],
+    "meta": { "date_evaluated": "December 2024", "evaluator_role": "GFA · Olive Oil Specialist" }
+  },
+
+  {
+    "id": "lucini-italia-premium-select",
+    "status": "evaluated",
+    "product": {
+      "name": "Lucini Italia Premium Select EVOO",
+      "producer": "Lucini Italia",
+      "origin": { "region": "Italy blend", "country": "Italy" },
+      "harvest_date": "Nov 2024",
+      "certifications": ["Third-party verified"],
+      "description": "A balanced Italian blend with a noticeable peppery finish. Good introduction to more assertive oils."
+    },
+    "gfa": {
+      "good": {
+        "criteria": {
+          "ingredients": { "score": "✓", "note": "Pure EVOO. Peppery finish is consistent with genuine extra virgin quality and polyphenol presence." },
+          "quality": { "score": "~", "note": "Third-party verified but the certifying body is not named on label. Italian blend — no specific quality standard beyond EVOO grade." }
+        }
+      },
+      "clean": {
+        "criteria": {
+          "traceability": { "score": "~", "note": "Italy origin confirmed. Blend — no regions, farms, or varieties disclosed. 'Italy' covers an enormous range of olive oil quality and provenance." },
+          "packaging": { "score": "~", "note": "Harvest date disclosed. No misleading claims, but limited supply chain narrative." }
+        }
+      },
+      "fair": {
+        "criteria": {
+          "workers": { "score": "—", "note": "Italian blend with undisclosed producer network. No labor practices disclosed." },
+          "land": { "score": "~", "note": "Not organically certified. No sustainability disclosures." }
+        }
+      },
+      "true": {
+        "criteria": {
+          "cultural_roots": { "score": "~", "note": "Italy is one of the great olive oil cultures, but a generic 'Italy blend' does not meaningfully engage with that tradition — no variety, no region, no estate." }
+        }
+      }
+    },
+    "buy": [
+      { "vendor": "Whole Foods", "url": "https://www.wholefoodsmarket.com/search?text=lucini+italia+evoo", "affiliate": false },
+      { "vendor": "Amazon", "url": "https://www.amazon.com/s?k=lucini+italia+premium+select+evoo", "affiliate": false }
+    ],
+    "meta": { "date_evaluated": "December 2024", "evaluator_role": "GFA · Olive Oil Specialist" }
+  },
+
+  {
+    "id": "kirkland-signature-evoo",
+    "status": "evaluated",
+    "product": {
+      "name": "Kirkland Signature EVOO",
+      "producer": "Kirkland Signature (Costco)",
+      "origin": { "region": "Italy blend", "country": "Italy" },
+      "harvest_date": "Nov 2024",
+      "certifications": ["IOC Standards"],
+      "description": "Costco private label at a remarkable price-per-liter. Independent testing confirms grade. Italian blend — mild and versatile."
+    },
+    "gfa": {
+      "good": {
+        "criteria": {
+          "ingredients": { "score": "✓", "note": "Pure EVOO. Consistently passes independent grade testing." },
+          "quality": { "score": "~", "note": "IOC standard compliance confirmed. Mild and clean. No rigorous sensory certification (e.g. COOC equivalent) applied." }
+        }
+      },
+      "clean": {
+        "criteria": {
+          "traceability": { "score": "~", "note": "Italy origin confirmed. Private label — actual producers undisclosed. No regional or varietal specificity." },
+          "packaging": { "score": "~", "note": "Harvest date disclosed. Private label limits supply chain transparency." }
+        }
+      },
+      "fair": {
+        "criteria": {
+          "workers": { "score": "—", "note": "Undisclosed producer network in Italy. No labor practices published." },
+          "land": { "score": "~", "note": "Not organically certified. No land-use disclosures." }
+        }
+      },
+      "true": {
+        "criteria": {
+          "cultural_roots": { "score": "~", "note": "Italian origin acknowledged but no variety or region disclosed. Functional product without cultural depth." }
+        }
+      }
+    },
+    "buy": [
+      { "vendor": "Costco", "url": "https://www.costco.com/s?keyword=kirkland+signature+evoo", "affiliate": false }
+    ],
+    "meta": { "date_evaluated": "December 2024", "evaluator_role": "GFA · Olive Oil Specialist" }
+  },
+
+  {
+    "id": "trader-joes-100-greek-kalamata",
+    "status": "evaluated",
+    "product": {
+      "name": "Trader Joe's 100% Greek Kalamata EVOO",
+      "producer": "Trader Joe's (private label)",
+      "origin": { "region": "Kalamata", "country": "Greece" },
+      "harvest_date": "Nov 2024",
+      "certifications": ["PDO Kalamata"],
+      "description": "PDO Kalamata designation means origin and production method are EU-verified. Fruity and gentle. Exceptional value for a single-origin PDO oil."
+    },
+    "gfa": {
+      "good": {
+        "criteria": {
+          "ingredients": { "score": "✓", "note": "Pure EVOO. Fruity and low-acid Koroneiki variety. PDO designation confirms grade within its system." },
+          "quality": { "score": "✓", "note": "PDO Kalamata is an EU-regulated designation with chemical and origin requirements. Harvest date on label." }
+        }
+      },
+      "clean": {
+        "criteria": {
+          "traceability": { "score": "✓", "note": "PDO Kalamata legally guarantees that olives were grown and oil was produced in the Kalamata region of the Peloponnese. EU-verified provenance." },
+          "packaging": { "score": "✓", "note": "PDO seal clearly displayed. Honest label — no inflated heritage claims beyond what the PDO already certifies." }
+        }
+      },
+      "fair": {
+        "criteria": {
+          "workers": { "score": "~", "note": "PDO cooperatives in Kalamata are typically small-to-medium grower cooperatives. Specific labor practices not disclosed by Trader Joe's." },
+          "land": { "score": "~", "note": "Not organically certified at this SKU. PDO rules do not require organic farming." }
+        }
+      },
+      "true": {
+        "criteria": {
+          "cultural_roots": { "score": "✓", "note": "Kalamata is one of the most storied olive oil appellations in the world. Koroneiki variety has been cultivated in the Peloponnese for millennia. PDO protects both origin and tradition." }
+        }
+      }
+    },
+    "buy": [
+      { "vendor": "Trader Joe's (in store)", "url": "https://www.traderjoes.com", "affiliate": false }
+    ],
+    "meta": { "date_evaluated": "December 2024", "evaluator_role": "GFA · Olive Oil Specialist" }
+  },
+
+  {
+    "id": "costco-organic-evoo-kirkland",
+    "status": "evaluated",
+    "product": {
+      "name": "Kirkland Signature Organic EVOO",
+      "producer": "Kirkland Signature (Costco)",
+      "origin": { "region": "Multi-origin blend", "country": "Multiple" },
+      "harvest_date": "Nov 2024",
+      "certifications": ["USDA Organic", "IOC Standards"],
+      "description": "Organic version of the Kirkland line. Two checkpoints: USDA Organic for farming, IOC standards for grade. Great pantry value."
+    },
+    "gfa": {
+      "good": {
+        "criteria": {
+          "ingredients": { "score": "✓", "note": "Pure EVOO. Organic certification confirms no synthetic pesticide inputs across the supply chain." },
+          "quality": { "score": "~", "note": "IOC grade compliance plus USDA Organic. No sensory panel certification beyond EVOO grade minimum." }
+        }
+      },
+      "clean": {
+        "criteria": {
+          "traceability": { "score": "~", "note": "Multi-origin organic blend. Origin countries and growers not disclosed. USDA Organic certification provides a farming-practices floor." },
+          "packaging": { "score": "~", "note": "Organic seal and harvest date present. Blend origins remain undisclosed." }
+        }
+      },
+      "fair": {
+        "criteria": {
+          "workers": { "score": "—", "note": "Multi-origin private label. No labor practices disclosed for any source country." },
+          "land": { "score": "✓", "note": "USDA Organic certified across all blend components." }
+        }
+      },
+      "true": {
+        "criteria": {
+          "cultural_roots": { "score": "~", "note": "Organic multi-origin blend. No named origin, variety, or cultural narrative." }
+        }
+      }
+    },
+    "buy": [
+      { "vendor": "Costco", "url": "https://www.costco.com/s?keyword=kirkland+organic+evoo", "affiliate": false }
+    ],
+    "meta": { "date_evaluated": "December 2024", "evaluator_role": "GFA · Olive Oil Specialist" }
+  },
+
+  {
+    "id": "graza-sizzle",
+    "status": "evaluated",
+    "product": {
+      "name": "Graza Sizzle",
+      "producer": "Graza",
+      "origin": { "region": "Jaén, Andalusia", "country": "Spain" },
+      "harvest_date": "Oct 2024",
+      "certifications": ["Harvest date on label"],
+      "description": "Picual variety from Spain in a squeeze bottle optimized for high-heat cooking. Harvest date printed. Direct-to-consumer model with full supply chain transparency."
+    },
+    "gfa": {
+      "good": {
+        "criteria": {
+          "ingredients": { "score": "✓", "note": "Pure EVOO, single variety Picual. Picual is naturally high in polyphenols and oleic acid, making it genuinely well-suited to high-heat cooking." },
+          "quality": { "score": "✓", "note": "Named variety (Picual), named origin (Jaén), and harvest date on every bottle. DTC model allows tight quality control from grove to consumer." }
+        }
+      },
+      "clean": {
+        "criteria": {
+          "traceability": { "score": "✓", "note": "Single variety, single origin (Andalusia, Spain). Harvest date confirmed. Graza publishes supply chain information including mill and grower relationships." },
+          "packaging": { "score": "✓", "note": "Squeeze bottle design reduces oxidation from repeated use. Harvest date prominently labeled. No misleading marketing claims." }
+        }
+      },
+      "fair": {
+        "criteria": {
+          "workers": { "score": "~", "note": "DTC model with direct grower relationships in Spain. No third-party labor certification, but Graza publishes sourcing information." },
+          "land": { "score": "~", "note": "Not organically certified. No specific sustainability disclosures for Jaén sourcing." }
+        }
+      },
+      "true": {
+        "criteria": {
+          "cultural_roots": { "score": "~", "note": "Picual is Spain's most planted olive variety, deeply embedded in Andalusian agriculture. Named variety is a cultural transparency signal. Modern DTC branding sits alongside, rather than displacing, the terroir story." }
+        }
+      }
+    },
+    "buy": [
+      { "vendor": "Graza.co", "url": "https://graza.co/products/sizzle", "affiliate": false },
+      { "vendor": "Whole Foods", "url": "https://www.wholefoodsmarket.com/search?text=graza+sizzle", "affiliate": false }
+    ],
+    "meta": { "date_evaluated": "December 2024", "evaluator_role": "GFA · Olive Oil Specialist" }
+  },
+
+  {
+    "id": "graza-drizzle",
+    "status": "evaluated",
+    "product": {
+      "name": "Graza Drizzle",
+      "producer": "Graza",
+      "origin": { "region": "Jaén, Andalusia", "country": "Spain" },
+      "harvest_date": "Oct 2024",
+      "certifications": ["Harvest date on label"],
+      "description": "Arbequina variety from Spain in a drizzle-optimized bottle. Light and fruity — designed for finishing. Same transparent supply chain as Sizzle."
+    },
+    "gfa": {
+      "good": {
+        "criteria": {
+          "ingredients": { "score": "✓", "note": "Pure EVOO, single variety Arbequina. Mild, fruity, low bitterness — appropriate characteristics for a finishing oil." },
+          "quality": { "score": "✓", "note": "Named variety, named origin, harvest date. Drizzle bottle design optimizes for low-oxidation finishing use." }
+        }
+      },
+      "clean": {
+        "criteria": {
+          "traceability": { "score": "✓", "note": "Arbequina variety, Andalusia, Spain. Harvest date on label. Same grower relationships and supply chain transparency as Graza Sizzle." },
+          "packaging": { "score": "✓", "note": "Drizzle-optimized nozzle with harvest date. No misleading claims." }
+        }
+      },
+      "fair": {
+        "criteria": {
+          "workers": { "score": "~", "note": "Direct grower relationships, no third-party labor certification." },
+          "land": { "score": "~", "note": "Not organically certified." }
+        }
+      },
+      "true": {
+        "criteria": {
+          "cultural_roots": { "score": "~", "note": "Arbequina originates in Catalonia; widely planted in Andalusia and California. Named variety is a meaningful transparency signal. Modern DTC branding." }
+        }
+      }
+    },
+    "buy": [
+      { "vendor": "Graza.co", "url": "https://graza.co/products/drizzle", "affiliate": false },
+      { "vendor": "Whole Foods", "url": "https://www.wholefoodsmarket.com/search?text=graza+drizzle", "affiliate": false }
+    ],
+    "meta": { "date_evaluated": "December 2024", "evaluator_role": "GFA · Olive Oil Specialist" }
+  },
+
+  {
+    "id": "california-olive-ranch-extra",
+    "status": "evaluated",
+    "product": {
+      "name": "California Olive Ranch Extra",
+      "producer": "California Olive Ranch",
+      "origin": { "region": "California", "country": "USA" },
+      "harvest_date": "Dec 2024",
+      "certifications": ["COOC Certified"],
+      "description": "Premium tier of California Olive Ranch. California single-origin, early harvest, full COOC certification."
+    },
+    "gfa": {
+      "good": {
+        "criteria": {
+          "ingredients": { "score": "✓", "note": "Pure EVOO, California single-origin. Early harvest confirms higher polyphenol content and fresher character." },
+          "quality": { "score": "✓", "note": "COOC certification (sensory + chemical). Dec 2024 harvest date confirmed. Premium tier within COR's range." }
+        }
+      },
+      "clean": {
+        "criteria": {
+          "traceability": { "score": "✓", "note": "California single-origin confirmed by COOC. No named variety, but California-only sourcing is a meaningful step up from the Global Blend." },
+          "packaging": { "score": "✓", "note": "Harvest date and COOC seal clearly displayed. No misleading claims." }
+        }
+      },
+      "fair": {
+        "criteria": {
+          "workers": { "score": "~", "note": "California grower network. No third-party labor certification published." },
+          "land": { "score": "~", "note": "Not organically certified." }
+        }
+      },
+      "true": {
+        "criteria": {
+          "cultural_roots": { "score": "~", "note": "California single-origin with COOC certification — the clearest expression of California olive oil terroir in the COR range, but still no named variety." }
+        }
+      }
+    },
+    "buy": [
+      { "vendor": "California Olive Ranch", "url": "https://californiaoliveranch.com", "affiliate": false },
+      { "vendor": "Whole Foods", "url": "https://www.wholefoodsmarket.com/search?text=california+olive+ranch+extra", "affiliate": false }
+    ],
+    "meta": { "date_evaluated": "December 2024", "evaluator_role": "GFA · Olive Oil Specialist" }
+  },
+
+  {
+    "id": "seka-hills-arbequina",
+    "status": "evaluated",
+    "product": {
+      "name": "Séka Hills Arbequina EVOO",
+      "producer": "Séka Hills",
+      "origin": { "region": "Yolo County, California", "country": "USA" },
+      "harvest_date": "Nov 2024",
+      "certifications": ["COOC Certified"],
+      "description": "Family-farm California oil. Arbequina variety — characteristically buttery and mild. COOC certified. Strong terroir story with transparent sourcing."
+    },
+    "gfa": {
+      "good": {
+        "criteria": {
+          "ingredients": { "score": "✓", "note": "Pure EVOO, single variety Arbequina. Named variety, estate origin, COOC certified." },
+          "quality": { "score": "✓", "note": "COOC certification (sensory + chemical). Harvest date confirmed. Single-variety consistency allows meaningful year-on-year quality tracking." }
+        }
+      },
+      "clean": {
+        "criteria": {
+          "traceability": { "score": "✓", "note": "Yolo County, California. Single variety (Arbequina). Family farm — direct producer relationship fully traceable." },
+          "packaging": { "score": "✓", "note": "Harvest date, COOC seal, and named variety on label. Estate contact published." }
+        }
+      },
+      "fair": {
+        "criteria": {
+          "workers": { "score": "✓", "note": "Family farm operation. Tribal enterprise — Séka Hills is the agricultural division of the Yocha Dehe Wintun Nation. Direct producer relationship, community ownership model." },
+          "land": { "score": "~", "note": "Not organically certified. Family farm context suggests more careful land management than industrial operations, but no formal certification." }
+        }
+      },
+      "true": {
+        "criteria": {
+          "cultural_roots": { "score": "~", "note": "Single-variety Arbequina from a named California estate. Named variety and estate origin are meaningful — the strongest terroir story in California's everyday-to-step-up range." }
+        }
+      }
+    },
+    "buy": [
+      { "vendor": "Séka Hills", "url": "https://www.sekahills.com/collections/olive-oils", "affiliate": false }
+    ],
+    "meta": { "date_evaluated": "December 2024", "evaluator_role": "GFA · Olive Oil Specialist" }
+  },
+
+  {
+    "id": "partanna-extra-virgin",
+    "status": "evaluated",
+    "product": {
+      "name": "Partanna Extra Virgin Olive Oil",
+      "producer": "Partanna",
+      "origin": { "region": "Trapani Valley, Sicily", "country": "Italy" },
+      "harvest_date": "Nov 2024",
+      "certifications": ["DOP Valli Trapanesi"],
+      "description": "Sicilian DOP oil from the Trapani valley. Nocellara del Belice variety. Certified DOP — origin, variety, and production method all verified."
+    },
+    "gfa": {
+      "good": {
+        "criteria": {
+          "ingredients": { "score": "✓", "note": "Pure EVOO, single variety Nocellara del Belice. DOP certification verifies grade within its geographic and varietal scope." },
+          "quality": { "score": "✓", "note": "DOP Valli Trapanesi is an EU Protected Designation of Origin with defined quality parameters. Nocellara del Belice has a short harvest window — freshness is inherently constrained and monitored." }
+        }
+      },
+      "clean": {
+        "criteria": {
+          "traceability": { "score": "✓", "note": "DOP legally guarantees olives were grown, pressed, and bottled in the Trapani valleys of Sicily. Named variety (Nocellara del Belice) provides additional specificity." },
+          "packaging": { "score": "✓", "note": "DOP seal displayed. Honest label — no inflated claims beyond what DOP certification already documents." }
+        }
+      },
+      "fair": {
+        "criteria": {
+          "workers": { "score": "~", "note": "Sicilian DOP cooperative. No third-party labor certification, but cooperative structures typically provide equitable producer relationships." },
+          "land": { "score": "~", "note": "Not organically certified. DOP rules do not require organic farming." }
+        }
+      },
+      "true": {
+        "criteria": {
+          "cultural_roots": { "score": "✓", "note": "Nocellara del Belice is one of Sicily's most ancient and distinctive varieties — with deep roots in the Trapani agricultural tradition. DOP protects both the variety and its place of origin." }
+        }
+      }
+    },
+    "buy": [
+      { "vendor": "Amazon", "url": "https://www.amazon.com/s?k=partanna+extra+virgin+olive+oil", "affiliate": false }
+    ],
+    "meta": { "date_evaluated": "December 2024", "evaluator_role": "GFA · Olive Oil Specialist" }
+  },
+
+  {
+    "id": "iliada-pdo-kalamata",
+    "status": "evaluated",
+    "product": {
+      "name": "Iliada PDO Kalamata EVOO",
+      "producer": "Iliada (Agrovim)",
+      "origin": { "region": "Kalamata", "country": "Greece" },
+      "harvest_date": "Nov 2024",
+      "certifications": ["PDO Kalamata"],
+      "description": "EU PDO-certified Kalamata oil. Koroneiki variety. Fruity with low acidity. One of the most consistent PDO Kalamata labels on the US market."
+    },
+    "gfa": {
+      "good": {
+        "criteria": {
+          "ingredients": { "score": "✓", "note": "Pure EVOO, Koroneiki variety. PDO certification confirms EVOO grade within the Kalamata system." },
+          "quality": { "score": "✓", "note": "PDO Kalamata requires low acidity and Koroneiki variety. Iliada is a consistent competition performer with documented low FFA levels." }
+        }
+      },
+      "clean": {
+        "criteria": {
+          "traceability": { "score": "✓", "note": "PDO Kalamata guarantees Peloponnese origin and Koroneiki variety. Named producer (Agrovim) with published mill and grower network information." },
+          "packaging": { "score": "✓", "note": "PDO seal, harvest date, and Koroneiki variety disclosed. No misleading claims." }
+        }
+      },
+      "fair": {
+        "criteria": {
+          "workers": { "score": "~", "note": "PDO cooperative network in Kalamata. No third-party labor certification." },
+          "land": { "score": "~", "note": "Not organically certified. No sustainability disclosures beyond PDO compliance." }
+        }
+      },
+      "true": {
+        "criteria": {
+          "cultural_roots": { "score": "✓", "note": "Koroneiki olives have been cultivated in the Kalamata region for over 3,000 years. PDO protects both the geographic identity and the traditional variety." }
+        }
+      }
+    },
+    "buy": [
+      { "vendor": "Whole Foods", "url": "https://www.wholefoodsmarket.com/search?text=iliada+kalamata+evoo", "affiliate": false },
+      { "vendor": "Amazon", "url": "https://www.amazon.com/s?k=iliada+pdo+kalamata+evoo", "affiliate": false }
+    ],
+    "meta": { "date_evaluated": "December 2024", "evaluator_role": "GFA · Olive Oil Specialist" }
+  },
+
+  {
+    "id": "brightland-alive",
+    "status": "evaluated",
+    "product": {
+      "name": "Brightland Alive EVOO",
+      "producer": "Brightland",
+      "origin": { "region": "California", "country": "USA" },
+      "harvest_date": "Nov 2024",
+      "certifications": ["COOC Certified"],
+      "description": "Harvest-date certified California oil. Arbosana and Arbequina blend. Direct-to-consumer, high transparency. Grassy and bright — designed for finishing."
+    },
+    "gfa": {
+      "good": {
+        "criteria": {
+          "ingredients": { "score": "✓", "note": "Pure EVOO, named varieties (Arbosana and Arbequina blend). COOC certified." },
+          "quality": { "score": "✓", "note": "COOC certification (chemical + sensory). Harvest date confirmed. UV-protective bottles preserve oil quality." }
+        }
+      },
+      "clean": {
+        "criteria": {
+          "traceability": { "score": "✓", "note": "California single-origin, named varieties, COOC certified. Brightland publishes grower partnerships and harvest information on their website." },
+          "packaging": { "score": "✓", "note": "UV-protective opaque bottle, harvest date, named varieties, COOC seal. One of the most transparent packaging propositions in California olive oil." }
+        }
+      },
+      "fair": {
+        "criteria": {
+          "workers": { "score": "~", "note": "Direct California grower relationships. No third-party labor certification published." },
+          "land": { "score": "~", "note": "Not organically certified. No formal sustainability disclosures." }
+        }
+      },
+      "true": {
+        "criteria": {
+          "cultural_roots": { "score": "~", "note": "Named California varieties with transparent sourcing. Modern DTC brand with genuine quality commitments — honest about being a contemporary California product rather than claiming Old World heritage." }
+        }
+      }
+    },
+    "buy": [
+      { "vendor": "Brightland", "url": "https://brightland.co/products/alive", "affiliate": false }
+    ],
+    "meta": { "date_evaluated": "December 2024", "evaluator_role": "GFA · Olive Oil Specialist" }
+  },
+
+  {
+    "id": "costco-terra-delyssa-organic",
+    "status": "evaluated",
+    "product": {
+      "name": "Terra Delyssa Organic EVOO (Costco tin)",
+      "producer": "Terra Delyssa",
+      "origin": { "region": "Tunisia", "country": "Tunisia" },
+      "harvest_date": "Nov 2024",
+      "certifications": ["USDA Organic", "Ecocert"],
+      "description": "Organic Tunisian oil available in tin format at Costco. Two organic certifications. QR code traceability. Excellent price-per-liter for the quality."
+    },
+    "gfa": {
+      "good": {
+        "criteria": {
+          "ingredients": { "score": "✓", "note": "Pure EVOO. Dual organic certification (USDA Organic + Ecocert) provides strong farming-practice verification." },
+          "quality": { "score": "✓", "note": "Organic certification, QR traceability, and tin packaging (best light protection) combine for strong quality assurance." }
+        }
+      },
+      "clean": {
+        "criteria": {
+          "traceability": { "score": "✓", "note": "Single-origin Tunisia. QR code on tin links to specific batch traceability data. Organic certification requires documented supply chain." },
+          "packaging": { "score": "✓", "note": "Tin is the gold standard for olive oil packaging — eliminates light degradation entirely. QR code and harvest date on label." }
+        }
+      },
+      "fair": {
+        "criteria": {
+          "workers": { "score": "~", "note": "No third-party fair labor certification. Tunisian agricultural context and no published social audit." },
+          "land": { "score": "✓", "note": "USDA Organic plus Ecocert — two independent organic certifications covering soil and farming practices." }
+        }
+      },
+      "true": {
+        "criteria": {
+          "cultural_roots": { "score": "~", "note": "Tunisia has an ancient olive oil tradition. The Costco tin is a practical format that doesn't foreground the cultural story — an opportunity not yet taken." }
+        }
+      }
+    },
+    "buy": [
+      { "vendor": "Costco", "url": "https://www.costco.com/s?keyword=terra+delyssa+organic+evoo", "affiliate": false }
+    ],
+    "meta": { "date_evaluated": "December 2024", "evaluator_role": "GFA · Olive Oil Specialist" }
+  },
+
+  {
+    "id": "zoe-spanish-extra-virgin",
+    "status": "evaluated",
+    "product": {
+      "name": "Zoe Spanish Extra Virgin Olive Oil",
+      "producer": "Zoe Foods",
+      "origin": { "region": "Spain blend", "country": "Spain" },
+      "harvest_date": "Nov 2024",
+      "certifications": ["IOC Standards"],
+      "description": "Spanish blend with a mild, approachable flavor profile. IOC standards compliance. Good everyday-to-step-up crossover."
+    },
+    "gfa": {
+      "good": {
+        "criteria": {
+          "ingredients": { "score": "✓", "note": "Pure EVOO. Mild flavor profile is consistent with EVOO grade." },
+          "quality": { "score": "~", "note": "IOC standard compliance is the minimum floor for EVOO grade. No additional sensory or quality certification." }
+        }
+      },
+      "clean": {
+        "criteria": {
+          "traceability": { "score": "~", "note": "Spain origin confirmed. Blend — no regions, estates, or varieties disclosed." },
+          "packaging": { "score": "~", "note": "Harvest date on label. No further supply chain information." }
+        }
+      },
+      "fair": {
+        "criteria": {
+          "workers": { "score": "—", "note": "Undisclosed producer network in Spain. No labor practices published." },
+          "land": { "score": "~", "note": "Not organically certified." }
+        }
+      },
+      "true": {
+        "criteria": {
+          "cultural_roots": { "score": "~", "note": "Spain is the world's largest olive oil producer, with immense varietal diversity. A generic Spanish blend doesn't engage with that story." }
+        }
+      }
+    },
+    "buy": [
+      { "vendor": "Whole Foods", "url": "https://www.wholefoodsmarket.com/search?text=zoe+spanish+evoo", "affiliate": false },
+      { "vendor": "Amazon", "url": "https://www.amazon.com/s?k=zoe+spanish+extra+virgin+olive+oil", "affiliate": false }
+    ],
+    "meta": { "date_evaluated": "December 2024", "evaluator_role": "GFA · Olive Oil Specialist" }
+  },
+
+  {
+    "id": "mcevoy-ranch-organic-evoo",
+    "status": "evaluated",
+    "product": {
+      "name": "McEvoy Ranch Organic EVOO",
+      "producer": "McEvoy Ranch",
+      "origin": { "region": "Marin County, California", "country": "USA" },
+      "harvest_date": "Nov 2024",
+      "certifications": ["COOC Certified", "USDA Organic"],
+      "description": "California estate oil, Tuscan variety blend. Certified organic and COOC-verified. Known for consistent peppery finish and green fruit character."
+    },
+    "gfa": {
+      "good": {
+        "criteria": {
+          "ingredients": { "score": "✓", "note": "Pure EVOO, Tuscan variety blend. USDA Organic confirms no synthetic pesticide inputs. COOC certifies EVOO grade." },
+          "quality": { "score": "✓", "note": "COOC certification (sensory + chemical) plus USDA Organic. Consistent peppery finish indicates polyphenol presence and freshness." }
+        }
+      },
+      "clean": {
+        "criteria": {
+          "traceability": { "score": "✓", "note": "Single estate, Marin County, California. Named as Tuscan variety blend (Leccino, Frantoio, Pendolino et al.). McEvoy publishes estate and grove information." },
+          "packaging": { "score": "✓", "note": "COOC seal, USDA Organic, harvest date, and estate origin on label." }
+        }
+      },
+      "fair": {
+        "criteria": {
+          "workers": { "score": "~", "note": "Single estate in California. No third-party labor certification, but direct estate operation with California labor law protections." },
+          "land": { "score": "✓", "note": "USDA Organic certified on the McEvoy Ranch estate. Biodynamic practices documented on ranch website." }
+        }
+      },
+      "true": {
+        "criteria": {
+          "cultural_roots": { "score": "~", "note": "Tuscan variety clones brought to California — a genuine connection to Italian varietal tradition. Named variety families and estate origin make this one of the stronger cultural narratives in California EVOO." }
+        }
+      }
+    },
+    "buy": [
+      { "vendor": "McEvoy Ranch", "url": "https://mcevoyranch.com/collections/olive-oils", "affiliate": false },
+      { "vendor": "Whole Foods", "url": "https://www.wholefoodsmarket.com/search?text=mcevoy+ranch+organic+evoo", "affiliate": false }
+    ],
+    "meta": { "date_evaluated": "December 2024", "evaluator_role": "GFA · Olive Oil Specialist" }
+  },
+
+  {
+    "id": "whole-foods-365-greek-evoo",
+    "status": "evaluated",
+    "product": {
+      "name": "365 Greek EVOO",
+      "producer": "Whole Foods Market (365)",
+      "origin": { "region": "Crete", "country": "Greece" },
+      "harvest_date": "Nov 2024",
+      "certifications": ["PDO Crete"],
+      "description": "PDO Crete designation from the Whole Foods house label. Single origin with EU verified provenance. Accessible entry into Greek PDO oils."
+    },
+    "gfa": {
+      "good": {
+        "criteria": {
+          "ingredients": { "score": "✓", "note": "Pure EVOO. PDO Crete confirms grade within the EU designation's parameters." },
+          "quality": { "score": "~", "note": "PDO Crete is EU-verified for origin and minimum grade. Private label — specific producer quality controls are not disclosed." }
+        }
+      },
+      "clean": {
+        "criteria": {
+          "traceability": { "score": "~", "note": "PDO Crete provides EU-verified geographic origin. However, as a private label, the specific producer(s) or cooperative behind this bottle are undisclosed." },
+          "packaging": { "score": "~", "note": "PDO seal on label. Harvest date present. Private label limits supply chain transparency." }
+        }
+      },
+      "fair": {
+        "criteria": {
+          "workers": { "score": "—", "note": "Private label product. Whole Foods does not disclose Cretan grower or labor practices for this SKU." },
+          "land": { "score": "~", "note": "Not organically certified." }
+        }
+      },
+      "true": {
+        "criteria": {
+          "cultural_roots": { "score": "~", "note": "Crete has a 3,500-year olive oil history. PDO Crete is a meaningful designation, but the private label format strips away the producer story." }
+        }
+      }
+    },
+    "buy": [
+      { "vendor": "Whole Foods", "url": "https://www.wholefoodsmarket.com/search?text=365+greek+evoo", "affiliate": false }
+    ],
+    "meta": { "date_evaluated": "December 2024", "evaluator_role": "GFA · Olive Oil Specialist" }
+  },
+
+  {
+    "id": "eataly-laudemio",
+    "status": "evaluated",
+    "product": {
+      "name": "Laudemio Extra Virgin Olive Oil",
+      "producer": "Laudemio Consortium (sold via Eataly)",
+      "origin": { "region": "Tuscany", "country": "Italy" },
+      "harvest_date": "Nov 2024",
+      "certifications": ["Laudemio Consortium"],
+      "description": "Laudemio is a Tuscan quality consortium with stricter standards than DOP. Intense green-fruit character with a strong peppery finish. Benchmark finishing oil."
+    },
+    "gfa": {
+      "good": {
+        "criteria": {
+          "ingredients": { "score": "✓", "note": "Pure EVOO. Laudemio Consortium standards require FFA below 0.5%, peroxide value below 12, and mandatory sensory panel evaluation — stricter than DOP." },
+          "quality": { "score": "✓", "note": "Consortium standards exceed DOP requirements. Intense peppery finish indicates high polyphenol content. Harvest window is tightly managed across member estates." }
+        }
+      },
+      "clean": {
+        "criteria": {
+          "traceability": { "score": "✓", "note": "Tuscany, Laudemio Consortium. Each member estate is individually certified. The iconic gold-capped bottle identifies the specific estate on the label." },
+          "packaging": { "score": "✓", "note": "Distinctive gold-capped dark glass bottle with harvest date and estate identification. Consortium membership is independently audited." }
+        }
+      },
+      "fair": {
+        "criteria": {
+          "workers": { "score": "~", "note": "Tuscan estates, no third-party labor certification. Estate-based production suggests direct grower relationships." },
+          "land": { "score": "~", "note": "Individual member estates vary in organic certification. The Consortium does not mandate organic farming." }
+        }
+      },
+      "true": {
+        "criteria": {
+          "cultural_roots": { "score": "✓", "note": "Laudemio revives the medieval Florentine term for the finest portion of the harvest — paid as tribute to the landowner. The consortium preserves both Tuscan variety traditions and the historical prestige of the harvest's best oil." }
+        }
+      }
+    },
+    "buy": [
+      { "vendor": "Eataly", "url": "https://www.eataly.com/us_en/search?q=laudemio", "affiliate": false }
+    ],
+    "meta": { "date_evaluated": "December 2024", "evaluator_role": "GFA · Olive Oil Specialist" }
+  },
+
+  {
+    "id": "manni-olio-per-doni",
+    "status": "evaluated",
+    "product": {
+      "name": "Manni Olio Per Doni",
+      "producer": "Manni",
+      "origin": { "region": "Tuscany", "country": "Italy" },
+      "harvest_date": "Nov 2024",
+      "certifications": ["Lab tested per batch", "Harvest date certified"],
+      "description": "One of the most documented Italian premium oils. Lab-tested for polyphenol content on each batch. Labeled with exact harvest date and grove. Only for finishing."
+    },
+    "gfa": {
+      "good": {
+        "criteria": {
+          "ingredients": { "score": "✓", "note": "Pure EVOO. Each batch independently lab-tested for FFA, peroxides, and polyphenol content — results published on the label." },
+          "quality": { "score": "✓", "note": "Per-batch lab analysis with disclosed polyphenol numbers is the highest standard of quality documentation in this category. Grove-specific production." }
+        }
+      },
+      "clean": {
+        "criteria": {
+          "traceability": { "score": "✓", "note": "Exact harvest date, grove location, and batch analysis data on every bottle. Manni publishes the name of the grove and the pressing date. The most documented traceability of any oil in this evaluation." },
+          "packaging": { "score": "✓", "note": "Dark glass, batch-specific polyphenol data, harvest date, and grove identification on label. No misleading claims — the packaging is the transparency." }
+        }
+      },
+      "fair": {
+        "criteria": {
+          "workers": { "score": "~", "note": "Small Tuscan estate operation. No third-party labor certification, but direct single-estate production." },
+          "land": { "score": "~", "note": "No organic certification published. The estate's grove management is not formally disclosed beyond harvest practices." }
+        }
+      },
+      "true": {
+        "criteria": {
+          "cultural_roots": { "score": "✓", "note": "Grove-specific Tuscan oil with deep varietal and place-of-origin documentation. The Manni approach — scientific precision applied to traditional Tuscan production — is a genuinely original contribution to the category." }
+        }
+      }
+    },
+    "buy": [
+      { "vendor": "Manni", "url": "https://manni.biz", "affiliate": false }
+    ],
+    "meta": { "date_evaluated": "December 2024", "evaluator_role": "GFA · Olive Oil Specialist" }
+  },
+
+  {
+    "id": "marques-de-grinon-oleum-artis",
+    "status": "evaluated",
+    "product": {
+      "name": "Marqués de Griñón Oleum Artis",
+      "producer": "Marqués de Griñón",
+      "origin": { "region": "Toledo, Castilla-La Mancha", "country": "Spain" },
+      "harvest_date": "Oct 2024",
+      "certifications": ["Harvest date", "Varietal certified"],
+      "description": "Single-estate Spanish oil, Picual variety. From a historic estate in Castilla-La Mancha. Complex flavor with long finish. Harvest date and variety certified."
+    },
+    "gfa": {
+      "good": {
+        "criteria": {
+          "ingredients": { "score": "✓", "note": "Pure EVOO, single variety Picual. Single estate, early October harvest — high polyphenol content confirmed by characteristic throat catch." },
+          "quality": { "score": "✓", "note": "Named variety, named estate, harvest date on label. Varietal certification confirms Picual identity and single-estate production." }
+        }
+      },
+      "clean": {
+        "criteria": {
+          "traceability": { "score": "✓", "note": "Single estate in Toledo. Named variety (Picual). Harvest date confirmed. The estate is a well-documented historic property with published production information." },
+          "packaging": { "score": "✓", "note": "Harvest date, varietal certification, and estate identification on label. No misleading claims." }
+        }
+      },
+      "fair": {
+        "criteria": {
+          "workers": { "score": "~", "note": "Historic Spanish estate. No third-party labor certification published." },
+          "land": { "score": "~", "note": "No organic certification. Estate practices not formally disclosed." }
+        }
+      },
+      "true": {
+        "criteria": {
+          "cultural_roots": { "score": "✓", "note": "The Marqués de Griñón estate in Toledo has documented agricultural history stretching back centuries. Picual is the defining variety of Castilla-La Mancha. Named variety and historic estate identity are both meaningfully preserved." }
+        }
+      }
+    },
+    "buy": [
+      { "vendor": "Amazon", "url": "https://www.amazon.com/s?k=marques+de+grinon+oleum+artis", "affiliate": false }
+    ],
+    "meta": { "date_evaluated": "December 2024", "evaluator_role": "GFA · Olive Oil Specialist" }
+  },
+
+  {
+    "id": "gaea-fresh-evoo",
+    "status": "evaluated",
+    "product": {
+      "name": "Gaea Fresh EVOO",
+      "producer": "Gaea",
+      "origin": { "region": "Crete", "country": "Greece" },
+      "harvest_date": "Nov 2024",
+      "certifications": ["PDO Crete"],
+      "description": "Gaea uses nitrogen-flushed bottles to preserve freshness. PDO Crete. One of the few brands to publish polyphenol content on the label."
+    },
+    "gfa": {
+      "good": {
+        "criteria": {
+          "ingredients": { "score": "✓", "note": "Pure EVOO, PDO Crete. Polyphenol content published on label — one of the very few brands that does this." },
+          "quality": { "score": "✓", "note": "PDO Crete, nitrogen-flushed bottles (eliminates oxidation during filling), and published polyphenol data together provide one of the strongest quality documentation packages in the accessible premium segment." }
+        }
+      },
+      "clean": {
+        "criteria": {
+          "traceability": { "score": "✓", "note": "PDO Crete with published polyphenol data per batch. Gaea publishes origin information and mill partnerships for this line." },
+          "packaging": { "score": "✓", "note": "Nitrogen-flushed dark glass, harvest date, PDO seal, and polyphenol content on label. Industry-leading packaging transparency for the price point." }
+        }
+      },
+      "fair": {
+        "criteria": {
+          "workers": { "score": "~", "note": "Cretan grower network. No third-party labor certification." },
+          "land": { "score": "~", "note": "Not organically certified." }
+        }
+      },
+      "true": {
+        "criteria": {
+          "cultural_roots": { "score": "✓", "note": "Crete PDO, Koroneiki variety. One of the world's great olive oil origins with 3,500+ years of documented production. Polyphenol disclosure connects modern science to ancient quality practice." }
+        }
+      }
+    },
+    "buy": [
+      { "vendor": "Whole Foods", "url": "https://www.wholefoodsmarket.com/search?text=gaea+fresh+evoo", "affiliate": false },
+      { "vendor": "Amazon", "url": "https://www.amazon.com/s?k=gaea+fresh+evoo", "affiliate": false }
+    ],
+    "meta": { "date_evaluated": "December 2024", "evaluator_role": "GFA · Olive Oil Specialist" }
+  },
+
+  {
+    "id": "frantoia-barbera",
+    "status": "evaluated",
+    "product": {
+      "name": "Frantoia Barbera Extra Virgin Olive Oil",
+      "producer": "Barbera",
+      "origin": { "region": "Trapani Valley, Sicily", "country": "Italy" },
+      "harvest_date": "Nov 2024",
+      "certifications": ["DOP Valli Trapanesi"],
+      "description": "Nocellara del Belice DOP from Sicily. Gentle and fruity with a rich texture. Consistent award-winner. One of the benchmark Sicilian finishing oils."
+    },
+    "gfa": {
+      "good": {
+        "criteria": {
+          "ingredients": { "score": "✓", "note": "Pure EVOO, Nocellara del Belice variety. DOP certification confirms grade and varietal identity." },
+          "quality": { "score": "✓", "note": "DOP Valli Trapanesi with consistent international competition recognition. Barbera has been producing under this designation for decades — quality track record is documented." }
+        }
+      },
+      "clean": {
+        "criteria": {
+          "traceability": { "score": "✓", "note": "DOP Valli Trapanesi guarantees Sicilian Trapani valley origin. Named producer (Barbera), named variety (Nocellara del Belice)." },
+          "packaging": { "score": "✓", "note": "DOP seal, harvest date, and named variety on label. Traditional dark glass bottle." }
+        }
+      },
+      "fair": {
+        "criteria": {
+          "workers": { "score": "~", "note": "Sicilian producer with local grower network. No third-party labor certification." },
+          "land": { "score": "~", "note": "Not organically certified." }
+        }
+      },
+      "true": {
+        "criteria": {
+          "cultural_roots": { "score": "✓", "note": "Nocellara del Belice is one of Sicily's most storied and distinctive varieties — celebrated for its dual use as a table olive and oil olive. DOP protects the traditional production zone. Barbera is a multigenerational Sicilian producer with documented historical ties to the variety." }
+        }
+      }
+    },
+    "buy": [
+      { "vendor": "Amazon", "url": "https://www.amazon.com/s?k=frantoia+barbera+olive+oil", "affiliate": false }
+    ],
+    "meta": { "date_evaluated": "December 2024", "evaluator_role": "GFA · Olive Oil Specialist" }
+  },
+
+  {
+    "id": "apollo-kritsa-greek-estate",
+    "status": "evaluated",
+    "product": {
+      "name": "Apollo Kritsa Greek Estate EVOO",
+      "producer": "Apollo",
+      "origin": { "region": "Crete", "country": "Greece" },
+      "harvest_date": "Nov 2024",
+      "certifications": ["PDO Crete"],
+      "description": "Single-estate Cretan oil with full terroir traceability. Harvest date and grove location published. High-polyphenol early harvest. Benchmark for Cretan oils."
+    },
+    "gfa": {
+      "good": {
+        "criteria": {
+          "ingredients": { "score": "✓", "note": "Pure EVOO, early harvest Koroneiki. PDO Crete certification. High polyphenol content from early harvest timing." },
+          "quality": { "score": "✓", "note": "Single estate with published grove location, harvest date, and early harvest designation. PDO Crete provides base certification; estate documentation goes beyond PDO minimum." }
+        }
+      },
+      "clean": {
+        "criteria": {
+          "traceability": { "score": "✓", "note": "PDO Crete, single estate, named grove location, harvest date. One of the most specific Cretan origin disclosures available in the US market." },
+          "packaging": { "score": "✓", "note": "Harvest date, grove location, and PDO seal on label. Dark glass bottle." }
+        }
+      },
+      "fair": {
+        "criteria": {
+          "workers": { "score": "~", "note": "Single estate in Crete. No third-party labor certification." },
+          "land": { "score": "~", "note": "Not organically certified." }
+        }
+      },
+      "true": {
+        "criteria": {
+          "cultural_roots": { "score": "✓", "note": "Kritsa is a historic olive-producing village in the Lasithi region of Crete — one of the oldest continuous olive cultivation areas in the world. Grove-specific early harvest preserves both terroir specificity and traditional quality practice." }
+        }
+      }
+    },
+    "buy": [
+      { "vendor": "Apollo", "url": "https://www.amazon.com/s?k=apollo+kritsa+greek+estate+evoo", "affiliate": false }
+    ],
+    "meta": { "date_evaluated": "December 2024", "evaluator_role": "GFA · Olive Oil Specialist" }
+  }
+]

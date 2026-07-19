@@ -1,0 +1,37 @@
+{
+  "id": "low-no-alcohol",
+  "name": "Low & No Alcohol",
+  "tagline": "Kombucha, kefir, shrubs, de-alcoholised wine, botanical waters, and more. A fast-growing space where the Good Food Standard matters most.",
+  "learn": {
+    "how_we_evaluate": "This category spans ancient fermented traditions and very new production methods. We look at what's actually in the bottle, how it was made, and whether the label tells the truth — particularly on ABV, residual sugar, and origin of botanical ingredients. For de-alcoholised wine, we evaluate the base wine quality and the de-alcoholisation method. For fermented drinks, we look at fermentation time, sugar content, and ingredient origin.",
+    "what_to_look_for": [
+      "Precise ABV stated — 0.0% and <0.5% are meaningfully different",
+      "Named botanical, tea, or grape ingredients with origin where possible",
+      "Residual sugar disclosed — especially important for de-alcoholised wine",
+      "Fermentation method explained for kombucha, kefir, kvass",
+      "Vegan certification for de-alcoholised wine (conventional fining agents)"
+    ],
+    "red_flags": [
+      "ABV stated only as 'less than 0.5%' with no more precision for 0.0% products",
+      "Added sugar not disclosed or buried in small print",
+      "Generic botanical names with no origin",
+      "De-alcoholisation method not disclosed",
+      "Equivalence claims — 'tastes just like wine' used to avoid honest description"
+    ],
+    "key_terms": [
+      {
+        "term": "0.0% vs <0.5% ABV",
+        "definition": "0.0% means no detectable alcohol (below 0.05% ABV under EU rules). <0.5% means trace alcohol — the same level found in some fruit juices and ripe bananas. The difference is real and meaningful for people who avoid alcohol for religious, medical, or personal reasons."
+      },
+      {
+        "term": "SCOBY",
+        "definition": "Symbiotic Culture of Bacteria and Yeast. The live culture used to ferment kombucha. A kombucha made with a live, well-maintained SCOBY is fundamentally different from a carbonated tea with kombucha flavouring."
+      },
+      {
+        "term": "Spinning cone",
+        "definition": "A gentle de-alcoholisation technology that uses centrifugal force and low temperature to separate alcohol from wine while preserving aromatics. Considered superior to vacuum distillation for maintaining wine character."
+      }
+    ],
+    "resources": []
+  }
+}

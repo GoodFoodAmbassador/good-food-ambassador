@@ -1,0 +1,56 @@
+{
+  "id": "oils-condiments",
+  "name": "Oils & Condiments",
+  "tagline": "Extra virgin olive oils, cold-pressed single-origins, vinegars, and fermented condiments. Evaluated for traceability, harvest date, and production integrity.",
+  "learn": {
+    "how_we_evaluate": "In this category, traceability and freshness are the primary signals. For olive oil, we look for a harvest date (not just a best-before date), single-estate or named-region origin, and honest packaging. Certifications like DOP/PDO are useful evidence but not sufficient on their own — a certified oil in clear glass with no harvest date fails on transparency. We taste where possible and note sensory properties. For condiments and vinegars, we evaluate ingredient transparency, origin of raw materials, and production method.",
+    "what_to_look_for": [
+      "Harvest date printed on the label (not just best-before)",
+      "Single-estate or named-region origin, not 'blend of EU olive oils'",
+      "Dark glass bottle or tin — protects from light degradation",
+      "First cold press or cold extraction — confirms no heat used",
+      "DOP/PDO certification for geographic authenticity"
+    ],
+    "red_flags": [
+      "No harvest date — only a best-before date",
+      "Clear or light-coloured glass bottle",
+      "'Blend of EU olive oils' or 'Product of multiple countries'",
+      "Unusually low price for claimed quality",
+      "No producer name — only a packer or importer"
+    ],
+    "key_terms": [
+      {
+        "term": "DOP / PDO",
+        "definition": "Protected Designation of Origin — the oil must come from and be produced in the named region. Verified annually by an independent body. DOP is the Italian acronym; PDO is the EU standard."
+      },
+      {
+        "term": "First cold press / Cold extraction",
+        "definition": "The olive paste was pressed or centrifuged at temperatures below 27°C. Preserves polyphenols and flavour. 'First cold press' is the traditional stone-mill term; 'cold extraction' applies to modern centrifuge production."
+      },
+      {
+        "term": "Harvest date",
+        "definition": "The date the olives were harvested and pressed. The most reliable freshness signal in extra virgin olive oil. A best-before date alone (typically 18-24 months from bottling) obscures when the oil was actually made."
+      },
+      {
+        "term": "Polyphenols",
+        "definition": "Antioxidant compounds in olive oil responsible for bitterness, pungency, and many of the health benefits associated with EVOO. Higher polyphenol content typically comes from early harvest and careful cold extraction."
+      },
+      {
+        "term": "Acidity",
+        "definition": "Free fatty acid content, expressed as a percentage of oleic acid. Extra virgin olive oil must be below 0.8%. Lower acidity generally indicates better quality olives and careful handling — but acidity alone is not a complete quality measure."
+      }
+    ],
+    "resources": [
+      {
+        "title": "EVOO World Ranking",
+        "url": "https://www.evoowr.com",
+        "note": "Annual ranking of international olive oil competition results by producer."
+      },
+      {
+        "title": "Flos Olei Guide",
+        "url": "https://www.flosolei.com",
+        "note": "Annual guide to the world's best extra virgin olive oils."
+      }
+    ]
+  }
+}
