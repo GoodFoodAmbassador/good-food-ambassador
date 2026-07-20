@@ -5,6 +5,8 @@ import { W, T, LIGHT, MID, GREEN, YELLOW, ORANGE, CYAN, GRAY } from '@/lib/token
 
 export const metadata = {
   title: 'Good Food Ambassador',
+  description:
+    'A community of growers, makers, movers, and eaters who believe what you eat touches everything — and act on it. Independent food evaluations, no ads, no sponsored rankings.',
   alternates: { canonical: 'https://www.goodfoodambassador.com/' },
 }
 
