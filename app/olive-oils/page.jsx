@@ -108,7 +108,7 @@ export default async function OilsPage() {
                 Three things to check on any bottle
               </p>
               {[
-                { n: '01', title: 'Harvest date', body: 'Not "best before." The actual harvest year, ideally month. If it's not there, put it back.' },
+                { n: '01', title: 'Harvest date', body: "Not \"best before.\" The actual harvest year, ideally month. If it's not there, put it back." },
                 { n: '02', title: 'Specific origin', body: 'A region or estate, not just a country. "Packed in Italy" is not an origin.' },
                 { n: '03', title: 'Independent certification', body: 'COOC (California), PDO/DOP (EU), NAOOA (North America). Any of these confirm at least a grade floor has been verified by a third party.' },
               ].map(item => (
