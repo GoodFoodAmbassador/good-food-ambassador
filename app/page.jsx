@@ -60,14 +60,16 @@ const CATEGORIES = [
     label: 'Legumes & Pulses',
     pillColor: CYAN,
     desc: 'Beans, lentils, chickpeas, and heritage varieties from smallholder farms worldwide. Among the most nutritious and land-efficient foods on the planet.',
-    status: 'Coming soon',
+    status: 'Evaluations underway',
+    cta: 'Read the Guide →',
   },
   {
     slug: 'snacks',
     label: 'Snacks & Pantry',
     pillColor: GRAY,
     desc: 'Crackers, dried fruit, preserved foods, ferments, and small bites from every food culture. The category with the widest gap between marketing and reality.',
-    status: 'Coming soon',
+    status: 'Evaluations underway',
+    cta: 'Read the Guide →',
   },
   {
     slug: 'lna',
@@ -82,7 +84,8 @@ const CATEGORIES = [
     label: 'Seafood',
     pillColor: CYAN,
     desc: 'Tuna, sardines, mackerel, anchovies — canned and fresh. Evaluated for sustainable catch methods, origin transparency, and honest labelling.',
-    status: 'Coming soon',
+    status: 'Evaluations underway',
+    cta: 'Read the Guide →',
   },
 ]
 

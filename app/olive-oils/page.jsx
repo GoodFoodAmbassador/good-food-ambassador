@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import GFANav from '@/components/GFANav'
 import Pill from '@/components/Pill'
-import { getProductsByCategory } from '@/lib/airtable'
+import { getProductsByCategory, generateSlug } from '@/lib/airtable'
 import { W, T, LIGHT, MID, GREEN, CYAN, ORANGE, GRAY } from '@/lib/tokens'
 
 export const metadata = {
@@ -231,7 +231,9 @@ function ProductList({ products }) {
           <div>
             <div style={{ display: 'flex', alignItems: 'baseline', gap: 12, marginBottom: 6, flexWrap: 'wrap' }}>
               <h3 style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 17, fontWeight: 600, margin: 0 }}>
-                {product.name}
+                <Link href={`/olive-oils/${generateSlug(product.name)}`} style={{ color: 'inherit', textDecoration: 'none' }}>
+                  {product.name}
+                </Link>
               </h3>
               {product.producer && (
                 <span style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 12, color: '#aaa', fontWeight: 500 }}>

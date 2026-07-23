@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import GFANav from '@/components/GFANav'
 import Pill from '@/components/Pill'
-import { getProductsByCategory } from '@/lib/airtable'
+import { getProductsByCategory, generateSlug } from '@/lib/airtable'
 import { W, T, LIGHT, MID, GREEN, CYAN, ORANGE, GRAY, YELLOW } from '@/lib/tokens'
 
 export const metadata = {
@@ -187,7 +187,9 @@ function ProductList({ products }) {
         <div key={product.id} style={{ borderTop: `1px solid ${MID}`, padding: '32px 0', display: 'grid', gridTemplateColumns: '1fr auto', gap: 40, alignItems: 'start' }}>
           <div>
             <div style={{ display: 'flex', alignItems: 'baseline', gap: 12, marginBottom: 6, flexWrap: 'wrap' }}>
-              <h3 style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 17, fontWeight: 600, margin: 0 }}>{product.name}</h3>
+              <h3 style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 17, fontWeight: 600, margin: 0 }}>
+                <Link href={`/grains/${generateSlug(product.name)}`} style={{ color: 'inherit', textDecoration: 'none' }}>{product.name}</Link>
+              </h3>
               {product.producer && <span style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 12, color: '#aaa', fontWeight: 500 }}>{product.producer}</span>}
             </div>
             {product.origin && <p style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 11, fontWeight: 600, letterSpacing: '0.06em', textTransform: 'uppercase', color: '#bbb', marginBottom: 12 }}>{product.origin}</p>}

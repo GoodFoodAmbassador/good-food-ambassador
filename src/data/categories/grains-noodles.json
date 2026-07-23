@@ -1,0 +1,41 @@
+{
+  "id": "grains-noodles",
+  "name": "Grains & Noodles",
+  "tagline": "Pasta, rice, soba, udon, couscous, millet, quinoa. Staple foods from every tradition, evaluated for origin, variety, and production method.",
+  "learn": {
+    "how_we_evaluate": "In this category, origin and production method are the primary signals. We look for named grain varieties, disclosed grain origin (separate from pasta origin), and honest production claims. Bronze-die extrusion and slow low-temperature drying are meaningful quality signals for pasta — but only when the producer can actually demonstrate them. Organic certification matters here because glyphosate use as a pre-harvest desiccant is common in conventional grain farming.",
+    "what_to_look_for": [
+      "Named grain variety (Senatore Cappelli, Saragolla, durum semolina, etc.)",
+      "Grain origin disclosed separately from pasta production origin",
+      "Bronze-die extrusion (trafilatura al bronzo) for pasta",
+      "Slow low-temperature drying (below 50°C, 12–56 hours) for pasta",
+      "Organic certification or published glyphosate-free test results"
+    ],
+    "red_flags": [
+      "No grain variety mentioned — generic 'durum wheat semolina' only",
+      "'Made in Italy' with no grain origin — grain may be from Canada or elsewhere",
+      "Teflon-die extrusion not disclosed (smooth, shiny surface is a visual indicator)",
+      "High-temperature fast drying not disclosed",
+      "Organic claimed without EU BIO or equivalent certification mark"
+    ],
+    "key_terms": [
+      {
+        "term": "Bronze die (trafilatura al bronzo)",
+        "definition": "Pasta extruded through a bronze die has a rough, porous surface that holds sauce better. Slower and more expensive than Teflon extrusion. The artisan standard."
+      },
+      {
+        "term": "IGP / PGI",
+        "definition": "Indicazione Geografica Protetta / Protected Geographical Indication. Links a product to a specific place. Pasta di Gragnano IGP means the pasta was produced exclusively in Gragnano using defined methods."
+      },
+      {
+        "term": "Filiera integrata",
+        "definition": "Integrated supply chain. When the same producer controls grain growing, milling, and pasta production. The highest level of traceability available in this category."
+      },
+      {
+        "term": "Senatore Cappelli",
+        "definition": "An ancient durum wheat variety selected in the early 20th century. Lower yield but higher protein and often higher digestibility than modern commercial varieties. A meaningful transparency signal when named on packaging."
+      }
+    ],
+    "resources": []
+  }
+}

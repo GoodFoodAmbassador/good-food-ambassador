@@ -1,0 +1,37 @@
+{
+  "id": "seafood",
+  "name": "Seafood",
+  "tagline": "Tuna, sardines, mackerel, anchovies — canned and fresh. Evaluated for sustainable catch methods, origin transparency, and honest labelling.",
+  "learn": {
+    "how_we_evaluate": "In this category, catch method and species transparency are the primary signals. We look for named catch location (not just 'Atlantic Ocean'), named species (not just 'tuna'), and honest catch method disclosure. Third-party sustainability certifications (MSC, Friend of the Sea) are useful evidence but not sufficient on their own.",
+    "what_to_look_for": [
+      "Named catch location — specific ocean area or fishing ground, not just 'Atlantic'",
+      "Named species — Thunnus albacares (yellowfin), not just 'tuna'",
+      "Catch method disclosed — pole-and-line, handline, or purse seine",
+      "MSC certification or equivalent third-party sustainability audit",
+      "Packing liquid disclosed — olive oil, sunflower oil, water, brine"
+    ],
+    "red_flags": [
+      "No catch location beyond 'ocean'",
+      "Generic species name only — 'tuna' without scientific or common species name",
+      "No catch method disclosed",
+      "Packing oil not named or sourced",
+      "Country of origin different from catch location with no explanation"
+    ],
+    "key_terms": [
+      {
+        "term": "MSC (Marine Stewardship Council)",
+        "definition": "An international non-profit certification for sustainable wild-caught seafood. MSC-certified fisheries are audited against science-based standards for fish stock health, ecosystem impact, and management."
+      },
+      {
+        "term": "Pole-and-line",
+        "definition": "A low-bycatch catch method where individual fish are caught one at a time. Considered the most selective method for tuna. Often associated with small-scale artisan fisheries."
+      },
+      {
+        "term": "Bycatch",
+        "definition": "Non-target species caught incidentally during fishing. Purse seine nets used for tuna can capture dolphins, sharks, turtles, and juvenile fish alongside the target species."
+      }
+    ],
+    "resources": []
+  }
+}
