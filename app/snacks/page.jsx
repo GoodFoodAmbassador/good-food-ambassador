@@ -64,11 +64,11 @@ export default async function SnacksPage() {
       <section style={{ padding: '80px 60px 60px', maxWidth: 760 }}>
         <Pill bg={GRAY} style={{ marginBottom: 28 }}>Snacks &amp; Pantry</Pill>
         <h1 style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontWeight: 300, fontSize: 52, lineHeight: 1.15, marginBottom: 24, marginTop: 20 }}>
-          Most snacks are engineered.<br />
-          <strong style={{ fontWeight: 600 }}>A few are made.</strong>
+          Snacks & pantry —<br />
+          <strong style={{ fontWeight: 600 }}>what the ingredient list tells you.</strong>
         </h1>
         <p style={{ fontSize: 17, lineHeight: 1.8, color: '#666', maxWidth: 560 }}>
-          The snack and pantry category is where ingredient integrity diverges most sharply. The gap between a product that looks like food and one that actually is has never been wider — or harder to read from a label.
+          We evaluated snacks and pantry staples against the Good Food Standard, with particular attention to ingredient transparency, labelling accuracy, and the gap between marketing claims and formulation.
         </p>
       </section>
 
@@ -79,14 +79,14 @@ export default async function SnacksPage() {
               What you should know
             </p>
             <h2 style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontWeight: 300, fontSize: 30, lineHeight: 1.3, marginBottom: 28 }}>
-              "Natural flavours" is a catch-all<br />
-              <strong style={{ fontWeight: 600 }}>that can hide almost anything.</strong>
+              How to read<br />
+              <strong style={{ fontWeight: 600 }}>a snack ingredient list.</strong>
             </h2>
             <p style={{ fontSize: 16, lineHeight: 1.85, color: '#555', marginBottom: 20 }}>
-              "Natural flavours" is the fourth most common ingredient in US food products. It is a regulatory category that covers thousands of compounds derived from natural sources — including ones you would not recognise as food. Its function is to create or intensify flavour cheaply, without disclosing what's actually doing the work. A product that relies on it heavily is likely masking an otherwise flat base ingredient.
+              "Natural flavours" is among the most common ingredients in packaged food in the US. As a regulatory category, it covers a wide range of compounds derived from natural sources — used to create or intensify flavour without disclosing the specific substances involved. Products that list it prominently are typically relying on flavour enhancement rather than ingredient quality alone.
             </p>
             <p style={{ fontSize: 16, lineHeight: 1.85, color: '#555', marginBottom: 20 }}>
-              "No added sugar" is another label that needs scrutiny. Many products make this claim while using concentrated fruit juices, which are metabolically equivalent to refined sugar but don't have to be labelled as such. The claim is legal. The implication is misleading.
+              "No added sugar" claims warrant attention. Some products using concentrated fruit juices carry this claim, since juice concentrates are not classified as added sugar under current labelling rules — despite having a similar metabolic profile to refined sugar. Reading the full ingredient list gives a more complete picture than front-of-pack claims alone.
             </p>
             <p style={{ fontSize: 16, lineHeight: 1.85, color: '#555', marginBottom: 20 }}>
               The oil used in crackers, crisps, and spreads is often the largest undisclosed ingredient. Labels say "vegetable oil" without specifying what it is — which usually means the cheapest available option. Named oils (olive, sunflower, coconut) are a step up because at least you know what you're eating.
@@ -102,7 +102,7 @@ export default async function SnacksPage() {
                 Three things to check on any product
               </p>
               {[
-                { n: '01', title: 'Ingredient count', body: 'Count the ingredients. If you can\'t identify what most of them are, you probably shouldn\'t be eating it regularly. A short, recognisable list is the simplest honest signal.' },
+                { n: '01', title: 'Ingredient count', body: 'A short, recognisable ingredient list is generally a reliable signal of a less processed product. The longer and less familiar the list, the more the product relies on additives and flavour enhancement rather than ingredient quality.' },
                 { n: '02', title: 'What oil is it?', body: '"Vegetable oil" means the cheapest available. Named oils — olive, sunflower, coconut — at least tell you what you\'re eating. For crackers, crisps, and spreads, it\'s the single biggest ingredient detail most labels hide.' },
                 { n: '03', title: 'Live or not?', body: 'For anything fermented — kimchi, sauerkraut, kombucha, vinegar — "raw," "unpasteurised," or "live cultures" tells you the product still has the cultures that make fermentation worth eating. Pasteurised versions are a different thing.' },
               ].map(item => (

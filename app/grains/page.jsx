@@ -29,7 +29,7 @@ const PILLARS = [
     criteria: [
       'Country or region of origin for the grain — not just where it was packaged',
       'Organic certification where pesticide use is a real concern (wheat, rice)',
-      'No misleading "Product of Italy" labels when the grain came from elsewhere',
+      'Country of origin refers to where the grain was grown, not where it was packaged',
     ],
   },
   {
@@ -49,7 +49,7 @@ const PILLARS = [
     criteria: [
       'No "artisan" or "traditional" claims without a production method to back them up',
       'Soba labelled with actual buckwheat percentage — below 40% is mostly wheat',
-      'Rice variety stated; "premium" or "select" alone tells you nothing',
+      'Rice variety stated — generic grade descriptors like "premium" or "select" carry no standardised definition',
     ],
   },
 ]
@@ -92,7 +92,7 @@ export default async function GrainsPage() {
               Production method matters too, particularly for pasta. Bronze-die extrusion creates a rough surface that sauces cling to. Slow drying at low temperature preserves more of the grain's proteins and flavour. Neither appears on most labels — but they account for most of the difference between a cheap packet and a great one.
             </p>
             <p style={{ fontSize: 16, lineHeight: 1.85, color: '#555' }}>
-              Rice is a separate problem. "Jasmine," "basmati," and "arborio" mean something specific — but they're also freely applied to blends or substitutes. Geographic indication certification (Indian GI for basmati, Thai for jasmine) is the only reliable check. Without it, the variety name is just marketing.
+              Rice variety names carry specific meaning — Jasmine, basmati, and arborio each refer to distinct varieties with different starch profiles and uses. Geographic indication certification (Indian GI for basmati, Thai for jasmine) provides third-party verification of both variety and origin. Without it, variety names are self-declared.
             </p>
           </div>
 
@@ -102,8 +102,8 @@ export default async function GrainsPage() {
                 Three things to check on any packet
               </p>
               {[
-                { n: '01', title: 'Grain variety', body: 'Durum wheat, buckwheat percentage, Koshihikari, Carnaroli — variety predicts quality. If it just says "wheat" or "rice," the producer is hiding the origin.' },
-                { n: '02', title: 'Origin of the grain', body: 'Not where it was packaged. "Product of Italy" can legally mean Italian-packaged grain from any country. Look for "Italian wheat" or a GI certification mark.' },
+                { n: '01', title: 'Grain variety', body: 'Durum wheat, buckwheat percentage, Koshihikari, Carnaroli — variety determines how the product will cook and taste. Generic terms like "wheat" or "rice" indicate commodity sourcing without specific variety disclosure.' },
+                { n: '02', title: 'Origin of the grain', body: 'Where the grain was grown, not where it was packaged. EU regulations allow products to be labelled by their packaging country. Look for explicit grain origin or a GI certification mark.' },
                 { n: '03', title: 'Production method', body: 'For pasta: bronze-die and slow-dried are meaningful signals. For soba: buckwheat percentage above 40% is a reasonable threshold. For rice: milling date where available — rice stales faster than most people realise.' },
               ].map(item => (
                 <div key={item.n} style={{ marginBottom: 28 }}>

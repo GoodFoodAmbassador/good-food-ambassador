@@ -50,8 +50,8 @@ const PILLARS = [
     title: 'Honest from grove to label',
     criteria: [
       'Olive variety accurately stated when relevant',
-      'No "Italian" label for non-Italian olives — origin claims verified',
-      'No meaningless phrases ("first cold press") used as quality signals',
+      'Origin claims verified against certification — country of bottling distinguished from country of production',
+      '"First cold press" and similar legacy phrases not used as substitutes for verifiable quality information',
     ],
   },
 ]
@@ -69,11 +69,11 @@ export default async function OilsPage() {
       <section style={{ padding: '80px 60px 60px', maxWidth: 760 }}>
         <Pill bg={GREEN} style={{ marginBottom: 28 }}>Oils &amp; Condiments</Pill>
         <h1 style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontWeight: 300, fontSize: 52, lineHeight: 1.15, marginBottom: 24, marginTop: 20 }}>
-          Most people have never<br />
-          <strong style={{ fontWeight: 600 }}>tasted real olive oil.</strong>
+          Extra virgin olive oil —<br />
+          <strong style={{ fontWeight: 600 }}>what the label tells you.</strong>
         </h1>
         <p style={{ fontSize: 17, lineHeight: 1.8, color: '#666', maxWidth: 560 }}>
-          The category has a fraud problem, a labelling problem, and a freshness problem. We evaluated the oils people actually buy — not to rank them, but to tell you what's in the bottle and what it means.
+          We evaluated widely available extra virgin olive oils against the Good Food Standard, looking at harvest date transparency, origin traceability, production method, and labelling accuracy.
         </p>
       </section>
 
@@ -85,20 +85,20 @@ export default async function OilsPage() {
               What you should know
             </p>
             <h2 style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontWeight: 300, fontSize: 30, lineHeight: 1.3, marginBottom: 28 }}>
-              The harvest date is the only number<br />
-              <strong style={{ fontWeight: 600 }}>that actually matters.</strong>
+              How to read<br />
+              <strong style={{ fontWeight: 600 }}>an olive oil label.</strong>
             </h2>
             <p style={{ fontSize: 16, lineHeight: 1.85, color: '#555', marginBottom: 20 }}>
-              Olive oil degrades from the moment it's pressed. Unlike wine, it doesn't improve with age — it loses its polyphenols, its flavour, and the health properties that make it worth buying in the first place. A "best before" date tells you nothing useful; it's set by the bottler, often two years after bottling, which could mean three or four years after harvest.
+              Olive oil is a fresh product. Its flavour and polyphenol content diminish over time from the point of pressing. The harvest date on the label indicates when the oil was produced — an oil harvested in November 2024 and purchased in mid-2025 is within a reasonable freshness window. A best-before date alone is less informative, as it reflects shelf life from bottling rather than from harvest.
             </p>
             <p style={{ fontSize: 16, lineHeight: 1.85, color: '#555', marginBottom: 20 }}>
-              The harvest date tells you when the clock started. An oil harvested in November 2024 and bought in mid-2025 is still fresh. The same oil without a harvest date could be anything.
+              EU regulations allow olive oil to be bottled in a member state and labelled with that country's name even when the olives were sourced from elsewhere. Protected Designation of Origin (PDO or DOP) certification provides a stronger geographic guarantee: oils carrying that mark must be grown, pressed, and bottled within the designated producing area.
             </p>
             <p style={{ fontSize: 16, lineHeight: 1.85, color: '#555', marginBottom: 20 }}>
-              The second thing most people don't know: the "Italian" label is often misleading. EU law allows oil to be bottled in Italy and sold as Italian even if the olives came from Spain, Tunisia, or Greece. Look for PDO or DOP certification tied to a specific region — not just a country flag.
+              "First cold press" is a legacy term that carried meaning under older mechanical pressing methods. Under current centrifugal extraction standards, all certified extra virgin olive oil is produced within temperature limits that qualify as cold. The phrase has no regulatory significance under modern standards.
             </p>
             <p style={{ fontSize: 16, lineHeight: 1.85, color: '#555' }}>
-              And "first cold press"? It's a legacy marketing phrase with no regulatory meaning today. Every certified extra virgin olive oil is cold-extracted. It tells you nothing.
+              Independent certification — COOC in California, PDO/DOP in the EU, NAOOA in North America — means a third party has verified the oil meets a defined grade threshold. These certifications vary in scope, but each requires external testing that self-declared labels do not.
             </p>
           </div>
 
@@ -108,9 +108,9 @@ export default async function OilsPage() {
                 Three things to check on any bottle
               </p>
               {[
-                { n: '01', title: 'Harvest date', body: "Not \"best before.\" The actual harvest year, ideally month. If it's not there, put it back." },
-                { n: '02', title: 'Specific origin', body: 'A region or estate, not just a country. "Packed in Italy" is not an origin.' },
-                { n: '03', title: 'Independent certification', body: 'COOC (California), PDO/DOP (EU), NAOOA (North America). Any of these confirm at least a grade floor has been verified by a third party.' },
+                { n: '01', title: 'Harvest date', body: 'The harvest year — ideally month — indicates when the oil was pressed. Together with the purchase date, it gives a reliable picture of freshness.' },
+                { n: '02', title: 'Specific origin', body: 'A named region or estate provides more information than a country of origin alone. EU regulations permit oils from multiple countries to be labelled under a single member state.' },
+                { n: '03', title: 'Independent certification', body: 'COOC (California), PDO/DOP (EU), and NAOOA (North America) each require third-party grade verification — a meaningful distinction from uncertified self-declared labels.' },
               ].map(item => (
                 <div key={item.n} style={{ marginBottom: 28 }}>
                   <div style={{ display: 'flex', gap: 16, alignItems: 'flex-start' }}>

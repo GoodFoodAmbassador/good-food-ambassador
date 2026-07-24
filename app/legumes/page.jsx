@@ -64,11 +64,11 @@ export default async function LegumesPage() {
       <section style={{ padding: '80px 60px 60px', maxWidth: 760 }}>
         <Pill bg={CYAN} style={{ marginBottom: 28 }}>Legumes &amp; Pulses</Pill>
         <h1 style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontWeight: 300, fontSize: 52, lineHeight: 1.15, marginBottom: 24, marginTop: 20 }}>
-          A can of chickpeas doesn't<br />
-          <strong style={{ fontWeight: 600 }}>tell you very much. It should.</strong>
+          Legumes — variety, origin,<br />
+          <strong style={{ fontWeight: 600 }}>and what the label discloses.</strong>
         </h1>
         <p style={{ fontSize: 17, lineHeight: 1.8, color: '#666', maxWidth: 560 }}>
-          Legumes are largely sold as commodities — price-driven, origin-obscured, variety-anonymous. But variety matters to flavour. Origin matters to freshness and farming practice. And what's in the canning liquid matters more than most people realise.
+          We evaluated beans, lentils, and chickpeas against the Good Food Standard, with attention to variety transparency, origin disclosure, freshness, and production method for both dried and canned formats.
         </p>
       </section>
 
@@ -79,14 +79,14 @@ export default async function LegumesPage() {
               What you should know
             </p>
             <h2 style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontWeight: 300, fontSize: 30, lineHeight: 1.3, marginBottom: 28 }}>
-              Most legumes on supermarket shelves<br />
-              <strong style={{ fontWeight: 600 }}>have no variety and no origin.</strong>
+              Variety and origin —<br />
+              <strong style={{ fontWeight: 600 }}>what they mean for legumes.</strong>
             </h2>
             <p style={{ fontSize: 16, lineHeight: 1.85, color: '#555', marginBottom: 20 }}>
               A Puy lentil from the Auvergne has a distinct texture and earthy, mineral flavour that holds up to cooking. A generic "green lentil" from the commodity supply chain may be three or four different varieties blended at a packing facility. Both are called green lentils. Neither label tells you which you have until you cook them.
             </p>
             <p style={{ fontSize: 16, lineHeight: 1.85, color: '#555', marginBottom: 20 }}>
-              Freshness matters more than most people assume. Dried legumes don't spoil, but they do age — older beans take longer to cook, never fully soften, and lose much of their flavour. Harvest date and crop year are almost never stated on packaging. A "best before" date two years from purchase tells you nothing about when the crop was actually harvested.
+              Dried legumes age without spoiling, but age affects them. Older beans require longer cooking times and may not fully soften regardless of preparation. Crop year and harvest date are rarely stated on packaging; a best-before date set two years from purchase reflects safe storage life rather than when the crop was harvested.
             </p>
             <p style={{ fontSize: 16, lineHeight: 1.85, color: '#555', marginBottom: 20 }}>
               For canned legumes, the canning liquid is underrated. Well-made canned chickpeas produce aquafaba worth keeping — the liquid has culinary value. Poor-quality canning liquid with high salt and additives is a signal of low-quality beans underneath. The ingredient list rarely tells you more than "chickpeas, water, salt."
