@@ -199,7 +199,7 @@ function ProductList({ products }) {
             <div style={{ display: 'flex', flexDirection: 'column', gap: 8, minWidth: 140 }}>
               {product.buyLinks.map((link, j) => (
                 <a key={j} href={link.url} target="_blank" rel="noopener noreferrer" style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 11, fontWeight: 600, letterSpacing: '0.06em', textTransform: 'uppercase', color: T, textDecoration: 'none', border: `1.5px solid ${MID}`, padding: '8px 16px', borderRadius: 2, textAlign: 'center', whiteSpace: 'nowrap', display: 'block' }}>
-                  {link.label || 'Buy'}
+                  {link.label || 'Find it'}
                 </a>
               ))}
             </div>

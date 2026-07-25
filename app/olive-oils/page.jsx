@@ -277,7 +277,7 @@ function ProductList({ products }) {
                     display: 'block',
                   }}
                 >
-                  {link.label || 'Buy'}
+                  {link.label || 'Find it'}
                 </a>
               ))}
             </div>

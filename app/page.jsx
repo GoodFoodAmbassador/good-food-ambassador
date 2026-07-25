@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import GFANav from '@/components/GFANav'
 import Pill from '@/components/Pill'
 import { W, T, LIGHT, MID, GREEN, YELLOW, ORANGE, CYAN, GRAY } from '@/lib/tokens'
@@ -45,6 +46,7 @@ const CATEGORIES = [
     desc: 'Extra virgin olive oils, cold-pressed single-origins, vinegars, and fermented condiments. Evaluated for traceability, harvest date, and production integrity.',
     status: '20 products evaluated',
     cta: 'View evaluations →',
+    img: '/illustrations/GFA_illus_oils.png',
   },
   {
     slug: 'grains',
@@ -54,6 +56,7 @@ const CATEGORIES = [
     desc: 'Pasta, rice, soba, udon, couscous, millet, quinoa. Staple foods from every tradition, evaluated for origin, variety, and production method.',
     status: '10 producers scouted',
     cta: 'Read the Guide →',
+    img: '/illustrations/GFA_illus_grains.png',
   },
   {
     slug: 'legumes',
@@ -62,6 +65,7 @@ const CATEGORIES = [
     desc: 'Beans, lentils, chickpeas, and heritage varieties from smallholder farms worldwide. Among the most nutritious and land-efficient foods on the planet.',
     status: 'Evaluations underway',
     cta: 'Read the Guide →',
+    img: '/illustrations/GFA_illus_legumes.png',
   },
   {
     slug: 'snacks',
@@ -70,6 +74,7 @@ const CATEGORIES = [
     desc: 'Crackers, dried fruit, preserved foods, ferments, and small bites from every food culture. Evaluated for ingredient transparency, labelling accuracy, and production integrity.',
     status: 'Evaluations underway',
     cta: 'Read the Guide →',
+    img: '/illustrations/GFA_illus_snacks.png',
   },
   {
     slug: 'lna',
@@ -78,6 +83,7 @@ const CATEGORIES = [
     desc: 'Kombucha, kefir, shrubs, de-alcoholised wine, botanical waters, and more. A fast-growing space where the Good Food Standard matters most.',
     status: '10 products scouted',
     cta: 'Read the Guide →',
+    img: '/illustrations/GFA_illus_lna.png',
   },
   {
     slug: 'seafood',
@@ -86,6 +92,7 @@ const CATEGORIES = [
     desc: 'Tuna, sardines, mackerel, anchovies — canned and fresh. Evaluated for sustainable catch methods, origin transparency, and honest labelling.',
     status: 'Evaluations underway',
     cta: 'Read the Guide →',
+    img: '/illustrations/GFA_illus_seafood.png',
   },
 ]
 
@@ -227,6 +234,11 @@ export default function HubPage() {
                 padding: '36px 32px',
               }}
             >
+              {cat.img && (
+                <div style={{ marginBottom: 24 }}>
+                  <Image src={cat.img} alt={cat.label} width={280} height={160} style={{ width: '100%', height: 'auto', display: 'block' }} />
+                </div>
+              )}
               <Pill bg={cat.pillColor} color={cat.pillTextColor}>{cat.label}</Pill>
               <h3
                 style={{
