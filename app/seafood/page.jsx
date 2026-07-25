@@ -37,7 +37,7 @@ const PILLARS = [
     label: 'Fair',
     title: 'Dignity for everyone in the chain',
     criteria: [
-      'Labour practices across the supply chain — seafood processing has documented compliance gaps in some regions',
+      'Labour practices across the supply chain — seafood processing standards vary by region and certification body',
       'Small-boat and artisan fishers fairly compensated in the supply chain',
       'IUU (illegal, unreported, unregulated) fishing traceable and excluded',
     ],
@@ -47,7 +47,7 @@ const PILLARS = [
     label: 'True',
     title: 'Says what it caught',
     criteria: [
-      'Species substitution is common in seafood — "red snapper" and "sea bass" are frequently mislabelled',
+      'Species identification in retail seafood — independent studies have found significant rates of species substitution, particularly for "red snapper" and "sea bass"',
       'Wild-caught claims verified by independent certification or chain-of-custody documentation',
       'Aquaculture: farming inputs (feed, antibiotics, chemicals) disclosed where possible',
     ],
@@ -86,13 +86,13 @@ export default async function SeafoodPage() {
               The wild vs. farmed debate misses the point. A well-managed salmon farm in Norway produces better, more consistent fish than wild-caught salmon from a depleted or poorly managed fishery. Conversely, pole-and-line caught tuna from a certified small-boat fishery is significantly better for ocean health than longline trawling regardless of whether the tuna is "wild." The meaningful questions are: where, how, and under what management.
             </p>
             <p style={{ fontSize: 16, lineHeight: 1.85, color: '#555', marginBottom: 20 }}>
-              Species accuracy is a meaningful issue in seafood. Independent studies across multiple countries have found significant rates of species substitution in retail and restaurant seafood — cheaper species sold under the names of more valued ones. "Red snapper" and "sea bass" are among the categories where this has been most consistently documented. MSC certification with chain-of-custody traceability provides the most reliable verification.
+              Species identification is an important factor in seafood. Independent studies across multiple countries have found significant rates of species substitution in retail and restaurant seafood. "Red snapper" and "sea bass" are among the categories most consistently documented in this research. MSC certification with chain-of-custody traceability provides the most reliable third-party verification of species identity.
             </p>
             <p style={{ fontSize: 16, lineHeight: 1.85, color: '#555', marginBottom: 20 }}>
-              Canned seafood is underrated as a category. A tin of well-sourced, pole-and-line tuna in good olive oil from a traceable fishery is a genuinely excellent product — but it looks identical on the outside to a tin of commodity tuna. The difference is in the small print: species (yellowfin vs. skipjack), catch method, origin, and what it's packed in.
+              Canned seafood is an underrated category. A tin of well-sourced, pole-and-line tuna in good olive oil from a traceable fishery is a genuinely excellent product — but it looks identical on the outside to a tin of commodity tuna. The distinction is in the details: species (yellowfin vs. skipjack), catch method, origin, and what it's packed in.
             </p>
             <p style={{ fontSize: 16, lineHeight: 1.85, color: '#555' }}>
-              Labour conditions in seafood supply chains — particularly in Thai and Southeast Asian processing — are a well-documented human rights issue. Third-party labour audits and certifications like the Marine Stewardship Council's Chain of Custody standard include some labour requirements, but coverage is incomplete. Supporting transparent, short supply chains is the most practical mitigation.
+              Labour standards in seafood supply chains vary widely by region and certification body. Third-party audits and certifications like MSC's Chain of Custody standard provide documented verification of fishing and labour practices. Transparent, shorter supply chains make it easier to verify both quality and sourcing.
             </p>
           </div>
 
@@ -148,7 +148,7 @@ export default async function SeafoodPage() {
           <div>
             <p style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 11, fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#aaa', marginBottom: 12 }}>The Index</p>
             <h2 style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontWeight: 300, fontSize: 30 }}>
-              Products that passed<br /><strong style={{ fontWeight: 600 }}>evaluation</strong>
+              Seafood<br /><strong style={{ fontWeight: 600 }}>in the index</strong>
             </h2>
           </div>
           <Link href="/suggest" style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 12, fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#aaa', textDecoration: 'none', borderBottom: `1px solid #ddd`, paddingBottom: 2, whiteSpace: 'nowrap' }}>
@@ -156,14 +156,14 @@ export default async function SeafoodPage() {
           </Link>
         </div>
         <p style={{ fontSize: 14, lineHeight: 1.8, color: '#999', marginBottom: 48, maxWidth: 600 }}>
-          Listed alphabetically. Being on this list means a product passed evaluation against the GFA Standard for seafood. We don't rank or score — every product here is worth buying.
+          Listed alphabetically. Products here have been evaluated against the GFA Standard using publicly available information. We look at what producers share — we don't rank between products.
         </p>
         {products.length === 0 ? <EmptyState /> : <ProductList products={products} />}
       </section>
 
       <footer style={{ borderTop: `1px solid ${MID}`, padding: '28px 60px' }}>
         <p style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 12, color: '#999', letterSpacing: '0.03em', lineHeight: 1.7, marginBottom: 24, paddingBottom: 24, borderBottom: `1px solid ${MID}` }}>
-          Good Food Ambassador was started by food professionals who believe the industry owes eaters better information.
+          Good Food Ambassador was started by food professionals who believe eaters deserve access to clear, independent information about the food they buy.
         </p>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <p style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 12, color: '#bbb' }}>

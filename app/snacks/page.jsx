@@ -47,9 +47,9 @@ const PILLARS = [
     label: 'True',
     title: 'Says what it is',
     criteria: [
-      'No "no added sugar" that relies on fruit juice concentrates as sweeteners',
-      'Serving size set realistically, not shrunk to make nutrition figures look better',
-      'Origin of key flavouring ingredients — "truffle flavour" is rarely real truffle',
+      'Total sugars per serving from all sources — fruit juice concentrates are not classified as "added sugar" under current labelling rules',
+      'Serving size stated in a way that reflects typical use',
+      'Key flavouring ingredients named — "truffle flavour" and "natural truffle flavour" have distinct meanings under labelling rules',
     ],
   },
 ]
@@ -83,13 +83,13 @@ export default async function SnacksPage() {
               <strong style={{ fontWeight: 600 }}>a snack ingredient list.</strong>
             </h2>
             <p style={{ fontSize: 16, lineHeight: 1.85, color: '#555', marginBottom: 20 }}>
-              "Natural flavours" is among the most common ingredients in packaged food in the US. As a regulatory category, it covers a wide range of compounds derived from natural sources — used to create or intensify flavour without disclosing the specific substances involved. Products that list it prominently are typically relying on flavour enhancement rather than ingredient quality alone.
+              "Natural flavours" is among the most common ingredients in packaged food in the US. As a regulatory category, it covers a wide range of compounds derived from natural sources — used to create or intensify flavour. Products that name their flavour sources specifically (vanilla extract, lemon zest, smoked paprika) give you a clearer picture of what creates the taste.
             </p>
             <p style={{ fontSize: 16, lineHeight: 1.85, color: '#555', marginBottom: 20 }}>
-              "No added sugar" claims warrant attention. Some products using concentrated fruit juices carry this claim, since juice concentrates are not classified as added sugar under current labelling rules — despite having a similar metabolic profile to refined sugar. Reading the full ingredient list gives a more complete picture than front-of-pack claims alone.
+              "No added sugar" claims refer to refined sugars added during production. Products using concentrated fruit juices can carry this claim, since juice concentrates are not classified as added sugar under current labelling rules. The nutrition panel shows total sugars per serving from all sources — a useful reference alongside front-of-pack claims.
             </p>
             <p style={{ fontSize: 16, lineHeight: 1.85, color: '#555', marginBottom: 20 }}>
-              The oil used in crackers, crisps, and spreads is often the largest undisclosed ingredient. Labels say "vegetable oil" without specifying what it is — which usually means the cheapest available option. Named oils (olive, sunflower, coconut) are a step up because at least you know what you're eating.
+              The oil used in crackers, crisps, and spreads is often the single largest ingredient by weight. "Vegetable oil" is a broad category that may cover several different oils. Named oils — olive, sunflower, coconut — tell you specifically what you're eating and allow for more informed comparison between products.
             </p>
             <p style={{ fontSize: 16, lineHeight: 1.85, color: '#555' }}>
               For condiments and ferments: live cultures make a real difference in fermented products. Pasteurised sauerkraut, kimchi, and kombucha may taste similar to the live versions — but the nutritional properties that make them worth buying are destroyed by heat. Look for "raw," "unpasteurised," or "live cultures" on fermented products.
@@ -103,7 +103,7 @@ export default async function SnacksPage() {
               </p>
               {[
                 { n: '01', title: 'Ingredient count', body: 'A short, recognisable ingredient list is generally a reliable signal of a less processed product. The longer and less familiar the list, the more the product relies on additives and flavour enhancement rather than ingredient quality.' },
-                { n: '02', title: 'What oil is it?', body: '"Vegetable oil" means the cheapest available. Named oils — olive, sunflower, coconut — at least tell you what you\'re eating. For crackers, crisps, and spreads, it\'s the single biggest ingredient detail most labels hide.' },
+                { n: '02', title: 'What oil is it?', body: '"Vegetable oil" is a broad category. Named oils — olive, sunflower, coconut — tell you specifically what you\'re eating. For crackers, crisps, and spreads, the oil is often the single largest ingredient by weight.' },
                 { n: '03', title: 'Live or not?', body: 'For anything fermented — kimchi, sauerkraut, kombucha, vinegar — "raw," "unpasteurised," or "live cultures" tells you the product still has the cultures that make fermentation worth eating. Pasteurised versions are a different thing.' },
               ].map(item => (
                 <div key={item.n} style={{ marginBottom: 28 }}>
@@ -148,7 +148,7 @@ export default async function SnacksPage() {
           <div>
             <p style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 11, fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#aaa', marginBottom: 12 }}>The Index</p>
             <h2 style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontWeight: 300, fontSize: 30 }}>
-              Products that passed<br /><strong style={{ fontWeight: 600 }}>evaluation</strong>
+              Snacks &amp; Pantry<br /><strong style={{ fontWeight: 600 }}>in the index</strong>
             </h2>
           </div>
           <Link href="/suggest" style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 12, fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#aaa', textDecoration: 'none', borderBottom: `1px solid #ddd`, paddingBottom: 2, whiteSpace: 'nowrap' }}>
@@ -156,14 +156,14 @@ export default async function SnacksPage() {
           </Link>
         </div>
         <p style={{ fontSize: 14, lineHeight: 1.8, color: '#999', marginBottom: 48, maxWidth: 600 }}>
-          Listed alphabetically. Being on this list means a product passed evaluation against the GFA Standard for snacks &amp; pantry. We don't rank or score — every product here is worth buying.
+          Listed alphabetically. Products here have been evaluated against the GFA Standard using publicly available information. We look at what producers share — we don't rank between products.
         </p>
         {products.length === 0 ? <EmptyState /> : <ProductList products={products} />}
       </section>
 
       <footer style={{ borderTop: `1px solid ${MID}`, padding: '28px 60px' }}>
         <p style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 12, color: '#999', letterSpacing: '0.03em', lineHeight: 1.7, marginBottom: 24, paddingBottom: 24, borderBottom: `1px solid ${MID}` }}>
-          Good Food Ambassador was started by food professionals who believe the industry owes eaters better information.
+          Good Food Ambassador was started by food professionals who believe eaters deserve access to clear, independent information about the food they buy.
         </p>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <p style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 12, color: '#bbb' }}>

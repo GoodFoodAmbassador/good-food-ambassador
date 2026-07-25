@@ -31,7 +31,7 @@ const PILLARS = [
     criteria: [
       'Specific geographic origin — region or estate, not just country',
       'Independent certification: COOC, PDO/DOP, NAOOA, or equivalent',
-      'No undisclosed blending of olive varieties or grades',
+      'Olive varieties and grades clearly stated on the label',
     ],
   },
   {
@@ -51,7 +51,7 @@ const PILLARS = [
     criteria: [
       'Olive variety accurately stated when relevant',
       'Origin claims verified against certification — country of bottling distinguished from country of production',
-      '"First cold press" and similar legacy phrases not used as substitutes for verifiable quality information',
+      '"First cold press" is a legacy term; under modern centrifugal extraction standards, it carries no additional regulatory meaning beyond the extra virgin grade itself',
     ],
   },
 ]
@@ -167,8 +167,8 @@ export default async function OilsPage() {
               The Index
             </p>
             <h2 style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontWeight: 300, fontSize: 30 }}>
-              Products that passed<br />
-              <strong style={{ fontWeight: 600 }}>evaluation</strong>
+              Oils &amp; Condiments<br />
+              <strong style={{ fontWeight: 600 }}>in the index</strong>
             </h2>
           </div>
           <Link
@@ -180,7 +180,7 @@ export default async function OilsPage() {
         </div>
 
         <p style={{ fontSize: 14, lineHeight: 1.8, color: '#999', marginBottom: 48, maxWidth: 600 }}>
-          Listed alphabetically. Being on this list means a product passed evaluation against the GFA Standard for olive oils. We don't rank or score — every product here is worth buying.
+          Listed alphabetically. Products here have been evaluated against the GFA Standard using publicly available information. We look at what producers share — we don't rank between products.
         </p>
 
         {products.length === 0 ? (
@@ -193,7 +193,7 @@ export default async function OilsPage() {
       {/* ── FOOTER ── */}
       <footer style={{ borderTop: `1px solid ${MID}`, padding: '28px 60px' }}>
         <p style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 12, color: '#999', letterSpacing: '0.03em', lineHeight: 1.7, marginBottom: 24, paddingBottom: 24, borderBottom: `1px solid ${MID}` }}>
-          Good Food Ambassador was started by food professionals who believe the industry owes eaters better information.
+          Good Food Ambassador was started by food professionals who believe eaters deserve access to clear, independent information about the food they buy.
         </p>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <p style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 12, color: '#bbb' }}>

@@ -29,7 +29,7 @@ const PILLARS = [
     criteria: [
       'Country or region of origin for the legume itself, not just the packaging location',
       'Organic certification where it makes a meaningful difference to pesticide load',
-      'No vague "product of multiple countries" when single origin is feasible',
+      'Single-origin labelling tells you more than "product of multiple countries"',
     ],
   },
   {
@@ -39,7 +39,7 @@ const PILLARS = [
     criteria: [
       'Farmers paid fairly, particularly small-scale pulse growers in developing regions',
       'Supply chain transparency — who grows it, where, under what conditions',
-      'No false "local" claims that obscure commodity sourcing',
+      'Supply chain claims supported by producer transparency and traceability',
     ],
   },
   {
@@ -92,7 +92,7 @@ export default async function LegumesPage() {
               For canned legumes, the canning liquid is underrated. Well-made canned chickpeas produce aquafaba worth keeping — the liquid has culinary value. Poor-quality canning liquid with high salt and additives is a signal of low-quality beans underneath. The ingredient list rarely tells you more than "chickpeas, water, salt."
             </p>
             <p style={{ fontSize: 16, lineHeight: 1.85, color: '#555' }}>
-              Origin disclosure is poor across the category. "Product of multiple countries" is common — a legal cover for commodity blending that tells the consumer nothing. Single-origin labelling, where it exists, is a meaningful signal.
+              "Product of multiple countries" is a common designation that reflects how most commodity legumes are sourced — blended at packing facilities from multiple origins. Single-origin labelling, where it exists, gives you more specific information about the crop and its provenance.
             </p>
           </div>
 
@@ -102,7 +102,7 @@ export default async function LegumesPage() {
                 Three things to check on any pack
               </p>
               {[
-                { n: '01', title: 'Variety name', body: 'Puy, Castelluccio, Borlotti, Kabocha, Beluga — these are meaningful distinctions. "Lentils" or "chickpeas" without a variety is the commodity version. It may still be fine, but you can\'t know.' },
+                { n: '01', title: 'Variety name', body: 'Puy, Castelluccio, Borlotti, Kabocha, Beluga — these are meaningful distinctions. A named variety gives you more information about texture, flavour, and what to expect in cooking.' },
                 { n: '02', title: 'Country of origin', body: 'For the legume itself, not just the packaging location. Single-country origin is better than "product of multiple countries." Regional designations (e.g. Puy PDO) verify both variety and origin.' },
                 { n: '03', title: 'What\'s in the can', body: 'Ingredient list for canned legumes should be short: legume, water, salt. Added preservatives, firming agents, or excessive sodium are signals of lower-quality sourcing. BPA-free lining is worth noting.' },
               ].map(item => (
@@ -148,7 +148,7 @@ export default async function LegumesPage() {
           <div>
             <p style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 11, fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#aaa', marginBottom: 12 }}>The Index</p>
             <h2 style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontWeight: 300, fontSize: 30 }}>
-              Products that passed<br /><strong style={{ fontWeight: 600 }}>evaluation</strong>
+              Legumes &amp; Pulses<br /><strong style={{ fontWeight: 600 }}>in the index</strong>
             </h2>
           </div>
           <Link href="/suggest" style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 12, fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#aaa', textDecoration: 'none', borderBottom: `1px solid #ddd`, paddingBottom: 2, whiteSpace: 'nowrap' }}>
@@ -156,14 +156,14 @@ export default async function LegumesPage() {
           </Link>
         </div>
         <p style={{ fontSize: 14, lineHeight: 1.8, color: '#999', marginBottom: 48, maxWidth: 600 }}>
-          Listed alphabetically. Being on this list means a product passed evaluation against the GFA Standard for legumes. We don't rank or score — every product here is worth buying.
+          Listed alphabetically. Products here have been evaluated against the GFA Standard using publicly available information. We look at what producers share — we don't rank between products.
         </p>
         {products.length === 0 ? <EmptyState /> : <ProductList products={products} />}
       </section>
 
       <footer style={{ borderTop: `1px solid ${MID}`, padding: '28px 60px' }}>
         <p style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 12, color: '#999', letterSpacing: '0.03em', lineHeight: 1.7, marginBottom: 24, paddingBottom: 24, borderBottom: `1px solid ${MID}` }}>
-          Good Food Ambassador was started by food professionals who believe the industry owes eaters better information.
+          Good Food Ambassador was started by food professionals who believe eaters deserve access to clear, independent information about the food they buy.
         </p>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <p style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 12, color: '#bbb' }}>

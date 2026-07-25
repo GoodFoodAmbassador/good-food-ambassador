@@ -47,7 +47,7 @@ const PILLARS = [
     label: 'True',
     title: 'Honest from field to packet',
     criteria: [
-      'No "artisan" or "traditional" claims without a production method to back them up',
+      '"Artisan" and "traditional" carry more meaning when accompanied by a stated production method',
       'Soba labelled with actual buckwheat percentage — below 40% is mostly wheat',
       'Rice variety stated — generic grade descriptors like "premium" or "select" carry no standardised definition',
     ],
@@ -64,11 +64,11 @@ export default async function GrainsPage() {
       <section style={{ padding: '80px 60px 60px', maxWidth: 760 }}>
         <Pill bg={YELLOW} color={T} style={{ marginBottom: 28 }}>Grains &amp; Noodles</Pill>
         <h1 style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontWeight: 300, fontSize: 52, lineHeight: 1.15, marginBottom: 24, marginTop: 20 }}>
-          Most pasta doesn't tell you<br />
-          <strong style={{ fontWeight: 600 }}>where the wheat was grown.</strong>
+          Grains — variety, origin,<br />
+          <strong style={{ fontWeight: 600 }}>and what the label tells you.</strong>
         </h1>
         <p style={{ fontSize: 17, lineHeight: 1.8, color: '#666', maxWidth: 560 }}>
-          Grain labelling is among the least transparent in food. Origin is often omitted, variety is vague, and "Product of Italy" can legally mean Italian packaging around grain grown elsewhere. We looked at what the label actually tells you — and whether it's enough.
+          We evaluated grains, pasta, and noodles against the Good Food Standard, looking at what producers share about variety, origin, and production method — the details that most affect how a product cooks and tastes.
         </p>
       </section>
 
@@ -83,7 +83,7 @@ export default async function GrainsPage() {
               <strong style={{ fontWeight: 600 }}>that predicts the result.</strong>
             </h2>
             <p style={{ fontSize: 16, lineHeight: 1.85, color: '#555', marginBottom: 20 }}>
-              Pasta made from high-quality durum wheat holds its texture during cooking. Pasta made from soft wheat turns starchy and collapses. The difference is protein content — not the brand name, not the packaging, not the flag on the front. Yet very few pasta brands tell you which wheat variety they use or where it was grown.
+              Pasta made from high-quality durum wheat holds its texture during cooking. Pasta made from soft wheat turns starchy and collapses. The difference is protein content — not the brand name, not the packaging, not the flag on the front. Grain variety and origin are not always stated on labels, but they're the details that most affect cooking performance.
             </p>
             <p style={{ fontSize: 16, lineHeight: 1.85, color: '#555', marginBottom: 20 }}>
               For noodles, the gap is wider. "Soba" noodles must contain buckwheat in Japan, but there's no equivalent rule in most export markets. A product labelled soba can be 90% wheat flour with a small buckwheat addition for colour and name. The buckwheat percentage — when it appears at all — is buried in the ingredient list.
@@ -102,7 +102,7 @@ export default async function GrainsPage() {
                 Three things to check on any packet
               </p>
               {[
-                { n: '01', title: 'Grain variety', body: 'Durum wheat, buckwheat percentage, Koshihikari, Carnaroli — variety determines how the product will cook and taste. Generic terms like "wheat" or "rice" indicate commodity sourcing without specific variety disclosure.' },
+                { n: '01', title: 'Grain variety', body: 'Durum wheat, buckwheat percentage, Koshihikari, Carnaroli — variety determines how the product will cook and taste. A named variety gives you more to work with than a generic term like "wheat" or "rice."' },
                 { n: '02', title: 'Origin of the grain', body: 'Where the grain was grown, not where it was packaged. EU regulations allow products to be labelled by their packaging country. Look for explicit grain origin or a GI certification mark.' },
                 { n: '03', title: 'Production method', body: 'For pasta: bronze-die and slow-dried are meaningful signals. For soba: buckwheat percentage above 40% is a reasonable threshold. For rice: milling date where available — rice stales faster than most people realise.' },
               ].map(item => (
@@ -151,7 +151,7 @@ export default async function GrainsPage() {
           <div>
             <p style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 11, fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#aaa', marginBottom: 12 }}>The Index</p>
             <h2 style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontWeight: 300, fontSize: 30 }}>
-              Products that passed<br /><strong style={{ fontWeight: 600 }}>evaluation</strong>
+              Grains &amp; Noodles<br /><strong style={{ fontWeight: 600 }}>in the index</strong>
             </h2>
           </div>
           <Link href="/suggest" style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 12, fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#aaa', textDecoration: 'none', borderBottom: `1px solid #ddd`, paddingBottom: 2, whiteSpace: 'nowrap' }}>
@@ -159,14 +159,14 @@ export default async function GrainsPage() {
           </Link>
         </div>
         <p style={{ fontSize: 14, lineHeight: 1.8, color: '#999', marginBottom: 48, maxWidth: 600 }}>
-          Listed alphabetically. Being on this list means a product passed evaluation against the GFA Standard for grains. We don't rank or score — every product here is worth buying.
+          Listed alphabetically. Products here have been evaluated against the GFA Standard using publicly available information. We look at what producers share — we don't rank between products.
         </p>
         {products.length === 0 ? <EmptyState /> : <ProductList products={products} />}
       </section>
 
       <footer style={{ borderTop: `1px solid ${MID}`, padding: '28px 60px' }}>
         <p style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 12, color: '#999', letterSpacing: '0.03em', lineHeight: 1.7, marginBottom: 24, paddingBottom: 24, borderBottom: `1px solid ${MID}` }}>
-          Good Food Ambassador was started by food professionals who believe the industry owes eaters better information.
+          Good Food Ambassador was started by food professionals who believe eaters deserve access to clear, independent information about the food they buy.
         </p>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <p style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 12, color: '#bbb' }}>

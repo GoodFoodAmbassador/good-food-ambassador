@@ -67,7 +67,7 @@ const CATEGORIES = [
     slug: 'snacks',
     label: 'Snacks & Pantry',
     pillColor: GRAY,
-    desc: 'Crackers, dried fruit, preserved foods, ferments, and small bites from every food culture. The category with the widest gap between marketing and reality.',
+    desc: 'Crackers, dried fruit, preserved foods, ferments, and small bites from every food culture. Evaluated for ingredient transparency, labelling accuracy, and production integrity.',
     status: 'Evaluations underway',
     cta: 'Read the Guide →',
   },
@@ -287,8 +287,8 @@ export default function HubPage() {
             borderBottom: `1px solid ${MID}`,
           }}
         >
-          Good Food Ambassador was started by food professionals who believe the industry owes eaters better
-          information.
+          Good Food Ambassador was started by food professionals who believe eaters deserve access to clear,
+          independent information about the food they buy.
         </p>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <p style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 12, color: '#bbb' }}>

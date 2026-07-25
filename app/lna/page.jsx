@@ -47,9 +47,9 @@ const PILLARS = [
     label: 'True',
     title: 'Honest about what it is',
     criteria: [
-      'Sugar per serving stated clearly — many "healthy" LNA drinks are high-sugar products',
+      'Total sugars per serving stated clearly — sugar content varies significantly across the category',
       'Kombucha: alcohol content disclosed (fermentation produces trace alcohol)',
-      'No implied health benefits that exceed what the product can actually deliver',
+      'Health and wellness claims accompanied by specific, verifiable information',
     ],
   },
 ]
@@ -64,11 +64,11 @@ export default async function LNAPage() {
       <section style={{ padding: '80px 60px 60px', maxWidth: 760 }}>
         <Pill bg={GREEN} style={{ marginBottom: 28 }}>Low &amp; No Alcohol</Pill>
         <h1 style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontWeight: 300, fontSize: 52, lineHeight: 1.15, marginBottom: 24, marginTop: 20 }}>
-          The category is growing fast.<br />
-          <strong style={{ fontWeight: 600 }}>The labelling hasn't kept up.</strong>
+          Low &amp; no alcohol — what the label<br />
+          <strong style={{ fontWeight: 600 }}>tells you about what's in the bottle.</strong>
         </h1>
         <p style={{ fontSize: 17, lineHeight: 1.8, color: '#666', maxWidth: 560 }}>
-          Low and no-alcohol drinks have moved from niche to mainstream in a few years — and the quality gap between products has widened at the same pace. Some are genuinely excellent. Many are high-sugar wellness products dressed up in sophisticated packaging.
+          We evaluated low and no-alcohol drinks against the Good Food Standard, looking at production method, ingredient transparency, and label accuracy across fermented drinks, de-alcoholised wines, and botanical beverages.
         </p>
       </section>
 
@@ -86,10 +86,10 @@ export default async function LNAPage() {
               The LNA category covers very different products under the same banner. Fermented drinks (kombucha, kefir, jun, water kefir) are produced by live microbial cultures — fermentation is the point, not a step to be reversed. De-alcoholised wine and beer start as alcoholic products and have alcohol removed, usually by heat or vacuum processes that also affect flavour. Botanical waters and "spirit alternatives" are never-alcoholic drinks — often sparkling water with botanicals and sometimes adaptogens added.
             </p>
             <p style={{ fontSize: 16, lineHeight: 1.85, color: '#555', marginBottom: 20 }}>
-              Live cultures are what make fermented drinks nutritionally interesting. Pasteurisation kills them. Many commercial kombuchas and kefirs are pasteurised after fermentation — legally still "kombucha," but the microbial content that drives the product's health positioning is gone. "Raw," "unpasteurised," or "live cultures" on the label means the microbes survived to the bottle. Without that language, assume pasteurisation.
+              Live cultures are what make fermented drinks distinctive. Pasteurisation, used to extend shelf life, deactivates them. Producers that keep their product raw typically say so on the label: "raw," "unpasteurised," or "live cultures" indicates the cultures are present in the bottle. Pasteurised versions are produced differently and will not carry those claims.
             </p>
             <p style={{ fontSize: 16, lineHeight: 1.85, color: '#555', marginBottom: 20 }}>
-              Sugar is the most underscrutinised issue in LNA. A bottle of kombucha can contain as much sugar as a soft drink — because fermentation converts sugar, but commercial versions are often sweetened post-fermentation for consumer palatability. "No added sugar" claims on kombucha are technically possible while the finished product is still high in natural fermentation sugars. Look at the nutrition panel, not the marketing.
+              Sugar per serving varies significantly across LNA products. A bottle of kombucha can contain as much sugar as a soft drink — fermentation converts some sugar, and commercial versions are often adjusted for palatability. "No added sugar" claims refer specifically to refined sugars added during production and do not reflect total sugars from fermentation. The nutrition panel shows total sugars per serving, which is the most complete reference.
             </p>
             <p style={{ fontSize: 16, lineHeight: 1.85, color: '#555' }}>
               De-alcoholised wine deserves more credit than it gets. The best producers approach removal with care — cold spinning and vacuum techniques that preserve flavour better than earlier heat-based methods. Full varietal and vintage disclosure is the baseline to look for. A de-alcoholised wine from a named estate is a different product from a generic blended base with alcohol removed.
@@ -148,7 +148,7 @@ export default async function LNAPage() {
           <div>
             <p style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 11, fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#aaa', marginBottom: 12 }}>The Index</p>
             <h2 style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontWeight: 300, fontSize: 30 }}>
-              Products that passed<br /><strong style={{ fontWeight: 600 }}>evaluation</strong>
+              Low &amp; No Alcohol<br /><strong style={{ fontWeight: 600 }}>in the index</strong>
             </h2>
           </div>
           <Link href="/suggest" style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 12, fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#aaa', textDecoration: 'none', borderBottom: `1px solid #ddd`, paddingBottom: 2, whiteSpace: 'nowrap' }}>
@@ -156,14 +156,14 @@ export default async function LNAPage() {
           </Link>
         </div>
         <p style={{ fontSize: 14, lineHeight: 1.8, color: '#999', marginBottom: 48, maxWidth: 600 }}>
-          Listed alphabetically. Being on this list means a product passed evaluation against the GFA Standard for low &amp; no alcohol. We don't rank or score — every product here is worth drinking.
+          Listed alphabetically. Products here have been evaluated against the GFA Standard using publicly available information. We look at what producers share — we don't rank between products.
         </p>
         {products.length === 0 ? <EmptyState /> : <ProductList products={products} />}
       </section>
 
       <footer style={{ borderTop: `1px solid ${MID}`, padding: '28px 60px' }}>
         <p style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 12, color: '#999', letterSpacing: '0.03em', lineHeight: 1.7, marginBottom: 24, paddingBottom: 24, borderBottom: `1px solid ${MID}` }}>
-          Good Food Ambassador was started by food professionals who believe the industry owes eaters better information.
+          Good Food Ambassador was started by food professionals who believe eaters deserve access to clear, independent information about the food they buy.
         </p>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <p style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 12, color: '#bbb' }}>
