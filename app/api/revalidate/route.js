@@ -3,6 +3,7 @@ import { NextResponse } from 'next/server'
 
 // Category paths that need revalidating when Airtable changes
 const CATEGORY_PATHS = [
+  '/',
   '/olive-oils',
   '/grains',
   '/legumes',
