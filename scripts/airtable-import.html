@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>GFA Airtable Import</title>
+<style>
+  body { font-family: monospace; background: #111; color: #eee; padding: 32px; max-width: 760px; }
+  h1 { color: #77d46c; font-size: 18px; margin-bottom: 4px; }
+  p { color: #888; margin: 0 0 16px; font-size: 13px; }
+  #setup { margin-bottom: 24px; }
+  input { background: #1a1a1a; border: 1px solid #333; color: #eee; font-family: monospace; font-size: 13px; padding: 10px 14px; border-radius: 4px; width: 100%; box-sizing: border-box; margin-bottom: 10px; }
+  button { background: #77d46c; color: #111; border: none; font-family: monospace; font-size: 13px; font-weight: bold; padding: 10px 24px; border-radius: 4px; cursor: pointer; }
+  button:disabled { background: #333; color: #666; cursor: default; }
+  #log { background: #1a1a1a; padding: 20px; border-radius: 4px; min-height: 200px; font-size: 13px; line-height: 1.8; display: none; }
+  .ok  { color: #77d46c; }
+  .err { color: #ed5a29; }
+  .dim { color: #666; }
+</style>
+</head>
+<body>
+<h1>🫒 GFA Airtable Import</h1>
+<p>Paste your Airtable PAT and click Run. The 17 product drafts will be created as pending records.</p>
+<div id="setup">
+  <input id="pat" type="password" placeholder="Airtable Personal Access Token (patXXX…)" />
+  <button id="btn" onclick="startImport()">Run import →</button>
+</div>
+<div id="log"></div>
+
+<script>
+const BASE_ID = 'appcBDopFuYbSTdRy'
+
+const log = (msg, cls = '') => {
+  const div = document.getElementById('log')
+  div.innerHTML += `<span class="${cls}">${msg}</span><br>`
+  div.scrollTop = div.scrollHeight
+}
+
+const PRODUCTS = [
+  {
+    "Name": "Graza Sizzle",
+    "Producer": "Graza",
+    "Origin": "Jaén, Andalusia, Spain",
+    "Category": "olive-oils",
+    "Status": "pending",
+    "Description": "Single-origin Picual from Jaén in a squeeze bottle designed for high-heat cooking. Harvest-dated, transparent sourcing, cold-extracted.",
+    "BuyLinks": "[{\"label\":\"Graza direct\",\"url\":\"https://www.graza.co\"}]",
+    "PillarGood": "Picual from Jaén is naturally high in polyphenols and oxidatively stable — well-suited for cooking. Cold-extracted, unfiltered. Acidity consistently below 0.4%. Harvest month and year printed on every bottle; oils typically arrive within 3–4 months of harvest.",
+    "PillarClean": "Single origin — Jaén, Andalusia. Mill location disclosed. Picual variety confirmed on label. No blending with other origins or grades. Not organic certified, but full production method disclosed and varietal sourcing transparent.",
+    "PillarFair": "Works with a co-operative mill in Jaén and publishes its supplier relationships. Direct-to-consumer model reduces intermediary extraction. No formal fair trade certification, but supply chain transparency is above category average.",
+    "PillarTrue": "\"Sizzle\" positioning is accurate — Picual's heat stability is genuine, not marketing. Harvest date removes ambiguity about freshness. No \"first cold press\" or other meaningless legacy phrases. Squeeze bottle is functional, not theatrical."
+  },
+  {
+    "Name": "Graza Drizzle",
+    "Producer": "Graza",
+    "Origin": "Catalonia, Spain",
+    "Category": "olive-oils",
+    "Status": "pending",
+    "Description": "Single-origin Arbequina from Catalonia in a drizzle-optimized bottle. Mild, fruity, harvest-dated — designed for finishing and raw applications.",
+    "BuyLinks": "[{\"label\":\"Graza direct\",\"url\":\"https://www.graza.co\"}]",
+    "PillarGood": "Arbequina from Catalonia produces a characteristically mild, buttery, low-bitterness oil. Best used raw — fruitiness and delicate polyphenols diminish with heat. Harvest date printed; acidity under 0.4%. Lighter polyphenol profile than Picual, appropriate for the variety.",
+    "PillarClean": "Single origin — Catalonia, Spain. Variety and mill location disclosed on label. Not organic certified. No blending across origins or varieties. QR code links to additional sourcing details.",
+    "PillarFair": "Same supply chain transparency as Sizzle. Graza's direct-to-consumer model supports its Catalan producer relationship. No fair trade certification, but sourcing relationship is documented.",
+    "PillarTrue": "Finishing/drizzle positioning is honest — Arbequina is genuinely better suited for raw use than high heat. Bottle design reflects intended use without gimmick. No legacy marketing language."
+  },
+  {
+    "Name": "Bono Sicilia PGI EVOO",
+    "Producer": "Bono",
+    "Origin": "Sicily, Italy",
+    "Category": "olive-oils",
+    "Status": "pending",
+    "Description": "EU PGI-certified Sicilian EVOO controlled by IRVO, the Italian government's olive oil authority. Each bottle carries a unique serial number traceable to the certifying body.",
+    "BuyLinks": "[{\"label\":\"Bono USA\",\"url\":\"https://www.bonousainc.com\"}]",
+    "PillarGood": "Acidity consistently between 0.2–0.4% — high quality and freshness. Sensory profile reflects Sicilian native cultivars: typically fruity with moderate bitterness and a clean finish. Harvest year (\"Raccolto\") printed on bottle.",
+    "PillarClean": "EU PGI certification requires olives to be grown, pressed, and bottled entirely in Sicily. Each bottle carries a unique serial number traceable through IRVO, a certifying body controlled by the Italian Ministry of Agriculture.",
+    "PillarFair": "Bono operates as a Sicilian cooperative structure, distributing revenue back to member growers within the PGI zone. Cooperative model structurally benefits smallholder farmers.",
+    "PillarTrue": "PGI certification means the Sicilian origin claim is legally verified — not self-asserted marketing. \"Raccolto\" vintage year on the bottle is required under PGI rules. No misleading pan-Italian labeling concealing non-Italian olives."
+  },
+  {
+    "Name": "Kirkland Signature EVOO",
+    "Producer": "Kirkland Signature (Costco)",
+    "Origin": "Italy (blend)",
+    "Category": "olive-oils",
+    "Status": "pending",
+    "Description": "Costco's house-label EVOO. Repeatedly passes independent grade testing and offers exceptional value at scale. Italian blend without specific regional disclosure.",
+    "BuyLinks": "[{\"label\":\"Costco\",\"url\":\"https://www.costco.com\"}]",
+    "PillarGood": "Multiple independent tests have confirmed Kirkland Signature EVOO meets EVOO grade standards, unlike many Italian-labeled competitors. Clean, mild flavor profile. Harvest date not consistently printed; freshness depends on purchase timing.",
+    "PillarClean": "Italian blend without specific regional or varietal disclosure. IOC-compliant standards confirmed by testing. No PDO or DOP designation. Harvest date transparency lags premium producers.",
+    "PillarFair": "As a Costco private label at high volume, supply chain details for farmer compensation are not publicly disclosed. No fair trade or cooperative certification.",
+    "PillarTrue": "Does not carry false claims — appropriately labeled as a blend without misleading single-origin language. Independent testing confirms genuine EVOO grade. \"Italian\" designation reflects bottling location."
+  },
+  {
+    "Name": "Terra Delyssa Organic EVOO",
+    "Producer": "Terra Delyssa",
+    "Origin": "Sfax & Kairouan regions, Tunisia",
+    "Category": "olive-oils",
+    "Status": "pending",
+    "Description": "Organic Tunisian EVOO with blockchain QR-code traceability. Chemlali and Chetoui olives pressed within 4 hours of harvest. USDA Organic, Ecocert, and NAOOA certified.",
+    "BuyLinks": "[{\"label\":\"Terra Delyssa\",\"url\":\"https://terradelyssa.com\"}]",
+    "PillarGood": "Pressing within 4 hours of harvest is among the fastest processing times in the category — significantly preserves polyphenol content. Cold-pressed. Harvest date accessible via QR code blockchain traceability.",
+    "PillarClean": "USDA Organic and Ecocert certified. QR code links to IBM Food Trust blockchain data showing harvest date, location, and production timeline. Non-GMO Project Verified and Kosher certified.",
+    "PillarFair": "Terra Delyssa sources from its own orchards — vertical integration maintains quality control but limits smallholder farmer participation. No fair trade certification.",
+    "PillarTrue": "Packaging honestly names Tunisia as origin. \"First cold press\" appears on some products — technically legacy phrasing, but extraction method is genuinely cold. Blockchain traceability makes claims verifiable."
+  },
+  {
+    "Name": "Kosterina Original EVOO",
+    "Producer": "Kosterina",
+    "Origin": "Peloponnese, Greece",
+    "Category": "olive-oils",
+    "Status": "pending",
+    "Description": "Early-harvest Koroneiki EVOO from southern Greece with independently verified polyphenol counts above 500 mg/kg per batch. USDA Organic certified.",
+    "BuyLinks": "[{\"label\":\"Kosterina direct\",\"url\":\"https://www.kosterina.com\"}]",
+    "PillarGood": "Early-harvest Koroneiki is among the highest-polyphenol olive varieties in the world. Kosterina publishes independent third-party polyphenol test results (500+ mg/kg) for every harvest batch. Intense green-fruit character with pronounced throat catch.",
+    "PillarClean": "Sourced from the Peloponnese, specifically disclosed. USDA Organic certified. Third-party lab test results published per harvest. Early harvest designation is chemically verified, not just stated.",
+    "PillarFair": "Founded by first-generation Greek-American Katerina Mountanos to support family olive growers in Greece. Works with small family farms. Direct-to-consumer model reduces margin extraction.",
+    "PillarTrue": "Polyphenol claims backed by published, per-harvest independent lab results — not generic marketing. \"Early harvest\" is genuinely reflected in the chemical profile. Health claims reference IOC-recognized research."
+  },
+  {
+    "Name": "Cobram Estate Classic EVOO",
+    "Producer": "Cobram Estate",
+    "Origin": "Victoria, Australia",
+    "Category": "olive-oils",
+    "Status": "pending",
+    "Description": "Australia's largest olive oil producer. Counter-seasonal harvesting (May–June) means fresh oil reaches Northern Hemisphere shelves while Mediterranean producers' oils age. AOCA certified, harvest-dated.",
+    "BuyLinks": "[{\"label\":\"Cobram Estate\",\"url\":\"https://cobramestate.com\"}]",
+    "PillarGood": "Australian May–June harvest delivers fresh oil to US stores while Northern Hemisphere oils age on shelves. Meets elevated benchmarks: FFA below 0.3%, peroxide value under 8 meq/kg, polyphenols above 250 mg/kg. AOCA certified.",
+    "PillarClean": "All olives grown, milled, and bottled in Victoria, Australia. AOCA certified — independent testing confirms grade. The \"California Select\" product line name suggests California origin but the oil is Australian; disclosed in fine print.",
+    "PillarFair": "Large-scale commercial operation — one of the world's largest single olive-growing operations. Vertically integrated. No fair trade certification. Labor follows Australian workplace law.",
+    "PillarTrue": "\"California Select\" brand name signals a quality tier, not California geographic origin — requires reading the small print. Otherwise, harvest dates, Australian origin, and AOCA certification are honestly represented."
+  },
+  {
+    "Name": "McEvoy Ranch Organic EVOO",
+    "Producer": "McEvoy Ranch",
+    "Origin": "Petaluma, Marin County, California, USA",
+    "Category": "olive-oils",
+    "Status": "pending",
+    "Description": "550-acre certified organic estate in Marin County. Tuscan varietal blend (Frantoio, Leccino, Moraiolo) small-batch harvested November–December. COOC certified, USDA Organic, harvest date on every bottle.",
+    "BuyLinks": "[{\"label\":\"McEvoy Ranch direct\",\"url\":\"https://www.mcevoyranch.com\"}]",
+    "PillarGood": "Small-batch production from estate-grown Tuscan varieties. Harvested at peak polyphenol content each November–December. Harvest date on every bottle. COOC certification confirms grade accuracy. Peppery finish and green-fruit character.",
+    "PillarClean": "Single estate origin — Petaluma, Marin County, California. USDA Organic and COOC certified. All olives grown, harvested, and milled on the 550-acre estate. No blending with outside sources.",
+    "PillarFair": "Family estate employing workers directly under California labor law. Small-batch production maintains a direct relationship between product and land. Founded by Nan McEvoy.",
+    "PillarTrue": "\"Tuscan\" refers to varietal heritage (Frantoio, Leccino), not Italian geographic origin — distinction honored in labeling. COOC certification independently verifies quality claims. No \"first cold press\" language."
+  },
+  {
+    "Name": "Equal Exchange Organic EVOO",
+    "Producer": "Equal Exchange",
+    "Origin": "West Bank, Palestine",
+    "Category": "olive-oils",
+    "Status": "pending",
+    "Description": "Worker-owned co-op sourcing fair trade organic EVOO from 777+ Palestinian smallholder farmers. Oil sales directly fund farmer livelihoods, women's services, and rural infrastructure in the West Bank.",
+    "BuyLinks": "[{\"label\":\"Equal Exchange\",\"url\":\"https://shop.equalexchange.coop/collections/olive-oil-medjool-dates\"}]",
+    "PillarGood": "Rumi variety — a native Palestinian cultivar with robust, slightly bitter, peppery character. Traditional early-harvest practices. USDA Organic certified. Harvest date disclosed on label.",
+    "PillarClean": "USDA Organic and Fair Trade certified. Single origin — West Bank, Palestine. Sourced from named farmer cooperatives with documented relationships. Full supply chain transparency is foundational to the model.",
+    "PillarFair": "Equal Exchange is itself a worker-owned cooperative. Palestinian farmer partners receive fair trade premiums funding community infrastructure, women's services, and cooperative development. One of the strongest Fair pillar stories in the category.",
+    "PillarTrue": "Mission framing is substantiated by certified cooperative relationships and published farmer outcome reports. Palestinian origin is explicitly named — unusual in a market where many brands use vague \"Mediterranean\" labeling."
+  },
+  {
+    "Name": "Canaan Fair Trade Organic EVOO",
+    "Producer": "Canaan Fair Trade",
+    "Origin": "West Bank, Palestine",
+    "Category": "olive-oils",
+    "Status": "pending",
+    "Description": "Palestinian-founded cooperative working with 2,500 farmers across 55 cooperatives. Pioneered the fair trade olive oil model. In 2024, awarded Regenerative Organic Certified (ROC) covering 20,000 acres.",
+    "BuyLinks": "[{\"label\":\"Canaan Fair Trade\",\"url\":\"https://canaanusa.com\"}]",
+    "PillarGood": "Rumi and Nabali varieties — native Palestinian cultivars with centuries-long agricultural history. Traditional early-harvest practices. Organic farming without artificial inputs. Supplies 90% of organic olive oil used by Dr. Bronner's — a strong quality benchmark.",
+    "PillarClean": "USDA Organic certified. Fair Trade certified (IMO). Regenerative Organic Certified (ROC) as of 2024 — the most demanding soil and welfare certification currently available. 52 communities, 55 cooperatives, fully documented.",
+    "PillarFair": "Founded by Palestinian agronomist Nasser Abufarha. Canaan created the fair trade olive oil model in Palestine in 2004 with documented 20-year outcomes: farmer premiums, women's cooperatives, rural infrastructure. Among the strongest Fair pillar in any food category.",
+    "PillarTrue": "Explicitly Palestinian origin in labeling. Fair trade and Regenerative Organic certifications are third-party verified. No geographic softening or \"Mediterranean\" umbrella language concealing specific origin."
+  },
+  {
+    "Name": "Citizens of Soil EVOO",
+    "Producer": "Citizens of Soil",
+    "Origin": "Croatia (Istria / Dalmatia, varies by release)",
+    "Category": "olive-oils",
+    "Status": "pending",
+    "Description": "Curated single-estate EVOOs from regenerative and biodynamic small farms. Subscription model supports ongoing small-farmer relationships. Focused on soil health, biodiversity, and transparent supply chains.",
+    "BuyLinks": "[{\"label\":\"Citizens of Soil\",\"url\":\"https://www.citizensofsoil.com\"}]",
+    "PillarGood": "Curation model sets a high quality floor. Oils sourced from named single-estate producers with harvest dates disclosed per release. Variety specified per bottle. Seasonal availability reflects genuine harvest cycles.",
+    "PillarClean": "Each oil sourced from named farms with disclosed locations. No blending across origins. Regenerative and biodynamic farming practices — some certified, others in documented transition.",
+    "PillarFair": "Subscription model creates stable demand for small producers lacking US distribution. Direct farmer relationships documented. Structurally advantages smallholders over commodity supply chains.",
+    "PillarTrue": "Honest about the curator role — Citizens of Soil is a marketplace, not a producer, and this is disclosed. Each oil labeled by specific estate and harvest. Croatian oil says Croatia — no Mediterranean umbrella obscuring."
+  },
+  {
+    "Name": "Brightland Alive EVOO",
+    "Producer": "Brightland",
+    "Origin": "San Joaquin Valley, California, USA",
+    "Category": "olive-oils",
+    "Status": "pending",
+    "Description": "Women-founded California EVOO brand built to fight industry fraud. Heirloom Arbosana and Arbequina blend, cold-pressed within 90 minutes of harvest. COOC certified, nitrogen-flushed UV-protective glass.",
+    "BuyLinks": "[{\"label\":\"Brightland direct\",\"url\":\"https://brightland.co\"}]",
+    "PillarGood": "COOC certification confirms grade. Cold-pressed within 90 minutes of harvest. Nitrogen-flushed bottles reduce oxidation during shelf life. Harvest date on every bottle. Heirloom Arbosana/Arbequina blend produces a light, grassy, fruity profile.",
+    "PillarClean": "California origin, COOC certified. Harvest date and specific California growing region disclosed. Not certified organic. UV-protective glass bottle design addresses light degradation — a genuine quality measure.",
+    "PillarFair": "Women-founded, B-corp adjacent values. Works with California family farms in the San Joaquin Valley. Direct-to-consumer model. Labor practices under California agricultural standards.",
+    "PillarTrue": "Brand was explicitly founded to counter EVOO fraud — transparency is built into every product decision. No \"first cold press\" or other legacy marketing phrases. The anti-fraud mission is substantiated rather than performative."
+  },
+  {
+    "Name": "Ayvaco EVOO",
+    "Producer": "Ayvaco",
+    "Origin": "Ayvalık, Turkey",
+    "Category": "olive-oils",
+    "Status": "pending",
+    "Description": "Single-origin, family-farm Turkish EVOO from the Ayvalık region. Direct-to-consumer, cutting out all middlemen. First cold press, harvest-dated. Revenue goes directly to the producing family.",
+    "BuyLinks": "[{\"label\":\"Ayvaco direct\",\"url\":\"https://www.ayvaco.com\"}]",
+    "PillarGood": "Ayvalık is a native Turkish variety with a characteristically mild, round, fruity profile and low bitterness. First cold press. Harvest date disclosed. Direct-from-farm shipping minimizes time between pressing and delivery.",
+    "PillarClean": "Single-origin family farm in the Ayvalık region, Turkey. Direct-to-consumer eliminates all intermediary handling and maintains provenance. Harvest date disclosed. Organic status not confirmed in available product information.",
+    "PillarFair": "Direct-to-consumer from a single farming family is the most structurally direct Fair model possible — 100% of the purchase price premium reaches the producing family.",
+    "PillarTrue": "Direct farm provenance is honest and verifiable. \"First cold press\" is used — technically legacy phrasing, though the extraction is genuine. Overall story is consistent with the actual supply chain."
+  },
+  {
+    "Name": "Papa Vince EVOO",
+    "Producer": "Papa Vince",
+    "Origin": "Santa Ninfa, Sicily, Italy",
+    "Category": "olive-oils",
+    "Status": "pending",
+    "Description": "Sicilian family harvest since 1935. Nocellara del Belice from a single estate in Santa Ninfa, unfiltered and unblended. Ships direct from the family. No pesticides, no herbicides. Full lot traceability to grove and harvest date.",
+    "BuyLinks": "[{\"label\":\"Papa Vince direct\",\"url\":\"https://papavince.com\"}]",
+    "PillarGood": "Nocellara del Belice is a premium Sicilian variety known for high polyphenol content and long shelf life relative to other cultivars. Unfiltered — richer texture and more intense flavor. Harvest lot number and date on every bottle.",
+    "PillarClean": "Single estate — Santa Ninfa, Sicily. Every step (cultivation, harvest, pressing) overseen at the same estate. Lot traceability to exact grove and harvest period. Direct shipping from Sicily eliminates intermediary handling.",
+    "PillarFair": "Multi-generational Sicilian family operation with a documented 1935 origin. Direct-to-consumer means full revenue reaches the producing family. No distributor margin extraction. Handpicking still practiced.",
+    "PillarTrue": "\"Unblended\" and \"unfiltered\" claims substantiated by the single-estate model. Lot number traceability makes origin verifiable. \"First cold press\" appears in marketing — legacy phrasing but extraction method is genuine."
+  },
+  {
+    "Name": "Masseria Estate Organic EVOO",
+    "Producer": "Masseria Estate",
+    "Origin": "Mt. Etna region, Sicily, Italy",
+    "Category": "olive-oils",
+    "Status": "pending",
+    "Description": "USDA Certified Organic, single-origin Sicilian EVOO. Nocellara Etnea olives grown in volcanic soil near Mt. Etna. Small estate, direct-to-consumer, no intermediaries.",
+    "BuyLinks": "[{\"label\":\"Masseria Estate\",\"url\":\"https://masseriaestate.com\"}]",
+    "PillarGood": "Nocellara Etnea grown in volcanic terroir near Mt. Etna — a distinctive mineral environment that imparts complexity to the flavor profile. USDA Organic. Small-batch harvest, early-season picking to maximize polyphenol content.",
+    "PillarClean": "USDA Organic certified. Single-origin: Nocellara Etnea variety, Mt. Etna zone, Sicily. Direct-to-consumer with no intermediary handling. Variety and precise location disclosed.",
+    "PillarFair": "Small estate, direct-to-consumer model. Revenue flows directly to the producing estate without distributor intermediation. No fair trade certification, but model is structurally favorable to producer welfare.",
+    "PillarTrue": "Nocellara Etnea is an accurately named native Sicilian variety, not a generic blend claim. USDA Organic certification is federally verified. Volcanic terroir claim is geographically accurate to the Mt. Etna growing zone."
+  },
+  {
+    "Name": "FIORE Artisan Olive Oils",
+    "Producer": "FIORE",
+    "Origin": "Various — seasonal global small producers (Spain, Italy, Chile, New Zealand, California)",
+    "Category": "olive-oils",
+    "Status": "pending",
+    "Description": "Curated seasonal collection that \"chases the crush\" — sourcing fresh-harvest oils from small artisan producers as each hemisphere's harvest comes in. Oils sell out and change seasonally.",
+    "BuyLinks": "[{\"label\":\"FIORE direct\",\"url\":\"https://www.fioreoliveoils.com\"}]",
+    "PillarGood": "\"Chasing the crush\" means oils are sourced at peak freshness from each producing region in turn — one of the most harvest-sensitive sourcing models in the US market. Each oil is single-origin, variety-specific, and released as a limited seasonal run.",
+    "PillarClean": "Named producers with disclosed origins and harvest dates. Each seasonal release traceable to a specific farm and picking date. No blending across origins. Certification status specified per release.",
+    "PillarFair": "Personal, long-term relationships with small producers are central to the sourcing model. Seasonal purchasing provides income stability for farms that would otherwise lack US export access.",
+    "PillarTrue": "\"Chasing the crush\" positioning is genuine — the sourcing model is real and documented, not a marketing frame over commodity oil. Seasonal sell-out and changing inventory is disclosed upfront."
+  },
+  {
+    "Name": "California Olive Ranch Classic EVOO",
+    "Producer": "California Olive Ranch",
+    "Origin": "California, USA (primary) + international blend components in some lines",
+    "Category": "olive-oils",
+    "Status": "pending",
+    "Description": "Largest US olive oil producer. COOC certified, harvest-dated, non-GMO. Supports California agriculture at significant domestic scale. Most widely distributed domestic EVOO brand.",
+    "BuyLinks": "[{\"label\":\"California Olive Ranch\",\"url\":\"https://californiaoliveranch.com\"}]",
+    "PillarGood": "COOC certification confirms grade accuracy. Harvest date on every bottle. Passes independent quality testing consistently. Mild, clean flavor profile from California varieties. Quality floor reliably above category average.",
+    "PillarClean": "COOC certified. Harvest date disclosed. Non-GMO certified. \"100% California\" line is fully domestic; \"Global Blend\" blends California oil with international sources. The distinction between product lines matters and is worth checking at purchase.",
+    "PillarFair": "Largest domestic producer — supports California olive farming industry at meaningful scale. Not a cooperative or fair trade certified. Supply chain details for international blend components not publicly disclosed.",
+    "PillarTrue": "\"California\" branding for the domestic line is accurate and COOC-verified. \"Global Blend\" is honest about non-California sourcing. Harvest date removes shelf-life ambiguity. No misleading Italian or Mediterranean framing."
+  }
+]
+
+function startImport() {
+  const pat = document.getElementById('pat').value.trim()
+  if (!pat) { alert('Please paste your Airtable PAT first.'); return }
+  document.getElementById('btn').disabled = true
+  document.getElementById('setup').style.opacity = '0.4'
+  document.getElementById('log').style.display = 'block'
+  run(pat)
+}
+
+async function run(API_KEY) {
+  const URL     = `https://api.airtable.com/v0/${BASE_ID}/Products`
+  const HEADERS = { 'Authorization': `Bearer ${API_KEY}`, 'Content-Type': 'application/json' }
+
+  async function getExistingNames() {
+    const names = new Set()
+    let offset = null
+    do {
+      const res  = await fetch(URL + `?fields[]=Name${offset ? `&offset=${offset}` : ''}`, { headers: HEADERS })
+      const data = await res.json()
+      if (data.error) throw new Error(data.error.message)
+      for (const r of data.records || []) names.add(r.fields.Name)
+      offset = data.offset
+    } while (offset)
+    return names
+  }
+
+  async function createBatch(records) {
+    const res  = await fetch(URL, {
+      method: 'POST', headers: HEADERS,
+      body: JSON.stringify({ records: records.map(f => ({ fields: f })) })
+    })
+    const data = await res.json()
+    if (data.error) throw new Error(data.error.message)
+    return data.records
+  }
+
+  try {
+    log('Checking existing records…', 'dim')
+    const existing = await getExistingNames()
+    log(`Found ${existing.size} existing records.`, 'dim')
+
+    const toCreate = PRODUCTS.filter(p => !existing.has(p.Name))
+    const skipped  = PRODUCTS.length - toCreate.length
+    if (skipped) log(`Skipping ${skipped} already-existing products.`, 'dim')
+
+    if (toCreate.length === 0) {
+      log('✅ All products already in Airtable — nothing to do.', 'ok')
+      return
+    }
+
+    log(`Creating ${toCreate.length} pending records…`, 'dim')
+
+    for (let i = 0; i < toCreate.length; i += 10) {
+      const batch = toCreate.slice(i, i + 10)
+      const created = await createBatch(batch)
+      for (const r of created) log(`✅  ${r.fields.Name}`, 'ok')
+      if (i + 10 < toCreate.length) await new Promise(r => setTimeout(r, 300))
+    }
+
+    log('', '')
+    log('🎉 Done! Open Airtable to review, edit, and approve.', 'ok')
+  } catch (e) {
+    log('❌ Error: ' + e.message, 'err')
+    document.getElementById('btn').disabled = false
+  }
+}
+</script>
+</body>
+</html>

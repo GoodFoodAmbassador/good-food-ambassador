@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>GFA Airtable Update</title>
+<style>
+  body { font-family: monospace; background: #111; color: #eee; padding: 32px; max-width: 760px; }
+  h1 { color: #77d46c; font-size: 18px; margin-bottom: 4px; }
+  p { color: #888; margin: 0 0 16px; font-size: 13px; }
+  #setup { margin-bottom: 24px; }
+  input { background: #1a1a1a; border: 1px solid #333; color: #eee; font-family: monospace; font-size: 13px; padding: 10px 14px; border-radius: 4px; width: 100%; box-sizing: border-box; margin-bottom: 10px; }
+  button { background: #77d46c; color: #111; border: none; font-family: monospace; font-size: 13px; font-weight: bold; padding: 10px 24px; border-radius: 4px; cursor: pointer; }
+  button:disabled { background: #333; color: #666; cursor: default; }
+  #log { background: #1a1a1a; padding: 20px; border-radius: 4px; min-height: 200px; font-size: 13px; line-height: 1.8; display: none; }
+  .ok  { color: #77d46c; }
+  .err { color: #ed5a29; }
+  .dim { color: #666; }
+</style>
+</head>
+<body>
+<h1>🫒 GFA Airtable Update — Pillar Text</h1>
+<p>Patches the PillarGood/Clean/Fair/True fields on existing records with revised, researcher-tone copy. Does not change Status or other fields.</p>
+<div id="setup">
+  <input id="pat" type="password" placeholder="Airtable Personal Access Token (patXXX…)" />
+  <button id="btn" onclick="startUpdate()">Run update →</button>
+</div>
+<div id="log"></div>
+
+<script>
+const BASE_ID = 'appcBDopFuYbSTdRy'
+
+const log = (msg, cls = '') => {
+  const div = document.getElementById('log')
+  div.innerHTML += `<span class="${cls}">${msg}</span><br>`
+  div.scrollTop = div.scrollHeight
+}
+
+const UPDATES = [
+  {
+    "Name": "Graza Sizzle",
+    "PillarGood": "Picual cultivar, Jaén province. Cold centrifugal extraction, unfiltered. Acidity stated below 0.4%. Harvest month and year printed on label. Picual has documented oxidative stability relative to other common cultivars, consistent with high-heat use.",
+    "PillarClean": "Single origin: Jaén, Andalusia. Variety stated on label. Mill location disclosed. Not certified organic. No blending with other origins or varieties declared. QR code links to additional production information.",
+    "PillarFair": "Sourced from a co-operative mill in Jaén. Direct-to-consumer distribution model. No third-party fair trade or equivalent certification.",
+    "PillarTrue": "Heat stability claim is consistent with published oxidative stability data for Picual. Harvest date disclosure reduces reliance on best-before dating alone. No legacy phrases such as 'first cold press' used."
+  },
+  {
+    "Name": "Graza Drizzle",
+    "PillarGood": "Arbequina cultivar, Catalonia. Cold extraction. Acidity stated below 0.4%. Harvest date printed on label. Arbequina has a lower polyphenol and oxidative stability profile relative to varieties such as Picual or Koroneiki — consistent with raw use rather than high-heat applications.",
+    "PillarClean": "Single origin: Catalonia, Spain. Variety stated on label. Mill location disclosed. Not certified organic. No blending across origins or varieties declared.",
+    "PillarFair": "Sourced from a co-operative mill in Catalonia. Direct-to-consumer distribution model. No third-party fair trade certification.",
+    "PillarTrue": "Raw/finishing positioning is consistent with Arbequina's published chemical profile. Harvest date stated. No unsupported quality descriptors."
+  },
+  {
+    "Name": "Bono Sicilia PGI EVOO",
+    "PillarGood": "Acidity 0.2–0.4% (producer-reported). Native Sicilian cultivars. Harvest year stated on label under the 'Raccolto' designation.",
+    "PillarClean": "EU PGI certification requires olives to be grown, pressed, and bottled within Sicily. Compliance is verified by IRVO (Istituto Regionale Vitivinicolo), operating under the Italian Ministry of Agriculture. Each bottle carries a unique serial number traceable through IRVO records.",
+    "PillarFair": "Co-operative structure with member growers within the PGI zone. Revenue distribution to member growers is a structural feature of co-operative models. No additional fair trade certification.",
+    "PillarTrue": "PGI geographic origin is independently certified, not self-declared. Vintage year disclosure is required under PGI rules. PGI requires production and bottling within the designated zone, which distinguishes this product from non-PGI Italian-labelled oils that may source olives from multiple countries."
+  },
+  {
+    "Name": "Kirkland Signature EVOO",
+    "PillarGood": "Independent laboratory testing (including UC Davis and Consumer Reports analyses) has confirmed EVOO grade compliance. Mild sensory profile consistent with a neutral blend. Harvest date not consistently printed; freshness relative to pressing date cannot be determined from label alone.",
+    "PillarClean": "Labeled as Italian blend. No specific regional or varietal disclosure. No PDO or DOP certification. Meets IOC-defined EVOO grade criteria based on independent testing.",
+    "PillarFair": "Private label product manufactured at high volume. Supply chain details for grower compensation are not publicly disclosed. No fair trade or co-operative certification.",
+    "PillarTrue": "No single-origin or estate claims made. 'Italian' designation reflects bottling location under EU labelling regulations — olives may originate from multiple countries. This is not disclosed on label but is consistent with current EU rules."
+  },
+  {
+    "Name": "Terra Delyssa Organic EVOO",
+    "PillarGood": "Time from harvest to pressing stated as under 4 hours. Cold-pressed. Harvest date accessible via QR code linked to IBM Food Trust blockchain records. Chemlali and Chetoui cultivars.",
+    "PillarClean": "USDA Organic and Ecocert certified. QR code links to blockchain provenance data (IBM Food Trust) recording harvest date, location, and production timeline. Non-GMO Project Verified. Kosher certified.",
+    "PillarFair": "Vertically integrated — sourcing from company-owned orchards. No third-party fair trade certification.",
+    "PillarTrue": "Tunisia stated as country of origin. 'First cold press' appears on some products — this is legacy phrasing; centrifugal extraction at controlled temperature is the actual method used in modern facilities. Blockchain records allow the stated origin and timing to be independently verified by the consumer."
+  },
+  {
+    "Name": "Kosterina Original EVOO",
+    "PillarGood": "Koroneiki cultivar, Peloponnese. Early harvest. Per-batch polyphenol results published by producer; values reported above 500 mg/kg in available test data. USDA Organic certified.",
+    "PillarClean": "Peloponnese origin stated. USDA Organic certified. Third-party laboratory polyphenol test results published per harvest batch. Early harvest designation is supported by published chemical data.",
+    "PillarFair": "Direct-to-consumer distribution. Producer states intent to support family olive growers in Greece. No third-party fair trade or equivalent certification.",
+    "PillarTrue": "Polyphenol values are documented per batch with published laboratory reports. 'Early harvest' designation is supported by chemical data, not asserted without evidence. Health-related references cite IOC-recognised research on olive oil phenolic compounds."
+  },
+  {
+    "Name": "Cobram Estate Classic EVOO",
+    "PillarGood": "Australian harvest in May–June. AOCA certified. Stated product parameters: FFA below 0.3%, peroxide value below 8 meq/kg, polyphenols above 250 mg/kg. Harvest date printed on label.",
+    "PillarClean": "Olives grown, milled, and bottled in Victoria, Australia. AOCA certification requires independent grade verification. One product line uses the name 'California Select' — the oil is Australian; country of origin (Australia) is stated in fine print.",
+    "PillarFair": "Large-scale vertically integrated operation. Labor subject to Australian workplace legislation. No fair trade or co-operative certification.",
+    "PillarTrue": "'California Select' is a quality tier designation, not a geographic origin claim. Country of origin (Australia) is disclosed on label in fine print. Harvest date and AOCA certification status are stated accurately."
+  },
+  {
+    "Name": "McEvoy Ranch Organic EVOO",
+    "PillarGood": "Tuscan varietal blend (Frantoio, Leccino, Moraiolo) from estate-grown trees. Harvested annually in November–December. COOC certified. Harvest date printed on each bottle.",
+    "PillarClean": "Single estate: Petaluma, Marin County, California. USDA Organic and COOC certified. All olives grown, harvested, and milled on the estate. No external sourcing declared.",
+    "PillarFair": "Estate operation with direct employment. Small-batch production. No third-party fair trade certification.",
+    "PillarTrue": "'Tuscan' refers to varietal lineage (Frantoio, Leccino, Moraiolo), not Italian geographic origin — this distinction is reflected in labelling. COOC certification independently verifies grade claims. No legacy marketing phrases used."
+  },
+  {
+    "Name": "Equal Exchange Organic EVOO",
+    "PillarGood": "Rumi cultivar, a native Palestinian variety. USDA Organic certified. Harvest date disclosed on label.",
+    "PillarClean": "USDA Organic and Fair Trade certified. Single origin: West Bank, Palestine. Sourced through named farmer co-operatives. Supply chain documented as a requirement of fair trade certification.",
+    "PillarFair": "Equal Exchange is itself a worker-owned co-operative. Palestinian farmer partners receive fair trade premiums; premium allocation is documented in published annual reports, covering community infrastructure and co-operative development.",
+    "PillarTrue": "Country of origin (Palestine) stated explicitly on label. Fair trade and organic certifications are third-party verified. No regional umbrella language used in place of specific origin."
+  },
+  {
+    "Name": "Canaan Fair Trade Organic EVOO",
+    "PillarGood": "Rumi and Nabali cultivars, native Palestinian varieties. Organic farming without synthetic inputs. Harvest date disclosed.",
+    "PillarClean": "USDA Organic certified. Fair Trade certified (IMO). Regenerative Organic Certified (ROC) as of 2024, requiring third-party verification of soil health, animal welfare, and social fairness criteria. Sourcing documented across 52 communities and 55 co-operatives.",
+    "PillarFair": "Founded by agronomist Nasser Abufarha. Established in 2004. Published annual reports document fair trade premium allocation over a 20-year period, including women's co-operative programs and rural infrastructure projects.",
+    "PillarTrue": "Palestinian origin stated explicitly in labelling. Fair trade and Regenerative Organic certifications are independently verified. No geographic softening used in place of country of origin."
+  },
+  {
+    "Name": "Citizens of Soil EVOO",
+    "PillarGood": "Each release sourced from a named single estate. Harvest date disclosed per release. Variety specified per bottle. Availability tied to actual seasonal harvest cycles.",
+    "PillarClean": "Each oil sourced from named farms with disclosed locations. No blending across origins. Farming practices vary by producer; some certified regenerative or biodynamic, others in documented transition.",
+    "PillarFair": "Subscription model provides predictable demand for small producers without established export distribution. Sourcing relationships with individual producers are documented on product pages.",
+    "PillarTrue": "Citizens of Soil operates as a curator and buyer, not a producer — this is stated in product descriptions. Each oil is labeled by specific estate and harvest year. Country of origin (Croatia) is stated without regional umbrella language."
+  },
+  {
+    "Name": "Brightland Alive EVOO",
+    "PillarGood": "Heirloom Arbosana and Arbequina blend. Cold-pressed, stated within 90 minutes of harvest. COOC certified — grade verified by independent testing. Nitrogen-flushed UV-protective glass. Harvest date printed on label.",
+    "PillarClean": "California origin, San Joaquin Valley. COOC certified. Harvest date disclosed. Not certified organic. UV-protective glass bottle used.",
+    "PillarFair": "Direct-to-consumer model. Works with family farms in the San Joaquin Valley. No third-party fair trade certification. Labor subject to California agricultural legislation.",
+    "PillarTrue": "COOC certification independently verifies grade claims. No legacy phrases used. Brand materials cite documented research on olive oil adulteration as context for sourcing approach."
+  },
+  {
+    "Name": "Ayvaco EVOO",
+    "PillarGood": "Ayvalık cultivar, a native Turkish variety. Harvest date disclosed. Direct-from-farm distribution reduces time in supply chain.",
+    "PillarClean": "Single farm, Ayvalık region, Turkey. Direct-to-consumer. No organic certification confirmed in available product information.",
+    "PillarFair": "Single family farm, direct-to-consumer. No intermediary distribution declared.",
+    "PillarTrue": "'First cold press' is stated — this is legacy phrasing without current regulatory meaning under modern centrifugal extraction. Otherwise, labelling is consistent with stated single-farm sourcing and harvest date."
+  },
+  {
+    "Name": "Papa Vince EVOO",
+    "PillarGood": "Nocellara del Belice cultivar. Unfiltered. Harvest lot number and date printed on label. No synthetic pesticides or herbicides declared.",
+    "PillarClean": "Single estate, Santa Ninfa, Sicily. All stages (cultivation, harvest, pressing) conducted at the same estate. Lot traceability to grove and harvest period. Direct shipping from Sicily.",
+    "PillarFair": "Family estate with stated continuous operation since 1935. Direct-to-consumer, no distributor intermediary declared.",
+    "PillarTrue": "'Unblended' and 'unfiltered' claims are consistent with single-estate production. Lot number enables traceability. 'First cold press' appears in marketing — legacy phrasing; current method is cold centrifugal extraction."
+  },
+  {
+    "Name": "Masseria Estate Organic EVOO",
+    "PillarGood": "Nocellara Etnea cultivar, Mt. Etna zone. USDA Organic certified. Small-batch production. Early harvest.",
+    "PillarClean": "USDA Organic certified. Single origin: Nocellara Etnea cultivar, Mt. Etna zone, Sicily. Direct-to-consumer. Cultivar and growing zone disclosed.",
+    "PillarFair": "Small estate, direct-to-consumer. No third-party fair trade certification.",
+    "PillarTrue": "Nocellara Etnea is a named native Sicilian cultivar. USDA Organic certification is federally verified. Mt. Etna growing zone designation is geographically accurate to the stated production area."
+  },
+  {
+    "Name": "FIORE Artisan Olive Oils",
+    "PillarGood": "Each release single-origin and variety-specific. Harvest date disclosed per release. Oils are sourced at the point of harvest completion in each producing region.",
+    "PillarClean": "Each release identifies the specific producing farm, harvest date, and origin. No blending across origins. Certification status varies by producer and is specified per release.",
+    "PillarFair": "Long-term sourcing relationships with individual small producers. Seasonal purchasing provides consistent demand for producers without established US distribution.",
+    "PillarTrue": "FIORE operates as a buyer and curator, not a producer — this is stated in product descriptions. Country and region of origin stated per bottle. Seasonal inventory rotation is disclosed."
+  },
+  {
+    "Name": "California Olive Ranch Classic EVOO",
+    "PillarGood": "COOC certified — grade verified by independent testing. Harvest date printed on label. Consistent performance in independent quality assessments.",
+    "PillarClean": "COOC certified. Harvest date disclosed. Non-GMO Project Verified. Two distinct product lines: '100% California' (fully domestic) and 'Global Blend' (California oil combined with international sources). The distinction is stated on label.",
+    "PillarFair": "Large-scale domestic producer. Supply chain details for international blend components are not publicly disclosed. No fair trade or co-operative certification.",
+    "PillarTrue": "'California' branding on the domestic line is accurate and COOC-verified. 'Global Blend' labelling is transparent about non-California sourcing. Harvest date stated. No misleading country-of-origin claims made."
+  }
+]
+
+function startUpdate() {
+  const pat = document.getElementById('pat').value.trim()
+  if (!pat) { alert('Please paste your Airtable PAT first.'); return }
+  document.getElementById('btn').disabled = true
+  document.getElementById('setup').style.opacity = '0.4'
+  document.getElementById('log').style.display = 'block'
+  run(pat)
+}
+
+async function run(API_KEY) {
+  const BASE_URL = `https://api.airtable.com/v0/${BASE_ID}/Products`
+  const HEADERS  = { 'Authorization': `Bearer ${API_KEY}`, 'Content-Type': 'application/json' }
+
+  async function fetchAllRecords() {
+    const map = {}
+    let offset = null
+    do {
+      const res  = await fetch(BASE_URL + `?fields[]=Name${offset ? `&offset=${offset}` : ''}`, { headers: HEADERS })
+      const data = await res.json()
+      if (data.error) throw new Error(data.error.message)
+      for (const r of data.records) map[r.fields.Name] = r.id
+      offset = data.offset
+    } while (offset)
+    return map
+  }
+
+  try {
+    log('Fetching existing records…', 'dim')
+    const idByName = await fetchAllRecords()
+    log(`Found ${Object.keys(idByName).length} records.`, 'dim')
+
+    const toUpdate = UPDATES.filter(u => idByName[u.Name])
+    const missing  = UPDATES.filter(u => !idByName[u.Name]).map(u => u.Name)
+    if (missing.length) log(`⚠ Not found (skipping): ${missing.join(', ')}`, 'dim')
+
+    log(`Patching ${toUpdate.length} records…`, 'dim')
+
+    for (let i = 0; i < toUpdate.length; i += 10) {
+      const batch = toUpdate.slice(i, i + 10)
+      const res = await fetch(BASE_URL, {
+        method: 'PATCH',
+        headers: HEADERS,
+        body: JSON.stringify({
+          records: batch.map(u => ({
+            id: idByName[u.Name],
+            fields: {
+              PillarGood:  u.PillarGood,
+              PillarClean: u.PillarClean,
+              PillarFair:  u.PillarFair,
+              PillarTrue:  u.PillarTrue,
+            }
+          }))
+        })
+      })
+      const data = await res.json()
+      if (data.error) throw new Error(data.error.message)
+      for (const r of data.records) log(`✅  ${r.fields.Name}`, 'ok')
+      if (i + 10 < toUpdate.length) await new Promise(r => setTimeout(r, 300))
+    }
+
+    log('', '')
+    log('🎉 Done. All pillar text updated.', 'ok')
+  } catch (e) {
+    log('❌ Error: ' + e.message, 'err')
+    document.getElementById('btn').disabled = false
+  }
+}
+</script>
+</body>
+</html>
