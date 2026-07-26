@@ -223,7 +223,7 @@ export default function HubPage() {
       </div>
 
       {/* ── GOOD FOOD INDEX ── */}
-      <section style={{ padding: '80px 60px' }}>
+      <section id="categories" style={{ padding: '80px 60px' }}>
         <div
           style={{
             display: 'flex',
