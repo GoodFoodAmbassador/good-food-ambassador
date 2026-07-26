@@ -21,7 +21,7 @@ const PILLARS = [
   {
     color: CYAN,
     label: 'Clean',
-    title: 'Transparent field to table',
+    title: 'Transparent from source to table',
     text: 'Origin traceable. Packaging honest. Nothing obscured between source and eater.',
   },
   {
@@ -62,7 +62,7 @@ const CATEGORIES = [
     slug: 'legumes',
     label: 'Legumes & Pulses',
     pillColor: CYAN,
-    desc: 'Beans, lentils, chickpeas, and heritage varieties from smallholder farms worldwide. Among the most nutritious and land-efficient foods on the planet.',
+    desc: 'Beans, lentils, chickpeas, and heritage varieties from smallholder farms worldwide. Among the most nutritious and resource-efficient foods on the planet.',
     status: 'Evaluations underway',
     cta: 'Read the Guide →',
     img: '/illustrations/GFA_illus_legumes.png',
@@ -80,7 +80,7 @@ const CATEGORIES = [
     slug: 'lna',
     label: 'Low & No Alcohol',
     pillColor: GREEN,
-    desc: 'Kombucha, kefir, shrubs, de-alcoholised wine, botanical waters, and more. A fast-growing space where the Good Food Standard matters most.',
+    desc: 'Kombucha, kefir, drinking vinegars, low-alcohol wine, botanical waters, and more. A fast-growing category where the Good Food Standard matters most.',
     status: '10 products scouted',
     cta: 'Read the Guide →',
     img: '/illustrations/GFA_illus_lna.png',
@@ -127,12 +127,11 @@ export default function HubPage() {
             <strong style={{ fontWeight: 600 }}>touches everything.</strong>
           </h1>
           <p style={{ fontSize: 17, lineHeight: 1.8, color: '#666', marginBottom: 20 }}>
-            The land it came from. The hands that made it. Your own health. And something harder to measure — the meal
-            that brought people closer, the taste that called back a memory, the joy of eating something made with
-            genuine care.
+            The land it came from. The people who grew or made it. Your own health. And the things that are harder to
+            measure — the meal that brought people together, the pleasure of eating food made with genuine care.
           </p>
           <p style={{ fontSize: 17, lineHeight: 1.8, color: '#666', marginBottom: 40 }}>
-            Good Food Ambassador is a community of growers, makers, movers, and eaters who believe all of that matters
+            Good Food Ambassador is a community of growers, makers, movers, and eaters who believe all of this matters
             — and act on it.
           </p>
           <div style={{ display: 'flex', gap: 14 }}>

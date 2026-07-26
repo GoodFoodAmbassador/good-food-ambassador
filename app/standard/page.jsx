@@ -13,7 +13,7 @@ export const metadata = {
 
 const PILLARS = [
   { color: GREEN,  label: 'GOOD',  desc: 'Quality that nourishes' },
-  { color: CYAN,   label: 'CLEAN', desc: 'Transparent from field to table' },
+  { color: CYAN,   label: 'CLEAN', desc: 'Transparent from source to table' },
   { color: ORANGE, label: 'FAIR',  desc: 'Dignity for everyone in the chain' },
   { color: GRAY,   label: 'TRUE',  desc: 'Honest about where food comes from' },
 ]
