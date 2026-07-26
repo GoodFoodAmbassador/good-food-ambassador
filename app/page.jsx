@@ -104,69 +104,87 @@ export default function HubPage() {
       {/* ── HERO ── */}
       <section
         style={{
-          padding: '120px 60px 100px',
-          maxWidth: 760,
+          display: 'flex',
+          alignItems: 'center',
+          gap: 64,
+          padding: '100px 60px 80px',
+          maxWidth: 1200,
         }}
       >
-        <h1
-          style={{
-            fontFamily: 'var(--font-poppins), Poppins, sans-serif',
-            fontWeight: 300,
-            fontSize: 60,
-            lineHeight: 1.15,
-            marginBottom: 32,
-          }}
-        >
-          What you eat
-          <br />
-          <strong style={{ fontWeight: 600 }}>touches everything.</strong>
-        </h1>
-        <p style={{ fontSize: 18, lineHeight: 1.8, color: '#666', marginBottom: 20, maxWidth: 560 }}>
-          The land it came from. The hands that made it. Your own health. And something harder to measure — the meal
-          that brought people closer, the taste that called back a memory, the joy of eating something made with
-          genuine care.
-        </p>
-        <p style={{ fontSize: 18, lineHeight: 1.8, color: '#666', marginBottom: 48, maxWidth: 560 }}>
-          Good Food Ambassador is a community of growers, makers, movers, and eaters who believe all of that matters
-          — and act on it.
-        </p>
-        <div style={{ display: 'flex', gap: 14 }}>
-          <Link
-            href="/olive-oils"
+        {/* Text column */}
+        <div style={{ flex: '0 0 auto', maxWidth: 520 }}>
+          <h1
             style={{
               fontFamily: 'var(--font-poppins), Poppins, sans-serif',
-              fontSize: 12,
-              fontWeight: 600,
-              letterSpacing: '0.1em',
-              textTransform: 'uppercase',
-              background: T,
-              color: W,
-              padding: '14px 28px',
-              borderRadius: 2,
-              textDecoration: 'none',
-              border: `1.5px solid ${T}`,
+              fontWeight: 300,
+              fontSize: 56,
+              lineHeight: 1.15,
+              marginBottom: 32,
             }}
           >
-            Explore the Index
-          </Link>
-          <Link
-            href="/standard"
-            style={{
-              fontFamily: 'var(--font-poppins), Poppins, sans-serif',
-              fontSize: 12,
-              fontWeight: 600,
-              letterSpacing: '0.1em',
-              textTransform: 'uppercase',
-              background: 'none',
-              color: T,
-              padding: '14px 28px',
-              borderRadius: 2,
-              textDecoration: 'none',
-              border: `1.5px solid ${T}`,
-            }}
-          >
-            Read the Standard
-          </Link>
+            What you eat
+            <br />
+            <strong style={{ fontWeight: 600 }}>touches everything.</strong>
+          </h1>
+          <p style={{ fontSize: 17, lineHeight: 1.8, color: '#666', marginBottom: 20 }}>
+            The land it came from. The hands that made it. Your own health. And something harder to measure — the meal
+            that brought people closer, the taste that called back a memory, the joy of eating something made with
+            genuine care.
+          </p>
+          <p style={{ fontSize: 17, lineHeight: 1.8, color: '#666', marginBottom: 40 }}>
+            Good Food Ambassador is a community of growers, makers, movers, and eaters who believe all of that matters
+            — and act on it.
+          </p>
+          <div style={{ display: 'flex', gap: 14 }}>
+            <Link
+              href="/olive-oils"
+              style={{
+                fontFamily: 'var(--font-poppins), Poppins, sans-serif',
+                fontSize: 12,
+                fontWeight: 600,
+                letterSpacing: '0.1em',
+                textTransform: 'uppercase',
+                background: T,
+                color: W,
+                padding: '14px 28px',
+                borderRadius: 2,
+                textDecoration: 'none',
+                border: `1.5px solid ${T}`,
+              }}
+            >
+              Explore the Index
+            </Link>
+            <Link
+              href="/standard"
+              style={{
+                fontFamily: 'var(--font-poppins), Poppins, sans-serif',
+                fontSize: 12,
+                fontWeight: 600,
+                letterSpacing: '0.1em',
+                textTransform: 'uppercase',
+                background: 'none',
+                color: T,
+                padding: '14px 28px',
+                borderRadius: 2,
+                textDecoration: 'none',
+                border: `1.5px solid ${T}`,
+              }}
+            >
+              Read the Standard
+            </Link>
+          </div>
+        </div>
+
+        {/* Community illustration */}
+        <div style={{ flex: '1 1 auto', minWidth: 0 }}>
+          <Image
+            src="/illustrations/GFA_illus_community.png"
+            alt="A community of growers, makers, movers, and eaters"
+            width={560}
+            height={560}
+            style={{ width: '100%', height: 'auto', display: 'block' }}
+            priority
+          />
         </div>
       </section>
 
@@ -236,7 +254,7 @@ export default function HubPage() {
             >
               {cat.img && (
                 <div style={{ marginBottom: 24 }}>
-                  <Image src={cat.img} alt={cat.label} width={280} height={160} style={{ width: '100%', height: 'auto', display: 'block' }} />
+                  <Image src={cat.img} alt={cat.label} width={400} height={400} style={{ width: '100%', height: 'auto', display: 'block' }} />
                 </div>
               )}
               <Pill bg={cat.pillColor} color={cat.pillTextColor}>{cat.label}</Pill>
