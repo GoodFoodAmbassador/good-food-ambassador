@@ -1,10 +1,11 @@
 #!/usr/bin/env node
 // ── GFA Airtable Import Script ────────────────────────────────────────────────
-// Reads products-draft.json and creates pending records in Airtable.
+// Reads a product JSON file and creates records in Airtable.
 // Existing records with the same Name are SKIPPED (no duplicates).
 //
 // Usage:
-//   node scripts/import-to-airtable.js
+//   node scripts/import-to-airtable.js                          # uses products-draft.json
+//   node scripts/import-to-airtable.js seafood-canned-draft.json
 //
 // Requires .env.local with:
 //   AIRTABLE_API_KEY=...
@@ -35,8 +36,12 @@ try {
   }
 } catch { /* .env.local not present — that's fine */ }
 
-// CLI args override everything
-const [,, cliKey, cliBase] = process.argv
+// CLI args: optional filename, then optional key/base
+// node import-to-airtable.js [filename.json] [API_KEY] [BASE_ID]
+const extraArgs = process.argv.slice(2)
+const fileArg   = extraArgs.find(a => a.endsWith('.json'))
+const nonFile   = extraArgs.filter(a => !a.endsWith('.json'))
+const [cliKey, cliBase] = nonFile
 const API_KEY  = cliKey  || process.env.AIRTABLE_API_KEY
 const BASE_ID  = cliBase || process.env.AIRTABLE_BASE_ID
 const TABLE    = process.env.AIRTABLE_TABLE_NAME || 'Products'
@@ -50,7 +55,9 @@ if (!API_KEY || !BASE_ID) {
 
 // ── Load draft products ───────────────────────────────────────────────────────
 
-const drafts = JSON.parse(readFileSync(join(__dir, 'products-draft.json'), 'utf8'))
+const draftFile = fileArg || 'products-draft.json'
+const drafts = JSON.parse(readFileSync(join(__dir, draftFile), 'utf8'))
+console.log(`   File  : ${draftFile}`)
 
 // ── Fetch existing product names (to avoid duplicates) ───────────────────────
 
