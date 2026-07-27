@@ -87,6 +87,7 @@ export default function AmbassadorsPage() {
       {/* ── FOUR TYPES ── */}
       <section style={{ padding: '0 40px 80px', maxWidth: 1200, margin: '0 auto' }}>
         <div
+          className="gfa-ambassador-grid"
           style={{
             display: 'grid',
             gridTemplateColumns: 'repeat(2, 1fr)',

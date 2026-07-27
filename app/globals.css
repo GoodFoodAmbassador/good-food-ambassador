@@ -35,3 +35,60 @@ textarea:focus-visible {
 button:focus:not(:focus-visible) {
   outline: none;
 }
+
+/* ── Responsive ───────────────────────────────────────────────────────────── */
+
+/* Tablet: 768–1023px */
+@media (max-width: 1023px) {
+  .gfa-hero {
+    padding: 72px 40px 56px !important;
+    gap: 48px !important;
+  }
+
+  .gfa-pillars {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .gfa-index {
+    padding: 60px 40px !important;
+  }
+
+  .gfa-index-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+/* Mobile: <640px */
+@media (max-width: 639px) {
+  .gfa-hero {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 36px !important;
+    padding: 48px 24px 40px !important;
+  }
+
+  .gfa-hero > div:first-child {
+    max-width: 100% !important;
+  }
+
+  .gfa-pillars {
+    grid-template-columns: 1fr !important;
+  }
+
+  .gfa-pillars > div {
+    border-right: none !important;
+    border-bottom: 1px solid #ebebea;
+  }
+
+  .gfa-index {
+    padding: 48px 24px !important;
+  }
+
+  .gfa-index-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .gfa-ambassador-grid {
+    grid-template-columns: 1fr !important;
+  }
+}

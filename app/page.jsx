@@ -103,12 +103,14 @@ export default function HubPage() {
 
       {/* ── HERO ── */}
       <section
+        className="gfa-hero"
         style={{
           display: 'flex',
           alignItems: 'center',
           gap: 64,
           padding: '100px 60px 80px',
           maxWidth: 1200,
+          margin: '0 auto',
         }}
       >
         {/* Text column */}
@@ -189,6 +191,7 @@ export default function HubPage() {
 
       {/* ── PILLARS ── */}
       <div
+        className="gfa-pillars"
         style={{
           display: 'grid',
           gridTemplateColumns: 'repeat(4, 1fr)',
@@ -222,7 +225,7 @@ export default function HubPage() {
       </div>
 
       {/* ── GOOD FOOD INDEX ── */}
-      <section id="categories" style={{ padding: '80px 60px' }}>
+      <section id="categories" className="gfa-index" style={{ padding: '80px 60px' }}>
         <div
           style={{
             display: 'flex',
@@ -242,7 +245,7 @@ export default function HubPage() {
           </h2>
         </div>
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 2 }}>
+        <div className="gfa-index-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 2 }}>
           {CATEGORIES.map((cat) => (
             <div
               key={cat.slug}
