@@ -3,6 +3,7 @@ import GFANav from '@/components/GFANav'
 import Pill from '@/components/Pill'
 import { getProductsByCategory, generateSlug } from '@/lib/airtable'
 import { W, T, LIGHT, MID, GREEN, CYAN, ORANGE, GRAY, YELLOW } from '@/lib/tokens'
+export const revalidate = 3600
 
 export const metadata = {
   title: 'Grains & Noodles',
