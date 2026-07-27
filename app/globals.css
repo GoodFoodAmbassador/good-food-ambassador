@@ -41,8 +41,14 @@ button:focus:not(:focus-visible) {
 /* Tablet: 768–1023px */
 @media (max-width: 1023px) {
   .gfa-hero {
+    flex-direction: column !important;
+    align-items: flex-start !important;
     padding: 72px 40px 56px !important;
-    gap: 48px !important;
+    gap: 40px !important;
+  }
+
+  .gfa-hero > div:first-child {
+    max-width: 100% !important;
   }
 
   .gfa-pillars {
