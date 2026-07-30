@@ -6,9 +6,10 @@ import { useState, useEffect } from 'react'
 import { T, W, MID } from '@/lib/tokens'
 
 const NAV_LINKS = [
-  { label: 'The Standard', href: '/standard' },
+  { label: 'The Pillars', href: '/pillars' },
   { label: 'The Directory', href: '/#categories' },
   { label: 'Ambassadors', href: '/ambassadors' },
+  { label: 'Join', href: '/join' },
 ]
 
 const linkStyle = (active) => ({

@@ -1,6 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // No special config needed — Next.js handles routing, SSG, and API routes natively
+  async redirects() {
+    return [
+      { source: '/standard', destination: '/pillars', permanent: true },
+      { source: '/suggest',  destination: '/join',    permanent: true },
+    ]
+  },
 }
 
 module.exports = nextConfig

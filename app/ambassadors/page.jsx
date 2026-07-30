@@ -81,7 +81,7 @@ export default function AmbassadorsPage() {
             If you grow, make, move, research, cook, or simply care deeply about food — this community is for you. Get in touch and tell us what you do and where you are.
           </p>
           <a
-            href="mailto:hello@goodfoodambassador.com?subject=I want to be a Good Food Ambassador"
+            href="/join"
             style={{
               fontFamily: 'var(--font-poppins), Poppins, sans-serif',
               fontSize: 12,
