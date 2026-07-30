@@ -10,7 +10,15 @@ export const metadata = {
 }
 
 const AMBASSADORS = [
-  // Add people here as they join — { name, role, location, bio }
+  {
+    name: 'Riccardo Astolfi',
+    role: 'Food & Beverage Innovation Strategist',
+    location: 'Bologna, Italy',
+    bio: 'Over twenty years at the intersection of food culture, fermentation, and product innovation — working with cooperatives, organic producers, startups, and food communities across Italy and beyond. Riccardo writes Gastrocene and No/Lo Bolo, two newsletters that treat alcohol-free drinking as a gastronomic category in its own right. He researches, tastes, and thinks about what good drinking can mean on its own terms.',
+    web: 'https://riccardoastolfi.it',
+    linkedin: 'https://www.linkedin.com/in/riccardoastolfi/',
+    focus: 'Low & No Alcohol',
+  },
 ]
 
 export default function AmbassadorsPage() {
@@ -114,7 +122,24 @@ export default function AmbassadorsPage() {
                   <p style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 11, fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#aaa', marginBottom: 12 }}>
                     {a.role} · {a.location}
                   </p>
-                  <p style={{ fontSize: 14, lineHeight: 1.7, color: '#777' }}>{a.bio}</p>
+                  <p style={{ fontSize: 14, lineHeight: 1.7, color: '#777', marginBottom: 16 }}>{a.bio}</p>
+                  {a.focus && (
+                    <p style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 11, fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#aaa', marginBottom: 12 }}>
+                      GFA focus: {a.focus}
+                    </p>
+                  )}
+                  <div style={{ display: 'flex', gap: 16 }}>
+                    {a.web && (
+                      <a href={a.web} target="_blank" rel="noopener noreferrer" style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 12, fontWeight: 600, color: T, textDecoration: 'none', borderBottom: '1px solid ' + T, paddingBottom: 1 }}>
+                        Website →
+                      </a>
+                    )}
+                    {a.linkedin && (
+                      <a href={a.linkedin} target="_blank" rel="noopener noreferrer" style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 12, fontWeight: 600, color: T, textDecoration: 'none', borderBottom: '1px solid ' + T, paddingBottom: 1 }}>
+                        LinkedIn →
+                      </a>
+                    )}
+                  </div>
                 </div>
               ))}
             </div>

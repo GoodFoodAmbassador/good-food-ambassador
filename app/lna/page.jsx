@@ -65,11 +65,11 @@ export default async function LNAPage() {
       <section style={{ padding: '80px 60px 60px', maxWidth: 760 }}>
         <Pill bg={GREEN} style={{ marginBottom: 28 }}>Low &amp; No Alcohol</Pill>
         <h1 style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontWeight: 300, fontSize: 52, lineHeight: 1.15, marginBottom: 24, marginTop: 20 }}>
-          Low &amp; no alcohol — what the label<br />
-          <strong style={{ fontWeight: 600 }}>tells you about what's in the bottle.</strong>
+          Every ritual deserves<br />
+          <strong style={{ fontWeight: 600 }}>a great drink.</strong>
         </h1>
         <p style={{ fontSize: 17, lineHeight: 1.8, color: '#666', maxWidth: 560 }}>
-          We evaluated low and no-alcohol drinks against the Good Food Standard, looking at production method, ingredient transparency, and label accuracy across fermented drinks, de-alcoholised wines, and botanical beverages.
+          A good no/low drink earns its place on its own terms — through the coherence of its aroma, the balance of its flavours, the weight and texture on the palate, and the desire it creates to take another sip.
         </p>
       </section>
 
@@ -81,19 +81,19 @@ export default async function LNAPage() {
             </p>
             <h2 style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontWeight: 300, fontSize: 30, lineHeight: 1.3, marginBottom: 28 }}>
               Fermented, de-alcoholised, botanical —<br />
-              <strong style={{ fontWeight: 600 }}>they are three different things.</strong>
+              <strong style={{ fontWeight: 600 }}>three distinct categories.</strong>
             </h2>
             <p style={{ fontSize: 16, lineHeight: 1.85, color: '#555', marginBottom: 20 }}>
-              The LNA category covers very different products under the same banner. Fermented drinks (kombucha, kefir, jun, water kefir) are produced by live microbial cultures — fermentation is the point, not a step to be reversed. De-alcoholised wine and beer start as alcoholic products and have alcohol removed, usually by heat or vacuum processes that also affect flavour. Botanical waters and "spirit alternatives" are never-alcoholic drinks — often sparkling water with botanicals and sometimes adaptogens added.
+              Category, style, and occasion all matter. A well-made kombucha, a dealcoholised wine, and a botanical aperitivo each have their own identity and their own way of succeeding. Look for definition and authenticity in the aroma. Look for balance — sweetness, acidity, bitterness, and texture all present and integrated. Look for body and progression across the palate, something that develops rather than arrives all at once. Look for a finish that lingers cleanly and leaves you wanting more.
             </p>
             <p style={{ fontSize: 16, lineHeight: 1.85, color: '#555', marginBottom: 20 }}>
-              Live cultures are what make fermented drinks distinctive. Pasteurisation, used to extend shelf life, deactivates them. Producers that keep their product raw typically say so on the label: "raw," "unpasteurised," or "live cultures" indicates the cultures are present in the bottle. Pasteurised versions are produced differently and will not carry those claims.
+              Fermented drinks — kombucha, kefir, jun, water kefir — are made by live microbial cultures. That fermentation is the point. Producers who keep their product raw say so on the label: "raw," "unpasteurised," or "live cultures" tells you the cultures are still present in the bottle.
             </p>
             <p style={{ fontSize: 16, lineHeight: 1.85, color: '#555', marginBottom: 20 }}>
-              Sugar per serving varies significantly across LNA products. A bottle of kombucha can contain as much sugar as a soft drink — fermentation converts some sugar, and commercial versions are often adjusted for palatability. "No added sugar" claims refer specifically to refined sugars added during production and do not reflect total sugars from fermentation. The nutrition panel shows total sugars per serving, which is the most complete reference.
+              De-alcoholised wine deserves more attention than it gets. The best producers use cold spinning and vacuum techniques that preserve far more flavour than older heat-based methods. Full varietal and vintage disclosure is the baseline to look for — a de-alcoholised wine from a named estate is a fundamentally different product from a generic blended base.
             </p>
             <p style={{ fontSize: 16, lineHeight: 1.85, color: '#555' }}>
-              De-alcoholised wine deserves more credit than it gets. The best producers approach removal with care — cold spinning and vacuum techniques that preserve flavour better than earlier heat-based methods. Full varietal and vintage disclosure is the baseline to look for. A de-alcoholised wine from a named estate is a different product from a generic blended base with alcohol removed.
+              The best products in this category have a recognisable identity of their own — a clear sense of what they are, where they come from, and why they exist. Ingredients and production methods are transparent. The experience is complete. And the occasion feels genuine.
             </p>
           </div>
 
@@ -125,7 +125,7 @@ export default async function LNAPage() {
       <section style={{ borderTop: `1px solid ${MID}`, padding: '64px 60px', background: LIGHT }}>
         <p style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 11, fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#aaa', marginBottom: 20 }}>How we evaluate</p>
         <h2 style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontWeight: 300, fontSize: 30, marginBottom: 40 }}>
-          The <strong style={{ fontWeight: 600 }}>Good Food Standard</strong> applied to low &amp; no alcohol
+          The <strong style={{ fontWeight: 600 }}>Four Pillars</strong> applied to low &amp; no alcohol
         </h2>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 2 }}>
           {PILLARS.map(p => (
@@ -149,10 +149,10 @@ export default async function LNAPage() {
           <div>
             <p style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 11, fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#aaa', marginBottom: 12 }}>The Directory</p>
             <h2 style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontWeight: 300, fontSize: 30 }}>
-              Low &amp; No Alcohol<br /><strong style={{ fontWeight: 600 }}>in the index</strong>
+              Low &amp; No Alcohol<br /><strong style={{ fontWeight: 600 }}>in the directory</strong>
             </h2>
           </div>
-          <Link href="/suggest" style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 12, fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#aaa', textDecoration: 'none', borderBottom: `1px solid #ddd`, paddingBottom: 2, whiteSpace: 'nowrap' }}>
+          <Link href="/join" style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 12, fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#aaa', textDecoration: 'none', borderBottom: `1px solid #ddd`, paddingBottom: 2, whiteSpace: 'nowrap' }}>
             Suggest a product →
           </Link>
         </div>
@@ -206,7 +206,7 @@ function ProductList({ products }) {
         </div>
       ))}
       <div style={{ borderTop: `1px solid ${MID}`, paddingTop: 32 }}>
-        <Link href="/suggest" style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 13, color: '#aaa', textDecoration: 'none' }}>
+        <Link href="/join" style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 13, color: '#aaa', textDecoration: 'none' }}>
           Know a product that belongs here?{' '}<span style={{ borderBottom: '1px solid #ddd', paddingBottom: 1 }}>Suggest it →</span>
         </Link>
       </div>
@@ -218,7 +218,7 @@ function EmptyState() {
   return (
     <div style={{ borderTop: `1px solid ${MID}`, paddingTop: 48, paddingBottom: 32 }}>
       <p style={{ fontSize: 15, lineHeight: 1.8, color: '#aaa', marginBottom: 24 }}>Evaluations are underway. The first products will appear here shortly.</p>
-      <Link href="/suggest" style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 12, fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', color: T, textDecoration: 'none', borderBottom: `1.5px solid ${T}`, paddingBottom: 2 }}>
+      <Link href="/join" style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 12, fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', color: T, textDecoration: 'none', borderBottom: `1.5px solid ${T}`, paddingBottom: 2 }}>
         Suggest a product for evaluation →
       </Link>
     </div>
