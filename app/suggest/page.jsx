@@ -85,7 +85,7 @@ export default function SuggestPage() {
           <strong style={{ fontWeight: 600 }}>worth evaluating?</strong>
         </h1>
         <p style={{ fontSize: 16, lineHeight: 1.8, color: '#777', maxWidth: 520 }}>
-          We evaluate every suggestion against the Good Food Standard. Products that pass are listed in the Index with no scores, no ranking — just honest information and where to buy.
+          We evaluate every suggestion against the Good Food Standard. Products that pass are listed in the Directory with no scores, no ranking — just honest information and where to buy.
         </p>
       </section>
 
@@ -96,7 +96,7 @@ export default function SuggestPage() {
               Thank you — we received it.
             </p>
             <p style={{ fontSize: 15, lineHeight: 1.8, color: '#777', marginBottom: 24 }}>
-              We review every suggestion personally. If it passes evaluation against the GFA Standard, it will appear in the Index.
+              We review every suggestion personally. If it passes evaluation against the GFA Standard, it will appear in the Directory.
             </p>
             <Link href="/" style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 12, fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', color: T, textDecoration: 'none', borderBottom: `1.5px solid ${T}`, paddingBottom: 2 }}>
               Back to home →

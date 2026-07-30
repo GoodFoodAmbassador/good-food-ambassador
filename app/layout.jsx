@@ -22,7 +22,7 @@ export const metadata = {
     template: '%s | Good Food Ambassador',
   },
   description:
-    'A community of growers, makers, movers, and eaters who believe food should be grown, made, moved, and eaten with care. Discover the Good Food Standard and the Good Food Index.',
+    'A community of growers, makers, movers, and eaters who believe food should be grown, made, moved, and eaten with care. Discover the Good Food Standard and the Good Food Directory.',
   keywords: ['food', 'olive oil', 'good food', 'food standards', 'traceable food', 'sustainable food'],
   authors: [{ name: 'Good Food Ambassador' }],
   creator: 'Good Food Ambassador',

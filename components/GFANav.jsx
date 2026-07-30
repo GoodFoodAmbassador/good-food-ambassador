@@ -7,7 +7,7 @@ import { T, W, MID } from '@/lib/tokens'
 
 const NAV_LINKS = [
   { label: 'The Standard', href: '/standard' },
-  { label: 'Good Food Index', href: '/#categories' },
+  { label: 'The Directory', href: '/#categories' },
   { label: 'Ambassadors', href: '/ambassadors' },
 ]
 

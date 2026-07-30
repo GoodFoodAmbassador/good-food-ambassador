@@ -15,26 +15,26 @@ const PILLARS = [
   {
     color: GREEN,
     label: 'Good',
-    title: 'Quality that nourishes',
-    text: 'Honest ingredients, consistent quality, and sensory truth. Not enhancement. Not imitation.',
+    title: 'Food that does what food is supposed to do',
+    text: 'Food that nourishes your body, connects you to other people, and is easy to understand, prepare, and enjoy. Ingredients you recognise. Flavour that comes from the food itself. Food that does what food is supposed to do.',
   },
   {
     color: CYAN,
     label: 'Clean',
-    title: 'Transparent from source to table',
-    text: 'Origin traceable. Packaging honest. Nothing obscured between source and eater.',
+    title: 'Clean food makes you curious in the best way',
+    text: 'Clean food makes you curious in the best way. It gives you something to follow — a farm, a region, a method, a person. The packaging invites questions. The answers are findable. The journey from source to table is one you can actually trace.',
   },
   {
     color: ORANGE,
     label: 'Fair',
-    title: 'Dignity for everyone in the chain',
-    text: 'Workers compensated lawfully. Land and water treated as assets, not things to deplete.',
+    title: 'The communities that feed us deserve to thrive from it',
+    text: 'Behind every product is a place and the people who work it. Fair means the land stays clean, the water stays drinkable, the work is chosen freely, and the wages are enough to live well — including eating well. The communities that feed us deserve to thrive from it.',
   },
   {
     color: GRAY,
     label: 'True',
-    title: 'Honest about where food comes from',
-    text: 'Cultural roots honoured. Authentic when it matters. No label that misleads eaters.',
+    title: 'A conscience made visible',
+    text: 'Behind every good product is someone who cared — about the soil, about the worker, about the person who would eventually eat it, even knowing they would never meet. True food carries that intention all the way to the table. It is the most honest thing a person can make.',
   },
 ]
 
@@ -43,7 +43,7 @@ const CATEGORIES = [
     slug: 'olive-oils',
     label: 'Oils & Condiments',
     pillColor: GREEN,
-    desc: 'Extra virgin olive oils, cold-pressed single-origins, vinegars, and fermented condiments. Evaluated for traceability, harvest date, and production integrity.',
+    desc: 'Every civilisation found its fat — the oil, the vinegar, the condiment that carried flavour and defined a cuisine. Oils are also among the most health-consequential foods we eat, with real differences in how they are grown, pressed, and priced. The cost of a bottle always tells part of the story. This is where we look for the rest of it.',
     status: '20 products evaluated',
     cta: 'View evaluations →',
     img: '/illustrations/GFA_illus_oils.png',
@@ -53,8 +53,8 @@ const CATEGORIES = [
     label: 'Grains & Noodles',
     pillColor: YELLOW,
     pillTextColor: T,
-    desc: 'Pasta, rice, soba, udon, couscous, millet, quinoa. Staple foods from every tradition, evaluated for origin, variety, and production method.',
-    status: 'Products in the index',
+    desc: 'No ingredient has done more to define who we are. The grain a culture chose, the shape it gave its pasta, the way it prepared its rice — these are acts of identity as much as nutrition. Global trade changed the scale. The story behind each grain is still worth knowing.',
+    status: 'Products in the directory',
     cta: 'View evaluations →',
     img: '/illustrations/GFA_illus_grains.png',
   },
@@ -62,8 +62,8 @@ const CATEGORIES = [
     slug: 'legumes',
     label: 'Legumes & Pulses',
     pillColor: CYAN,
-    desc: 'Beans, lentils, chickpeas, and heritage varieties from smallholder farms worldwide. Among the most nutritious and resource-efficient foods on the planet.',
-    status: 'Products in the index',
+    desc: 'Legumes might be the most quietly remarkable food on earth. They need almost nothing to keep, almost nothing to transport, and give back almost everything in return — protein, fibre, nitrogen back into the soil. Every culture found them and made them entirely their own: stewed, ground, fermented, sprouted, shaped into a hundred different forms across a thousand different traditions. Small, colourful, and endlessly generous — one of nature\'s most complete gifts.',
+    status: 'Products in the directory',
     cta: 'View evaluations →',
     img: '/illustrations/GFA_illus_legumes.png',
   },
@@ -71,8 +71,8 @@ const CATEGORIES = [
     slug: 'snacks',
     label: 'Snacks & Pantry',
     pillColor: GRAY,
-    desc: 'Crackers, dried fruit, preserved foods, ferments, and small bites from every food culture. Evaluated for ingredient transparency, labelling accuracy, and production integrity.',
-    status: 'Products in the index',
+    desc: 'The pantry exists because seasons do. Preserved, pickled, fermented, dried — these are the ways every food culture found to hold onto flavour when the fresh harvest was over. A jar of tomatoes in January, kimchi through a cold winter, dried figs from a summer orchard. Some of the most interesting food in the world lives in jars, tins, and packets — ferments that took months to develop, fruits concentrated by sun and time, grains pressed into something crisp and shareable. The pantry is where seasons get extended, ingredients get transformed, and new flavours find their way into your kitchen.',
+    status: 'Products in the directory',
     cta: 'View evaluations →',
     img: '/illustrations/GFA_illus_snacks.png',
   },
@@ -80,8 +80,8 @@ const CATEGORIES = [
     slug: 'lna',
     label: 'Low & No Alcohol',
     pillColor: GREEN,
-    desc: 'Kombucha, kefir, drinking vinegars, low-alcohol wine, botanical waters, and more. A fast-growing category where the Good Food Standard matters most.',
-    status: 'Products in the index',
+    desc: 'Long before cocktails there were potions. Herbalists and foragers who turned bark, seed, grass, and water into something that tasted extraordinary and did something good for the body. That spirit — curious, experimental, generous — is alive in the best kombucha, the best botanical water, the best low-alcohol wine made today. Drinking together is one of the oldest human rituals. Low and no alcohol opens that ritual to everyone — with all the craft, the wonder, and the shared pleasure. Drinks designed to spark conversation, invite curiosity, and leave everyone feeling good.',
+    status: 'Products in the directory',
     cta: 'View evaluations →',
     img: '/illustrations/GFA_illus_lna.png',
   },
@@ -89,8 +89,8 @@ const CATEGORIES = [
     slug: 'seafood',
     label: 'Seafood',
     pillColor: CYAN,
-    desc: 'Tuna, sardines, mackerel, anchovies — canned and fresh. Evaluated for sustainable catch methods, origin transparency, and honest labelling.',
-    status: 'Products in the index',
+    desc: 'The planet is mostly ocean. Its rivers feed our valleys, its lakes sustain our cities, its seas have fed humanity since before history began. We live on land and sometimes forget what that water holds — not just the fish we eat, but the entire living world beneath the surface that keeps the ocean healthy, balanced, and generous. Every creature in that world deserves to be there. The ones that feed us and the ones that make it possible for the others to exist. This category celebrates that world, traces where the seafood we eat comes from, and looks for the people who fish, farm, and process with genuine respect for the water and everything it sustains.',
+    status: 'Products in the directory',
     cta: 'View evaluations →',
     img: '/illustrations/GFA_illus_seafood.png',
   },
@@ -133,8 +133,8 @@ export default function HubPage() {
             measure — the meal that brought people together, the pleasure of eating food made with genuine care.
           </p>
           <p style={{ fontSize: 17, lineHeight: 1.8, color: '#666', marginBottom: 40 }}>
-            Good Food Ambassador is a community of growers, makers, movers, and eaters who believe all of this matters
-            — and act on it.
+            There's a lot more to know about what's on your plate than most labels admit. Good Food Ambassador doesn't
+            judge what you buy — it just makes it easier to ask better questions about it.
           </p>
           <div style={{ display: 'flex', gap: 14 }}>
             <Link
@@ -153,7 +153,7 @@ export default function HubPage() {
                 border: `1.5px solid ${T}`,
               }}
             >
-              Explore the Index
+              Explore the Directory
             </Link>
             <Link
               href="/standard"
@@ -241,7 +241,7 @@ export default function HubPage() {
               fontWeight: 300,
             }}
           >
-            The <strong style={{ fontWeight: 600 }}>Good Food Index</strong>
+            The <strong style={{ fontWeight: 600 }}>Good Food Directory</strong>
           </h2>
         </div>
 
