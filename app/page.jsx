@@ -45,7 +45,7 @@ const CATEGORIES = [
     pillColor: GREEN,
     desc: 'Every civilisation found its fat — the oil, the vinegar, the condiment that carried flavour and defined a cuisine. Oils are also among the most health-consequential foods we eat, with real differences in how they are grown, pressed, and priced. The cost of a bottle always tells part of the story. This is where we look for the rest of it.',
     status: '20 products evaluated',
-    cta: 'View evaluations →',
+    cta: 'Dive in →',
     img: '/illustrations/GFA_illus_oils.png',
   },
   {
@@ -55,7 +55,7 @@ const CATEGORIES = [
     pillTextColor: T,
     desc: 'No ingredient has done more to define who we are. The grain a culture chose, the shape it gave its pasta, the way it prepared its rice — these are acts of identity as much as nutrition. Global trade changed the scale. The story behind each grain is still worth knowing.',
     status: 'Products in the directory',
-    cta: 'View evaluations →',
+    cta: 'Dive in →',
     img: '/illustrations/GFA_illus_grains.png',
   },
   {
@@ -64,7 +64,7 @@ const CATEGORIES = [
     pillColor: CYAN,
     desc: 'Legumes might be the most quietly remarkable food on earth. They need almost nothing to keep, almost nothing to transport, and give back almost everything in return — protein, fibre, nitrogen back into the soil. Every culture found them and made them entirely their own: stewed, ground, fermented, sprouted, shaped into a hundred different forms across a thousand different traditions. Small, colourful, and endlessly generous — one of nature\'s most complete gifts.',
     status: 'Products in the directory',
-    cta: 'View evaluations →',
+    cta: 'Dive in →',
     img: '/illustrations/GFA_illus_legumes.png',
   },
   {
@@ -73,7 +73,7 @@ const CATEGORIES = [
     pillColor: GRAY,
     desc: 'The pantry exists because seasons do. Preserved, pickled, fermented, dried — these are the ways every food culture found to hold onto flavour when the fresh harvest was over. A jar of tomatoes in January, kimchi through a cold winter, dried figs from a summer orchard. Some of the most interesting food in the world lives in jars, tins, and packets — ferments that took months to develop, fruits concentrated by sun and time, grains pressed into something crisp and shareable. The pantry is where seasons get extended, ingredients get transformed, and new flavours find their way into your kitchen.',
     status: 'Products in the directory',
-    cta: 'View evaluations →',
+    cta: 'Dive in →',
     img: '/illustrations/GFA_illus_snacks.png',
   },
   {
@@ -82,7 +82,7 @@ const CATEGORIES = [
     pillColor: GREEN,
     desc: 'Long before cocktails there were potions. Herbalists and foragers who turned bark, seed, grass, and water into something that tasted extraordinary and did something good for the body. That spirit — curious, experimental, generous — is alive in the best kombucha, the best botanical water, the best low-alcohol wine made today. Drinking together is one of the oldest human rituals. Low and no alcohol opens that ritual to everyone — with all the craft, the wonder, and the shared pleasure. Drinks designed to spark conversation, invite curiosity, and leave everyone feeling good.',
     status: 'Products in the directory',
-    cta: 'View evaluations →',
+    cta: 'Dive in →',
     img: '/illustrations/GFA_illus_lna.png',
   },
   {
@@ -91,7 +91,7 @@ const CATEGORIES = [
     pillColor: CYAN,
     desc: 'The planet is mostly ocean. Its rivers feed our valleys, its lakes sustain our cities, its seas have fed humanity since before history began. We live on land and sometimes forget what that water holds — not just the fish we eat, but the entire living world beneath the surface that keeps the ocean healthy, balanced, and generous. Every creature in that world deserves to be there. The ones that feed us and the ones that make it possible for the others to exist. This category celebrates that world, traces where the seafood we eat comes from, and looks for the people who fish, farm, and process with genuine respect for the water and everything it sustains.',
     status: 'Products in the directory',
-    cta: 'View evaluations →',
+    cta: 'Dive in →',
     img: '/illustrations/GFA_illus_seafood.png',
   },
 ]

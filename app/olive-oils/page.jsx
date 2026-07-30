@@ -70,11 +70,11 @@ export default async function OilsPage() {
       <section style={{ padding: '80px 60px 60px', maxWidth: 760 }}>
         <Pill bg={GREEN} style={{ marginBottom: 28 }}>Oils &amp; Condiments</Pill>
         <h1 style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontWeight: 300, fontSize: 52, lineHeight: 1.15, marginBottom: 24, marginTop: 20 }}>
-          Extra virgin olive oil —<br />
-          <strong style={{ fontWeight: 600 }}>what the label tells you.</strong>
+          Small bottle, long story —<br />
+          <strong style={{ fontWeight: 600 }}>trace it back.</strong>
         </h1>
         <p style={{ fontSize: 17, lineHeight: 1.8, color: '#666', maxWidth: 560 }}>
-          We evaluated widely available extra virgin olive oils against the Good Food Standard, looking at harvest date transparency, origin traceability, production method, and labelling accuracy.
+          Every civilisation found its fat. The oil, the vinegar, the condiment that carried flavour and defined a cuisine. Oils are among the most health-consequential foods we eat — with real differences in how they are grown, pressed, and priced. The cost of a bottle always tells part of the story. This is where we look for the rest of it.
         </p>
       </section>
 
@@ -138,7 +138,7 @@ export default async function OilsPage() {
           How we evaluate
         </p>
         <h2 style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontWeight: 300, fontSize: 30, marginBottom: 40 }}>
-          The <strong style={{ fontWeight: 600 }}>Good Food Standard</strong> applied to olive oils
+          The <strong style={{ fontWeight: 600 }}>Four Pillars</strong> applied to olive oils
         </h2>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 2 }}>
           {PILLARS.map(p => (
@@ -173,7 +173,7 @@ export default async function OilsPage() {
             </h2>
           </div>
           <Link
-            href="/suggest"
+            href="/join"
             style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 12, fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#aaa', textDecoration: 'none', borderBottom: `1px solid #ddd`, paddingBottom: 2, whiteSpace: 'nowrap' }}
           >
             Suggest a product →
@@ -288,7 +288,7 @@ function ProductList({ products }) {
       ))}
       <div style={{ borderTop: `1px solid ${MID}`, paddingTop: 32 }}>
         <Link
-          href="/suggest"
+          href="/join"
           style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 13, color: '#aaa', textDecoration: 'none' }}
         >
           Know a product that belongs here?{' '}
@@ -306,7 +306,7 @@ function EmptyState() {
         Evaluations are underway. The first products will appear here shortly.
       </p>
       <Link
-        href="/suggest"
+        href="/join"
         style={{
           fontFamily: 'var(--font-poppins), Poppins, sans-serif',
           fontSize: 12,
