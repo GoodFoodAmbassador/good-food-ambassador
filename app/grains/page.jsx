@@ -50,7 +50,7 @@ const PILLARS = [
     title: 'Honest from field to packet',
     criteria: [
       '"Artisan" and "traditional" carry more meaning when accompanied by a stated production method',
-      'Soba labelled with actual buckwheat percentage — below 40% is mostly wheat',
+      'Soba labelled with actual buckwheat percentage — Japan\'s legal minimum to use the name is 30%; "nihachi" (80%) and "juwari" (100%) signal higher quality',
       'Rice variety stated — generic grade descriptors like "premium" or "select" carry no standardised definition',
     ],
   },
@@ -88,7 +88,7 @@ export default async function GrainsPage() {
               Pasta made from high-quality durum wheat holds its texture during cooking. Pasta made from soft wheat turns starchy and collapses. The difference is protein content — not the brand name, not the packaging, not the flag on the front. Grain variety and origin are not always stated on labels, but they're the details that most affect cooking performance.
             </p>
             <p style={{ fontSize: 16, lineHeight: 1.85, color: '#555', marginBottom: 20 }}>
-              For noodles, the gap is wider. "Soba" noodles must contain buckwheat in Japan, but there's no equivalent rule in most export markets. A product labelled soba can be 90% wheat flour with a small buckwheat addition for colour and name. The buckwheat percentage — when it appears at all — is buried in the ingredient list.
+              For noodles, the gap is wider. In Japan, a product can only be labelled "soba" if it contains at least 30% buckwheat flour, under the Fair Competition Code for fresh noodles — most export markets have no equivalent rule at all. A product sold as soba outside Japan can be 90% wheat flour with a small buckwheat addition for colour and name. Within that 30% floor, quality signals get more specific: "nihachi" soba is 80% buckwheat to 20% wheat, and "juwari" is 100% buckwheat — both meaningful step-ups from the legal minimum.
             </p>
             <p style={{ fontSize: 16, lineHeight: 1.85, color: '#555', marginBottom: 20 }}>
               Production method matters too, particularly for pasta. Bronze-die extrusion creates a rough surface that sauces cling to. Slow drying at low temperature preserves more of the grain's proteins and flavour. Neither appears on most labels — but they account for most of the difference between a cheap packet and a great one.
@@ -106,7 +106,7 @@ export default async function GrainsPage() {
               {[
                 { n: '01', title: 'Grain variety', body: 'Durum wheat, buckwheat percentage, Koshihikari, Carnaroli — variety determines how the product will cook and taste. A named variety gives you more to work with than a generic term like "wheat" or "rice."' },
                 { n: '02', title: 'Origin of the grain', body: 'Where the grain was grown, not where it was packaged. EU regulations allow products to be labelled by their packaging country. Look for explicit grain origin or a GI certification mark.' },
-                { n: '03', title: 'Production method', body: 'For pasta: bronze-die and slow-dried are meaningful signals. For soba: buckwheat percentage above 40% is a reasonable threshold. For rice: milling date where available — rice stales faster than most people realise.' },
+                { n: '03', title: 'Production method', body: 'For pasta: bronze-die and slow-dried are meaningful signals. For soba: Japan requires at least 30% buckwheat to use the name at all — "nihachi" (80%) and "juwari" (100%) are real step-ups worth seeking out. For rice: milling date where available — rice stales faster than most people realise.' },
               ].map(item => (
                 <div key={item.n} style={{ marginBottom: 28 }}>
                   <div style={{ display: 'flex', gap: 16, alignItems: 'flex-start' }}>
