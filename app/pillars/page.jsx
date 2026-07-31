@@ -168,6 +168,10 @@ export default function PillarsPage() {
             <a href="mailto:hello@goodfoodambassador.com" style={{ color: '#bbb', textDecoration: 'none' }}>
               hello@goodfoodambassador.com
             </a>
+            {' · '}
+            <Link href="/privacy" style={{ color: '#bbb', textDecoration: 'none' }}>Privacy</Link>
+            {' · '}
+            <Link href="/terms" style={{ color: '#bbb', textDecoration: 'none' }}>Terms</Link>
           </p>
           <Link href="/" style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 12, fontWeight: 600, letterSpacing: '0.06em', color: T, textDecoration: 'none', borderBottom: '1.5px solid ' + T, paddingBottom: 2 }}>
             ← Back to GFA

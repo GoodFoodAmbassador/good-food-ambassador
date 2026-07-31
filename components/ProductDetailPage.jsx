@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import GFANav from '@/components/GFANav'
 import Pill from '@/components/Pill'
+import AffiliateDisclosure from '@/components/AffiliateDisclosure'
 import { W, T, LIGHT, MID, GREEN, CYAN, ORANGE, GRAY } from '@/lib/tokens'
 
 // ── Pillar config ─────────────────────────────────────────────────────────────
@@ -140,6 +141,7 @@ export default function ProductDetailPage({ product, categorySlug, categoryLabel
               </a>
             ))}
           </div>
+          <AffiliateDisclosure style={{ marginTop: 16 }} />
         </section>
       )}
 

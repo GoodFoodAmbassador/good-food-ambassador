@@ -248,6 +248,10 @@ export default function StandardPage() {
             <a href="mailto:hello@goodfoodambassador.com" style={{ color: '#bbb', textDecoration: 'none' }}>
               hello@goodfoodambassador.com
             </a>
+            {' · '}
+            <Link href="/privacy" style={{ color: '#bbb', textDecoration: 'none' }}>Privacy</Link>
+            {' · '}
+            <Link href="/terms" style={{ color: '#bbb', textDecoration: 'none' }}>Terms</Link>
           </p>
           <Link
             href="/"

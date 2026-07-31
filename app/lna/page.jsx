@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import GFANav from '@/components/GFANav'
 import Pill from '@/components/Pill'
+import AffiliateDisclosure from '@/components/AffiliateDisclosure'
 import { getProductsByCategory, generateSlug } from '@/lib/airtable'
 import { W, T, LIGHT, MID, GREEN, CYAN, ORANGE, GRAY } from '@/lib/tokens'
 export const revalidate = 3600
@@ -301,6 +302,7 @@ export default async function LNAPage() {
         <p style={{ fontSize: 14, lineHeight: 1.8, color: '#999', marginBottom: 48, maxWidth: 600 }}>
           Listed alphabetically. Products here have been evaluated against the Four Pillars using publicly available information. We look at what producers share — we look for the full picture, and we rank no product above another.
         </p>
+        <AffiliateDisclosure style={{ marginBottom: 32 }} />
         {products.length === 0 ? <EmptyState /> : <ProductList products={products} />}
       </section>
 
@@ -312,6 +314,8 @@ export default async function LNAPage() {
           <p style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 12, color: '#bbb' }}>
             © Good Food Ambassador ·{' '}
             <a href="mailto:hello@goodfoodambassador.com" style={{ color: '#bbb', textDecoration: 'none' }}>hello@goodfoodambassador.com</a>
+            {' · '}<Link href="/privacy" style={{ color: '#bbb', textDecoration: 'none' }}>Privacy</Link>
+            {' · '}<Link href="/terms" style={{ color: '#bbb', textDecoration: 'none' }}>Terms</Link>
           </p>
           <p style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 12, color: '#bbb' }}>Know something worth adding?{' '}
             <a href="/join" style={{ color: T, textDecoration: 'none', borderBottom: '1px solid ' + T, paddingBottom: 1 }}>Join →</a></p>

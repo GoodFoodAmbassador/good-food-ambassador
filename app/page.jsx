@@ -330,6 +330,10 @@ export default function HubPage() {
             <a href="mailto:hello@goodfoodambassador.com" style={{ color: '#bbb', textDecoration: 'none' }}>
               hello@goodfoodambassador.com
             </a>
+            {' · '}
+            <Link href="/privacy" style={{ color: '#bbb', textDecoration: 'none' }}>Privacy</Link>
+            {' · '}
+            <Link href="/terms" style={{ color: '#bbb', textDecoration: 'none' }}>Terms</Link>
           </p>
           <p style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 12, color: '#bbb' }}>
             No ads. No sponsored rankings. Independent by design. We may earn from qualifying purchases — never from
