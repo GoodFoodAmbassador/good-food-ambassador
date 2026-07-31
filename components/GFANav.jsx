@@ -138,6 +138,7 @@ export default function GFANav() {
             <Link
               key={label}
               href={href}
+              onClick={() => setOpen(false)}
               style={{
                 fontFamily: 'var(--font-poppins), Poppins, sans-serif',
                 fontSize: 20,
@@ -153,6 +154,7 @@ export default function GFANav() {
           ))}
           <a
             href="mailto:hello@goodfoodambassador.com"
+            onClick={() => setOpen(false)}
             style={{
               fontFamily: 'var(--font-poppins), Poppins, sans-serif',
               fontSize: 20,
