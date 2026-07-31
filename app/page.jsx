@@ -98,7 +98,7 @@ const CATEGORIES = [
 
 export default function HubPage() {
   return (
-    <div style={{ background: W, color: T, fontFamily: 'var(--font-mulish), Mulish, sans-serif', fontWeight: 300 }}>
+    <div style={{ background: W, color: T, fontFamily: 'var(--font-mulish), Mulish, sans-serif', fontWeight: 300, overflowX: 'hidden' }}>
       <GFANav />
 
       {/* ── HERO ── */}
@@ -177,7 +177,7 @@ export default function HubPage() {
         </div>
 
         {/* Community illustration */}
-        <div style={{ flex: '1 1 auto', minWidth: 0 }}>
+        <div style={{ flex: '1 1 auto', minWidth: 0, maxWidth: 520 }}>
           <Image
             src="/illustrations/GFA_illus_community.png"
             alt="A community of growers, makers, movers, and eaters"

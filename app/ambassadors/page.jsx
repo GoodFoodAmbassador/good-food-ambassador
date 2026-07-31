@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import GFANav from '@/components/GFANav'
 import { W, T, LIGHT, MID } from '@/lib/tokens'
 
@@ -11,6 +12,13 @@ export const metadata = {
 
 const AMBASSADORS = [
   {
+    name: 'Giovanni Quaratesi',
+    role: 'Olive Oil Expert · Geographical Indications Specialist · Private Label Programs',
+    location: 'Italy',
+    bio: 'Food professional with deep expertise in extra virgin olive oil — from grove to label. Giovanni works across quality evaluation, origin traceability, and the regulatory frameworks that govern Geographical Indications (PDO and PGI) in Europe and beyond. He has extensive experience in private label program development, helping retailers and brands build honest, traceable product ranges. He is one of the founders of Good Food Ambassador.',
+    focus: 'Oils & Condiments · Geographical Indications',
+  },
+  {
     name: 'Riccardo Astolfi',
     role: 'Food & Beverage Innovation Strategist',
     location: 'Bologna, Italy',
@@ -19,6 +27,13 @@ const AMBASSADORS = [
     linkedin: 'https://www.linkedin.com/in/riccardoastolfi/',
     focus: 'Low & No Alcohol',
   },
+]
+
+const ROLES = [
+  { img: '/illustrations/GFA_illus_growers.png',     label: 'Growers & Makers' },
+  { img: '/illustrations/GFA_illus_eaters.png',      label: 'Eaters & Cooks' },
+  { img: '/illustrations/GFA_illus_supplychain.png', label: 'Traders & Movers' },
+  { img: '/illustrations/GFA_illus_foodservice.png', label: 'Food Service' },
 ]
 
 export default function AmbassadorsPage() {
@@ -79,6 +94,18 @@ export default function AmbassadorsPage() {
           <p style={{ fontSize: 17, lineHeight: 1.9, color: '#555' }}>
             Good Food Ambassadors are the people keeping that original trust alive — across every distance, every border, every supply chain food travels to reach a table.
           </p>
+        </div>
+
+        {/* Illustration strip */}
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 2, marginBottom: 48 }}>
+          {ROLES.map(r => (
+            <div key={r.label} style={{ background: LIGHT }}>
+              <Image src={r.img} alt={r.label} width={300} height={300} style={{ width: '100%', height: 'auto', display: 'block' }} />
+              <p style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 11, fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#aaa', padding: '14px 20px' }}>
+                {r.label}
+              </p>
+            </div>
+          ))}
         </div>
 
         <div style={{ background: LIGHT, padding: '40px 48px', marginBottom: 80, display: 'flex', flexDirection: 'column', gap: 16 }}>
