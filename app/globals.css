@@ -36,6 +36,27 @@ button:focus:not(:focus-visible) {
   outline: none;
 }
 
+/* ── Nav: CSS-only mobile/desktop switch (no JS layout flash) ──────────────── */
+
+.gfa-nav-toggle {
+  display: none;
+}
+
+@media (max-width: 639px) {
+  .gfa-nav {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  .gfa-nav-desktop {
+    display: none !important;
+  }
+
+  .gfa-nav-toggle {
+    display: flex !important;
+  }
+}
+
 /* ── Responsive ───────────────────────────────────────────────────────────── */
 
 /* Tablet: 768–1023px */

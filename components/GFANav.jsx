@@ -26,22 +26,21 @@ const linkStyle = (active) => ({
 
 export default function GFANav() {
   const pathname = usePathname()
-  const [mobile, setMobile] = useState(false)
   const [open, setOpen] = useState(false)
-
-  useEffect(() => {
-    const check = () => setMobile(window.innerWidth < 640)
-    check()
-    window.addEventListener('resize', check)
-    return () => window.removeEventListener('resize', check)
-  }, [])
 
   // Close drawer on route change
   useEffect(() => { setOpen(false) }, [pathname])
 
   return (
     <>
+      {/*
+        Desktop links and the mobile hamburger button are BOTH always rendered.
+        Which one is visible is decided purely by CSS media query (.gfa-nav-desktop /
+        .gfa-nav-toggle in globals.css) so the correct nav appears on first paint —
+        no JS-computed layout, no flash of the wrong nav while React hydrates.
+      */}
       <nav
+        className="gfa-nav"
         style={{
           position: 'sticky',
           top: 0,
@@ -51,7 +50,7 @@ export default function GFANav() {
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'space-between',
-          padding: mobile ? '0 20px' : '0 60px',
+          padding: '0 60px',
           height: 64,
         }}
       >
@@ -70,56 +69,56 @@ export default function GFANav() {
           Good Food Ambassador
         </Link>
 
-        {mobile ? (
-          /* Hamburger button */
-          <button
-            onClick={() => setOpen((o) => !o)}
-            aria-label={open ? 'Close menu' : 'Open menu'}
+        {/* Desktop links — hidden on mobile via CSS */}
+        <div className="gfa-nav-desktop" style={{ display: 'flex', gap: 40, alignItems: 'center' }}>
+          {NAV_LINKS.map(({ label, href }) => (
+            <Link key={label} href={href} style={linkStyle(pathname === href)}>
+              {label}
+            </Link>
+          ))}
+          <a
+            href="mailto:hello@goodfoodambassador.com"
             style={{
-              background: 'none',
-              border: 'none',
-              cursor: 'pointer',
-              padding: 8,
-              display: 'flex',
-              flexDirection: 'column',
-              gap: 5,
+              fontFamily: 'var(--font-poppins), Poppins, sans-serif',
+              fontSize: 12,
+              fontWeight: 500,
+              letterSpacing: '0.06em',
+              color: T,
+              textDecoration: 'none',
+              border: `1.5px solid ${T}`,
+              padding: '8px 18px',
+              borderRadius: 2,
             }}
           >
-            <span style={{ display: 'block', width: 22, height: 1.5, background: T, transition: 'transform 0.2s', transform: open ? 'translateY(6.5px) rotate(45deg)' : 'none' }} />
-            <span style={{ display: 'block', width: 22, height: 1.5, background: T, opacity: open ? 0 : 1, transition: 'opacity 0.2s' }} />
-            <span style={{ display: 'block', width: 22, height: 1.5, background: T, transition: 'transform 0.2s', transform: open ? 'translateY(-6.5px) rotate(-45deg)' : 'none' }} />
-          </button>
-        ) : (
-          /* Desktop links */
-          <div style={{ display: 'flex', gap: 40, alignItems: 'center' }}>
-            {NAV_LINKS.map(({ label, href }) => (
-              <Link key={label} href={href} style={linkStyle(pathname === href)}>
-                {label}
-              </Link>
-            ))}
-            <a
-              href="mailto:hello@goodfoodambassador.com"
-              style={{
-                fontFamily: 'var(--font-poppins), Poppins, sans-serif',
-                fontSize: 12,
-                fontWeight: 500,
-                letterSpacing: '0.06em',
-                color: T,
-                textDecoration: 'none',
-                border: `1.5px solid ${T}`,
-                padding: '8px 18px',
-                borderRadius: 2,
-              }}
-            >
-              hello@
-            </a>
-          </div>
-        )}
+            hello@
+          </a>
+        </div>
+
+        {/* Hamburger button — hidden on desktop via CSS */}
+        <button
+          className="gfa-nav-toggle"
+          onClick={() => setOpen((o) => !o)}
+          aria-label={open ? 'Close menu' : 'Open menu'}
+          style={{
+            background: 'none',
+            border: 'none',
+            cursor: 'pointer',
+            padding: 8,
+            flexDirection: 'column',
+            gap: 5,
+          }}
+        >
+          <span style={{ display: 'block', width: 22, height: 1.5, background: T, transition: 'transform 0.2s', transform: open ? 'translateY(6.5px) rotate(45deg)' : 'none' }} />
+          <span style={{ display: 'block', width: 22, height: 1.5, background: T, opacity: open ? 0 : 1, transition: 'opacity 0.2s' }} />
+          <span style={{ display: 'block', width: 22, height: 1.5, background: T, transition: 'transform 0.2s', transform: open ? 'translateY(-6.5px) rotate(-45deg)' : 'none' }} />
+        </button>
       </nav>
 
-      {/* Mobile drawer */}
-      {mobile && open && (
+      {/* Mobile drawer — only ever meaningful on mobile widths, since the
+          toggle button that opens it is CSS-hidden above 639px */}
+      {open && (
         <div
+          className="gfa-nav-drawer"
           style={{
             position: 'fixed',
             top: 64,
