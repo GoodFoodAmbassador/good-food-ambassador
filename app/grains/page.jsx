@@ -20,7 +20,7 @@ const PILLARS = [
     criteria: [
       'Grain variety stated — durum, emmer, Koshihikari, buckwheat percentage',
       'For pasta: bronze-die extrusion and slow drying preserve texture and flavour',
-      'No unnecessary additives; ingredient list reflects what you expect',
+'Ingredient list reflects what the product is — grain, water, salt for noodles; grain alone for dried pasta and rice',
     ],
   },
   {
@@ -28,9 +28,9 @@ const PILLARS = [
     label: 'Clean',
     title: 'Origin you can verify',
     criteria: [
-      'Country or region of origin for the grain — not just where it was packaged',
-      'Organic certification where pesticide use is a real concern (wheat, rice)',
-      'Country of origin refers to where the grain was grown, not where it was packaged',
+      'Country or region of origin for the grain itself — distinct from where it was packaged',
+      'Organic certification where pesticide load is a real concern — wheat and rice among the most treated crops',
+      'GI certification for protected varieties: basmati, Jasmine rice, Parmigiano-registered flours, Japanese short-grain',
     ],
   },
   {
@@ -69,7 +69,7 @@ export default async function GrainsPage() {
           <strong style={{ fontWeight: 600 }}>and what the label tells you.</strong>
         </h1>
         <p style={{ fontSize: 17, lineHeight: 1.8, color: '#666', maxWidth: 560 }}>
-          We evaluated grains, pasta, and noodles against the Good Food Standard, looking at what producers share about variety, origin, and production method — the details that most affect how a product cooks and tastes.
+          Pasta, rice, soba, couscous, millet, quinoa — staple foods from every tradition. The details that most affect how a product cooks and tastes: variety, origin, and production method. Most labels say little. A few say a lot.
         </p>
       </section>
 
@@ -77,7 +77,7 @@ export default async function GrainsPage() {
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 360px', gap: 80, maxWidth: 1080 }}>
           <div>
             <p style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 11, fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#aaa', marginBottom: 20 }}>
-              What you should know
+              About grains &amp; noodles
             </p>
             <h2 style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontWeight: 300, fontSize: 30, lineHeight: 1.3, marginBottom: 28 }}>
               The grain variety is the only thing<br />
@@ -127,7 +127,7 @@ export default async function GrainsPage() {
           How we evaluate
         </p>
         <h2 style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontWeight: 300, fontSize: 30, marginBottom: 40 }}>
-          The <strong style={{ fontWeight: 600 }}>Good Food Standard</strong> applied to grains
+          The <strong style={{ fontWeight: 600 }}>Four Pillars</strong> applied to grains &amp; noodles
         </h2>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 2 }}>
           {PILLARS.map(p => (
