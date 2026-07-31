@@ -13,9 +13,11 @@ export const metadata = {
 const AMBASSADORS = [
   {
     name: 'Giovanni Quaratesi',
-    role: 'Olive Oil Expert · Geographical Indications Specialist · Private Label Programs',
-    location: 'Italy',
-    bio: 'Food professional with deep expertise in extra virgin olive oil — from grove to label. Giovanni works across quality evaluation, origin traceability, and the regulatory frameworks that govern Geographical Indications (PDO and PGI) in Europe and beyond. He has extensive experience in private label program development, helping retailers and brands build honest, traceable product ranges. He is one of the founders of Good Food Ambassador.',
+    role: 'Olive Oil Expert · Geographical Indications Specialist · Private Label Programs · Educator',
+    location: 'New York City',
+    bio: 'Food professional and educator based in New York City, with deep expertise in extra virgin olive oil, Geographical Indications (PDO/PGI), and private label program development. Giovanni works at the intersection of international trade policy, retail procurement strategy, and Italian food heritage — bridging production traditions with global market realities across Europe, the Mediterranean, and North America. He advises retailers and brands on authenticity, PDO/PGI compliance, and own-brand portfolio development, helping organisations audit their supply chains and build transparent, traceable product ranges. He also lectures on global food systems, GI certifications, and the olive oil category — bringing the same precision to education that he brings to procurement and policy. He is one of the founders of Good Food Ambassador.',
+    web: 'https://giovanniquaratesi.wordpress.com/author/giovanniquaratesi/',
+    linkedin: 'https://www.linkedin.com/in/giovanniquaratesi',
     focus: 'Oils & Condiments · Geographical Indications',
   },
   {
@@ -33,7 +35,7 @@ const ROLES = [
   { img: '/illustrations/GFA_illus_growers.png',     label: 'Growers & Makers' },
   { img: '/illustrations/GFA_illus_eaters.png',      label: 'Eaters & Cooks' },
   { img: '/illustrations/GFA_illus_supplychain.png', label: 'Traders & Movers' },
-  { img: '/illustrations/GFA_illus_foodservice.png', label: 'Food Service' },
+  { img: '/illustrations/GFA_illus_foodservice.png', label: 'Chefs & Hosts' },
 ]
 
 export default function AmbassadorsPage() {
@@ -97,7 +99,7 @@ export default function AmbassadorsPage() {
         </div>
 
         {/* Illustration strip */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 2, marginBottom: 48 }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 2, marginBottom: 48 }}>
           {ROLES.map(r => (
             <div key={r.label} style={{ background: LIGHT }}>
               <Image src={r.img} alt={r.label} width={300} height={300} style={{ width: '100%', height: 'auto', display: 'block' }} />
