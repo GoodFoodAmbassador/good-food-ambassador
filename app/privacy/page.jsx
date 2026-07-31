@@ -20,7 +20,8 @@ const SECTIONS = [
     body: [
       'We collect only what you choose to give us. If you use the Suggest or Join forms, that may include your name, email address, and whatever product or contact details you enter. If you email us directly, we receive whatever is in that email.',
       'We do not require an account to use this site, and we do not collect passwords, payment details, or government ID of any kind — the site has no checkout or login.',
-      'Our hosting provider (Vercel) automatically logs basic technical data for every website it serves — things like IP address, browser type, and page requested — for security and performance purposes. This is standard practice for any hosted website and is not something Good Food Ambassador configures or accesses individually. We do not currently run any third-party analytics or advertising trackers on this site.',
+      'Our hosting provider (Vercel) automatically logs basic technical data for every website it serves — things like IP address, browser type, and page requested — for security and performance purposes. This is standard practice for any hosted website and is not something Good Food Ambassador configures or accesses individually.',
+      'We use Vercel Web Analytics to understand which pages get visited and roughly how much traffic the site gets. It is cookieless and does not track you across other websites or build a personal profile — it reports aggregate counts (page views, general location at the country/region level, device type, referring site) that cannot be tied back to an individual visitor. We do not run Google Analytics, advertising trackers, or any tool that follows you elsewhere on the web.',
     ],
   },
   {
