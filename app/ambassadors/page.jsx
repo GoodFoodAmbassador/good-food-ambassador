@@ -15,7 +15,7 @@ const AMBASSADORS = [
     name: 'Giovanni Quaratesi',
     role: 'Olive Oil Expert · Geographical Indications Specialist · Private Label Programs · Educator',
     location: 'New York City',
-    bio: 'Food professional and educator based in New York City, with deep expertise in extra virgin olive oil, Geographical Indications (PDO/PGI), and private label program development. Giovanni works at the intersection of international trade policy, retail procurement strategy, and Italian food heritage — bridging production traditions with global market realities across Europe, the Mediterranean, and North America. He advises retailers and brands on authenticity, PDO/PGI compliance, and own-brand portfolio development, helping organisations audit their supply chains and build transparent, traceable product ranges. He also lectures on global food systems, GI certifications, and the olive oil category — bringing the same precision to education that he brings to procurement and policy. He is one of the founders of Good Food Ambassador.',
+    bio: 'Food professional, educator, and one of the founders of Good Food Ambassador. Based in New York City, Giovanni specialises in extra virgin olive oil, Geographical Indications (PDO/PGI), and private label program development — working at the intersection of international trade policy and retail procurement across Europe, the Mediterranean, and North America. He lectures, advises, and helps organisations build honest, traceable food programs.',
     web: 'https://giovanniquaratesi.wordpress.com/author/giovanniquaratesi/',
     linkedin: 'https://www.linkedin.com/in/giovanniquaratesi',
     focus: 'Oils & Condiments · Geographical Indications',
