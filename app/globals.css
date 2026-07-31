@@ -141,8 +141,10 @@ button:focus:not(:focus-visible) {
   }
 }
 
-/* Tablet: 2-col content grids for category pages */
-@media (max-width: 1023px) {
+/* Tablet only: 2-col content grids for category pages.
+   Scoped to 640-1023px (not max-width alone) so it can never
+   override the narrower mobile block above at phone widths. */
+@media (min-width: 640px) and (max-width: 1023px) {
   .gfa-2col {
     grid-template-columns: 1fr !important;
     gap: 40px !important;
