@@ -49,7 +49,7 @@ const PILLARS = [
     label: 'True',
     title: 'Says what it caught',
     criteria: [
-      'Species identification in retail seafood — independent studies have found significant rates of species substitution, particularly for "red snapper" and "sea bass"',
+      'Species identification in retail seafood — DNA testing has found mislabelling rates as high as 87% for products sold as "red snapper"',
       'Wild-caught claims verified by independent certification or chain-of-custody documentation',
       'Aquaculture: farming inputs (feed, antibiotics, chemicals) disclosed where possible',
     ],
@@ -88,7 +88,7 @@ export default async function SeafoodPage() {
               The wild vs. farmed debate misses the point. A well-managed salmon farm in Norway produces better, more consistent fish than wild-caught salmon from a depleted or poorly managed fishery. Conversely, pole-and-line caught tuna from a certified small-boat fishery is significantly better for ocean health than longline trawling regardless of whether the tuna is "wild." The meaningful questions are: where, how, and under what management.
             </p>
             <p style={{ fontSize: 16, lineHeight: 1.85, color: '#555', marginBottom: 20 }}>
-              Species identification is an important factor in seafood. Independent studies across multiple countries have found significant rates of species substitution in retail and restaurant seafood. "Red snapper" and "sea bass" are among the categories most consistently documented in this research. MSC certification with chain-of-custody traceability provides the most reliable third-party verification of species identity.
+              Species identification is a measurable, recurring problem. DNA testing by the ocean conservation group Oceana found seafood sold in the US as "red snapper" was mislabelled 87% of the time, and "sea bass" 55% of the time — usually replaced with cheaper, less-regulated species. A separate genetic study across 19 European cities found lower mislabelling at retail (under 5%) but rates climbing toward 30% in restaurants and catering, with anchovy, hake, and tuna substituted most often. The pattern holds across markets: a cheaper species sold under a more valuable name. MSC certification with chain-of-custody traceability provides the most reliable third-party verification of species identity.
             </p>
             <p style={{ fontSize: 16, lineHeight: 1.85, color: '#555', marginBottom: 20 }}>
               Canned seafood is an underrated category. A tin of well-sourced, pole-and-line tuna in good olive oil from a traceable fishery is a genuinely excellent product — but it looks identical on the outside to a tin of commodity tuna. The distinction is in the details: species (yellowfin vs. skipjack), catch method, origin, and what it's packed in.

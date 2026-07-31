@@ -49,7 +49,7 @@ const PILLARS = [
     label: 'True',
     title: 'Says what it is',
     criteria: [
-      'Total sugars per serving from all sources — fruit juice concentrates are not classified as "added sugar" under current labelling rules',
+      'Total sugars per serving from all sources — "added sugar" rules vary by market and don\'t capture every sweetening source',
       'Serving size stated in a way that reflects typical use',
       'Key flavouring ingredients named — "truffle flavour" and "natural truffle flavour" have distinct meanings under labelling rules',
     ],
@@ -88,7 +88,7 @@ export default async function SnacksPage() {
               "Natural flavours" is among the most common ingredients in packaged food in the US. As a regulatory category, it covers a wide range of compounds derived from natural sources — used to create or intensify flavour. Products that name their flavour sources specifically (vanilla extract, lemon zest, smoked paprika) give you a clearer picture of what creates the taste.
             </p>
             <p style={{ fontSize: 16, lineHeight: 1.85, color: '#555', marginBottom: 20 }}>
-              "No added sugar" claims refer to refined sugars added during production. Products using concentrated fruit juices can carry this claim, since juice concentrates are not classified as added sugar under current labelling rules. The nutrition panel shows total sugars per serving from all sources — a useful reference alongside front-of-pack claims.
+              "No added sugar" claims are regulated differently depending on where a product is sold. Under US FDA rules, sugar from concentrated fruit juice used to sweeten a product — beyond what the same volume of whole fruit juice naturally contains — counts as added sugar, with narrow exceptions for 100% juice drinks and jam or jelly. In the EU and UK, labels must show total sugars but aren't required to break out an added-sugars figure at all. The nutrition panel's total sugars per serving is the number that holds up across markets, regardless of what a front-of-pack claim says.
             </p>
             <p style={{ fontSize: 16, lineHeight: 1.85, color: '#555', marginBottom: 20 }}>
               The oil used in crackers, crisps, and spreads is often the single largest ingredient by weight. "Vegetable oil" is a broad category that may cover several different oils. Named oils — olive, sunflower, coconut — tell you specifically what you're eating and allow for more informed comparison between products.
