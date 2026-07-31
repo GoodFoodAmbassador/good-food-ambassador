@@ -18,11 +18,11 @@ const PILLARS = [
   {
     color: GREEN,
     label: 'Good',
-    title: 'Quality that nourishes',
+    title: 'Quality across the category',
     criteria: [
-      'Harvest date on the label — the single most important number',
-      'Fruitiness, bitterness, and pungency all present; no rancid or musty notes',
-      'Polyphenol content or early-harvest designation where available',
+      'Harvest date for oils; production or bottling date for condiments — freshness markers specific to each product',
+      'Sensory quality present and lively: fruitiness and pungency in oils, real acidity in vinegars, depth and complexity in fermented condiments',
+      'Live cultures retained where fermentation is the point — miso, raw ACV, naturally brewed soy sauce',
     ],
   },
   {
@@ -30,9 +30,9 @@ const PILLARS = [
     label: 'Clean',
     title: 'Origin you can verify',
     criteria: [
-      'Specific geographic origin — region or estate, not just country',
-      'Independent certification: COOC, PDO/DOP, NAOOA, or equivalent',
-      'Olive varieties and grades clearly stated on the label',
+      'Named geographic origin for all products: region, estate, or country — not generic',
+      'Geographical Indication (PDO or PGI) where available: Tradizionale balsamic, sherry vinegar, extra virgin olive oils from protected areas',
+      'Ingredient lists that reflect what the product is — without additions that mask the base',
     ],
   },
   {
@@ -40,19 +40,19 @@ const PILLARS = [
     label: 'Fair',
     title: 'Dignity for everyone in the chain',
     criteria: [
-      'Producer transparent about where olives are grown and pressed',
-      'Direct-to-consumer or traceable distribution where possible',
-      'Land and water treated with care — not mined for yield',
+      'Producer transparent about where ingredients are grown, fermented, and packaged — three different things',
+      'GI certification anchors the product to a specific territory and community of producers, not just a commercial brand',
+      'Land and water treated with care; cooperative or traceable sourcing that keeps value tied to the place of origin',
     ],
   },
   {
     color: GRAY,
     label: 'True',
-    title: 'Honest from grove to label',
+    title: 'Honest from grove to table',
     criteria: [
-      'Olive variety accurately stated when relevant',
-      'Origin claims verified against certification — country of bottling distinguished from country of production',
-      '"First cold press" is a legacy term; under modern centrifugal extraction standards, it carries no additional regulatory meaning beyond the extra virgin grade itself',
+      '"First cold press" is obsolete — all certified extra virgin olive oil is cold-extracted by legal definition',
+      '"Non-GMO" and "gluten-free" on olive oil are redundant — no GMO olive trees exist commercially, and olive oil contains no gluten',
+      'Country of bottling clearly distinguished from country of production — they are often different things',
     ],
   },
 ]
@@ -83,35 +83,39 @@ export default async function OilsPage() {
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 360px', gap: 80, maxWidth: 1080 }}>
           <div>
             <p style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 11, fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#aaa', marginBottom: 20 }}>
-              What you should know
+              About this oil
             </p>
             <h2 style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontWeight: 300, fontSize: 30, lineHeight: 1.3, marginBottom: 28 }}>
-              How to read<br />
-              <strong style={{ fontWeight: 600 }}>an olive oil label.</strong>
+              Extra virgin olive oil —<br />
+              <strong style={{ fontWeight: 600 }}>what the label tells you.</strong>
             </h2>
             <p style={{ fontSize: 16, lineHeight: 1.85, color: '#555', marginBottom: 20 }}>
-              Olive oil is a fresh product. Its flavour and polyphenol content diminish over time from the point of pressing. The harvest date on the label indicates when the oil was produced — an oil harvested in November 2024 and purchased in mid-2025 is within a reasonable freshness window. A best-before date alone is less informative, as it reflects shelf life from bottling rather than from harvest.
+              Olive oil is a fresh product. Its flavour and polyphenol content diminish from the point of extraction. The harvest date on the label tells you when the oil was made. The best-before date tells you when it was bottled. Both together give the clearest picture of freshness.
             </p>
             <p style={{ fontSize: 16, lineHeight: 1.85, color: '#555', marginBottom: 20 }}>
-              EU regulations allow olive oil to be bottled in a member state and labelled with that country's name even when the olives were sourced from elsewhere. Protected Designation of Origin (PDO or DOP) certification provides a stronger geographic guarantee: oils carrying that mark must be grown, pressed, and bottled within the designated producing area.
+              Taste is the most direct test. A good extra virgin olive oil carries a recognisable fruitiness — the scent of fresh olives, grass, or green herbs — followed by bitterness and pungency on the palate. That peppery catch at the back of the throat is polyphenols at work: a sign of freshness and antioxidant content. Fruitiness, bitterness, and pungency all present and lively — that is the benchmark.
             </p>
             <p style={{ fontSize: 16, lineHeight: 1.85, color: '#555', marginBottom: 20 }}>
-              "First cold press" is a legacy term that carried meaning under older mechanical pressing methods. Under current centrifugal extraction standards, all certified extra virgin olive oil is produced within temperature limits that qualify as cold. The phrase has no regulatory significance under modern standards.
+              Olive oil is produced on every continent. According to the International Olive Council, Spain leads global production at around 38%, followed by Italy (~13%), Turkey (~8%), Greece (~10%), Tunisia (~7%), Morocco (~4%), and Portugal (~3%). These six Mediterranean and North African countries together account for the majority of world supply. In the Southern Hemisphere, Argentina (~1.5%) and Chile (~0.5%) produce high-quality oils harvested in May and June. The USA (~0.5%) and China (~0.3%) are smaller but growing producers. Each country brings its own olive varieties, climate, and production culture — origin is always part of the story.
+            </p>
+            <p style={{ fontSize: 16, lineHeight: 1.85, color: '#555', marginBottom: 20 }}>
+              "First cold press" is an obsolete term. All extra virgin olive oil is extracted at controlled temperatures by definition — it is a legal requirement of the grade, not a distinguishing feature of any particular product. The phrase implies something extra that it does not deliver. Similarly, "non-GMO" and "gluten-free" labels on olive oil are redundant: no GMO olive trees exist commercially, and olive oil contains no gluten.
             </p>
             <p style={{ fontSize: 16, lineHeight: 1.85, color: '#555' }}>
-              Independent certification — COOC in California, PDO/DOP in the EU, NAOOA in North America — means a third party has verified the oil meets a defined grade threshold. These certifications vary in scope, but each requires external testing that self-declared labels do not.
+              Independent certification means a third party has verified the oil meets a defined grade threshold through chemistry and sensory testing. Geographical Indications — PDO (Protected Designation of Origin) and PGI (Protected Geographical Indication) — anchor the product to a specific territory and its community of producers. COOC in the USA, NAOOA and the Extra Virgin Alliance (EVA) in North America each require third-party testing. Price reflects the cost of producing something genuine.
             </p>
           </div>
 
           <div>
             <div style={{ background: LIGHT, padding: '36px 32px', borderRadius: 2 }}>
               <p style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 11, fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#aaa', marginBottom: 20 }}>
-                Three things to check on any bottle
+                Four things to check on any bottle
               </p>
               {[
-                { n: '01', title: 'Harvest date', body: 'The harvest year — ideally month — indicates when the oil was pressed. Together with the purchase date, it gives a reliable picture of freshness.' },
-                { n: '02', title: 'Specific origin', body: 'A named region or estate provides more information than a country of origin alone. EU regulations permit oils from multiple countries to be labelled under a single member state.' },
-                { n: '03', title: 'Independent certification', body: 'COOC (California), PDO/DOP (EU), and NAOOA (North America) each require third-party grade verification — a meaningful distinction from uncertified self-declared labels.' },
+                { n: '01', title: 'Harvest date', body: 'Tells you when the oil was made. Together with the best-before date — which tells you when it was bottled — you get a full picture of where the oil is in its life.' },
+                { n: '02', title: 'Specific origin', body: 'A named region or estate tells you more than a country alone. PDO and PGI (Geographical Indications) mean the product is anchored to a specific territory and its producers.' },
+                { n: '03', title: 'Independent certification', body: 'COOC (California), PDO/PGI (EU), EVA and NAOOA (North America) each require third-party chemistry and sensory testing — the mark of a producer willing to be held to a standard.' },
+                { n: '04', title: 'Sensory markers', body: 'Fruitiness, bitterness, and pungency all present in balance. The peppery sensation at the back of the throat is polyphenols — a sign of freshness and antioxidant content.' },
               ].map(item => (
                 <div key={item.n} style={{ marginBottom: 28 }}>
                   <div style={{ display: 'flex', gap: 16, alignItems: 'flex-start' }}>
@@ -132,13 +136,108 @@ export default async function OilsPage() {
         </div>
       </section>
 
+      {/* ── SECTION 1b: VINEGARS ── */}
+      <section style={{ borderTop: `1px solid ${MID}`, padding: '64px 60px' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 360px', gap: 80, maxWidth: 1080 }}>
+          <div>
+            <p style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 11, fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#aaa', marginBottom: 20 }}>
+              About vinegar
+            </p>
+            <h2 style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontWeight: 300, fontSize: 30, lineHeight: 1.3, marginBottom: 28 }}>
+              Fermentation, time, and<br />
+              <strong style={{ fontWeight: 600 }}>what it means.</strong>
+            </h2>
+            <p style={{ fontSize: 16, lineHeight: 1.85, color: '#555', marginBottom: 20 }}>
+              True vinegar is made in two steps: first alcoholic fermentation converts fruit or grain to alcohol, then acetic acid bacteria convert that alcohol to vinegar. That process takes time and produces complexity. Speed shortcuts it.
+            </p>
+            <p style={{ fontSize: 16, lineHeight: 1.85, color: '#555', marginBottom: 20 }}>
+              Traditional balsamic — Aceto Balsamico Tradizionale from Modena or Reggio Emilia, both PDO — is aged for a minimum of 12 years through a series of wooden barrels made from different woods. It is a deeply concentrated condiment with no resemblance to commercial "balsamic" made from grape must concentrate and caramel colouring. That distinction is entirely invisible on most supermarket shelves.
+            </p>
+            <p style={{ fontSize: 16, lineHeight: 1.85, color: '#555', marginBottom: 20 }}>
+              Apple cider vinegar made with the "mother" — the cloudy culture of live acetic acid bacteria — is unpasteurised and still active. Wine vinegars, sherry vinegar (PDO, from Jerez), and rice vinegar each carry the character of their base ingredient when produced traditionally.
+            </p>
+            <p style={{ fontSize: 16, lineHeight: 1.85, color: '#555' }}>
+              The most useful question for any vinegar: made from real fermentation, and for how long?
+            </p>
+          </div>
+          <div>
+            <div style={{ background: LIGHT, padding: '36px 32px', borderRadius: 2 }}>
+              <p style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 11, fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#aaa', marginBottom: 20 }}>
+                Three things to check
+              </p>
+              {[
+                { n: '01', title: 'The base', body: 'Wine, apple, rice, grape — named and specific. "Spirit vinegar" tells you almost nothing about origin or process.' },
+                { n: '02', title: 'Fermentation method', body: 'Slow traditional vs. fast industrial. For balsamic: PDO status is the only reliable mark. For ACV: "with the mother" or "raw."' },
+                { n: '03', title: 'Aging', body: 'For wine and sherry vinegars, time in wood adds depth. Tradizionale balsamic requires a minimum of 12 years by PDO law.' },
+              ].map(item => (
+                <div key={item.n} style={{ marginBottom: 28 }}>
+                  <div style={{ display: 'flex', gap: 16, alignItems: 'flex-start' }}>
+                    <span style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 11, fontWeight: 600, color: '#ccc', minWidth: 24, paddingTop: 2 }}>{item.n}</span>
+                    <div>
+                      <p style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 14, fontWeight: 600, marginBottom: 6 }}>{item.title}</p>
+                      <p style={{ fontSize: 13, lineHeight: 1.65, color: '#777' }}>{item.body}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── SECTION 1c: FERMENTED CONDIMENTS ── */}
+      <section style={{ borderTop: `1px solid ${MID}`, padding: '64px 60px' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 360px', gap: 80, maxWidth: 1080 }}>
+          <div>
+            <p style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 11, fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#aaa', marginBottom: 20 }}>
+              About fermented condiments
+            </p>
+            <h2 style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontWeight: 300, fontSize: 30, lineHeight: 1.3, marginBottom: 28 }}>
+              Salt, time, and<br />
+              <strong style={{ fontWeight: 600 }}>the oldest food technology on earth.</strong>
+            </h2>
+            <p style={{ fontSize: 16, lineHeight: 1.85, color: '#555', marginBottom: 20 }}>
+              Fermented condiments are among the oldest foods humans have made. Miso has been produced in Japan for over a thousand years. Fish sauce from Southeast Asia and garum from ancient Rome share the same logic: salt, protein, time. Soy sauce, gochujang, preserved lemons, fermented black bean — every food culture found fermentation, and every one made it entirely their own.
+            </p>
+            <p style={{ fontSize: 16, lineHeight: 1.85, color: '#555', marginBottom: 20 }}>
+              The distinction that matters most is whether a product is still alive. Unpasteurised miso retains live cultures and continues to develop in the jar. Industrially produced soy sauce — made in days through chemical hydrolysis rather than months of natural brewing — is a fundamentally different product that happens to carry the same name.
+            </p>
+            <p style={{ fontSize: 16, lineHeight: 1.85, color: '#555' }}>
+              Naturally brewed soy sauce says so on the label. Ingredient lists are short: soybeans, wheat, salt, water. Traditional fish sauce lists fish and salt. Nothing else. Additional flavourings, caramel colouring, or MSG point to a different process and a different intention.
+            </p>
+          </div>
+          <div>
+            <div style={{ background: LIGHT, padding: '36px 32px', borderRadius: 2 }}>
+              <p style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 11, fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#aaa', marginBottom: 20 }}>
+                Three things to check
+              </p>
+              {[
+                { n: '01', title: 'Naturally brewed', body: 'For soy sauce: "naturally brewed" means months of fermentation, not days. For miso: "unpasteurised" or "raw" means live cultures are still present.' },
+                { n: '02', title: 'Ingredient list', body: 'Short is meaningful. Fish sauce: fish and salt. Miso: soybeans, grain, salt, koji. Additional flavourings or colours point to shortcuts.' },
+                { n: '03', title: 'Origin', body: 'Shoyu from Japan, gochujang from Korea, preserved lemons from Morocco — origin tells you which tradition you are eating from.' },
+              ].map(item => (
+                <div key={item.n} style={{ marginBottom: 28 }}>
+                  <div style={{ display: 'flex', gap: 16, alignItems: 'flex-start' }}>
+                    <span style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 11, fontWeight: 600, color: '#ccc', minWidth: 24, paddingTop: 2 }}>{item.n}</span>
+                    <div>
+                      <p style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 14, fontWeight: 600, marginBottom: 6 }}>{item.title}</p>
+                      <p style={{ fontSize: 13, lineHeight: 1.65, color: '#777' }}>{item.body}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ── SECTION 2: GFA PILLARS FOR OLIVE OILS ── */}
       <section style={{ borderTop: `1px solid ${MID}`, padding: '64px 60px', background: LIGHT }}>
         <p style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 11, fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#aaa', marginBottom: 20 }}>
           How we evaluate
         </p>
         <h2 style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontWeight: 300, fontSize: 30, marginBottom: 40 }}>
-          The <strong style={{ fontWeight: 600 }}>Four Pillars</strong> applied to olive oils
+          The <strong style={{ fontWeight: 600 }}>Four Pillars</strong> applied to oils &amp; condiments
         </h2>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 2 }}>
           {PILLARS.map(p => (
@@ -169,7 +268,7 @@ export default async function OilsPage() {
             </p>
             <h2 style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontWeight: 300, fontSize: 30 }}>
               Oils &amp; Condiments<br />
-              <strong style={{ fontWeight: 600 }}>in the index</strong>
+              <strong style={{ fontWeight: 600 }}>in the directory</strong>
             </h2>
           </div>
           <Link
@@ -181,7 +280,7 @@ export default async function OilsPage() {
         </div>
 
         <p style={{ fontSize: 14, lineHeight: 1.8, color: '#999', marginBottom: 48, maxWidth: 600 }}>
-          Listed alphabetically. Products here have been evaluated against the GFA Standard using publicly available information. We look at what producers share — we don't rank between products.
+          Listed alphabetically. Products here have been evaluated against the Four Pillars using publicly available information. We look at what producers share — we look for the full picture, and we do not rank between products.
         </p>
 
         {products.length === 0 ? (

@@ -156,7 +156,7 @@ export default function HubPage() {
               Explore the Directory
             </Link>
             <Link
-              href="/standard"
+              href="/pillars"
               style={{
                 fontFamily: 'var(--font-poppins), Poppins, sans-serif',
                 fontSize: 12,
@@ -171,7 +171,7 @@ export default function HubPage() {
                 border: `1.5px solid ${T}`,
               }}
             >
-              Read the Standard
+              The Four Pillars
             </Link>
           </div>
         </div>

@@ -96,7 +96,7 @@ export default function SuggestPage() {
               Thank you — we received it.
             </p>
             <p style={{ fontSize: 15, lineHeight: 1.8, color: '#777', marginBottom: 24 }}>
-              We review every suggestion personally. If it passes evaluation against the GFA Standard, it will appear in the Directory.
+              We review every suggestion personally. If it passes review against the Four Pillars, it will appear in the Directory.
             </p>
             <Link href="/" style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 12, fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', color: T, textDecoration: 'none', borderBottom: `1.5px solid ${T}`, paddingBottom: 2 }}>
               Back to home →
