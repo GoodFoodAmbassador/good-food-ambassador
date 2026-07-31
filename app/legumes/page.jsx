@@ -65,8 +65,8 @@ export default async function LegumesPage() {
       <section style={{ padding: '80px 60px 60px', maxWidth: 760 }}>
         <Pill bg={CYAN} style={{ marginBottom: 28 }}>Legumes &amp; Pulses</Pill>
         <h1 style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontWeight: 300, fontSize: 52, lineHeight: 1.15, marginBottom: 24, marginTop: 20 }}>
-          Legumes — variety, origin,<br />
-          <strong style={{ fontWeight: 600 }}>and what the label discloses.</strong>
+          Every food culture has its own way with legumes —<br />
+          <strong style={{ fontWeight: 600 }}>the variety is where that story starts.</strong>
         </h1>
         <p style={{ fontSize: 17, lineHeight: 1.8, color: '#666', maxWidth: 560 }}>
           Lentils, chickpeas, beans, peas — the protein backbone of plant-based cooking in every food culture. The details that matter: variety, origin, freshness, and how they were grown and processed. Most labels say very little. A few say a lot.

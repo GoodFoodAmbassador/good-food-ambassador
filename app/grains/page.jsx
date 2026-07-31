@@ -65,8 +65,8 @@ export default async function GrainsPage() {
       <section style={{ padding: '80px 60px 60px', maxWidth: 760 }}>
         <Pill bg={YELLOW} color={T} style={{ marginBottom: 28 }}>Grains &amp; Noodles</Pill>
         <h1 style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontWeight: 300, fontSize: 52, lineHeight: 1.15, marginBottom: 24, marginTop: 20 }}>
-          Grains — variety, origin,<br />
-          <strong style={{ fontWeight: 600 }}>and what the label tells you.</strong>
+          Pasta needs the right wheat. Rice needs the right variety.<br />
+          <strong style={{ fontWeight: 600 }}>Both need the right process.</strong>
         </h1>
         <p style={{ fontSize: 17, lineHeight: 1.8, color: '#666', maxWidth: 560 }}>
           Pasta, rice, soba, couscous, millet, quinoa — staple foods from every tradition. The details that most affect how a product cooks and tastes: variety, origin, and production method. Most labels say little. A few say a lot.
