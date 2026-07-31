@@ -88,7 +88,7 @@ export default function JoinPage() {
     <div style={{ background: W, color: T, fontFamily: 'var(--font-mulish), Mulish, sans-serif', fontWeight: 300 }}>
       <GFANav />
 
-      <div style={{ maxWidth: 760, margin: '0 auto', padding: '80px 40px' }}>
+      <div className="gfa-narrow-page" style={{ maxWidth: 760, margin: '0 auto', padding: '80px 40px' }}>
 
         <Link
           href="/"
@@ -142,7 +142,7 @@ export default function JoinPage() {
             </div>
           ) : (
             <form onSubmit={handleSubmit}>
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 24, marginBottom: 24 }}>
+              <div className="gfa-form-2col" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 24, marginBottom: 24 }}>
                 <div>
                   <label style={labelStyle}>Product name *</label>
                   <input style={inputStyle} value={form.name} onChange={e => set('name', e.target.value)} placeholder="e.g. Frantoio Muraglia EVOO" required />
@@ -153,7 +153,7 @@ export default function JoinPage() {
                 </div>
               </div>
 
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 24, marginBottom: 24 }}>
+              <div className="gfa-form-2col" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 24, marginBottom: 24 }}>
                 <div>
                   <label style={labelStyle}>Origin</label>
                   <input style={inputStyle} value={form.origin} onChange={e => set('origin', e.target.value)} placeholder="e.g. Puglia, Italy" />

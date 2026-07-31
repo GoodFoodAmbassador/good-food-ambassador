@@ -63,7 +63,7 @@ export default async function SeafoodPage() {
     <div style={{ background: W, color: T, fontFamily: 'var(--font-mulish), Mulish, sans-serif', fontWeight: 300 }}>
       <GFANav />
 
-      <section style={{ padding: '80px 60px 60px', maxWidth: 760 }}>
+      <section className="gfa-section" style={{ padding: '80px 60px 60px', maxWidth: 760 }}>
         <Pill bg={CYAN} style={{ marginBottom: 28 }}>Seafood</Pill>
         <h1 style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontWeight: 300, fontSize: 52, lineHeight: 1.15, marginBottom: 24, marginTop: 20 }}>
           Seafood — species, origin,<br />
@@ -74,8 +74,8 @@ export default async function SeafoodPage() {
         </p>
       </section>
 
-      <section style={{ borderTop: `1px solid ${MID}`, padding: '64px 60px' }}>
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 360px', gap: 80, maxWidth: 1080 }}>
+      <section className="gfa-section" style={{ borderTop: `1px solid ${MID}`, padding: '64px 60px' }}>
+        <div className="gfa-2col" style={{ display: 'grid', gridTemplateColumns: '1fr 360px', gap: 80, maxWidth: 1080 }}>
           <div>
             <p style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 11, fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#aaa', marginBottom: 20 }}>
               What you should know
@@ -123,12 +123,12 @@ export default async function SeafoodPage() {
         </div>
       </section>
 
-      <section style={{ borderTop: `1px solid ${MID}`, padding: '64px 60px', background: LIGHT }}>
+      <section className="gfa-section" style={{ borderTop: `1px solid ${MID}`, padding: '64px 60px', background: LIGHT }}>
         <p style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 11, fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#aaa', marginBottom: 20 }}>How we evaluate</p>
         <h2 style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontWeight: 300, fontSize: 30, marginBottom: 40 }}>
           The <strong style={{ fontWeight: 600 }}>Good Food Standard</strong> applied to seafood
         </h2>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 2 }}>
+        <div className="gfa-pillars-4" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 2 }}>
           {PILLARS.map(p => (
             <div key={p.label} style={{ background: W, padding: '36px 28px' }}>
               <Pill bg={p.color}>{p.label}</Pill>
@@ -145,7 +145,7 @@ export default async function SeafoodPage() {
         </div>
       </section>
 
-      <section style={{ borderTop: `1px solid ${MID}`, padding: '64px 60px' }}>
+      <section className="gfa-section" style={{ borderTop: `1px solid ${MID}`, padding: '64px 60px' }}>
         <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', marginBottom: 12 }}>
           <div>
             <p style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 11, fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#aaa', marginBottom: 12 }}>The Directory</p>
@@ -164,7 +164,7 @@ export default async function SeafoodPage() {
         {products.length === 0 ? <EmptyState /> : <ProductList products={products} />}
       </section>
 
-      <footer style={{ borderTop: `1px solid ${MID}`, padding: '28px 60px' }}>
+      <footer className="gfa-section" style={{ borderTop: `1px solid ${MID}`, padding: '28px 60px' }}>
         <p style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 12, color: '#999', letterSpacing: '0.03em', lineHeight: 1.7, marginBottom: 24, paddingBottom: 24, borderBottom: `1px solid ${MID}` }}>
           Good Food Ambassador was started by food professionals who believe eaters deserve access to clear, independent information about the food they buy.
         </p>
@@ -187,7 +187,7 @@ function ProductList({ products }) {
   return (
     <div>
       {products.map(product => (
-        <div key={product.id} style={{ borderTop: `1px solid ${MID}`, padding: '32px 0', display: 'grid', gridTemplateColumns: '1fr auto', gap: 40, alignItems: 'start' }}>
+        <div key={product.id} className="gfa-product-row" style={{ borderTop: `1px solid ${MID}`, padding: '32px 0', display: 'grid', gridTemplateColumns: '1fr auto', gap: 40, alignItems: 'start' }}>
           <div>
             <div style={{ display: 'flex', alignItems: 'baseline', gap: 12, marginBottom: 6, flexWrap: 'wrap' }}>
               <h3 style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 17, fontWeight: 600, margin: 0 }}>

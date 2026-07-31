@@ -74,7 +74,7 @@ export default function TermsPage() {
   return (
     <div style={{ background: W, color: T, fontFamily: 'var(--font-mulish), Mulish, sans-serif', fontWeight: 300 }}>
       <GFANav />
-      <div style={{ maxWidth: 720, margin: '0 auto', padding: '80px 40px' }}>
+      <div className="gfa-narrow-page" style={{ maxWidth: 720, margin: '0 auto', padding: '80px 40px' }}>
 
         <Link
           href="/"

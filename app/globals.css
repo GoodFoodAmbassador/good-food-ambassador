@@ -97,4 +97,72 @@ button:focus:not(:focus-visible) {
   .gfa-ambassador-grid {
     grid-template-columns: 1fr !important;
   }
+
+  .gfa-illus-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .gfa-2col {
+    grid-template-columns: 1fr !important;
+  }
+
+  .gfa-pillars-4 {
+    grid-template-columns: 1fr !important;
+  }
+
+  .gfa-form-2col {
+    grid-template-columns: 1fr !important;
+  }
+
+  .gfa-product-row {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+
+  .gfa-product-row > div:last-child {
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    min-width: 0 !important;
+  }
+
+  .gfa-pillar-row {
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+  }
+
+  .gfa-section {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  .gfa-narrow-page {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+}
+
+/* Tablet: 2-col content grids for category pages */
+@media (max-width: 1023px) {
+  .gfa-2col {
+    grid-template-columns: 1fr !important;
+    gap: 40px !important;
+  }
+
+  .gfa-pillars-4 {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .gfa-illus-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .gfa-section {
+    padding-left: 32px !important;
+    padding-right: 32px !important;
+  }
+
+  .gfa-narrow-page {
+    padding-left: 32px !important;
+    padding-right: 32px !important;
+  }
 }

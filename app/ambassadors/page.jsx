@@ -43,7 +43,7 @@ export default function AmbassadorsPage() {
     <div style={{ background: W, color: T, fontFamily: 'var(--font-mulish), Mulish, sans-serif', fontWeight: 300 }}>
       <GFANav />
 
-      <div style={{ maxWidth: 800, margin: '0 auto', padding: '80px 40px' }}>
+      <div className="gfa-narrow-page" style={{ maxWidth: 800, margin: '0 auto', padding: '80px 40px' }}>
 
         <Link
           href="/"
@@ -99,7 +99,7 @@ export default function AmbassadorsPage() {
         </div>
 
         {/* Illustration strip */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 2, marginBottom: 48 }}>
+        <div className="gfa-illus-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 2, marginBottom: 48 }}>
           {ROLES.map(r => (
             <div key={r.label} style={{ background: LIGHT }}>
               <Image src={r.img} alt={r.label} width={300} height={300} style={{ width: '100%', height: 'auto', display: 'block' }} />
@@ -142,7 +142,7 @@ export default function AmbassadorsPage() {
             <h2 style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontWeight: 600, fontSize: 20, letterSpacing: '0.04em', marginBottom: 32 }}>
               The people
             </h2>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 2, marginBottom: 80 }}>
+            <div className="gfa-ambassador-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 2, marginBottom: 80 }}>
               {AMBASSADORS.map((a) => (
                 <div key={a.name} style={{ background: LIGHT, padding: '28px 32px' }}>
                   <p style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 16, fontWeight: 600, marginBottom: 4 }}>

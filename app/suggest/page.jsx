@@ -106,7 +106,7 @@ export default function SuggestPage() {
       ) : (
         <section style={{ padding: '0 60px 100px', maxWidth: 720 }}>
           <form onSubmit={handleSubmit}>
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 24, marginBottom: 24 }}>
+            <div className="gfa-form-2col" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 24, marginBottom: 24 }}>
               <div>
                 <label style={label}>Product name *</label>
                 <input
@@ -128,7 +128,7 @@ export default function SuggestPage() {
               </div>
             </div>
 
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 24, marginBottom: 24 }}>
+            <div className="gfa-form-2col" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 24, marginBottom: 24 }}>
               <div>
                 <label style={label}>Origin</label>
                 <input

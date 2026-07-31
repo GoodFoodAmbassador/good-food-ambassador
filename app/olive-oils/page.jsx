@@ -68,7 +68,7 @@ export default async function OilsPage() {
       <GFANav />
 
       {/* ── HERO ── */}
-      <section style={{ padding: '80px 60px 60px', maxWidth: 760 }}>
+      <section className="gfa-section" style={{ padding: '80px 60px 60px', maxWidth: 760 }}>
         <Pill bg={GREEN} style={{ marginBottom: 28 }}>Oils &amp; Condiments</Pill>
         <h1 style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontWeight: 300, fontSize: 52, lineHeight: 1.15, marginBottom: 24, marginTop: 20 }}>
           Small bottle, long story —<br />
@@ -80,8 +80,8 @@ export default async function OilsPage() {
       </section>
 
       {/* ── SECTION 1: KNOWLEDGE ── */}
-      <section style={{ borderTop: `1px solid ${MID}`, padding: '64px 60px' }}>
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 360px', gap: 80, maxWidth: 1080 }}>
+      <section className="gfa-section" style={{ borderTop: `1px solid ${MID}`, padding: '64px 60px' }}>
+        <div className="gfa-2col" style={{ display: 'grid', gridTemplateColumns: '1fr 360px', gap: 80, maxWidth: 1080 }}>
           <div>
             <p style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 11, fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#aaa', marginBottom: 20 }}>
               About this oil
@@ -138,8 +138,8 @@ export default async function OilsPage() {
       </section>
 
       {/* ── SECTION 1b: VINEGARS ── */}
-      <section style={{ borderTop: `1px solid ${MID}`, padding: '64px 60px' }}>
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 360px', gap: 80, maxWidth: 1080 }}>
+      <section className="gfa-section" style={{ borderTop: `1px solid ${MID}`, padding: '64px 60px' }}>
+        <div className="gfa-2col" style={{ display: 'grid', gridTemplateColumns: '1fr 360px', gap: 80, maxWidth: 1080 }}>
           <div>
             <p style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 11, fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#aaa', marginBottom: 20 }}>
               About vinegar
@@ -187,8 +187,8 @@ export default async function OilsPage() {
       </section>
 
       {/* ── SECTION 1c: FERMENTED CONDIMENTS ── */}
-      <section style={{ borderTop: `1px solid ${MID}`, padding: '64px 60px' }}>
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 360px', gap: 80, maxWidth: 1080 }}>
+      <section className="gfa-section" style={{ borderTop: `1px solid ${MID}`, padding: '64px 60px' }}>
+        <div className="gfa-2col" style={{ display: 'grid', gridTemplateColumns: '1fr 360px', gap: 80, maxWidth: 1080 }}>
           <div>
             <p style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 11, fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#aaa', marginBottom: 20 }}>
               About fermented condiments
@@ -233,14 +233,14 @@ export default async function OilsPage() {
       </section>
 
       {/* ── SECTION 2: GFA PILLARS FOR OLIVE OILS ── */}
-      <section style={{ borderTop: `1px solid ${MID}`, padding: '64px 60px', background: LIGHT }}>
+      <section className="gfa-section" style={{ borderTop: `1px solid ${MID}`, padding: '64px 60px', background: LIGHT }}>
         <p style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 11, fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#aaa', marginBottom: 20 }}>
           How we evaluate
         </p>
         <h2 style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontWeight: 300, fontSize: 30, marginBottom: 40 }}>
           The <strong style={{ fontWeight: 600 }}>Four Pillars</strong> applied to oils &amp; condiments
         </h2>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 2 }}>
+        <div className="gfa-pillars-4" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 2 }}>
           {PILLARS.map(p => (
             <div key={p.label} style={{ background: W, padding: '36px 28px' }}>
               <Pill bg={p.color}>{p.label}</Pill>
@@ -261,7 +261,7 @@ export default async function OilsPage() {
       </section>
 
       {/* ── SECTION 3: THE INDEX ── */}
-      <section style={{ borderTop: `1px solid ${MID}`, padding: '64px 60px' }}>
+      <section className="gfa-section" style={{ borderTop: `1px solid ${MID}`, padding: '64px 60px' }}>
         <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', marginBottom: 12 }}>
           <div>
             <p style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 11, fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#aaa', marginBottom: 12 }}>
@@ -293,7 +293,7 @@ export default async function OilsPage() {
       </section>
 
       {/* ── FOOTER ── */}
-      <footer style={{ borderTop: `1px solid ${MID}`, padding: '28px 60px' }}>
+      <footer className="gfa-section" style={{ borderTop: `1px solid ${MID}`, padding: '28px 60px' }}>
         <p style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 12, color: '#999', letterSpacing: '0.03em', lineHeight: 1.7, marginBottom: 24, paddingBottom: 24, borderBottom: `1px solid ${MID}` }}>
           Good Food Ambassador was started by food professionals who believe eaters deserve access to clear, independent information about the food they buy.
         </p>
@@ -326,6 +326,7 @@ function ProductList({ products }) {
       {products.map((product, i) => (
         <div
           key={product.id}
+          className="gfa-product-row"
           style={{
             borderTop: `1px solid ${MID}`,
             padding: '32px 0',

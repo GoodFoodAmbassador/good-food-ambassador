@@ -22,7 +22,7 @@ export default function ProductDetailPage({ product, categorySlug, categoryLabel
     <div style={{ background: W, color: T, fontFamily: 'var(--font-mulish), Mulish, sans-serif', fontWeight: 300 }}>
       <GFANav />
 
-      <div style={{ maxWidth: 860, padding: '64px 60px 0' }}>
+      <div className="gfa-section" style={{ maxWidth: 860, padding: '64px 60px 0' }}>
         <Link
           href={`/${categorySlug}`}
           style={{
@@ -43,7 +43,7 @@ export default function ProductDetailPage({ product, categorySlug, categoryLabel
       </div>
 
       {/* ── HERO ── */}
-      <section style={{ maxWidth: 860, padding: '0 60px 48px' }}>
+      <section className="gfa-section" style={{ maxWidth: 860, padding: '0 60px 48px' }}>
         <Pill bg={pillColor} style={{ marginBottom: 20 }}>{categoryLabel}</Pill>
         <h1
           style={{
@@ -102,7 +102,7 @@ export default function ProductDetailPage({ product, categorySlug, categoryLabel
 
       {/* ── BUY LINKS ── */}
       {product.buyLinks.length > 0 && (
-        <section style={{ borderTop: `1px solid ${MID}`, padding: '32px 60px' }}>
+        <section className="gfa-section" style={{ borderTop: `1px solid ${MID}`, padding: '32px 60px' }}>
           <p
             style={{
               fontFamily: 'var(--font-poppins), Poppins, sans-serif',
@@ -147,7 +147,7 @@ export default function ProductDetailPage({ product, categorySlug, categoryLabel
 
       {/* ── GFA EVALUATION ── */}
       {hasPillars && (
-        <section style={{ borderTop: `1px solid ${MID}`, padding: '64px 60px' }}>
+        <section className="gfa-section" style={{ borderTop: `1px solid ${MID}`, padding: '64px 60px' }}>
           <p
             style={{
               fontFamily: 'var(--font-poppins), Poppins, sans-serif',
@@ -180,6 +180,7 @@ export default function ProductDetailPage({ product, categorySlug, categoryLabel
               return (
                 <div
                   key={p.key}
+                  className="gfa-pillar-row"
                   style={{
                     borderTop: `1px solid ${MID}`,
                     padding: '36px 0',
@@ -202,7 +203,7 @@ export default function ProductDetailPage({ product, categorySlug, categoryLabel
       )}
 
       {/* ── FOOTER ── */}
-      <footer style={{ borderTop: `1px solid ${MID}`, padding: '28px 60px', marginTop: 32 }}>
+      <footer className="gfa-section" style={{ borderTop: `1px solid ${MID}`, padding: '28px 60px', marginTop: 32 }}>
         <div
           style={{
             display: 'flex',
