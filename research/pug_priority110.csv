@@ -1,29 +1,29 @@
 Brand,PUG Aisle(s),PUG Signal Tag(s),Status
-(P)RiND,Puffs+Crunch,Organic,pending
-All The Bitter,Non-Alc,Gives Back,pending
-Auntie Rana's,Pantry,Gives Back,pending
-Bachan's,Saucy+Spicy,Gives Back,pending
-Bake Away,Sweets+Treats,Gives Back,pending
-Batch,Pantry,Organic,pending
-Boss Cow,"Pantry, Sweets+Treats",Regenerative Ingredients,pending
-Brass Roots,Puffs+Crunch,Gives Back,pending
-Brightland,Pantry,Gives Back,pending
-But Better,Bites+Chews,Organic,pending
-Cactus Crunch,Puffs+Crunch,Gives Back,pending
-CAFF,Bites+Chews,Organic,pending
-Chewsy,Bites+Chews,Gives Back,pending
-Chocxo,Sweets+Treats,Organic,pending
-Cob,Puffs+Crunch,"Regenerative Ingredients, Gives Back",pending
-Creature Matcha,Pantry,Organic,pending
-DEFI Snacks,Sweets+Treats,Gives Back,pending
-Desert Dust,Pantry,Organic,pending
-Dirtbag Bar,Sweets+Treats,"Organic, Gives Back",pending
-Dr. Smood,Bites+Chews,Organic,pending
-edggies veggies,Pantry,Organic,pending
-Evo Hemp,Bites+Chews,Regenerative Ingredients,pending
-Felicia,Pantry,Organic,pending
-Figa Foods,Sweets+Treats,Regenerative Ingredients,pending
-Figure Ate,Bites+Chews,Regenerative Ingredients,pending
+(P)RiND,Puffs+Crunch,Organic,"screened-hold (inconclusive organic claim, needs direct verify)"
+All The Bitter,Non-Alc,Gives Back,shortlisted
+Auntie Rana's,Pantry,Gives Back,shortlisted
+Bachan's,Saucy+Spicy,Gives Back,screened-reject (no verifiable signal beyond brand story)
+Bake Away,Sweets+Treats,Gives Back,shortlisted
+Batch,Pantry,Organic,"screened-hold (brand unclear, needs direct site check)"
+Boss Cow,"Pantry, Sweets+Treats",Regenerative Ingredients,screened-reject (no GFA category -- dairy)
+Brass Roots,Puffs+Crunch,Gives Back,shortlisted
+Brightland,Pantry,Gives Back,shortlisted
+But Better,Bites+Chews,Organic,screened-reject (no verifiable signal found)
+Cactus Crunch,Puffs+Crunch,Gives Back,shortlisted
+CAFF,Bites+Chews,Organic,"screened-reject (self-described organic only, no cert)"
+Chewsy,Bites+Chews,Gives Back,screened-reject (no GFA category -- gum)
+Chocxo,Sweets+Treats,Organic,shortlisted
+Cob,Puffs+Crunch,"Regenerative Ingredients, Gives Back",screened-reject (regenerative claim not certified/verified)
+Creature Matcha,Pantry,Organic,"screened-hold (not found, needs direct site check)"
+DEFI Snacks,Sweets+Treats,Gives Back,shortlisted
+Desert Dust,Pantry,Organic,screened-reject (partial-ingredient organic claim only)
+Dirtbag Bar,Sweets+Treats,"Organic, Gives Back",shortlisted
+Dr. Smood,Bites+Chews,Organic,"screened-reject (cafe chain, not a shippable retail product)"
+edggies veggies,Pantry,Organic,shortlisted
+Evo Hemp,Bites+Chews,Regenerative Ingredients,shortlisted
+Felicia,Pantry,Organic,shortlisted
+Figa Foods,Sweets+Treats,Regenerative Ingredients,shortlisted
+Figure Ate,Bites+Chews,Regenerative Ingredients,shortlisted
 Floura,Bites+Chews,Regenerative Ingredients,pending
 Frankie's Fabulous Granola,Breakfast-ish,Gives Back,pending
 Garden Based,Pantry,Gives Back,pending
