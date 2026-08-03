@@ -44,7 +44,7 @@ const CATEGORIES = [
     label: 'Oils & Condiments',
     pillColor: GREEN,
     desc: 'Every civilisation found its fat — the oil, the vinegar, the condiment that carried flavour and defined a cuisine. Oils are also among the most health-consequential foods we eat, with real differences in how they are grown, pressed, and priced. The cost of a bottle always tells part of the story. This is where we look for the rest of it.',
-    status: '20 products evaluated',
+    status: 'Products in the directory',
     cta: 'Dive in →',
     img: '/illustrations/GFA_illus_oils.png',
   },
