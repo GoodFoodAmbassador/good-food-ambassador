@@ -23,32 +23,32 @@ edggies veggies,Pantry,Organic,imported (Airtable batch 1)
 Evo Hemp,Bites+Chews,Regenerative Ingredients,rejected — signaled bar line discontinued (evohemp.com no longer sells bars)
 Felicia,Pantry,Organic,"imported (Airtable batch 1, grains category)"
 Figa Foods,Sweets+Treats,Regenerative Ingredients,imported (Airtable batch 1)
-Figure Ate,Bites+Chews,Regenerative Ingredients,shortlisted
-Floura,Bites+Chews,Regenerative Ingredients,pending
-Frankie's Fabulous Granola,Breakfast-ish,Gives Back,pending
-Garden Based,Pantry,Gives Back,pending
-Geem,Puffs+Crunch,Regenerative Ingredients,pending
-Ghips,Puffs+Crunch,Regenerative Ingredients,pending
-Go a Little Nuts,Bites+Chews,Regenerative Ingredients,pending
-GOOD GREED,Sweets+Treats,Gives Back,pending
-Good Twin,Non-Alc,Organic,pending
-Gwell,Bites+Chews,Gives Back,pending
-Harken Sweets,Sweets+Treats,Regenerative Ingredients,pending
-Harry's Famous Sauce,Pantry,"Regenerative Ingredients, Gives Back",pending
-Hayati,Pantry,Gives Back,pending
-Herbs & Kettles,Pantry,Regenerative Ingredients,pending
-iMind Brain Food,Bites+Chews,Organic,pending
-Jennie's House,Pantry,Regenerative Ingredients,pending
-Joey Nordic Seed Crisps,Puffs+Crunch,Organic,pending
-JOYA,Sweets+Treats,Gives Back,pending
-Kahawa 1893 Coffee,Breakfast-ish,Gives Back,pending
-Kaizen Food Company,Pantry,Regenerative Ingredients,pending
-kencko,Breakfast-ish,Organic,pending
-Keya's Snacks,Puffs+Crunch,Organic,pending
-Kittylamb,Sweets+Treats,Organic,pending
-Kosterina,Pantry,Gives Back,pending
-LL's Kitchen,Breakfast-ish,Gives Back,pending
-MALK Organics,Breakfast-ish,Organic,pending
+Figure Ate,Bites+Chews,Regenerative Ingredients,"imported (Airtable batch 1, as Figure Ate Foods persimmon vinegar)"
+Floura,Bites+Chews,Regenerative Ingredients,screened-reject (no verifiable brand/signal found)
+Frankie's Fabulous Granola,Breakfast-ish,Gives Back,screened-reject ($1/bag to SAG-AFTRA Foundation is named but not a certification; not food/ag-focused cause)
+Garden Based,Pantry,Gives Back,screened-reject (brand not identified)
+Geem,Puffs+Crunch,Regenerative Ingredients,"screened-reject (regenerative claim is about seaweed as a crop type, not a certified practice)"
+Ghips,Puffs+Crunch,Regenerative Ingredients,screened-reject (no certification found)
+Go a Little Nuts,Bites+Chews,Regenerative Ingredients,screened-reject (no verifiable signal found)
+GOOD GREED,Sweets+Treats,Gives Back,"screened-hold (1% of proceeds to NAMI stated, needs direct site verify)"
+Good Twin,Non-Alc,Organic,shortlisted
+Gwell,Bites+Chews,Gives Back,"screened-reject (food equity mission stated, no certification)"
+Harken Sweets,Sweets+Treats,Regenerative Ingredients,shortlisted
+Harry's Famous Sauce,Pantry,"Regenerative Ingredients, Gives Back",shortlisted
+Hayati,Pantry,Gives Back,screened-reject (not certified organic per brand's own site; donation not quantified)
+Herbs & Kettles,Pantry,Regenerative Ingredients,"screened-reject (inconsistent organic status across sourcing, self-reported)"
+iMind Brain Food,Bites+Chews,Organic,shortlisted
+Jennie's House,Pantry,Regenerative Ingredients,screened-reject (brand not identified)
+Joey Nordic Seed Crisps,Puffs+Crunch,Organic,shortlisted
+JOYA,Sweets+Treats,Gives Back,screened-reject (brand name ambiguous across multiple unrelated companies)
+Kahawa 1893 Coffee,Breakfast-ish,Gives Back,"screened-reject (no GFA category -- coffee; otherwise strong direct-trade signal, flagged for Giovanni)"
+Kaizen Food Company,Pantry,Regenerative Ingredients,screened-hold (GFCO + Kosher + 3rd-party glyphosate testing verified; regenerative claim uncertified)
+kencko,Breakfast-ish,Organic,shortlisted
+Keya's Snacks,Puffs+Crunch,Organic,"screened-reject (mission-driven story, no certification or direct-trade signal)"
+Kittylamb,Sweets+Treats,Organic,shortlisted
+Kosterina,Pantry,Gives Back,rejected -- duplicate of existing live product (Kosterina Original EVOO)
+LL's Kitchen,Breakfast-ish,Gives Back,"screened-reject (mental-health giving stated, no % or certification disclosed)"
+MALK Organics,Breakfast-ish,Organic,"screened-reject (no GFA category -- oat milk; otherwise USDA Organic certified, flagged for Giovanni)"
 Marianne's,Pantry,"Organic, Regenerative Ingredients",pending
 Mary's Gone Crackers,Puffs+Crunch,Organic,pending
 Matchpoint,Pantry,Organic,pending
