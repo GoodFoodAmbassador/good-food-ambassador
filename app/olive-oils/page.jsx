@@ -355,9 +355,14 @@ function ProductList({ products }) {
               </p>
             )}
             {product.description && (
-              <p style={{ fontSize: 14, lineHeight: 1.75, color: '#777', maxWidth: 560 }}>
+              <p style={{ fontSize: 14, lineHeight: 1.75, color: '#777', maxWidth: 560, marginBottom: Object.values(product.pillars).some(Boolean) ? 12 : 0 }}>
                 {product.description}
               </p>
+            )}
+            {Object.values(product.pillars).some(Boolean) && (
+              <Link href={`/olive-oils/${generateSlug(product.name)}`} style={{ display: 'inline-block', fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 12, fontWeight: 600, letterSpacing: '0.04em', color: T, textDecoration: 'none', borderBottom: `1px solid ${T}`, paddingBottom: 1 }}>
+                Read the full evaluation →
+              </Link>
             )}
           </div>
 

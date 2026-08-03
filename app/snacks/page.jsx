@@ -196,7 +196,12 @@ function ProductList({ products }) {
               {product.producer && <span style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 12, color: '#aaa', fontWeight: 500 }}>{product.producer}</span>}
             </div>
             {product.origin && <p style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 11, fontWeight: 600, letterSpacing: '0.06em', textTransform: 'uppercase', color: '#bbb', marginBottom: 12 }}>{product.origin}</p>}
-            {product.description && <p style={{ fontSize: 14, lineHeight: 1.75, color: '#777', maxWidth: 560 }}>{product.description}</p>}
+            {product.description && <p style={{ fontSize: 14, lineHeight: 1.75, color: '#777', maxWidth: 560, marginBottom: Object.values(product.pillars).some(Boolean) ? 12 : 0 }}>{product.description}</p>}
+            {Object.values(product.pillars).some(Boolean) && (
+              <Link href={`/snacks/${generateSlug(product.name)}`} style={{ display: 'inline-block', fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 12, fontWeight: 600, letterSpacing: '0.04em', color: T, textDecoration: 'none', borderBottom: `1px solid ${T}`, paddingBottom: 1 }}>
+                Read the full evaluation →
+              </Link>
+            )}
           </div>
           {product.buyLinks.length > 0 && (
             <div style={{ display: 'flex', flexDirection: 'column', gap: 8, minWidth: 140 }}>

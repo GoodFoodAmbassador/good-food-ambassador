@@ -109,6 +109,12 @@ const UPDATES = [
     PillarClean: "COOC certified. Harvest date disclosed. Non-GMO Project Verified. Two distinct product lines: '100% California' (fully domestic) and 'Global Blend' (California oil combined with international sources). The distinction is stated on label.",
     PillarFair:  "Large-scale domestic producer. Supply chain details for international blend components are not publicly disclosed. No fair trade or co-operative certification.",
     PillarTrue:  "'California' branding on the domestic line is accurate and COOC-verified. 'Global Blend' labelling is transparent about non-California sourcing. Harvest date stated. No misleading country-of-origin claims made." },
+
+  { Name: 'Castillo de Canena Arbequina',
+    PillarGood:  "Arbequina monovariety, single estate in the Guadalquivir Valley, Jaén, Andalusia — farmed by the same family since 1780. Cold-pressed, harvest-dated. Grassy, peppery finish with genuine bitterness, consistent with the estate's published high-polyphenol lab results for this line.",
+    PillarClean: "ECOCERT organic certified. Single variety (Arbequina) and single estate stated. A QR code on each bottle links to the specific grove, harvest date, mill batch number, and laboratory results (fatty acid profile, sterol composition) — third-party lab data, not a self-declared claim.",
+    PillarFair:  "Family-run estate on land farmed since 1780, bottling under its own label since the early 2000s. Direct export distribution. No third-party fair trade or co-operative certification.",
+    PillarTrue:  "Harvest date and lab results are independently verifiable per bottle via the QR/batch traceability system, rather than asserted without evidence. The high-polyphenol claim is consistent with that published test data. No legacy phrases such as 'first cold press' used in current labelling." },
 ]
 
 async function getAllRecordIds() {
