@@ -1,28 +1,28 @@
 Brand,PUG Aisle(s),PUG Signal Tag(s),Status
 (P)RiND,Puffs+Crunch,Organic,"screened-hold (inconclusive organic claim, needs direct verify)"
-All The Bitter,Non-Alc,Gives Back,shortlisted
-Auntie Rana's,Pantry,Gives Back,shortlisted
+All The Bitter,Non-Alc,Gives Back,imported (Airtable batch 1)
+Auntie Rana's,Pantry,Gives Back,"imported (Airtable batch 1, corrected to olive-oils/condiments category)"
 Bachan's,Saucy+Spicy,Gives Back,screened-reject (no verifiable signal beyond brand story)
-Bake Away,Sweets+Treats,Gives Back,shortlisted
+Bake Away,Sweets+Treats,Gives Back,imported (Airtable batch 1)
 Batch,Pantry,Organic,"screened-hold (brand unclear, needs direct site check)"
 Boss Cow,"Pantry, Sweets+Treats",Regenerative Ingredients,screened-reject (no GFA category -- dairy)
-Brass Roots,Puffs+Crunch,Gives Back,shortlisted
-Brightland,Pantry,Gives Back,shortlisted
+Brass Roots,Puffs+Crunch,Gives Back,imported (Airtable batch 1)
+Brightland,Pantry,Gives Back,rejected — duplicate of existing live product (Brightland Alive EVOO)
 But Better,Bites+Chews,Organic,screened-reject (no verifiable signal found)
-Cactus Crunch,Puffs+Crunch,Gives Back,shortlisted
+Cactus Crunch,Puffs+Crunch,Gives Back,imported (Airtable batch 1)
 CAFF,Bites+Chews,Organic,"screened-reject (self-described organic only, no cert)"
 Chewsy,Bites+Chews,Gives Back,screened-reject (no GFA category -- gum)
-Chocxo,Sweets+Treats,Organic,shortlisted
+Chocxo,Sweets+Treats,Organic,imported (Airtable batch 1)
 Cob,Puffs+Crunch,"Regenerative Ingredients, Gives Back",screened-reject (regenerative claim not certified/verified)
 Creature Matcha,Pantry,Organic,"screened-hold (not found, needs direct site check)"
-DEFI Snacks,Sweets+Treats,Gives Back,shortlisted
+DEFI Snacks,Sweets+Treats,Gives Back,imported (Airtable batch 1)
 Desert Dust,Pantry,Organic,screened-reject (partial-ingredient organic claim only)
-Dirtbag Bar,Sweets+Treats,"Organic, Gives Back",shortlisted
+Dirtbag Bar,Sweets+Treats,"Organic, Gives Back",imported (Airtable batch 1)
 Dr. Smood,Bites+Chews,Organic,"screened-reject (cafe chain, not a shippable retail product)"
-edggies veggies,Pantry,Organic,shortlisted
-Evo Hemp,Bites+Chews,Regenerative Ingredients,shortlisted
-Felicia,Pantry,Organic,shortlisted
-Figa Foods,Sweets+Treats,Regenerative Ingredients,shortlisted
+edggies veggies,Pantry,Organic,imported (Airtable batch 1)
+Evo Hemp,Bites+Chews,Regenerative Ingredients,rejected — signaled bar line discontinued (evohemp.com no longer sells bars)
+Felicia,Pantry,Organic,"imported (Airtable batch 1, grains category)"
+Figa Foods,Sweets+Treats,Regenerative Ingredients,imported (Airtable batch 1)
 Figure Ate,Bites+Chews,Regenerative Ingredients,shortlisted
 Floura,Bites+Chews,Regenerative Ingredients,pending
 Frankie's Fabulous Granola,Breakfast-ish,Gives Back,pending
