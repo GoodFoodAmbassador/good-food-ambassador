@@ -1,0 +1,641 @@
+{
+  "blankRecordIds": [
+    "rec2iDSzmDgHo315E",
+    "recxu5w72SUdS6kSa"
+  ],
+  "deleteRecordIds": [
+    "rec03ITRHRdRwuVVs",
+    "recDE6sjCbjtAlil5",
+    "rec0JQb2xLifbJLCm",
+    "rec0SRIUXaiQfiKAI",
+    "recH3dCzz48RJ7g9C",
+    "rec2RZrTJJ46VvxRT",
+    "rec2eOxKYIRja0Qgs",
+    "recqkezPP6ep1VCdd",
+    "rec2nSMEQ9uw5hEf1",
+    "recWR8pTxYXMkEG5P",
+    "rec30YkRXN7d25h5r",
+    "rec3YBYdFQg9Dwbi0",
+    "recuzdHhu59JCyfQG",
+    "rec4lW20kcMQHQJUC",
+    "rec5OnElllcnnU4e3",
+    "rechQprA0Y3zY5ov5",
+    "rec5kE5eCP6W48vHh",
+    "rec5kzwhijfn6QSLq",
+    "rec6iXja1pLKFOjvZ",
+    "recQpMIxlCbHlsOYh",
+    "rec7s1mB7Ed0XKTGL",
+    "rec87RkaG5YFT9TmK",
+    "rec8S6P1eprOdT8FT",
+    "rec8Vhdwj2642YZFB",
+    "rec91yYfoXwQMzDiF",
+    "rec9C3EXJ1oXT1rcB",
+    "recgSagei4e72rk8q",
+    "recvwVDhK5UQo7rVk",
+    "recAhsLDmSDSJ7SaQ",
+    "recAhrunDodiXBnez",
+    "recBAdutbifuZaDYe",
+    "recBzgn6K50eQdSOi",
+    "recLueYA74ojH6mMF",
+    "recCkOACqYTtFX4q0",
+    "recVcdLNOWt8oPlIa",
+    "recDtJN0dk025bAGw",
+    "recpwsAkBdm2bhJ4a",
+    "recEg68cyFjCVJoTe",
+    "recFKgQeyAemoL6dI",
+    "rechkOsKoapHRO2xc",
+    "recfm6b85LxNFHeIv",
+    "recKQycBtAfDX91BJ",
+    "recMRdU6ezyjo35xi",
+    "recHVYJSsFXvudBGQ",
+    "recwgVsgW1leFTZ88",
+    "recphJsm6z3EGdeTO",
+    "recQGnLfe8bJTsr7j",
+    "recI1zbIYXDrkA54d",
+    "recIcfab2TVPLHLzw",
+    "recJgnTBNI5839AcH",
+    "recKRDq7scXqKUkEX",
+    "recZVPxKrXBnYAcRL",
+    "recLXtYPfV0Sd1vdP",
+    "recYPhTKrqRJJCvK8",
+    "recMkk8BFNHYAcxBv",
+    "recN0DZVPqo5ie3s9",
+    "recNPnUEUtMb3fr7i",
+    "recjyGgZ4PLsY1z9D",
+    "recwX2MdCiCRTzgPa",
+    "recP8gyATis2XHNxO",
+    "recQ0kUyWWHZj1BSS",
+    "reczUnmJKUVNFSFOE",
+    "recerXhndz4phmkSs",
+    "reclSiOX0xxCb8jRs",
+    "recvHAw8ozQCft3St",
+    "recacw03SUyuNSaZ9",
+    "recwIp22t5zSj9nOK",
+    "recSh4JZMPFYfY9gu",
+    "recTSeaHhcPr3ZOWs",
+    "recUpCC5VFsLu6mka",
+    "recUpWEMiMuIjt4BC",
+    "recUxc8E38jdoCVHL",
+    "recUxiJtgYJlbhdF8",
+    "recyKKSJhoDs4PQZV",
+    "receHSt2FhimCAVrO",
+    "recnPoBI3T6h1u1tC",
+    "recqigX5rMzSKTsPA",
+    "recY1YbsvLHDgF8gK",
+    "recbIhS5Gp2m3HS7y",
+    "rechRivLREKOgWybz",
+    "recgi5h1983Mu3oIp",
+    "reczgDZr3i2cAqXqj",
+    "recp8BgASuqtl5vT3",
+    "recdCUvA5QcOIAt2E",
+    "reczt5rIG0mqIYD5T",
+    "recg4aekwiJsrFMUt",
+    "recitFLrWGiqMAM3Q",
+    "recyrDDOGGEIHQRZk",
+    "recr14UFF0E6QUlFm",
+    "recr64Ij3YBNdwyMR"
+  ],
+  "deleteDetails": [
+    {
+      "id": "rec03ITRHRdRwuVVs",
+      "name": "Anson Mills Farro Piccolo (Einkorn)",
+      "category": "grains",
+      "reason": "duplicate of kept record rec4Hq8snvvjjL2Jv (category: grains) — this copy has no buy links"
+    },
+    {
+      "id": "recDE6sjCbjtAlil5",
+      "name": "Clearspring Organic Japanese Tamari",
+      "category": "olive-oils",
+      "reason": "duplicate of kept record rec0AEU4pRm74s4il (category: olive-oils) — this copy has no buy links"
+    },
+    {
+      "id": "rec0JQb2xLifbJLCm",
+      "name": "Entelia Private Reserve PDO Kolymvari",
+      "category": "olive-oils",
+      "reason": "duplicate of kept record recSrGdObFa88KpZT (category: olive-oils) — this copy has no buy links"
+    },
+    {
+      "id": "rec0SRIUXaiQfiKAI",
+      "name": "BREZ Flow Functional Mushroom Drink",
+      "category": "lna",
+      "reason": "duplicate of kept record recIZInMYS1g1jbiE (category: lna) — this copy has no buy links"
+    },
+    {
+      "id": "recH3dCzz48RJ7g9C",
+      "name": "Olio Guglielmi Crushed Chili Pepper EVOO",
+      "category": "olive-oils",
+      "reason": "duplicate of kept record rec0pG0gubA9b801Y (category: olive-oils) — this copy has no buy links"
+    },
+    {
+      "id": "rec2RZrTJJ46VvxRT",
+      "name": "Oro del Desierto Organic Coupage",
+      "category": "olive-oils",
+      "reason": "duplicate of kept record reclsDu2d7vr8eahU (category: olive-oils) — this copy has no buy links"
+    },
+    {
+      "id": "rec2eOxKYIRja0Qgs",
+      "name": "Hu Kitchen Simple Dark Chocolate Bar",
+      "category": "snacks",
+      "reason": "duplicate of kept record recvtR7VqhRlCKFG7 (category: snacks) — this copy has no buy links"
+    },
+    {
+      "id": "recqkezPP6ep1VCdd",
+      "name": "Iannotta Organic Garlic Flavored EVOO",
+      "category": "olive-oils",
+      "reason": "duplicate of kept record rec2m7DRRzAeFZWEH (category: olive-oils) — this copy has no buy links"
+    },
+    {
+      "id": "rec2nSMEQ9uw5hEf1",
+      "name": "Collective Arts Surreal Perpetual Paloma",
+      "category": "lna",
+      "reason": "duplicate of kept record recQN5llWKjs5PSnz (category: lna) — this copy has no buy links"
+    },
+    {
+      "id": "recWR8pTxYXMkEG5P",
+      "name": "Anson Mills Antebellum Coarse Grits",
+      "category": "grains",
+      "reason": "duplicate of kept record rec2rYWn3F45nfzfI (category: grains) — this copy has no buy links"
+    },
+    {
+      "id": "rec30YkRXN7d25h5r",
+      "name": "Quattrociocchi Rosemary Organic Infused EVOO",
+      "category": "olive-oils",
+      "reason": "duplicate of kept record recoCHZjjhPbftj9j (category: olive-oils) — this copy has no buy links"
+    },
+    {
+      "id": "rec3YBYdFQg9Dwbi0",
+      "name": "Bragg Organic Liquid Aminos",
+      "category": "olive-oils",
+      "reason": "duplicate of kept record rec47eWzGJUFZk2qJ (category: olive-oils) — this copy has no buy links"
+    },
+    {
+      "id": "recuzdHhu59JCyfQG",
+      "name": "Big Tree Farms Organic Coconut Aminos Smoked",
+      "category": "olive-oils",
+      "reason": "duplicate of kept record rec49Pi1qrOdcjMAR (category: olive-oils) — this copy has no buy links"
+    },
+    {
+      "id": "rec4lW20kcMQHQJUC",
+      "name": "Vital Choice Wild Alaskan Halibut Fillets",
+      "category": "seafood",
+      "reason": "duplicate of kept record rectKhjNqWfeAC0oL (category: seafood) — this copy has no buy links"
+    },
+    {
+      "id": "rec5OnElllcnnU4e3",
+      "name": "Frantoio Bonamini IGP Balsamic Vinegar of Modena Purple Label",
+      "category": "olive-oils",
+      "reason": "duplicate of kept record reciN9EBqLhGO0W7y (category: olive-oils) — this copy has no buy links"
+    },
+    {
+      "id": "rechQprA0Y3zY5ov5",
+      "name": "Oro del Desierto Organic Picual",
+      "category": "olive-oils",
+      "reason": "duplicate of kept record rec5WyyqrNjKbDNsd (category: olive-oils) — this copy has no buy links"
+    },
+    {
+      "id": "rec5kE5eCP6W48vHh",
+      "name": "Vital Choice Wild King Salmon Fillets",
+      "category": "seafood",
+      "reason": "duplicate of kept record recmBkiZsIrdtFa4y (category: seafood) — this copy has no buy links"
+    },
+    {
+      "id": "rec5kzwhijfn6QSLq",
+      "name": "Momentum Brewery Hazy IPA",
+      "category": "lna",
+      "reason": "duplicate of kept record recdTGA90AqJhVr6H (category: lna) — this copy has no buy links"
+    },
+    {
+      "id": "rec6iXja1pLKFOjvZ",
+      "name": "Anson Mills Stone Cut Oats",
+      "category": "grains",
+      "reason": "duplicate of kept record recY7KAbDw5kA16eI (category: grains) — this copy has no buy links"
+    },
+    {
+      "id": "recQpMIxlCbHlsOYh",
+      "name": "Anson Mills Carolina Gold Rice",
+      "category": "grains",
+      "reason": "duplicate of kept record rec7AWFQaiOrKtIyh (category: grains) — this copy has no buy links"
+    },
+    {
+      "id": "rec7s1mB7Ed0XKTGL",
+      "name": "Christmas Lima Bean",
+      "category": "legumes",
+      "reason": "duplicate of kept record recyg04Zt55irfTmF (category: legumes) — this copy has no buy links"
+    },
+    {
+      "id": "rec87RkaG5YFT9TmK",
+      "name": "Scarlet Runner Bean",
+      "category": "legumes",
+      "reason": "duplicate of kept record recuGl05gffMpyCiU (category: legumes) — this copy has no buy links"
+    },
+    {
+      "id": "rec8S6P1eprOdT8FT",
+      "name": "Coconut Secret Organic Coconut Aminos",
+      "category": "olive-oils",
+      "reason": "duplicate of kept record recu31RG86Wjn4YYE (category: olive-oils) — this copy has no buy links"
+    },
+    {
+      "id": "rec8Vhdwj2642YZFB",
+      "name": "Anson Mills Rouge de Bordeaux Bread Flour",
+      "category": "grains",
+      "reason": "duplicate of kept record recr3OtpRXo5HWCVW (category: grains) — this copy has no buy links"
+    },
+    {
+      "id": "rec91yYfoXwQMzDiF",
+      "name": "Entelia Novello",
+      "category": "olive-oils",
+      "reason": "duplicate of kept record recCUw6o9dREOCRtF (category: olive-oils) — this copy has no buy links"
+    },
+    {
+      "id": "rec9C3EXJ1oXT1rcB",
+      "name": "Quattrociocchi Garlic Organic Infused EVOO",
+      "category": "olive-oils",
+      "reason": "duplicate of kept record recNalKZF2E8v6PxG (category: olive-oils) — this copy has no buy links"
+    },
+    {
+      "id": "recgSagei4e72rk8q",
+      "name": "NON NON3 Toasted Cinnamon & Yuzu",
+      "category": "lna",
+      "reason": "duplicate of kept record rec9k2WBg7r1MkfV8 (category: lna) — this copy has no buy links"
+    },
+    {
+      "id": "recvwVDhK5UQo7rVk",
+      "name": "Vital Choice Wild Alaskan Spot Prawns",
+      "category": "seafood",
+      "reason": "duplicate of kept record recAW2DN6OAnCatxo (category: seafood) — this copy has no buy links"
+    },
+    {
+      "id": "recAhsLDmSDSJ7SaQ",
+      "name": "Vital Choice Wild Alaskan Sablefish (Black Cod)",
+      "category": "seafood",
+      "reason": "duplicate of kept record recAhS24bv1VewIV7 (category: seafood) — this copy has no buy links"
+    },
+    {
+      "id": "recAhrunDodiXBnez",
+      "name": "Terre Francescane Lemon Infused EVOO",
+      "category": "olive-oils",
+      "reason": "duplicate of kept record recOJCcFyimJGzPOs (category: olive-oils) — this copy has no buy links"
+    },
+    {
+      "id": "recBAdutbifuZaDYe",
+      "name": "Vital Choice Wild Dungeness Crab Meat",
+      "category": "seafood",
+      "reason": "duplicate of kept record recR02Uo2YqgyKVjI (category: seafood) — this copy has no buy links"
+    },
+    {
+      "id": "recBzgn6K50eQdSOi",
+      "name": "Cassoulet (Tarbais) Bean",
+      "category": "legumes",
+      "reason": "duplicate of kept record recBYX4zBhK8CoHrm (category: legumes) — this copy has no buy links"
+    },
+    {
+      "id": "recLueYA74ojH6mMF",
+      "name": "Woodland Farms Ruby Sour Ale",
+      "category": "lna",
+      "reason": "duplicate of kept record recBenYwOvvYOPaPF (category: lna) — this copy has no buy links"
+    },
+    {
+      "id": "recCkOACqYTtFX4q0",
+      "name": "Timeless Emmer Farro",
+      "category": "grains",
+      "reason": "duplicate of kept record recMrMQeaxJEJjeFA (category: grains) — this copy has no buy links"
+    },
+    {
+      "id": "recVcdLNOWt8oPlIa",
+      "name": "Terre Francescane Black Truffle Infused EVOO",
+      "category": "olive-oils",
+      "reason": "duplicate of kept record recDpE9nkLfL6veAs (category: olive-oils) — this copy has no buy links"
+    },
+    {
+      "id": "recDtJN0dk025bAGw",
+      "name": "San-J Organic Tamari",
+      "category": "olive-oils",
+      "reason": "duplicate of kept record recQQCp9ZYJwNCBLH (category: olive-oils) — this copy has no buy links"
+    },
+    {
+      "id": "recpwsAkBdm2bhJ4a",
+      "name": "Recess Zero Proof Lime Margarita",
+      "category": "lna",
+      "reason": "duplicate of kept record recEfa5bPGbPgQvVP (category: lna) — this copy has no buy links"
+    },
+    {
+      "id": "recEg68cyFjCVJoTe",
+      "name": "Mussini PGI Balsamic Vinegar of Modena 5 Gold Medals",
+      "category": "olive-oils",
+      "reason": "duplicate of kept record recaRFMQjgeeHdgD4 (category: olive-oils) — this copy has no buy links"
+    },
+    {
+      "id": "recFKgQeyAemoL6dI",
+      "name": "Vital Choice Wild Coho Salmon Fillets",
+      "category": "seafood",
+      "reason": "duplicate of kept record recgHf7Rjb5ofiMZd (category: seafood) — this copy has no buy links"
+    },
+    {
+      "id": "rechkOsKoapHRO2xc",
+      "name": "Ohsawa Organic Nama Shoyu",
+      "category": "olive-oils",
+      "reason": "duplicate of kept record recFW8JPKBCgIiPrf (category: olive-oils) — this copy has no buy links"
+    },
+    {
+      "id": "recfm6b85LxNFHeIv",
+      "name": "Oleoestepa Egregio Organic",
+      "category": "olive-oils",
+      "reason": "duplicate of kept record recFY4bJ9r9X9g38p (category: olive-oils) — this copy has no buy links"
+    },
+    {
+      "id": "recKQycBtAfDX91BJ",
+      "name": "Vital Choice Wild Sockeye Salmon Fillets",
+      "category": "seafood",
+      "reason": "duplicate of kept record recGB52rDI4NtTRSa (category: seafood) — this copy has no buy links"
+    },
+    {
+      "id": "recMRdU6ezyjo35xi",
+      "name": "Quattrociocchi Olivastro Organic",
+      "category": "olive-oils",
+      "reason": "duplicate of kept record recGeSYiY4luuESg8 (category: olive-oils) — this copy has no buy links"
+    },
+    {
+      "id": "recHVYJSsFXvudBGQ",
+      "name": "Hidatsa Red Bean",
+      "category": "legumes",
+      "reason": "duplicate of kept record recGpTpW0oU6dHN2C (category: legumes) — this copy has no buy links"
+    },
+    {
+      "id": "recwgVsgW1leFTZ88",
+      "name": "Kishibori Premium Shoyu",
+      "category": "olive-oils",
+      "reason": "duplicate of kept record recGtNdqdEbOSgnmt (category: olive-oils) — this copy has no buy links"
+    },
+    {
+      "id": "recphJsm6z3EGdeTO",
+      "name": "Timeless French Green Lentils",
+      "category": "grains",
+      "reason": "duplicate of kept record recH6UzzWHHIr7t6i (category: legumes) — this copy has no buy links"
+    },
+    {
+      "id": "recQGnLfe8bJTsr7j",
+      "name": "Good Mother Stallard Bean",
+      "category": "legumes",
+      "reason": "duplicate of kept record recHlHjz2U0DHsqO1 (category: legumes) — this copy has no buy links"
+    },
+    {
+      "id": "recI1zbIYXDrkA54d",
+      "name": "Primal Kitchen Dark Chocolate Almond Bar",
+      "category": "snacks",
+      "reason": "duplicate of kept record receLyNI6uzW22P39 (category: snacks) — this copy has no buy links"
+    },
+    {
+      "id": "recIcfab2TVPLHLzw",
+      "name": "Simple Mills Almond Flour Crackers",
+      "category": "snacks",
+      "reason": "duplicate of kept record recb9WoJ8ItuL9eZg (category: snacks) — this copy has no buy links"
+    },
+    {
+      "id": "recJgnTBNI5839AcH",
+      "name": "Eden Foods Organic Shoyu",
+      "category": "olive-oils",
+      "reason": "duplicate of kept record recxYCkJDGCtNwgGU (category: olive-oils) — this copy has no buy links"
+    },
+    {
+      "id": "recKRDq7scXqKUkEX",
+      "name": "Arvum Vinagre Gran Reserva",
+      "category": "olive-oils",
+      "reason": "duplicate of kept record recMs7G16C1lIJPYj (category: olive-oils) — this copy has no buy links"
+    },
+    {
+      "id": "recZVPxKrXBnYAcRL",
+      "name": "Arvum Vinagre Reserva al Moscatel",
+      "category": "olive-oils",
+      "reason": "duplicate of kept record recKb9h4pYWEGsq2Y (category: olive-oils) — this copy has no buy links"
+    },
+    {
+      "id": "recLXtYPfV0Sd1vdP",
+      "name": "Marcella Bean",
+      "category": "legumes",
+      "reason": "duplicate of kept record receLM3y40VDqCtGc (category: legumes) — this copy has no buy links"
+    },
+    {
+      "id": "recYPhTKrqRJJCvK8",
+      "name": "Vital Choice Wild Pink Salmon (Canned)",
+      "category": "seafood",
+      "reason": "duplicate of kept record recLeGXIgLli41Cg3 (category: seafood) — this copy has no buy links"
+    },
+    {
+      "id": "recMkk8BFNHYAcxBv",
+      "name": "Castillo de Canena Smoked Arbequina",
+      "category": "olive-oils",
+      "reason": "duplicate of kept record recgOaJT6tCUEIZPR (category: olive-oils) — this copy has no buy links"
+    },
+    {
+      "id": "recN0DZVPqo5ie3s9",
+      "name": "Frantoio Bonamini IGP Balsamic Vinegar of Modena Gold Label",
+      "category": "olive-oils",
+      "reason": "duplicate of kept record recxgs04vtRtqYnS6 (category: olive-oils) — this copy has no buy links"
+    },
+    {
+      "id": "recNPnUEUtMb3fr7i",
+      "name": "Quattrociocchi Peperoncino Organic Infused EVOO",
+      "category": "olive-oils",
+      "reason": "duplicate of kept record recw6jeV8mKrx8BQg (category: olive-oils) — this copy has no buy links"
+    },
+    {
+      "id": "recjyGgZ4PLsY1z9D",
+      "name": "Barnana Organic Plantain Chips",
+      "category": "snacks",
+      "reason": "duplicate of kept record recOJxlxyqFDwyLA2 (category: snacks) — this copy has no buy links"
+    },
+    {
+      "id": "recwX2MdCiCRTzgPa",
+      "name": "Yamasa Organic Soy Sauce",
+      "category": "olive-oils",
+      "reason": "duplicate of kept record recOtlJIYYKeE6p6c (category: olive-oils) — this copy has no buy links"
+    },
+    {
+      "id": "recP8gyATis2XHNxO",
+      "name": "Nobleza del Sur Organic Day",
+      "category": "olive-oils",
+      "reason": "duplicate of kept record recRsXctosEDYFLQX (category: olive-oils) — this copy has no buy links"
+    },
+    {
+      "id": "recQ0kUyWWHZj1BSS",
+      "name": "Timeless Crimson Lentils",
+      "category": "grains",
+      "reason": "duplicate of kept record recly8CHrbMyEBeab (category: legumes) — this copy has no buy links"
+    },
+    {
+      "id": "reczUnmJKUVNFSFOE",
+      "name": "Rincón de la Subbética",
+      "category": "olive-oils",
+      "reason": "duplicate of kept record recQ3vDM5QKOwhdbF (category: olive-oils) — this copy has no buy links"
+    },
+    {
+      "id": "recerXhndz4phmkSs",
+      "name": "Kate's Real Food Lemon Coconut Bar",
+      "category": "snacks",
+      "reason": "duplicate of kept record recQTn5RGiOnvzWkX (category: snacks) — this copy has no buy links"
+    },
+    {
+      "id": "reclSiOX0xxCb8jRs",
+      "name": "Ayocote Morado Bean",
+      "category": "legumes",
+      "reason": "duplicate of kept record recR2pVrcdToZd2L6 (category: legumes) — this copy has no buy links"
+    },
+    {
+      "id": "recvHAw8ozQCft3St",
+      "name": "Navitas Organics Cacao Blueberry Power Snack",
+      "category": "snacks",
+      "reason": "duplicate of kept record recRZgKd5WUGY61cS (category: snacks) — this copy has no buy links"
+    },
+    {
+      "id": "recacw03SUyuNSaZ9",
+      "name": "Casa del Agua Vinagre de Jerez Reserva",
+      "category": "olive-oils",
+      "reason": "duplicate of kept record recSKbrlFK3cI7ZPn (category: olive-oils) — this copy has no buy links"
+    },
+    {
+      "id": "recwIp22t5zSj9nOK",
+      "name": "Vital Choice Wild Pacific Albacore Tuna",
+      "category": "seafood",
+      "reason": "duplicate of kept record recSbYirMFDCahb19 (category: seafood) — this copy has no buy links"
+    },
+    {
+      "id": "recSh4JZMPFYfY9gu",
+      "name": "Royal Corona Bean",
+      "category": "legumes",
+      "reason": "duplicate of kept record recZxDiZNavTV4oLQ (category: legumes) — this copy has no buy links"
+    },
+    {
+      "id": "recTSeaHhcPr3ZOWs",
+      "name": "Vital Choice Wild Sockeye Salmon Roe (Ikura)",
+      "category": "seafood",
+      "reason": "duplicate of kept record recrkz5eOKMA3lwRN (category: seafood) — this copy has no buy links"
+    },
+    {
+      "id": "recUpCC5VFsLu6mka",
+      "name": "Terre Francescane Peperoncino Infused EVOO",
+      "category": "olive-oils",
+      "reason": "duplicate of kept record recZlVbLBmMXGo2Jq (category: olive-oils) — this copy has no buy links"
+    },
+    {
+      "id": "recUpWEMiMuIjt4BC",
+      "name": "Frantoi Cutrera Primo Double Organic PDO Monte Iblei",
+      "category": "olive-oils",
+      "reason": "duplicate of kept record recmz8wcz8qfZxFrB (category: olive-oils) — this copy has no buy links"
+    },
+    {
+      "id": "recUxc8E38jdoCVHL",
+      "name": "KIT NA Brewing On Your Mark Blonde",
+      "category": "lna",
+      "reason": "duplicate of kept record reclGCxSXHDZhpNTq (category: lna) — this copy has no buy links"
+    },
+    {
+      "id": "recUxiJtgYJlbhdF8",
+      "name": "Mussini Saba Cooked Grape Must Condiment",
+      "category": "olive-oils",
+      "reason": "duplicate of kept record recgMbmhoohnH1cC3 (category: olive-oils) — this copy has no buy links"
+    },
+    {
+      "id": "recyKKSJhoDs4PQZV",
+      "name": "Leitz Eins Zwei Zero Sparkling Rosé",
+      "category": "lna",
+      "reason": "duplicate of kept record recVAhYSyiq9jouFv (category: lna) — this copy has no buy links"
+    },
+    {
+      "id": "receHSt2FhimCAVrO",
+      "name": "Fly By Jing Sichuan Chili Crisp",
+      "category": "snacks",
+      "reason": "duplicate of kept record recWasPoEiimeF0u3 (category: snacks) — this copy has no buy links"
+    },
+    {
+      "id": "recnPoBI3T6h1u1tC",
+      "name": "Timeless Pardina Lentils",
+      "category": "grains",
+      "reason": "duplicate of kept record recX4IhrK4Hqh02J6 (category: legumes) — this copy has no buy links"
+    },
+    {
+      "id": "recqigX5rMzSKTsPA",
+      "name": "Yellow Eye Bean",
+      "category": "legumes",
+      "reason": "duplicate of kept record recXqnMiBRxnTZ4fH (category: legumes) — this copy has no buy links"
+    },
+    {
+      "id": "recY1YbsvLHDgF8gK",
+      "name": "Hu Kitchen Almond Butter Dark Chocolate Bar",
+      "category": "snacks",
+      "reason": "duplicate of kept record recfCMc9OzD79JqPE (category: snacks) — this copy has no buy links"
+    },
+    {
+      "id": "recbIhS5Gp2m3HS7y",
+      "name": "Rio Zape Bean",
+      "category": "legumes",
+      "reason": "duplicate of kept record recY40IMpS83fZaEA (category: legumes) — this copy has no buy links"
+    },
+    {
+      "id": "rechRivLREKOgWybz",
+      "name": "Wan Ja Shan Organic Tamari",
+      "category": "olive-oils",
+      "reason": "duplicate of kept record recZiZrBGpgJTc6hf (category: olive-oils) — this copy has no buy links"
+    },
+    {
+      "id": "recgi5h1983Mu3oIp",
+      "name": "Castillo de Canena Cabernet Sauvignon Vinegar",
+      "category": "olive-oils",
+      "reason": "duplicate of kept record recaTthFhNOB22HVi (category: olive-oils) — this copy has no buy links"
+    },
+    {
+      "id": "reczgDZr3i2cAqXqj",
+      "name": "Colonna Granverde Lemon EVOO",
+      "category": "olive-oils",
+      "reason": "duplicate of kept record reccg2XnxIBL8A8Nj (category: olive-oils) — this copy has no buy links"
+    },
+    {
+      "id": "recp8BgASuqtl5vT3",
+      "name": "Arvum Vinagre Reserva al Pedro Ximenez",
+      "category": "olive-oils",
+      "reason": "duplicate of kept record reccgmWKosGeKDp1N (category: olive-oils) — this copy has no buy links"
+    },
+    {
+      "id": "recdCUvA5QcOIAt2E",
+      "name": "Siete Grain-Free Tortilla Chips",
+      "category": "snacks",
+      "reason": "duplicate of kept record recpjTfHDrHrSNHaM (category: snacks) — this copy has no buy links"
+    },
+    {
+      "id": "reczt5rIG0mqIYD5T",
+      "name": "Quattrociocchi Superbo Organic",
+      "category": "olive-oils",
+      "reason": "duplicate of kept record receJ0OZGL7QutCyF (category: olive-oils) — this copy has no buy links"
+    },
+    {
+      "id": "recg4aekwiJsrFMUt",
+      "name": "Timeless Black Beluga Lentils",
+      "category": "grains",
+      "reason": "duplicate of kept record recnwRYnBubZnk41H (category: legumes) — this copy has no buy links"
+    },
+    {
+      "id": "recitFLrWGiqMAM3Q",
+      "name": "Sober Carpenter Organic Session IPA",
+      "category": "lna",
+      "reason": "duplicate of kept record recnNjXyubGpxGfwc (category: lna) — this copy has no buy links"
+    },
+    {
+      "id": "recyrDDOGGEIHQRZk",
+      "name": "LesserEvil Organic Himalayan Pink Salt Popcorn",
+      "category": "snacks",
+      "reason": "duplicate of kept record recl5oUPJ33Ma2gQN (category: snacks) — this copy has no buy links"
+    },
+    {
+      "id": "recr14UFF0E6QUlFm",
+      "name": "Mussini PGI Balsamic Vinegar of Modena 4 Gold Medals",
+      "category": "olive-oils",
+      "reason": "duplicate of kept record recxTsO9pnAOFNJqp (category: olive-oils) — this copy has no buy links"
+    },
+    {
+      "id": "recr64Ij3YBNdwyMR",
+      "name": "GO Brewing Sunbeam Pils",
+      "category": "lna",
+      "reason": "duplicate of kept record recvAch4joDSdMFb8 (category: lna) — this copy has no buy links"
+    }
+  ],
+  "needsReview": []
+}
