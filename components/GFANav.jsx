@@ -1,9 +1,9 @@
 'use client'
 
 import Link from 'next/link'
-import { usePathname } from 'next/navigation'
+import { usePathname, useRouter } from 'next/navigation'
 import { useState, useEffect } from 'react'
-import { T, W, MID } from '@/lib/tokens'
+import { T, W, MID, GRAY } from '@/lib/tokens'
 
 const NAV_LINKS = [
   { label: 'The Pillars', href: '/pillars' },
@@ -11,6 +11,72 @@ const NAV_LINKS = [
   { label: 'Ambassadors', href: '/ambassadors' },
   { label: 'Join', href: '/join' },
 ]
+
+function SearchForm({ compact = false, onSubmitted }) {
+  const router = useRouter()
+  const [q, setQ] = useState('')
+
+  function handleSubmit(e) {
+    e.preventDefault()
+    const query = q.trim()
+    router.push(query ? `/search?q=${encodeURIComponent(query)}` : '/search')
+    onSubmitted?.()
+  }
+
+  return (
+    <form
+      onSubmit={handleSubmit}
+      role="search"
+      aria-label="Search products"
+      style={{
+        display: 'flex',
+        alignItems: 'center',
+        gap: 8,
+        border: `1.5px solid ${MID}`,
+        borderRadius: 20,
+        padding: compact ? '10px 14px' : '5px 6px 5px 14px',
+        background: W,
+      }}
+    >
+      <span aria-hidden="true" style={{ fontSize: compact ? 15 : 13, color: GRAY }}>⌕</span>
+      <input
+        type="search"
+        value={q}
+        onChange={(e) => setQ(e.target.value)}
+        placeholder="Search products…"
+        aria-label="Search products"
+        style={{
+          border: 'none',
+          outline: 'none',
+          background: 'transparent',
+          fontFamily: 'var(--font-poppins), Poppins, sans-serif',
+          fontSize: compact ? 15 : 12,
+          fontWeight: 500,
+          color: T,
+          width: compact ? '100%' : 140,
+        }}
+      />
+      <button
+        type="submit"
+        aria-label="Submit search"
+        style={{
+          fontFamily: 'var(--font-poppins), Poppins, sans-serif',
+          fontSize: 11,
+          fontWeight: 600,
+          letterSpacing: '0.05em',
+          color: T,
+          background: 'none',
+          border: 'none',
+          cursor: 'pointer',
+          padding: compact ? '4px 6px' : '4px 10px',
+          opacity: 0.7,
+        }}
+      >
+        Go
+      </button>
+    </form>
+  )
+}
 
 const linkStyle = (active) => ({
   fontFamily: 'var(--font-poppins), Poppins, sans-serif',
@@ -70,12 +136,13 @@ export default function GFANav() {
         </Link>
 
         {/* Desktop links — hidden on mobile via CSS */}
-        <div className="gfa-nav-desktop" style={{ display: 'flex', gap: 40, alignItems: 'center' }}>
+        <div className="gfa-nav-desktop" style={{ display: 'flex', gap: 28, alignItems: 'center' }}>
           {NAV_LINKS.map(({ label, href }) => (
             <Link key={label} href={href} style={linkStyle(pathname === href)}>
               {label}
             </Link>
           ))}
+          <SearchForm />
           <a
             href="mailto:hello@goodfoodambassador.com"
             style={{
@@ -134,6 +201,7 @@ export default function GFANav() {
             borderTop: `1px solid ${MID}`,
           }}
         >
+          <SearchForm compact onSubmitted={() => setOpen(false)} />
           {NAV_LINKS.map(({ label, href }) => (
             <Link
               key={label}
