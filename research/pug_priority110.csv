@@ -74,31 +74,31 @@ Olyra Foods,Breakfast-ish,"Organic, Gives Back","imported (Airtable batch 3, sna
 Oso Snacks,Bites+Chews,Organic,"screened-reject (fair-wage claim stated, no certification or specifics)"
 Partake Foods,Sweets+Treats,Gives Back,"imported (Airtable batch 3, snacks category)"
 Pastabilities,Pantry,Organic,"imported (Airtable batch 3, grains category -- corrected: not organic-certified as originally logged, imported on verified Kosher certification alone)"
-Pixsea,Puffs+Crunch,Regenerative Ingredients,pending
-Popcorn for the People,Puffs+Crunch,Gives Back,pending
-Power Up Foods,Bites+Chews,Gives Back,pending
-Prest,Pantry,Regenerative Ingredients,pending
-PRIMA,Bites+Chews,Regenerative Ingredients,pending
-Pulpito Fruit Bites,Bites+Chews,Organic,pending
-Racha Organics,Pantry,"Organic, Regenerative Ingredients",pending
-Rare Breed Coffee,Pantry,Organic,pending
-Reform Botanicals,Non-Alc,Regenerative Ingredients,pending
-Rowe's Macaroons,Sweets+Treats,Gives Back,pending
-Savannah Bee Company,"Pantry, Sweets+Treats",Regenerative Ingredients,pending
-SEEDLY,Sweets+Treats,Organic,pending
-Sky High Farm Goods,Pantry,"Regenerative Ingredients, Gives Back",pending
-Solely,Bites+Chews,Organic,pending
-Sprinkle Bites,Pantry,Organic,pending
-Stellar Eats,Breakfast-ish,Gives Back,pending
-Sweet Deliverance,Breakfast-ish,Organic,pending
-Sweet Stash,Sweets+Treats,Gives Back,pending
-Sweeter Collective,Sweets+Treats,Organic,pending
-Taim Olive,Pantry,Gives Back,pending
-Tazzy Candy,Sweets+Treats,Gives Back,pending
-tealish,Pantry,Organic,pending
-Tenneyson,Non-Alc,Gives Back,pending
-The Conscious Bar,Sweets+Treats,Organic,pending
-Three Spirit,Non-Alc,Gives Back,pending
+Pixsea,Puffs+Crunch,Regenerative Ingredients,screened-reject (no certification found; sustainable-sourcing claim uncertified)
+Popcorn for the People,Puffs+Crunch,Gives Back,"screened-reject (neurodiverse-employment mission is real but no certification; profits reinvested internally, not a named external food/ag cause)"
+Power Up Foods,Bites+Chews,Gives Back,screened-reject (no certification or give-back signal found)
+Prest,Pantry,Regenerative Ingredients,screened-reject (brand not identified)
+PRIMA,Bites+Chews,Regenerative Ingredients,"screened-reject (Non-GMO Project Verification explicitly stated as ""pending,"" not yet certified; no other named certifying body)"
+Pulpito Fruit Bites,Bites+Chews,Organic,"screened-hold (some SKUs organic-labeled, brand-wide certification not confirmed, needs direct site verify)"
+Racha Organics,Pantry,"Organic, Regenerative Ingredients",shortlisted
+Rare Breed Coffee,Pantry,Organic,shortlisted
+Reform Botanicals,Non-Alc,Regenerative Ingredients,"screened-reject (no GFA category -- CBD/hemp wellness product, not food/beverage)"
+Rowe's Macaroons,Sweets+Treats,Gives Back,screened-reject (no certification or verifiable give-back signal found)
+Savannah Bee Company,"Pantry, Sweets+Treats",Regenerative Ingredients,screened-reject (funds regenerative research/partnerships but product itself is not independently certified)
+SEEDLY,Sweets+Treats,Organic,shortlisted
+Sky High Farm Goods,Pantry,"Regenerative Ingredients, Gives Back","screened-reject (nonprofit farm has a real regenerative/food-donation mission, but retail ""Goods"" line is apparel/merchandise, not a certified food product)"
+Solely,Bites+Chews,Organic,shortlisted
+Sprinkle Bites,Pantry,Organic,"screened-reject (self-described organic/non-GMO, no certifying body named)"
+Stellar Eats,Breakfast-ish,Gives Back,shortlisted
+Sweet Deliverance,Breakfast-ish,Organic,shortlisted
+Sweet Stash,Sweets+Treats,Gives Back,"screened-reject (70% organic ingredients, not certified organic; gives back to arts education -- non-food-relevant cause)"
+Sweeter Collective,Sweets+Treats,Organic,shortlisted
+Taim Olive,Pantry,Gives Back,shortlisted
+Tazzy Candy,Sweets+Treats,Gives Back,shortlisted
+tealish,Pantry,Organic,shortlisted
+Tenneyson,Non-Alc,Gives Back,screened-reject (no certification or specific give-back % found)
+The Conscious Bar,Sweets+Treats,Organic,"screened-reject (self-described organic cacao/dates, no certifying body named)"
+Three Spirit,Non-Alc,Gives Back,shortlisted
 Tidbits,Sweets+Treats,Gives Back,pending
 Toodaloo,Breakfast-ish,Gives Back,pending
 VEGOBEARS,Sweets+Treats,Organic,pending
