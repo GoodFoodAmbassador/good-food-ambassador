@@ -80,25 +80,25 @@ Power Up Foods,Bites+Chews,Gives Back,screened-reject (no certification or give-
 Prest,Pantry,Regenerative Ingredients,screened-reject (brand not identified)
 PRIMA,Bites+Chews,Regenerative Ingredients,"screened-reject (Non-GMO Project Verification explicitly stated as ""pending,"" not yet certified; no other named certifying body)"
 Pulpito Fruit Bites,Bites+Chews,Organic,"screened-hold (some SKUs organic-labeled, brand-wide certification not confirmed, needs direct site verify)"
-Racha Organics,Pantry,"Organic, Regenerative Ingredients",shortlisted
-Rare Breed Coffee,Pantry,Organic,shortlisted
+Racha Organics,Pantry,"Organic, Regenerative Ingredients","imported (Airtable batch 4, olive-oils category -- verified USDA Certified Organic; regenerative-farm claim uncertified, not credited)"
+Rare Breed Coffee,Pantry,Organic,"imported (Airtable batch 4, LNA category -- corrected: brand's own FAQ says ""most,"" not all, coffees are certified organic)"
 Reform Botanicals,Non-Alc,Regenerative Ingredients,"screened-reject (no GFA category -- CBD/hemp wellness product, not food/beverage)"
 Rowe's Macaroons,Sweets+Treats,Gives Back,screened-reject (no certification or verifiable give-back signal found)
 Savannah Bee Company,"Pantry, Sweets+Treats",Regenerative Ingredients,screened-reject (funds regenerative research/partnerships but product itself is not independently certified)
-SEEDLY,Sweets+Treats,Organic,shortlisted
+SEEDLY,Sweets+Treats,Organic,"imported (Airtable batch 4, snacks category -- corrected: imported on verified Fairtrade-certified chocolate, not the self-described organic ingredient claim)"
 Sky High Farm Goods,Pantry,"Regenerative Ingredients, Gives Back","screened-reject (nonprofit farm has a real regenerative/food-donation mission, but retail ""Goods"" line is apparel/merchandise, not a certified food product)"
-Solely,Bites+Chews,Organic,shortlisted
+Solely,Bites+Chews,Organic,"imported (Airtable batch 4, snacks category -- verified USDA Certified Organic seal on packaging)"
 Sprinkle Bites,Pantry,Organic,"screened-reject (self-described organic/non-GMO, no certifying body named)"
-Stellar Eats,Breakfast-ish,Gives Back,shortlisted
-Sweet Deliverance,Breakfast-ish,Organic,shortlisted
+Stellar Eats,Breakfast-ish,Gives Back,"imported (Airtable batch 4, snacks category -- verified NON-GMO Project Verified + Certified Kosher + quantified 1% giving program)"
+Sweet Deliverance,Breakfast-ish,Organic,"rejected -- on live verification, brand's own site only self-describes ingredients as organic (no certifying body named); 2024 Good Food Awards win is recognition, not certification"
 Sweet Stash,Sweets+Treats,Gives Back,"screened-reject (70% organic ingredients, not certified organic; gives back to arts education -- non-food-relevant cause)"
-Sweeter Collective,Sweets+Treats,Organic,shortlisted
-Taim Olive,Pantry,Gives Back,shortlisted
-Tazzy Candy,Sweets+Treats,Gives Back,shortlisted
-tealish,Pantry,Organic,shortlisted
+Sweeter Collective,Sweets+Treats,Organic,"imported (Airtable batch 4, snacks category -- verified USDA Organic seal visible on product packaging)"
+Taim Olive,Pantry,Gives Back,"imported (Airtable batch 4, olive-oils category -- verified named nonprofit partner (SEAL, 501c3 supporting Lebanese farmers), no organic cert claimed)"
+Tazzy Candy,Sweets+Treats,Gives Back,rejected -- discontinued/unavailable everywhere checked (official site unreachable; third-party retailers list out of stock; no live Tazzy Candy listings found on Amazon)
+tealish,Pantry,Organic,"rejected -- on live verification, brand's own site and every third-party retailer checked repeat ""organic""/""certified organic"" without ever naming a certifying body; no USDA/EU Organic seal found"
 Tenneyson,Non-Alc,Gives Back,screened-reject (no certification or specific give-back % found)
 The Conscious Bar,Sweets+Treats,Organic,"screened-reject (self-described organic cacao/dates, no certifying body named)"
-Three Spirit,Non-Alc,Gives Back,shortlisted
+Three Spirit,Non-Alc,Gives Back,"imported (Airtable batch 4, LNA category -- corrected: imported on verified B Corp Certified + Non-GMO Project Verified, stronger signal than the original Gives Back tag)"
 Tidbits,Sweets+Treats,Gives Back,pending
 Toodaloo,Breakfast-ish,Gives Back,pending
 VEGOBEARS,Sweets+Treats,Organic,pending
