@@ -49,7 +49,7 @@ BENI BITES,Puffs+Crunch,"screened-hold (product name references ""Organic Sweet 
 Benny,Non-Alc,"screened-reject (""Benny's Organic Market"" appears to be a retailer, not a manufacturer brand -- no product-level certification found)"
 BERO,Non-Alc,"screened-reject (non-alcoholic beer; explicitly not vegan certified per own FAQ, no organic or other certification found)"
 Best Day Brewing,Non-Alc,screened-reject (non-GMO/vegan are ingredient claims; one beer uses organic chamomile but no brand-wide certification confirmed)
-BETR CBD,Bites+Chews,pending
+BETR CBD,Bites+Chews,"screened-reject (no GFA category -- CBD product, not food/beverage)"
 Better Sour,Sweets+Treats,screened-reject (brand not clearly identifiable as a distinct entity -- no certification found under this exact name)
 Betty Buzz,Non-Alc,"screened-hold (search sources say ""certified Kosher and non-GMO"" but don't name the specific certifying bodies -- needs direct verify on packaging/site)"
 Biena,Puffs+Crunch,"screened-reject (""Non-GMO Verified"" stated but certifying body not confirmed; no organic or B Corp certification found)"
@@ -81,37 +81,37 @@ Byte Bars,Bites+Chews,screened-hold (brand identity ambiguous -- multiple simila
 Byte'm,Sweets+Treats,"screened-reject (""real natural ingredients"" is a marketing claim only; no certification found)"
 Cabi,Pantry,screened-reject (no organic or other certification found)
 Caboodle Snacks,Bites+Chews,"screened-reject (brand's own site: NOT certified organic -- organic ingredients only, no certifying body named)"
-Cactus Crunch,Puffs+Crunch,pending
-CAFF,Bites+Chews,pending
-Caff Off,Pantry,pending
-Candid,Sweets+Treats,pending
-CanDo,Bites+Chews,pending
-Cann,Non-Alc,pending
-Capsco,Non-Alc,pending
-Carbone Fine Food,Saucy+Spicy,pending
-Carolyn's Krisps,Puffs+Crunch,pending
-Casa Picosa,Saucy+Spicy,pending
-Catalina Crunch,"Breakfast-ish, Puffs+Crunch, Sweets+Treats",pending
-CauliPuffs,Puffs+Crunch,pending
-Chamberlain Coffee,Pantry,pending
-Cheerie Lane Popcorn,Puffs+Crunch,pending
-Chef Poppin,Puffs+Crunch,pending
-Chew Foods,Sweets+Treats,pending
-Chewsy,Bites+Chews,pending
-Chili Nut Crunch,Pantry,pending
-Chirps Chips,Puffs+Crunch,pending
-Cho's Bakeshop,Sweets+Treats,pending
-Chocxo,Sweets+Treats,pending
-ChocZero,Sweets+Treats,pending
-CHOMPS,Bites+Chews,pending
-Chosen Foods,Pantry,pending
-Christie's,Puffs+Crunch,pending
-CHUM,Bites+Chews,pending
-CHUZA,Bites+Chews,pending
-Ciao Pappy,Saucy+Spicy,pending
-Clebby's,"Non-Alc, Sweets+Treats",pending
-Climate Candy,Sweets+Treats,pending
-CNDY,Sweets+Treats,pending
+Cactus Crunch,Puffs+Crunch,screened-reject (kosher-certified + non-GMO stated but no specific certifying body confirmed; no organic certification found)
+CAFF,Bites+Chews,screened-reject (brand not clearly identifiable -- no product or certification found under this exact name)
+Caff Off,Pantry,screened-reject (brand not clearly identifiable -- no product or certification found under this exact name)
+Candid,Sweets+Treats,screened-reject (brand not clearly identifiable as a distinct entity -- no certification found under this exact name)
+CanDo,Bites+Chews,screened-reject (no organic or other certification found)
+Cann,Non-Alc,"screened-reject (no GFA category -- THC/cannabis social tonic, not food/beverage)"
+Capsco,Non-Alc,screened-reject (brand not clearly identifiable -- no product or certification found under this exact name)
+Carbone Fine Food,Saucy+Spicy,"shortlisted (Non-GMO Project Certified per brand's own FAQ, with noted exceptions for Four Cheese Marinara and Alfredo sauce items)"
+Carolyn's Krisps,Puffs+Crunch,"screened-reject (organic/non-GMO ingredients marked at ingredient level only, not a whole-product certification)"
+Casa Picosa,Saucy+Spicy,screened-reject (no certification found)
+Catalina Crunch,"Breakfast-ish, Puffs+Crunch, Sweets+Treats",shortlisted (Non-GMO Project Verified per brand's own FAQ; not organic certified)
+CauliPuffs,Puffs+Crunch,"screened-hold (mixed signals -- ""Vegan Caulitos"" line is Organic Certified + Non-GMO Project Verified, but core CauliPuffs line not confirmed -- needs direct verify which SKUs carry which certification)"
+Chamberlain Coffee,Pantry,shortlisted (USDA Organic + Fair Trade certified per multiple retailer listings)
+Cheerie Lane Popcorn,Puffs+Crunch,"screened-reject (""organic farming methods"" is self-described, not certified; non-GMO heirloom kernels stated but no Non-GMO Project Verified confirmed)"
+Chef Poppin,Puffs+Crunch,screened-reject (non-GMO stated but no certifying body confirmed; no organic certification found)
+Chew Foods,Sweets+Treats,screened-reject (brand not clearly identifiable as a distinct entity -- no certification found under this exact name)
+Chewsy,Bites+Chews,"shortlisted (Certified Organic by an internationally recognised certifying body, per brand's own site)"
+Chili Nut Crunch,Pantry,"screened-hold (brand describes ingredients as ""Mostly Organic"" but no whole-product certifying body confirmed -- needs direct verify)"
+Chirps Chips,Puffs+Crunch,screened-reject (non-GMO corn stated as ingredient but no certifying body confirmed; no organic certification found)
+Cho's Bakeshop,Sweets+Treats,screened-reject (no organic or non-GMO certification found)
+Chocxo,Sweets+Treats,"shortlisted (USDA Organic + Non-GMO Project Verified + Certified Gluten-Free + Kosher, per multiple product listings)"
+ChocZero,Sweets+Treats,screened-hold (Fair-Trade cocoa beans + non-GMO stated but not confirmed as Non-GMO Project Verified; no organic certification confirmed -- needs direct verify)
+CHOMPS,Bites+Chews,"shortlisted (Non-GMO Project Verified across all products + Certified Gluten-Free + Paleo Certified, per brand's own help center)"
+Chosen Foods,Pantry,"shortlisted (USDA Organic + Non-GMO Project Verified, per multiple retailer listings, for the Organic Avocado Oil line)"
+Christie's,Puffs+Crunch,"screened-reject (vegan/non-GMO/kosher/gluten-free are stated attributes, certifying bodies not confirmed; no organic certification found)"
+CHUM,Bites+Chews,"screened-hold (""certified Non-GMO"" stated but specific certifying body -- e.g. Non-GMO Project -- not confirmed -- needs direct verify)"
+CHUZA,Bites+Chews,"screened-reject (no organic or non-GMO certification found; ""minority-certified"" is an ownership-diversity cert, excluded per methodology)"
+Ciao Pappy,Saucy+Spicy,"screened-hold (Bristol Farms retailer listing references ""Organic Marinara Sauce"" but certifying body not confirmed on brand's own site -- needs direct verify)"
+Clebby's,"Non-Alc, Sweets+Treats","screened-reject (no GFA category -- hemp-derived cannabis/THC baking products, not standard food)"
+Climate Candy,Sweets+Treats,screened-reject (non-GMO/gluten-free are ingredient claims only; no certifying body confirmed)
+CNDY,Sweets+Treats,screened-reject (brand not clearly identifiable -- no product or certification found under this exact name)
 Cob,Puffs+Crunch,pending
 Cocobox,Pantry,pending
 Cocomo,Pantry,pending
