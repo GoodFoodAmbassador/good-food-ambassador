@@ -112,36 +112,36 @@ Ciao Pappy,Saucy+Spicy,"screened-hold (Bristol Farms retailer listing references
 Clebby's,"Non-Alc, Sweets+Treats","screened-reject (no GFA category -- hemp-derived cannabis/THC baking products, not standard food)"
 Climate Candy,Sweets+Treats,screened-reject (non-GMO/gluten-free are ingredient claims only; no certifying body confirmed)
 CNDY,Sweets+Treats,screened-reject (brand not clearly identifiable -- no product or certification found under this exact name)
-Cob,Puffs+Crunch,pending
-Cocobox,Pantry,pending
-Cocomo,Pantry,pending
-Codex,Sweets+Treats,pending
-Confusion Snacks,Puffs+Crunch,pending
-Coracao Chocolate,Sweets+Treats,pending
-CORE Foods,Puffs+Crunch,pending
-Couplet Coffee,Breakfast-ish,pending
-Craize,Puffs+Crunch,pending
-Cravings by Chrissy Teigen,Sweets+Treats,pending
-Creature Matcha,Pantry,pending
-Croots,Puffs+Crunch,pending
-Curious Elixirs,Non-Alc,pending
-CurryCups,Pantry,pending
-Cybele's,Pantry,pending
-D'vash Organics,Saucy+Spicy,pending
-Daily Crunch Snacks,Puffs+Crunch,pending
-Dandies,Sweets+Treats,pending
-Date Better,Sweets+Treats,pending
-Date Smarter!,Sweets+Treats,pending
-David Protein,Bites+Chews,pending
-Dawnbreaker,Breakfast-ish,pending
-Day Out Snacks,Bites+Chews,pending
-Daybreak Seaweed Co.,Pantry,pending
-De Soi,Non-Alc,pending
-DEFI Snacks,Sweets+Treats,pending
-Deliciously Ella,Bites+Chews,pending
-Desert Dust,Pantry,pending
-Diaspora Co.,Pantry,pending
-DINO BARS,Bites+Chews,pending
+Cob,Puffs+Crunch,"screened-hold (Clean Label Project Purity Award is a testing/purity certification, not organic/fair-trade/B-Corp; sorghum described as ""transitional organic,"" not yet certified -- needs a category-fit call)"
+Cocobox,Pantry,screened-reject (brand not clearly identifiable -- no product or certification found under this exact name)
+Cocomo,Pantry,"shortlisted (Oregon Tilth Certified Organic (OTCO), a named third-party certifying body)"
+Codex,Sweets+Treats,screened-reject (brand not clearly identifiable -- no product or certification found under this exact name)
+Confusion Snacks,Puffs+Crunch,screened-reject (non-GMO avocado oil is an ingredient claim only; no certifying body confirmed)
+Coracao Chocolate,Sweets+Treats,"shortlisted (Fair Trade Certified + USDA Organic Certified + Certified Climate Neutral, per brand's own site)"
+CORE Foods,Puffs+Crunch,shortlisted (Non-GMO Project Verified + Certified USDA Organic + Certified Gluten-Free + Certified Vegan + Certified Kosher)
+Couplet Coffee,Breakfast-ish,screened-reject (brand not clearly identifiable -- no product or certification found under this exact name)
+Craize,Puffs+Crunch,"shortlisted (Non-GMO Project Verified + Certified Organic, per EWG Food Scores and brand FAQ)"
+Cravings by Chrissy Teigen,Sweets+Treats,"shortlisted (Non-GMO Project Verified + Kosher certified across multiple products, per brand's own descriptions)"
+Creature Matcha,Pantry,screened-reject (brand not clearly identifiable -- no product or certification found under this exact name)
+Croots,Puffs+Crunch,screened-reject (non-GMO stated but no certifying body confirmed; no organic certification found)
+Curious Elixirs,Non-Alc,"screened-hold (organic ingredients claimed by brand and by a third-party retailer, but no specific certifying body/badge confirmed directly from the brand's own materials -- needs direct verify)"
+CurryCups,Pantry,"screened-reject (brand not clearly identifiable -- search only returned generic curry powder brands, not this specific one)"
+Cybele's,Pantry,shortlisted (Non-GMO Project Verified + Certified Gluten-Free + Certified Vegan)
+D'vash Organics,Saucy+Spicy,"shortlisted (USDA Organic + Non-GMO Project Verified, per brand's own site and multiple retailers)"
+Daily Crunch Snacks,Puffs+Crunch,screened-reject (non-GMO stated but certifying body not confirmed; no organic certification found)
+Dandies,Sweets+Treats,"shortlisted (Non-GMO Project Verified, per multiple retailer listings)"
+Date Better,Sweets+Treats,screened-reject (organic ingredients used in products but no brand-wide certification confirmed)
+Date Smarter!,Sweets+Treats,screened-reject (organic ingredients used but no brand-wide certification confirmed)
+David Protein,Bites+Chews,screened-reject (no organic or Non-GMO Project certification found; distinct from the similarly-named Dave's Killer Bread which IS certified)
+Dawnbreaker,Breakfast-ish,screened-reject (brand not clearly identifiable -- no product or certification found under this exact name)
+Day Out Snacks,Bites+Chews,screened-reject (brand not clearly identifiable -- no product or certification found under this exact name)
+Daybreak Seaweed Co.,Pantry,"screened-hold (seaweed salt line uses ""Organic West Coast Wakame"" but certifying body not confirmed; other seasonings are non-GMO/gluten-free claims only -- needs direct verify)"
+De Soi,Non-Alc,screened-reject (no organic certification found)
+DEFI Snacks,Sweets+Treats,screened-reject (non-GMO/kosher claimed but certifying bodies not confirmed; no organic certification found)
+Deliciously Ella,Bites+Chews,screened-hold (Planet Organic retailer listing implies organic certification but not confirmed directly on brand's own site -- needs direct verify)
+Desert Dust,Pantry,"screened-hold (""at least 95% organic material"" language matches USDA Organic's certification threshold, but no specific certifying body/seal confirmed -- needs direct verify)"
+Diaspora Co.,Pantry,"screened-reject (brand's own FAQ: NOT USDA certified -- ""beyond organic"" is self-described; 6x-commodity-price payment is a real quantified signal but no named certifying body, so doesn't meet the certification bar)"
+DINO BARS,Bites+Chews,"shortlisted (USDA Certified Organic + non-GMO, per brand's own product descriptions)"
 Dirtbag Bar,Sweets+Treats,pending
 DIRTY GUT,Sweets+Treats,pending
 DOCTOR STOLBERG,Pantry,pending
