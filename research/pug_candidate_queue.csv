@@ -1,5 +1,5 @@
 Brand,PUG Aisle(s),Status
-(P)RiND,Puffs+Crunch,pending
+(P)RiND,Puffs+Crunch,screened-reject (brand not identifiable -- no product or certification found under this exact name)
 1906,Non-Alc,"screened-reject (no GFA category -- THC/cannabis wellness drink, not food/beverage)"
 2Betties,Sweets+Treats,screened-hold (brand's own FAQ claims certified non-GMO but not certified organic; specific non-GMO certifying body not confirmed on product page -- needs direct verify)
 3 Farm Daughters,Pantry,shortlisted (Kosher Certified per brand's own FAQ and product pages)
@@ -11,36 +11,36 @@ Acid League,Pantry,"screened-reject (brand's own FAQ: ''not certified organic'',
 Aeira,Pantry,screened-hold (possible brand-name collision -- ''certified organic'' claim seen doesn't match the bone-broth product page checked; needs direct verify)
 AL's,Non-Alc,shortlisted (BeVeg Certified Vegan per BeVeg's own certified-beverages list)
 Algae Cooking Club,Pantry,shortlisted (Seed Oil Free Certified per Seed Oil Free Alliance)
-All The Bitter,Non-Alc,pending
+All The Bitter,Non-Alc,"screened-hold (brand's own site states ""every bottle... certified organic"" but no specific certifying body (e.g. USDA, CCOF) named in available sources -- needs direct label verify)"
 Amazi,Bites+Chews,"screened-reject (brand's own FAQ: not certified organic, not certified gluten-free; ''Certified Woman-Owned'' excluded per methodology -- ownership-diversity certs don't qualify)"
 Aplos,Non-Alc,screened-reject (no certification found; hemp-infused ingredient raises the same category concern as the Reform Botanicals rejection)
-Auntie Rana's,Pantry,pending
+Auntie Rana's,Pantry,"shortlisted (5% of sales to wildlife conservation per brand's own site -- already researched and imported via global_brand_shortlist.xlsx, see scripts/import-shortlist-batch4.mjs)"
 Avo Crazy,Puffs+Crunch,screened-reject (no verifiable certification found specific to this brand)
 AYOBA,Puffs+Crunch,"screened-reject (brand identity ambiguous -- dominant search results are ''Ayoba-Yo'' meat/biltong snacks, no GFA category for meat)"
 Ayoh Foods,Pantry,screened-reject (EWG and Farm Fresh To You both confirm ''not certified organic''; no other certification found)
 aziz,Breakfast-ish,"screened-reject (brand's own product page says only ''organic ingredients,'' no certifying body named)"
 B-SIDES,Puffs+Crunch,"screened-reject (self-described organic/non-GMO ingredients only, no certification confirmed for the finished product)"
 B.T.R. Bar,Bites+Chews,"screened-reject (brand's own site: some farms ''not USDA Organic Certified,'' self-admitted partial; no other certification confirmed)"
-Bachan's,Saucy+Spicy,pending
+Bachan's,Saucy+Spicy,shortlisted (Gluten-Free line is Non-GMO Project Verified per brand's own product page and multiple retailer listings)
 Bada Bean Bada Boom,Puffs+Crunch,"shortlisted (Non-GMO Project Verified + Kosher Certified by Orthodox Union (OU), per brand's own FAQ)"
 Bahamii,Bites+Chews,"shortlisted (Kosher Certified + Non-GMO certified, confirmed consistently across brand and multiple retailers)"
 Baja Vida,Bites+Chews,shortlisted (Dried Mangos SKU only -- USDA Certified Organic per brand's own site; the brand's jerky/meat line has no GFA category)
-Bake Away,Sweets+Treats,pending
+Bake Away,Sweets+Treats,screened-reject (brand not identifiable -- no product or certification found under this exact name)
 Bake Dreams,Breakfast-ish,screened-reject (no verifiable certification found)
 Bake Me Healthy,Sweets+Treats,"screened-hold (blog references ''certified gluten-free oat flour'' in general educational content, not confirmed as their own product's certification -- needs direct verify)"
 BamJam,Pantry,"screened-reject (self-described organic monk fruit ingredient only, no certification for finished product)"
-Bangkok Bites,Bites+Chews,pending
-Banza,Pantry,pending
-Baobab Superfruit Bites,Bites+Chews,pending
-Barbari,Non-Alc,pending
-Bashi,Non-Alc,pending
-Basic Honey Co.,Pantry,pending
-Batch,Pantry,pending
-Batta,Sweets+Treats,pending
-Beckon,Sweets+Treats,pending
-Beefy's Own,Puffs+Crunch,pending
-Beekeeper's Naturals,Pantry,pending
-BEHAVE,Sweets+Treats,pending
+Bangkok Bites,Bites+Chews,screened-reject (vegan/gluten-free are ingredient claims only; no third-party certification found for this Goodness Plant sub-brand)
+Banza,Pantry,shortlisted (Non-GMO Project Verified + GFCO Certified Gluten-Free per brand's own FAQ)
+Baobab Superfruit Bites,Bites+Chews,"screened-hold (brand identity ambiguous -- ""powbab"" baobab chews confirm USDA Organic/Fair Trade/Non-GMO Project Verified, but ""Baobest"" Superfruit Bites product page does not show the same certifications -- needs direct verify which brand this refers to)"
+Barbari,Non-Alc,"screened-reject (brand identity ambiguous -- dominant search results are Barbari Botanical Co., herbal smoking blends; no GFA food/beverage category match found)"
+Bashi,Non-Alc,"screened-hold (kava-based non-alcoholic drink, clean-ingredient claims but no organic/non-GMO certification confirmed -- also raises the same category question as prior kava/cannabis-adjacent rejections -- needs direct verify)"
+Basic Honey Co.,Pantry,"screened-reject (raw honey; Good Food Foundation recognition is an award, not a certification -- no certifying body confirmed)"
+Batch,Pantry,screened-reject (brand not identifiable -- no product or certification found under this exact name in Pantry)
+Batta,Sweets+Treats,"screened-hold (brand identity ambiguous -- ""Batta"" baking mixes vs. ""BATA FOOD"" ingredient supplier vs. ""Batta"" olive oil producer; no certification confirmed specific to the baking-mix brand -- needs direct verify)"
+Beckon,Sweets+Treats,shortlisted (Certified Organic + Certified GMO Free per EWG Food Scores and brand's own site)
+Beefy's Own,Puffs+Crunch,"screened-reject (""no seed oils"" and ""additive-free"" are ingredient claims, not certifications -- no certifying body found)"
+Beekeeper's Naturals,Pantry,shortlisted (Certified B Corporation per B Lab Global; note some SKUs are organic but not certified brand-wide)
+BEHAVE,Sweets+Treats,"screened-hold (retailer listings say ""Non-GMO"" but don't confirm Non-GMO Project Verified specifically -- needs direct verify on brand's own site/packaging)"
 beituti,Saucy+Spicy,pending
 Bellemille,Pantry,pending
 BelliWelli,Breakfast-ish,pending
