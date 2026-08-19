@@ -22,6 +22,7 @@ const PILLARS = [
       'Fermented: live cultures present and stated — "raw," "unpasteurised," or "live cultures" on the label',
       'De-alcoholised wine: full varietal and vintage transparency; low-temperature removal preserves aromatic character',
       'Botanical: named botanicals with clear hierarchy — specific herbs, roots, flowers stated',
+      'Bottle or can sized to the contents, not padded with excess weight or oversized secondary packaging',
     ],
   },
   {
@@ -32,6 +33,7 @@ const PILLARS = [
       'Sweeteners used to compensate for reduced alcohol clearly stated; flavour from real sources',
       'Organic certification for key botanicals and tea ingredients where pesticide load is a concern',
       'Short ingredient list — fruit, botanicals, water, cultures — with real flavour sources',
+      'Bottle, can lining, or cap material free of undisclosed PFAS, BPA, or similar substances of concern',
     ],
   },
   {
@@ -52,6 +54,7 @@ const PILLARS = [
       'Total sugars per serving stated clearly — sugar content varies significantly across the category',
       'Kombucha: trace alcohol content disclosed — fermentation always produces some',
       'Health and wellness claims accompanied by specific, verifiable information',
+      'Recyclable glass or can claims backed by an actual collection system, not just the symbol on the label',
     ],
   },
 ]

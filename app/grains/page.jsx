@@ -22,6 +22,7 @@ const PILLARS = [
       'Grain variety stated — durum, emmer, Koshihikari, buckwheat percentage',
       'For pasta: bronze-die extrusion and slow drying preserve texture and flavour',
 'Ingredient list reflects what the product is — grain, water, salt for noodles; grain alone for dried pasta and rice',
+      'Bag or box sized to the actual grain volume, not padded with excess headspace',
     ],
   },
   {
@@ -32,6 +33,7 @@ const PILLARS = [
       'Country or region of origin for the grain itself — distinct from where it was packaged',
       'Organic certification where pesticide load is a real concern — wheat and rice among the most treated crops',
       'GI certification for protected varieties: basmati, Jasmine rice, Parmigiano-registered flours, Japanese short-grain',
+      'Bag lining and window material free of undisclosed PFAS, BPA, or similar substances of concern',
     ],
   },
   {
@@ -52,6 +54,7 @@ const PILLARS = [
       '"Artisan" and "traditional" carry more meaning when accompanied by a stated production method',
       'Soba labelled with actual buckwheat percentage — Japan\'s legal minimum to use the name is 30%; "nihachi" (80%) and "juwari" (100%) signal higher quality',
       'Rice variety stated — generic grade descriptors like "premium" or "select" carry no standardised definition',
+      'Recyclable or compostable bag claims backed by an actual collection system, not just the symbol on the label',
     ],
   },
 ]

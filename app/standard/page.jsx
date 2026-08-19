@@ -7,7 +7,7 @@ import { W, T, LIGHT, MID, GREEN, CYAN, ORANGE, GRAY } from '@/lib/tokens'
 export const metadata = {
   title: 'The Good Food Standard',
   description:
-    'A framework for evaluating food with honesty, curiosity, and respect for everyone in the chain. Four pillars, seven criteria.',
+    'A framework for evaluating food with honesty, curiosity, and respect for everyone in the chain. Four pillars, nine criteria.',
   alternates: { canonical: 'https://www.goodfoodambassador.com/standard' },
 }
 
@@ -35,6 +35,13 @@ const CRITERIA = [
     ],
   },
   {
+    pillar: 'GOOD', color: GREEN,
+    label: 'Packaging designed with restraint',
+    text: [
+      'The package is sized to the product, not to shelf presence — no oversized boxes, excess void fill, or nested layers that exist mainly to look substantial. Material choice reflects what the product actually needs to stay safe and fresh, not the cheapest or most conventional default. Less material, used more deliberately, is the goal.',
+    ],
+  },
+  {
     pillar: 'CLEAN', color: CYAN,
     label: 'Traceable from origin',
     text: [
@@ -45,7 +52,7 @@ const CRITERIA = [
     pillar: 'CLEAN', color: CYAN,
     label: 'Packaging that tells the truth',
     text: [
-      'Packaging communicates honestly: materials are disclosed, environmental claims are not exaggerated. Packaging choices reflect an awareness of the full lifecycle — from production to disposal. GFA reports packaging materials and their known trade-offs as part of every evaluation.',
+      'Packaging communicates honestly: materials are disclosed, environmental claims are not exaggerated. Packaging choices reflect an awareness of the full lifecycle — from production to disposal. What touches the food is free of unnecessary substances of concern — no undisclosed PFAS, BPA, or similar contact-risk materials. GFA reports packaging materials, their known trade-offs, and any contact-safety concerns as part of every evaluation.',
     ],
   },
   {
@@ -68,6 +75,13 @@ const CRITERIA = [
     text: [
       'Food carries history. We recognise the value of foods that travel, adapt, and find new expression in new contexts — that is how food culture has always worked.',
       'What GFA asks is that the original be respected: authentic ingredients where authenticity matters, honest labelling of inspired-by versus the real thing, no imitation that misleads eaters about what they are eating or where it comes from.',
+    ],
+  },
+  {
+    pillar: 'TRUE', color: GRAY,
+    label: 'Accountability for what happens after disposal',
+    text: [
+      'A recyclable or compostable label means little without a real system behind it. GFA looks at whether a producer invests in take-back programs, collection infrastructure, or industry-wide systems — or simply prints a claim and leaves the burden on the eater and their municipality to make it true.',
     ],
   },
 ]
@@ -180,7 +194,7 @@ export default function StandardPage() {
             marginBottom: 8,
           }}
         >
-          The seven criteria
+          The nine criteria
         </h2>
         {CRITERIA.map((c, i) => (
           <div key={i} style={{ borderTop: `1px solid ${MID}`, padding: '32px 0' }}>

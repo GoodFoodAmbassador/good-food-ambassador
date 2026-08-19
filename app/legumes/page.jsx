@@ -22,6 +22,7 @@ const PILLARS = [
       'Variety stated — Puy lentil, Castelluccio, Borlotti, Kabocha — distinct varieties with distinct cooking profiles',
       'For canned: short, clean ingredient list; canning liquid worth keeping (aquafaba has real culinary value)',
       'Dried legumes from a recent harvest — crop year or harvest date is the most useful freshness signal',
+      'Bag or can sized to the actual product volume, not padded with excess headspace or oversized boxing',
     ],
   },
   {
@@ -32,6 +33,7 @@ const PILLARS = [
       'Country or region where the legume was grown — distinct from where it was packaged',
       'Organic certification where pesticide load is a real concern — soy is one of the most heavily treated crops globally',
       'GI certification for protected varieties: Puy lentil PDO, Castelluccio IGP',
+      'Can lining, bag, or pouch material free of undisclosed PFAS, BPA, or similar substances of concern',
     ],
   },
   {
@@ -52,6 +54,7 @@ const PILLARS = [
       'Variety names used with precision — "lentils" is not a variety; Puy, green, or red is',
       'Canned legumes: BPA-free lining disclosed where relevant',
       'Health claims accompanied by specific, verifiable information — legumes are genuinely nutritious without exaggeration',
+      'Recyclable can or compostable bag claims backed by an actual collection system, not just the symbol on the label',
     ],
   },
 ]

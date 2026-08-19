@@ -22,6 +22,7 @@ const PILLARS = [
       'Short ingredient list with recognisable components',
       'No "natural flavours" used as a catch-all to obscure what creates the taste',
       'Key ingredients (oils, nuts, grains) are named and where possible, sourced',
+      'Pouch or box sized to the product, not padded with excess air or oversized boxing for shelf presence',
     ],
   },
   {
@@ -32,6 +33,7 @@ const PILLARS = [
       'Oil type stated and not swapped for cheap alternatives mid-production',
       'No additives that exist to extend shelf life at the cost of nutritional value',
       'Organic certification where it meaningfully affects the ingredient profile',
+      'Pouch or wrapper material free of undisclosed PFAS, BPA, or similar substances of concern',
     ],
   },
   {
@@ -52,6 +54,7 @@ const PILLARS = [
       'Total sugars per serving from all sources — "added sugar" rules vary by market and don\'t capture every sweetening source',
       'Serving size stated in a way that reflects typical use',
       'Key flavouring ingredients named — "truffle flavour" and "natural truffle flavour" have distinct meanings under labelling rules',
+      'Recyclable or compostable pouch claims backed by an actual collection system, not just the symbol on the label',
     ],
   },
 ]

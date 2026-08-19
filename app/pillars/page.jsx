@@ -21,6 +21,7 @@ const PILLARS = [
       'Does the flavour come from the food itself?',
       'Is the nutritional information honest and complete?',
       'Is this food easy to understand and prepare?',
+      'Is the packaging sized to the product, not to the shelf?',
     ],
   },
   {
@@ -33,6 +34,7 @@ const PILLARS = [
       'Can you trace the journey from source to shelf?',
       'Does the packaging tell the truth about what is inside?',
       'Are the environmental claims verifiable?',
+      'Is the packaging itself safe — free of unnecessary chemicals of concern?',
     ],
   },
   {
@@ -57,6 +59,7 @@ const PILLARS = [
       'Is the story behind this product real and verifiable?',
       'Does the price reflect the true cost of making it?',
       'Can you sense the intention behind it?',
+      'If the packaging claims recyclable or compostable, is there a real system behind that claim?',
     ],
   },
 ]

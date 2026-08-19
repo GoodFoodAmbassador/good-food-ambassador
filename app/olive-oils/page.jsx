@@ -24,6 +24,7 @@ const PILLARS = [
       'Harvest date for oils; production or bottling date for condiments — freshness markers specific to each product',
       'Sensory quality present and lively: fruitiness and pungency in oils, real acidity in vinegars, depth and complexity in fermented condiments',
       'Live cultures retained where fermentation is the point — miso, raw ACV, naturally brewed soy sauce',
+      'Bottle or tin sized to the contents, not padded with excess weight or oversized boxing for shelf presence',
     ],
   },
   {
@@ -34,6 +35,7 @@ const PILLARS = [
       'Named geographic origin for all products: region, estate, or country — not generic',
       'Geographical Indication (PDO or PGI) where available: Tradizionale balsamic, sherry vinegar, extra virgin olive oils from protected areas',
       'Ingredient lists that reflect what the product is — without additions that mask the base',
+      'Dark glass, tin, or other food-contact material free of undisclosed PFAS, BPA, or similar substances of concern',
     ],
   },
   {
@@ -54,6 +56,7 @@ const PILLARS = [
       '"First cold press" is meaningless — olives are pressed once; "cold extraction" (below 27°C) is the real, separate claim worth checking for',
       '"Non-GMO" and "gluten-free" on olive oil are redundant — no GMO olive trees exist commercially, and olive oil contains no gluten',
       'Country of bottling clearly distinguished from country of production — they are often different things',
+      'Recyclable-glass or recyclable-tin claims backed by an actual collection system, not just the symbol on the label',
     ],
   },
 ]

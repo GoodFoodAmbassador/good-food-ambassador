@@ -22,6 +22,7 @@ const PILLARS = [
       'Species accurately named — not just "white fish," "tuna," or "prawns"',
       'For canned: single species per tin, packed in quality oil or water, no fillers',
       'Texture, flavour, and freshness appropriate to the species and preparation',
+      'Tin or pouch sized to the contents, not padded with excess weight or oversized secondary packaging',
     ],
   },
   {
@@ -32,6 +33,7 @@ const PILLARS = [
       'Catch area stated (FAO zone or named fishery) for wild; farm location for aquaculture',
       'Fishing or farming method disclosed — pole-and-line, longline, net type, or farm system',
       'MSC, ASC, or equivalent third-party certification where available',
+      'Tin lining or pouch material free of undisclosed PFAS, BPA, or similar substances of concern',
     ],
   },
   {
@@ -52,6 +54,7 @@ const PILLARS = [
       'Species identification in retail seafood — DNA testing has found mislabelling rates as high as 87% for products sold as "red snapper"',
       'Wild-caught claims verified by independent certification or chain-of-custody documentation',
       'Aquaculture: farming inputs (feed, antibiotics, chemicals) disclosed where possible',
+      'Recyclable tin or pouch claims backed by an actual collection system, not just the symbol on the label',
     ],
   },
 ]
