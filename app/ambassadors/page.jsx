@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import GFASeedMark from '@/components/GFASeedMark'
 import Image from 'next/image'
 import GFANav from '@/components/GFANav'
 import { W, T, LIGHT, MID } from '@/lib/tokens'
@@ -177,7 +178,7 @@ export default function AmbassadorsPage() {
 
         <div style={{ borderTop: '1px solid ' + MID, paddingTop: 24, display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 12 }}>
           <p style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 12, color: '#bbb' }}>
-            Good Food Ambassador ·{' '}
+            <GFASeedMark />Good Food Ambassador ·{' '}
             <a href="mailto:hello@goodfoodambassador.com" style={{ color: '#bbb', textDecoration: 'none' }}>
               hello@goodfoodambassador.com
             </a>

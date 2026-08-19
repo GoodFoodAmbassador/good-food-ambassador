@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import GFASeedMark from '@/components/GFASeedMark'
 import Link from 'next/link'
 import GFANav from '@/components/GFANav'
 import { W, T, LIGHT, MID, GREEN } from '@/lib/tokens'
@@ -218,7 +219,7 @@ export default function SuggestPage() {
 
       <footer style={{ borderTop: `1px solid ${MID}`, padding: '28px 60px' }}>
         <p style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 12, color: '#bbb' }}>
-          © Good Food Ambassador ·{' '}
+          <GFASeedMark />© Good Food Ambassador ·{' '}
           <a href="mailto:hello@goodfoodambassador.com" style={{ color: '#bbb', textDecoration: 'none' }}>
             hello@goodfoodambassador.com
           </a>

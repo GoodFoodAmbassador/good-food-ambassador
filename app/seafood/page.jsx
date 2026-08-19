@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import GFASeedMark from '@/components/GFASeedMark'
 import GFANav from '@/components/GFANav'
 import Pill from '@/components/Pill'
 import AffiliateDisclosure from '@/components/AffiliateDisclosure'
@@ -173,7 +174,7 @@ export default async function SeafoodPage() {
         </p>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <p style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 12, color: '#bbb' }}>
-            © Good Food Ambassador ·{' '}
+            <GFASeedMark />© Good Food Ambassador ·{' '}
             <a href="mailto:hello@goodfoodambassador.com" style={{ color: '#bbb', textDecoration: 'none' }}>hello@goodfoodambassador.com</a>
             {' · '}<Link href="/privacy" style={{ color: '#bbb', textDecoration: 'none' }}>Privacy</Link>
             {' · '}<Link href="/terms" style={{ color: '#bbb', textDecoration: 'none' }}>Terms</Link>

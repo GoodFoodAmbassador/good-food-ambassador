@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import GFASeedMark from '@/components/GFASeedMark'
 import GFANav from '@/components/GFANav'
 import Pill from '@/components/Pill'
 import GFAScorecard from '@/components/GFAScorecard'
@@ -258,7 +259,7 @@ export default function StandardPage() {
           }}
         >
           <p style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 12, color: '#bbb' }}>
-            Good Food Ambassador ·{' '}
+            <GFASeedMark />Good Food Ambassador ·{' '}
             <a href="mailto:hello@goodfoodambassador.com" style={{ color: '#bbb', textDecoration: 'none' }}>
               hello@goodfoodambassador.com
             </a>

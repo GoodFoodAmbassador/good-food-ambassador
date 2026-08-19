@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import GFASeedMark from '@/components/GFASeedMark'
 import Link from 'next/link'
 import GFANav from '@/components/GFANav'
 import { W, T, LIGHT, MID, GREEN, CYAN, ORANGE, GRAY } from '@/lib/tokens'
@@ -261,7 +262,7 @@ export default function JoinPage() {
         {/* Footer */}
         <div style={{ borderTop: '1px solid ' + MID, marginTop: 60, paddingTop: 24, display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 12 }}>
           <p style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 12, color: '#bbb' }}>
-            Good Food Ambassador ·{' '}
+            <GFASeedMark />Good Food Ambassador ·{' '}
             <a href="mailto:hello@goodfoodambassador.com" style={{ color: '#bbb', textDecoration: 'none' }}>
               hello@goodfoodambassador.com
             </a>

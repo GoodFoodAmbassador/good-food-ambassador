@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import GFASeedMark from '@/components/GFASeedMark'
 import Image from 'next/image'
 import GFANav from '@/components/GFANav'
 import Pill from '@/components/Pill'
@@ -326,7 +327,7 @@ export default function HubPage() {
         </p>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <p style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 12, color: '#bbb' }}>
-            © Good Food Ambassador ·{' '}
+            <GFASeedMark />© Good Food Ambassador ·{' '}
             <a href="mailto:hello@goodfoodambassador.com" style={{ color: '#bbb', textDecoration: 'none' }}>
               hello@goodfoodambassador.com
             </a>
