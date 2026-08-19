@@ -1,0 +1,31 @@
+<svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <title>Good Food Ambassador — Round Seal, pillars + journey ring (seed icon)</title>
+  <defs>
+    <path id="ringOuter" d="M 200,28 A 172,172 0 1,1 199.9,28 Z"/>
+    <path id="ringInner" d="M 200,66 A 134,134 0 1,1 199.9,66 Z"/>
+  </defs>
+
+  <circle cx="200" cy="200" r="188" fill="#ffffff" stroke="#3e3e3f" stroke-width="3"/>
+  <circle cx="200" cy="200" r="150" fill="none" stroke="#3e3e3f" stroke-width="1.5" opacity="0.4"/>
+
+  <!-- outer ring: the four quality pillars -->
+  <text font-family="Helvetica,Arial,sans-serif" font-weight="700" font-size="21" letter-spacing="6" fill="#3e3e3f">
+    <textPath href="#ringOuter" startOffset="0%">GOOD · CLEAN · FAIR · TRUE ·</textPath>
+  </text>
+
+  <!-- inner ring: the journey -->
+  <text font-family="Helvetica,Arial,sans-serif" font-weight="600" font-size="15" letter-spacing="5" fill="#75756d">
+    <textPath href="#ringInner" startOffset="0%">GROW · MAKE · MOVE · EAT ·</textPath>
+  </text>
+
+  <!-- centered seed icon -->
+  <g transform="translate(200,201) scale(0.56) translate(-200,-202)">
+    <path d="M200,95 C225,100 248,120 253,150 C258,185 250,225 234,258 C222,282 210,298 200,310 C190,298 178,282 166,258 C150,225 142,185 147,150 C152,120 175,100 200,95 Z" fill="#3e3e3f"/>
+    <path d="M200,120 L214,139 L200,158 L186,139 Z" fill="#77d46c"/>
+    <path d="M200,160 L214,179 L200,198 L186,179 Z" fill="#01b3ff"/>
+    <path d="M200,200 L214,219 L200,238 L186,219 Z" fill="#ed5a29"/>
+    <path d="M200,240 L214,259 L200,278 L186,259 Z" fill="#75756d"/>
+    <line x1="200" y1="105" x2="200" y2="122" stroke="#ffffff" stroke-width="4"/>
+    <line x1="200" y1="276" x2="200" y2="300" stroke="#ffffff" stroke-width="4"/>
+  </g>
+</svg>
