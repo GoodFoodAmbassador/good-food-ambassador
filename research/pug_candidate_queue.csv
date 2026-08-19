@@ -181,7 +181,7 @@ FATSO,Saucy+Spicy,"screened-hold (""certified non-GMO"" claimed but specific cer
 FAUXMOSA,Non-Alc,"screened-reject (GMO-free/gluten-free/vegan are stated attributes, no certifying body confirmed; no organic certification found)"
 Favour,Bites+Chews,"screened-reject (brand not clearly identifiable -- search surfaced unrelated brands, not this specific one)"
 Fearless Keto,Sweets+Treats,screened-reject (no organic or non-GMO certification confirmed)
-Felicia,Pantry,pending
+Felicia,Pantry,"shortlisted (already researched and imported -- Andriani S.p.A., B Corp Certified -- see global_brand_shortlist.xlsx / scripts/import-shortlist-batch1.mjs)"
 Fever-Tree,Non-Alc,"screened-hold (""Non-GMO certified"" stated across products but specific certifying body not named; no organic certification found -- needs direct verify)"
 FFups,Puffs+Crunch,screened-reject (no organic or non-GMO certification found; made from processed corn/oil)
 Fichi,Bites+Chews,"screened-reject (""all-natural"" is a marketing claim only; no certification confirmed)"
@@ -203,21 +203,21 @@ Folds,Puffs+Crunch,screened-reject (no certification confirmed)
 Food Should Taste Good,Puffs+Crunch,"shortlisted (Certified Organic + Kosher + Non-GMO, per multiple sources)"
 For Bitter For Worse,Non-Alc,"shortlisted (certified organic, regeneratively farmed botanicals used in production, per brand's own description)"
 For Good Granola,Breakfast-ish,screened-reject (organic/non-GMO ingredients used but no brand-wide certification confirmed)
-Forchewn,Pantry,pending
-Frankie's Fabulous Granola,Breakfast-ish,pending
-Frankly Good Coffee,Pantry,pending
-FREE AF,Non-Alc,pending
-French Squirrel,Pantry,pending
-FUJI Bar,Bites+Chews,pending
-Funny Farm,Pantry,pending
-Gaia Foods,Bites+Chews,pending
-Gamsa Foods,Breakfast-ish,pending
-Garden Based,Pantry,pending
-Gato,Sweets+Treats,pending
-Gay Awakening Coffee,Pantry,pending
-Geem,Puffs+Crunch,pending
-Get Golden,Bites+Chews,pending
-Get Supr,Breakfast-ish,pending
+Forchewn,Pantry,screened-reject (brand not clearly identifiable -- no product or certification found under this exact name)
+Frankie's Fabulous Granola,Breakfast-ish,"screened-reject (""mostly organic"" ingredient-level claims; no brand-wide certification confirmed)"
+Frankly Good Coffee,Pantry,screened-reject (no certification confirmed)
+FREE AF,Non-Alc,screened-reject (organic sugar is an ingredient-level claim; no brand-wide certification found)
+French Squirrel,Pantry,"screened-hold (""organic"" used repeatedly across the product line and ingredient list, but no specific certifying body -- e.g. USDA -- named -- needs direct verify)"
+FUJI Bar,Bites+Chews,screened-reject (brand not clearly identifiable -- confused in search results with an unrelated Fuji apple chips product)
+Funny Farm,Pantry,"screened-reject (brand not clearly identifiable -- confused in search results with Annie's ""Bernie's Farm"")"
+Gaia Foods,Bites+Chews,"screened-reject (brand not clearly identifiable -- multiple unrelated ""Gaia""-named companies found, none matching ""Gaia Foods"" specifically)"
+Gamsa Foods,Breakfast-ish,screened-reject (no organic or non-GMO certification confirmed)
+Garden Based,Pantry,screened-reject (brand not clearly identifiable -- no product or certification found under this exact name)
+Gato,Sweets+Treats,screened-reject (brand not clearly identifiable -- only unrelated pet food brands found)
+Gay Awakening Coffee,Pantry,"shortlisted (100% Certified Organic, ODA-approved, per brand's own site)"
+Geem,Puffs+Crunch,screened-hold (Non-GMO Verified confirmed; organic ingredients used in some flavors but not confirmed brand-wide -- needs direct verify)
+Get Golden,Bites+Chews,screened-reject (brand not clearly identifiable -- only unrelated generic turmeric brands found)
+Get Supr,Breakfast-ish,screened-reject (brand not clearly identifiable -- no product or certification found under this exact name)
 Ghia,Non-Alc,pending
 Ghips,Puffs+Crunch,pending
 GIGANTIC!,Sweets+Treats,pending
