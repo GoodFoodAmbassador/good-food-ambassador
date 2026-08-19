@@ -142,36 +142,36 @@ Deliciously Ella,Bites+Chews,screened-hold (Planet Organic retailer listing impl
 Desert Dust,Pantry,"screened-hold (""at least 95% organic material"" language matches USDA Organic's certification threshold, but no specific certifying body/seal confirmed -- needs direct verify)"
 Diaspora Co.,Pantry,"screened-reject (brand's own FAQ: NOT USDA certified -- ""beyond organic"" is self-described; 6x-commodity-price payment is a real quantified signal but no named certifying body, so doesn't meet the certification bar)"
 DINO BARS,Bites+Chews,"shortlisted (USDA Certified Organic + non-GMO, per brand's own product descriptions)"
-Dirtbag Bar,Sweets+Treats,pending
-DIRTY GUT,Sweets+Treats,pending
-DOCTOR STOLBERG,Pantry,pending
-donutful,Sweets+Treats,pending
-doosra,Puffs+Crunch,pending
-Dr. Smood,Bites+Chews,pending
-Dream Pops,Sweets+Treats,pending
-Drizzi,Pantry,pending
-Droosh,Pantry,pending
-Dumpling Daughter,Saucy+Spicy,pending
-dun,Non-Alc,pending
-Earth & Star,Bites+Chews,pending
-Eat Senza,Pantry,pending
-edggies veggies,Pantry,pending
-Effie's Homemade,Puffs+Crunch,pending
-ELAVI,Breakfast-ish,pending
-Eleni's New York,Sweets+Treats,pending
-Eleven Madison Home,Pantry,pending
-Ella's Flats,Puffs+Crunch,pending
-Eltee's Goods,Pantry,pending
-Endure Sport Nutrition,Bites+Chews,pending
-Enso Chips,Puffs+Crunch,pending
-Equip Foods,Bites+Chews,pending
-Eureka Tortilla,Pantry,pending
-Every Body Eat,Puffs+Crunch,pending
-EVERYDAZE,Sweets+Treats,pending
-Evie's Snacks,Puffs+Crunch,pending
-Evo Hemp,Bites+Chews,pending
-EVOLVED,Sweets+Treats,pending
-Fabalish,Pantry,pending
+Dirtbag Bar,Sweets+Treats,"shortlisted (Certified Organic + Non-GMO whole food energy bar, per brand's own site; also 1% for the Planet + 1% for Mental Health)"
+DIRTY GUT,Sweets+Treats,screened-reject (brand not clearly identifiable -- no product or certification found under this exact name)
+DOCTOR STOLBERG,Pantry,"screened-hold (""majority of ingredients certified organic"" is vague -- no specific certifying body or product-level certification confirmed -- needs direct verify)"
+donutful,Sweets+Treats,screened-reject (organic cane sugar is an ingredient-level claim; non-GMO stated but not confirmed as Non-GMO Project Verified; no whole-product organic certification)
+doosra,Puffs+Crunch,screened-reject (organic dark chocolate is an ingredient-level claim only; no brand-wide certification found)
+Dr. Smood,Bites+Chews,"shortlisted (100% USDA Certified Organic + Kosher across the product line, per brand's own site and multiple listings)"
+Dream Pops,Sweets+Treats,screened-reject (no certification information found)
+Drizzi,Pantry,"shortlisted (GFCO Certified Gluten-Free + Non-GMO Project Verified -- brand name is ""Drizzilicious"")"
+Droosh,Pantry,screened-reject (brand's own description: products are NOT certified organic; non-GMO stated but no certifying body confirmed)
+Dumpling Daughter,Saucy+Spicy,"shortlisted (Certified Organic + Certified GMO Free, per EWG Food Scores)"
+dun,Non-Alc,screened-reject (brand not clearly identifiable -- no product or certification found under this exact name)
+Earth & Star,Bites+Chews,"shortlisted (100% Certified Organic ingredients across the product line, per brand's own site)"
+Eat Senza,Pantry,screened-reject (no organic or non-GMO certification confirmed)
+edggies veggies,Pantry,shortlisted (USDA Organic certified by CCOF -- California Certified Organic Farmers -- a named certifying body)
+Effie's Homemade,Puffs+Crunch,"screened-hold (""some products are certified organic and certified GMO free"" but not specified which SKUs -- needs direct verify)"
+ELAVI,Breakfast-ish,screened-reject (brand's own FAQ: NOT certified organic; non-GMO stated but certifying body not confirmed)
+Eleni's New York,Sweets+Treats,screened-hold (OU Kosher Certified confirmed; no organic/non-GMO certification found -- needs a category-fit call on kosher-only qualification)
+Eleven Madison Home,Pantry,"screened-reject (organic ingredients referenced at ingredient level -- e.g. ""Organic Oats"" -- but no brand-wide certification confirmed)"
+Ella's Flats,Puffs+Crunch,"shortlisted (Certified Gluten Free + Non-GMO Project Verified, per brand's own site)"
+Eltee's Goods,Pantry,"screened-reject (""local"" and ""regenerative"" are self-described; no certifying body confirmed)"
+Endure Sport Nutrition,Bites+Chews,"screened-reject (brand not clearly identifiable -- search returned only generic retail categories, not a matching specific brand)"
+Enso Chips,Puffs+Crunch,screened-reject (brand's own site: NOT certified organic; non-GMO stated but no certifying body confirmed)
+Equip Foods,Bites+Chews,shortlisted (Clean Coffee line is certified organic + Fair Trade certified + Regenerative Organic Certified)
+Eureka Tortilla,Pantry,"shortlisted (Organic + Non-GMO across the product line, ""at least 95% organic material"" per brand's own listings)"
+Every Body Eat,Puffs+Crunch,"shortlisted (Gluten Free Certified + Non-GMO Project Verified + Kosher + Seed Oil Free Certified, per brand's own certifications page -- not organic)"
+EVERYDAZE,Sweets+Treats,screened-reject (brand not clearly identifiable -- no product or certification found under this exact name)
+Evie's Snacks,Puffs+Crunch,"shortlisted (USDA Certified Organic pecan line + Non-GMO, per brand's own site)"
+Evo Hemp,Bites+Chews,"shortlisted (MOCU Organic Hemp Protein + Organic Hemp Hearts certified organic, vegan, non-GMO, gluten-free)"
+EVOLVED,Sweets+Treats,shortlisted (USDA Organic Certified + Rainforest Alliance certified cacao)
+Fabalish,Pantry,"shortlisted (Organic baked falafel line, per brand's own site and multiple product listings -- ""first organic baked falafel on the market"")"
 Fadwa Masala,Pantry,pending
 Fake Drinks Club,Non-Alc,pending
 Fancypants Baking Co.,Sweets+Treats,pending
