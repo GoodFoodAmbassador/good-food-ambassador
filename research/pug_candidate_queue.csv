@@ -241,8 +241,8 @@ Grumpy Ginger,Pantry,screened-reject (brand not identifiable -- no certification
 Gruvi,Non-Alc,"screened-reject (ingredients sourced from GFSI-certified suppliers -- a food-safety standard, not an organic/fair-trade/B-Corp certification -- no qualifying certification found)"
 Gwell,Bites+Chews,screened-hold (own site says 'natural and organic ingredients' without naming a specific certifying body -- needs direct verify)
 Happy Candy,Sweets+Treats,shortlisted (WBENC Certified Women's Business Enterprise; non-GMO ingredients claimed but certifying body not specified)
-Harken Sweets,Sweets+Treats,pending
-Harry's Famous Sauce,Pantry,pending
+Harken Sweets,Sweets+Treats,shortlisted (already imported/live on site -- import-new-products.mjs)
+Harry's Famous Sauce,Pantry,shortlisted (already imported/live on site -- import-shortlist-batch4.mjs)
 Haus of Biscotti,Sweets+Treats,screened-reject (no certification info found)
 Haven's Kitchen,"Pantry, Saucy+Spicy","screened-reject (non-GMO, gluten-free, vegan claims but no named third-party certifying body found)"
 Hawa Matcha,Pantry,screened-reject (brand not identifiable -- no search results found)
@@ -255,14 +255,14 @@ Heraclea,Pantry,shortlisted (PDO certified Memecik olives + Non-GMO Project Veri
 Herb & Olive,Pantry,screened-reject (brand not identifiable -- search returned only unrelated brands)
 Herbs & Kettles,Pantry,screened-hold (Georgia Grown directory lists 'certified organic and/or natural' but company itself notes many source farms use organic methods without formal certification -- needs direct verify)
 Hero Bread,Pantry,"screened-reject (no organic, Non-GMO Project, or B Corp certification found)"
-HEY CHAMP,Sweets+Treats,pending
-Heyday Canning Co.,Pantry,pending
-High Mesa Chile Co.,Saucy+Spicy,pending
-Hoboken Farms,Saucy+Spicy,pending
-HOL Health Club,Bites+Chews,pending
-Hola Mija,Puffs+Crunch,pending
-Holy Tshili,Pantry,pending
-Homemade ish,Sweets+Treats,pending
+HEY CHAMP,Sweets+Treats,screened-reject (no certification info found)
+Heyday Canning Co.,Pantry,screened-reject (not yet certified organic per own site; no B Corp or other named certification found)
+High Mesa Chile Co.,Saucy+Spicy,"screened-reject ('natural ingredients' claim only, no brand-level named certification found)"
+Hoboken Farms,Saucy+Spicy,shortlisted (Non-GMO Project Verified + USDA Certified Organic + OU Kosher + Keto Certified + Gluten-Free Certified)
+HOL Health Club,Bites+Chews,"screened-reject (whole-food/clean-ingredient claims only, no certification found)"
+Hola Mija,Puffs+Crunch,"shortlisted (certified organic + Non-GMO + gluten-free, seed-oil-free tortilla chips)"
+Holy Tshili,Pantry,screened-reject (no certification info found)
+Homemade ish,Sweets+Treats,screened-reject (no certification info found)
 Homestead's Hot Sauce,Saucy+Spicy,pending
 Homiah,Pantry,pending
 Hope and Sesame,Breakfast-ish,pending
