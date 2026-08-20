@@ -247,14 +247,14 @@ Haus of Biscotti,Sweets+Treats,screened-reject (no certification info found)
 Haven's Kitchen,"Pantry, Saucy+Spicy","screened-reject (non-GMO, gluten-free, vegan claims but no named third-party certifying body found)"
 Hawa Matcha,Pantry,screened-reject (brand not identifiable -- no search results found)
 Hayati,Pantry,"screened-reject (brand explicitly states za'atar is not certified organic, grown traditionally but uncertified per own FAQ)"
-Hazelicious,Breakfast-ish,pending
-Hazlo,Non-Alc,pending
-Hebel & Co,Sweets+Treats,pending
-Heilala Vanilla,Pantry,pending
-Heraclea,Pantry,pending
-Herb & Olive,Pantry,pending
-Herbs & Kettles,Pantry,pending
-Hero Bread,Pantry,pending
+Hazelicious,Breakfast-ish,"screened-reject (non-GMO/plant-based claims only, no organic or other named certification found)"
+Hazlo,Non-Alc,screened-reject (uses organic cane sugar as an ingredient but no full-product organic or B Corp certification found)
+Hebel & Co,Sweets+Treats,shortlisted (USDA Certified Organic + Kosher + Fair Trade bean-to-bar chocolate in Chocolate Chunk Halva)
+Heilala Vanilla,Pantry,shortlisted (Certified organic + Fair Trade + Certified B Corporation -- first vanilla company to reach B Corp status)
+Heraclea,Pantry,shortlisted (PDO certified Memecik olives + Non-GMO Project Verified + 1% for the Planet)
+Herb & Olive,Pantry,screened-reject (brand not identifiable -- search returned only unrelated brands)
+Herbs & Kettles,Pantry,screened-hold (Georgia Grown directory lists 'certified organic and/or natural' but company itself notes many source farms use organic methods without formal certification -- needs direct verify)
+Hero Bread,Pantry,"screened-reject (no organic, Non-GMO Project, or B Corp certification found)"
 HEY CHAMP,Sweets+Treats,pending
 Heyday Canning Co.,Pantry,pending
 High Mesa Chile Co.,Saucy+Spicy,pending
