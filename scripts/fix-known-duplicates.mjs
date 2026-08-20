@@ -3,7 +3,8 @@
 // correctly refused to guess). We already know which record is the correct
 // one -- the one written in import-shortlist-batch4/5.mjs, with full
 // evaluation prose -- so this script keeps that exact name and deletes any
-// other record in the same category whose normalized name is a near-match.
+// other record in the same category whose normalized name shares most of
+// its significant words with it.
 //
 // READ-ONLY first: run with no --apply flag to just print what it would do.
 // Usage:
@@ -19,22 +20,34 @@ const BASE_ID = 'appcBDopFuYbSTdRy'
 const TABLE   = 'Products'
 
 // The exact Name string as written by our own import scripts -- this is the
-// record to KEEP. Everything else in the same category matching the fuzzy
-// name below gets deleted.
+// record to KEEP. Everything else in the same category with strong word
+// overlap gets flagged for deletion.
 const KEEP = [
-  { keepName: "Auntie Rana's Smoked Chili Oil", category: 'oils-condiments', fuzzy: "auntie rana's smoked chili oil" },
-  { keepName: "Harry's Famous Sauce, Lemon Pepper Dill", category: 'oils-condiments', fuzzy: "harry's famous sauce lemon pepper dill" },
-  { keepName: "Marianne's Harvest Regenerative Organic Certified Avocado Oil", category: 'oils-condiments', fuzzy: "marianne's regenerative organic certified avocado oil" },
-  { keepName: "Taïm Olive Single-Estate Extra Virgin Olive Oil", category: 'oils-condiments', fuzzy: 'taim olive single estate extra virgin olive oil' },
+  { keepName: "Auntie Rana's Smoked Chili Oil" },
+  { keepName: "Harry's Famous Sauce, Lemon Pepper Dill" },
+  { keepName: "Marianne's Harvest Regenerative Organic Certified Avocado Oil" },
+  { keepName: "Taïm Olive Single-Estate Extra Virgin Olive Oil" },
 ]
+
+const FILLER = new Set(['organic', 'the', 'a', 'an', 'and', 'with', 'in', 'of', 'oil'])
 
 function normalize(name) {
   return name
-    .toLowerCase()
     .normalize('NFD').replace(/[̀-ͯ]/g, '') // strip accents (ï -> i)
+    .toLowerCase()
     .replace(/[^a-z0-9\s]/g, ' ')
     .replace(/\s+/g, ' ')
     .trim()
+}
+
+function significantWords(norm) {
+  return norm.split(' ').filter(w => w && !FILLER.has(w))
+}
+
+function overlapRatio(aWords, bWords) {
+  const setA = new Set(aWords), setB = new Set(bWords)
+  const shared = [...setA].filter(w => setB.has(w)).length
+  return shared / Math.min(setA.size, setB.size) // ratio relative to the SHORTER name, catches subset matches
 }
 
 async function fetchAll() {
@@ -54,20 +67,22 @@ async function fetchAll() {
 const records = await fetchAll()
 const toDelete = []
 
-for (const { keepName, category, fuzzy } of KEEP) {
-  const candidates = records.filter(r => {
-    if (!r.fields.Name) return false
-    const n = normalize(r.fields.Name)
-    return n.includes(fuzzy.split(' ').slice(0, 3).join(' ')) // cheap prefilter by first 3 words
-  })
+for (const { keepName } of KEEP) {
+  const keepWords = significantWords(normalize(keepName))
+  const named = records.filter(r => r.fields.Name && r.fields.Name.trim())
 
-  const exactKeep = candidates.find(r => r.fields.Name.trim() === keepName)
+  const exactKeep = named.find(r => r.fields.Name.trim() === keepName)
   if (!exactKeep) {
     console.log(`⚠ Could not find exact record for "${keepName}" -- skipping this pair, check manually.`)
     continue
   }
 
-  const dupes = candidates.filter(r => r.id !== exactKeep.id)
+  const dupes = named.filter(r => {
+    if (r.id === exactKeep.id) return false
+    const words = significantWords(normalize(r.fields.Name.trim()))
+    return overlapRatio(keepWords, words) >= 0.65
+  })
+
   if (!dupes.length) {
     console.log(`✓ "${keepName}" -- no duplicate found, nothing to do.`)
     continue
