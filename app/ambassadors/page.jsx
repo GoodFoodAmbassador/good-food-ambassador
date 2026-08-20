@@ -30,6 +30,14 @@ const AMBASSADORS = [
     linkedin: 'https://www.linkedin.com/in/riccardoastolfi/',
     focus: 'Low & No Alcohol',
   },
+  {
+    name: 'Vigil Yangjinqi Yu',
+    role: 'Packaging & Circular Economy Specialist · Plastics Policy Expert',
+    location: 'Spain',
+    bio: 'Vigil brings a background in plastics policy and the circular economy to Good Food Ambassador\'s evaluation of packaging — the layer of a product\'s story that\'s often the least examined. She currently serves as Senior Program Officer for Plastics Policy and Markets at Verra, where she navigates international and regional policy landscapes and identifies market opportunities to catalyze investment in circular solutions for plastics. Previously, she spent years at the Ellen MacArthur Foundation, managing a cross-sector stakeholder network across China and facilitating dialogue between policymakers, industry leaders, and researchers to advance circular economy development. Her expertise spans plastics, food systems, and science communication for sustainability. She holds a Master of Science in Industrial Ecology from Leiden University, TU Delft, and Chalmers University, through the Erasmus Mundus program.',
+    linkedin: 'https://www.linkedin.com/in/vigil-yangjinqi-yu-35360732/',
+    focus: 'Packaging & Circular Design',
+  },
 ]
 
 const ROLES = [
