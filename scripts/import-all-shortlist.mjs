@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Runs shortlist import batches 6 through 10 in sequence, using one PAT.
+// Runs shortlist import batches 6 through 13 in sequence, using one PAT.
 // Usage: node scripts/import-all-shortlist.mjs <YOUR_PAT> [BASE_ID]
 
 import { spawnSync } from 'child_process'
@@ -10,7 +10,7 @@ const [,, API_KEY, BASE_ID] = process.argv
 if (!API_KEY) { console.error('Usage: node scripts/import-all-shortlist.mjs <PAT>'); process.exit(1) }
 
 const dir = path.dirname(fileURLToPath(import.meta.url))
-const batches = [6, 7, 8, 9, 10]
+const batches = [6, 7, 8, 9, 10, 11, 12, 13]
 
 for (const b of batches) {
   const script = path.join(dir, `import-shortlist-batch${b}.mjs`)
