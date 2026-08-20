@@ -92,26 +92,25 @@ for (const r of records) {
 }
 
 const toDelete = []
-let unexpectedGroups = 0
 
 for (const [norm, recs] of groups) {
-  if (recs.length < 2) { console.log(`⚠ "${recs[0]?.fields.Name}" -- only 1 copy found, expected 2. Skipping.`); continue }
-  if (recs.length > 2) { console.log(`⚠ "${recs[0].fields.Name}" -- ${recs.length} copies found (expected 2). Review manually.`); unexpectedGroups++; continue }
+  if (recs.length < 2) { console.log(`⚠ "${recs[0]?.fields.Name}" -- only 1 copy found. Skipping.`); continue }
 
-  // Prefer keeping the one with working buy links; if tie, keep earliest created.
-  const [a, b] = recs
-  let keep, drop
-  if (hasLinks(a) && !hasLinks(b)) { keep = a; drop = b }
-  else if (hasLinks(b) && !hasLinks(a)) { keep = b; drop = a }
-  else { [keep, drop] = a.createdTime <= b.createdTime ? [a, b] : [b, a] }
+  // Keep whichever copy has working buy links; among those (or if none/all
+  // have links), keep the earliest created. Delete every other copy,
+  // regardless of how many total copies exist (handles 2x, 3x, 4x...).
+  const withLinks = recs.filter(hasLinks)
+  const pool = withLinks.length ? withLinks : recs
+  const keep = pool.reduce((earliest, r) => (r.createdTime < earliest.createdTime ? r : earliest), pool[0])
+  const drop = recs.filter(r => r.id !== keep.id)
 
-  console.log(`KEEP: "${keep.fields.Name}" (${keep.id}, created ${keep.createdTime})`)
-  console.log(`DROP: "${drop.fields.Name}" (${drop.id}, created ${drop.createdTime})\n`)
-  toDelete.push(drop.id)
+  console.log(`KEEP: "${keep.fields.Name}" (${keep.id}, created ${keep.createdTime}) -- out of ${recs.length} copies`)
+  for (const d of drop) console.log(`DROP: "${d.fields.Name}" (${d.id}, created ${d.createdTime})`)
+  console.log()
+  toDelete.push(...drop.map(d => d.id))
 }
 
 console.log(`\n${toDelete.length} duplicate record(s) identified for deletion.`)
-if (unexpectedGroups) console.log(`${unexpectedGroups} group(s) had an unexpected count and were skipped -- review manually.`)
 
 if (!toDelete.length) { console.log('Nothing to delete.'); process.exit(0) }
 
