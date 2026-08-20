@@ -237,16 +237,16 @@ Groovy Coffee,Pantry,shortlisted (Certified Kosher; explicitly not organic or Fa
 Ground Up PDX,Pantry,screened-hold (site states 'non-GMO certified' but does not name Non-GMO Project Verified or another specific certifying body -- needs direct verify)
 grounds,Pantry,"screened-reject (brand not identifiable -- search returned only unrelated coffee brands, not this specific brand)"
 Growee Foods,Saucy+Spicy,screened-hold (own site says 'certified organic and/or natural products' without naming a specific certifying body or which products -- needs direct verify)
-Grumpy Ginger,Pantry,pending
-Gruvi,Non-Alc,pending
-Gwell,Bites+Chews,pending
-Happy Candy,Sweets+Treats,pending
+Grumpy Ginger,Pantry,screened-reject (brand not identifiable -- no certification info found)
+Gruvi,Non-Alc,"screened-reject (ingredients sourced from GFSI-certified suppliers -- a food-safety standard, not an organic/fair-trade/B-Corp certification -- no qualifying certification found)"
+Gwell,Bites+Chews,screened-hold (own site says 'natural and organic ingredients' without naming a specific certifying body -- needs direct verify)
+Happy Candy,Sweets+Treats,shortlisted (WBENC Certified Women's Business Enterprise; non-GMO ingredients claimed but certifying body not specified)
 Harken Sweets,Sweets+Treats,pending
 Harry's Famous Sauce,Pantry,pending
-Haus of Biscotti,Sweets+Treats,pending
-Haven's Kitchen,"Pantry, Saucy+Spicy",pending
-Hawa Matcha,Pantry,pending
-Hayati,Pantry,pending
+Haus of Biscotti,Sweets+Treats,screened-reject (no certification info found)
+Haven's Kitchen,"Pantry, Saucy+Spicy","screened-reject (non-GMO, gluten-free, vegan claims but no named third-party certifying body found)"
+Hawa Matcha,Pantry,screened-reject (brand not identifiable -- no search results found)
+Hayati,Pantry,"screened-reject (brand explicitly states za'atar is not certified organic, grown traditionally but uncertified per own FAQ)"
 Hazelicious,Breakfast-ish,pending
 Hazlo,Non-Alc,pending
 Hebel & Co,Sweets+Treats,pending
