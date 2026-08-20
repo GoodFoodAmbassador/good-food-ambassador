@@ -344,13 +344,13 @@ La Saum,Non-Alc,screened-reject (brand not identifiable -- no search results fou
 Lake & Oak Tea Co.,Pantry,screened-reject (brand explicitly states it is not certified organic despite using ~97% organic ingredients per own FAQ)
 LASSO,Sweets+Treats,screened-reject (brand not identifiable -- no search results found)
 LAV,Pantry,screened-reject (brand not identifiable -- no search results found)
-Lazy Food Co,Pantry,pending
-Leemu,Pantry,pending
-Leichacha,Pantry,pending
-Like Air,Puffs+Crunch,pending
-Lil Bucks,Breakfast-ish,pending
-Little Latke,Puffs+Crunch,pending
-Little Rebels Kids,Pantry,pending
+Lazy Food Co,Pantry,"screened-reject ('all-natural, plant-based' claims only, no organic certification found)"
+Leemu,Pantry,"screened-reject ('clean ingredients' claims only, no organic certification found)"
+Leichacha,Pantry,"screened-reject ('100% natural' claim only, no organic certification found)"
+Like Air,Puffs+Crunch,shortlisted (Kosher certified; non-GMO ingredients claimed but not third-party verified)
+Lil Bucks,Breakfast-ish,shortlisted (USDA Certified Organic + Regenerative Organic Certified -- first ROC buckwheat supply chain in the US)
+Little Latke,Puffs+Crunch,shortlisted (Kosher certified; non-GMO/seed-oil-free claimed but not third-party verified)
+Little Rebels Kids,Pantry,"screened-reject (children's apparel brand, not a food/beverage product -- not applicable to this directory)"
 Little Spoon,Pantry,pending
 Little Zing,Pantry,pending
 Liv Gourmet Granola,Breakfast-ish,pending
