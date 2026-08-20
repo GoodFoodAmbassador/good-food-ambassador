@@ -263,14 +263,14 @@ HOL Health Club,Bites+Chews,"screened-reject (whole-food/clean-ingredient claims
 Hola Mija,Puffs+Crunch,"shortlisted (certified organic + Non-GMO + gluten-free, seed-oil-free tortilla chips)"
 Holy Tshili,Pantry,screened-reject (no certification info found)
 Homemade ish,Sweets+Treats,screened-reject (no certification info found)
-Homestead's Hot Sauce,Saucy+Spicy,pending
-Homiah,Pantry,pending
-Hope and Sesame,Breakfast-ish,pending
-Hormbles Chormbles,Sweets+Treats,pending
-Hot N Saucy,Pantry,pending
-Hotgirlsauce,Pantry,pending
-Hotpot Queen,Saucy+Spicy,pending
-House of Yes,Bites+Chews,pending
+Homestead's Hot Sauce,Saucy+Spicy,shortlisted (Kosher certified)
+Homiah,Pantry,"screened-reject (non-GMO ingredient claim only, no named certifying body or organic certification found)"
+Hope and Sesame,Breakfast-ish,shortlisted (USDA Certified Organic + Non-GMO Project Verified + Kosher + Upcycled Certified -- only Upcycled Certified plant milk)
+Hormbles Chormbles,Sweets+Treats,screened-reject (explicitly not organic; no other certification found)
+Hot N Saucy,Pantry,"screened-reject (all-natural/vegan claims only, no organic certification found)"
+Hotgirlsauce,Pantry,"screened-reject (non-GMO ingredient claim only, no named certifying body found)"
+Hotpot Queen,Saucy+Spicy,"screened-reject ('natural' and non-GMO ingredient claims only, no named certification found)"
+House of Yes,Bites+Chews,shortlisted (OU Kosher certified per Kashruth Division of the Orthodox Union)
 Huckleberry,Breakfast-ish,pending
 Hueza Bakery,Sweets+Treats,pending
 Humble House,Bites+Chews,pending
