@@ -393,16 +393,16 @@ Maven,Pantry,screened-reject (brand unclear/not verifiably a snack bar company w
 Maya Kaimal,Pantry,"shortlisted (Certified Organic + Non-GMO Project Verified on Everyday Dal/Chana lines, per brand and Amazon listings)"
 Meggo Sweets,Sweets+Treats,screened-hold (organic ingredients claimed but no confirmed third-party organic certification -- needs direct verify)
 Mellody,Saucy+Spicy,"screened-reject (no named third-party certification found, only general claims)"
-Melting Forest,Non-Alc,pending
-merri matcha,Pantry,pending
-Mez Foods,Sweets+Treats,pending
-Michele's Granola,Breakfast-ish,pending
-MIILS,Breakfast-ish,pending
-Milk Bar,Sweets+Treats,pending
-milkadamia,Breakfast-ish,pending
-Miracle Mama,Sweets+Treats,pending
-Misfits Market,Puffs+Crunch,pending
-Mixiboy,Sweets+Treats,pending
+Melting Forest,Non-Alc,screened-hold (claims Organic/Non-GMO certifications on ingredients but no specific named cert body confirmed for flagship products -- needs direct verify)
+merri matcha,Pantry,"screened-reject (brand not found in search, unverifiable)"
+Mez Foods,Sweets+Treats,"screened-reject (brand not found in search, unverifiable)"
+Michele's Granola,Breakfast-ish,shortlisted (Non-GMO Project Verified per official Non-GMO Project press release; made with organic whole grain oats but not full product organic certification)
+MIILS,Breakfast-ish,"screened-reject (brand not found in search, unverifiable)"
+Milk Bar,Sweets+Treats,"screened-reject (no organic/non-GMO/kosher certification confirmed, only all-natural ingredient claims)"
+milkadamia,Breakfast-ish,"shortlisted (USDA Certified Organic + Non-GMO Project Verified on Organic Artisan Macadamia Milk line, per brand site and Amazon)"
+Miracle Mama,Sweets+Treats,screened-hold (gluten-free/vegan claims but no organic or other named certification confirmed -- needs direct verify)
+Misfits Market,Puffs+Crunch,"screened-reject (grocery delivery marketplace, not a product brand -- sources certified organic produce from various farms but does not itself hold a product certification)"
+Mixiboy,Sweets+Treats,screened-hold (organic/non-GMO claimed for baking mixes but no specific certifying body confirmed -- needs direct verify)
 Mixly,Non-Alc,pending
 Mmmly,Sweets+Treats,pending
 Mocktail Club,Non-Alc,pending
