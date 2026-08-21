@@ -453,16 +453,16 @@ NUDEGREENS,Pantry,shortlisted (Organic + Fair Trade + Kosher certifications per 
 Oats in Coats,Breakfast-ish,screened-hold (non-GMO claimed but no organic or other named certifying body confirmed -- needs direct verify)
 OCA Foods,Puffs+Crunch,shortlisted (USDA Certified Organic + Non-GMO certified energy drink line)
 OffLimits,Breakfast-ish,shortlisted (Certified Organic + Certified GMO Free)
-OH MY GUM!,Sweets+Treats,pending
-Oh-Mazing Granola,Breakfast-ish,pending
-Ohhts! Overnight Oatmeal,Breakfast-ish,pending
-Ojaswe Co.,Breakfast-ish,pending
-Okina,Sweets+Treats,pending
-Ollin,Sweets+Treats,pending
-Olyra Foods,Breakfast-ish,pending
-Omsom,Saucy+Spicy,pending
-One Trick Pony,Pantry,pending
-ONO,Breakfast-ish,pending
+OH MY GUM!,Sweets+Treats,"screened-hold (Non-GMO/Kosher claimed, no named certifying body confirmed -- needs direct verify)"
+Oh-Mazing Granola,Breakfast-ish,"screened-hold (site claims 'Certified Organic', certifying agent not confirmed -- needs direct verify)"
+Ohhts! Overnight Oatmeal,Breakfast-ish,"screened-reject (Non-GMO ingredient claim only, no named certification)"
+Ojaswe Co.,Breakfast-ish,screened-reject (no named certification found)
+Okina,Sweets+Treats,"screened-reject (regeneratively-grown claim, no named certification)"
+Ollin,Sweets+Treats,screened-reject (no named certification confirmed; name collision between two brands)
+Olyra Foods,Breakfast-ish,shortlisted (USDA Certified Organic + Non-GMO Project Verified)
+Omsom,Saucy+Spicy,"screened-reject (Non-GMO claim only, not Non-GMO Project Verified)"
+One Trick Pony,Pantry,shortlisted (Certified Organic + Certified Non-GMO + Certified Gluten Free + Star-K Kosher)
+ONO,Breakfast-ish,screened-reject (no usable information found)
 ONOIN,Pantry,pending
 Onyx Coffee Lab,Breakfast-ish,pending
 Oobli,Sweets+Treats,pending
