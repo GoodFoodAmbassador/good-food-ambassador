@@ -583,16 +583,16 @@ Savannah Bee Company,"Pantry, Sweets+Treats",screened-hold (some SKUs labeled 'o
 SayGhee,Pantry,screened-reject (no information found on this brand)
 SAYSO,Non-Alc,screened-reject (no matching brand found)
 Scout,Pantry,"shortlisted (Certified Organic + Certified GMO Free + Certified B Corp + MSC Certified, canned seafood)"
-Scout Mustard,Saucy+Spicy,pending
-seasn,Non-Alc,pending
-Seed to Surf,Pantry,pending
-Seedible,Pantry,pending
-SEEDLY,Sweets+Treats,pending
-SENOR MANGO,Bites+Chews,pending
-Seven Sundays,Breakfast-ish,pending
-SHAMAN RAMAN,Pantry,pending
-She's The Sauce,Pantry,pending
-Shinzo Matcha,Pantry,pending
+Scout Mustard,Saucy+Spicy,screened-reject (no matching brand found)
+seasn,Non-Alc,screened-reject (no matching brand found)
+Seed to Surf,Pantry,screened-reject (no certification confirmed)
+Seedible,Pantry,"screened-hold ('organic' claimed, certifying body not confirmed; now part of Soom Foods -- needs direct verify)"
+SEEDLY,Sweets+Treats,"shortlisted (USDA Certified Organic + Fair Trade + Kosher, chocolate bark)"
+SENOR MANGO,Bites+Chews,"screened-reject ('organic' claimed in marketing, no named certifying body confirmed)"
+Seven Sundays,Breakfast-ish,shortlisted (Certified USDA Organic + Non-GMO Project Verified)
+SHAMAN RAMAN,Pantry,"screened-hold (site claims '100% organic', certifying body not named -- needs direct verify)"
+She's The Sauce,Pantry,screened-reject (no certification confirmed)
+Shinzo Matcha,Pantry,screened-reject (no matching brand found)
 Shooka Sauce,Saucy+Spicy,pending
 Siesta Co,Pantry,pending
 Simple Mills,Puffs+Crunch,pending
