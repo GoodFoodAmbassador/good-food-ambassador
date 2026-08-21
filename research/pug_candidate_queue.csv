@@ -523,16 +523,16 @@ Prest,Pantry,screened-reject (no information found on this brand)
 PRETZELIZED,Puffs+Crunch,screened-reject (no confirmed certification for this specific brand)
 PREVAIL,Bites+Chews,"screened-reject (marinades/spices described as '100% organic' at ingredient level only, no named certifying body)"
 PRIMA,Bites+Chews,screened-hold (site claims 'certified gluten-free and Non-GMO' without naming the certifying body -- needs direct verify)
-Primis Imports,Pantry,pending
-Proposition Cocktail Co,Non-Alc,pending
-Puffworks,Puffs+Crunch,pending
-Pulp Pantry,Puffs+Crunch,pending
-Pulpito Fruit Bites,Bites+Chews,pending
-PUR Spices Limited,Pantry,pending
-Purely Pecans,Saucy+Spicy,pending
-Purposefuel,Bites+Chews,pending
-pwrfuel,Bites+Chews,pending
-Quincy,Non-Alc,pending
+Primis Imports,Pantry,screened-reject (no certification confirmed)
+Proposition Cocktail Co,Non-Alc,screened-reject (organic-sourced ingredient claim only; also appears discontinued per BevNET)
+Puffworks,Puffs+Crunch,shortlisted (USDA Organic Certified + Non-GMO Project Verified + Certified Gluten-Free + Kosher)
+Pulp Pantry,Puffs+Crunch,"screened-reject (Non-GMO claimed, ingredient-level organic only, no named certifying body for organic)"
+Pulpito Fruit Bites,Bites+Chews,"screened-hold (site lists 'organic' among attributes, certifying body not confirmed -- needs direct verify)"
+PUR Spices Limited,Pantry,screened-reject (no confirmed certification)
+Purely Pecans,Saucy+Spicy,"screened-reject (Non-GMO claimed without named certifying body, not certified organic)"
+Purposefuel,Bites+Chews,"screened-reject (Non-GMO claimed, no named certifying body confirmed)"
+pwrfuel,Bites+Chews,screened-reject (no information found on this brand)
+Quincy,Non-Alc,screened-reject (no matching branded food product found)
 R.E.D.D.,Bites+Chews,pending
 Raaka,Sweets+Treats,pending
 Racha Organics,Pantry,pending
