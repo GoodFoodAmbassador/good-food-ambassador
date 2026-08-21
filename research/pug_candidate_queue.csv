@@ -403,16 +403,16 @@ milkadamia,Breakfast-ish,"shortlisted (USDA Certified Organic + Non-GMO Project 
 Miracle Mama,Sweets+Treats,screened-hold (gluten-free/vegan claims but no organic or other named certification confirmed -- needs direct verify)
 Misfits Market,Puffs+Crunch,"screened-reject (grocery delivery marketplace, not a product brand -- sources certified organic produce from various farms but does not itself hold a product certification)"
 Mixiboy,Sweets+Treats,screened-hold (organic/non-GMO claimed for baking mixes but no specific certifying body confirmed -- needs direct verify)
-Mixly,Non-Alc,pending
-Mmmly,Sweets+Treats,pending
-Mocktail Club,Non-Alc,pending
-Moku,Bites+Chews,pending
-MommaBear Organics,Sweets+Treats,pending
-Monday,Non-Alc,pending
-Monte's Fine Foods,Saucy+Spicy,pending
-Moo'd Up,Breakfast-ish,pending
-Moonshot,Puffs+Crunch,pending
-More Than Matcha,Pantry,pending
+Mixly,Non-Alc,"screened-reject (brand not found in search, unverifiable)"
+Mmmly,Sweets+Treats,screened-hold (organic ingredient claims but no product-level certifying body confirmed -- needs direct verify)
+Mocktail Club,Non-Alc,screened-hold (Non-GMO certified claimed but certifying body unclear -- needs direct verify)
+Moku,Bites+Chews,screened-hold (organically-grown mushrooms + non-GMO claimed but no specific certifying body confirmed for the product -- needs direct verify)
+MommaBear Organics,Sweets+Treats,screened-hold (organic/non-GMO/kosher claimed but no confirmed USDA or other named certifying body -- needs direct verify)
+Monday,Non-Alc,screened-reject (vegan/gluten-free claimed but no organic or other named certification confirmed)
+Monte's Fine Foods,Saucy+Spicy,shortlisted (Certified Non-GMO + Kosher Certified per brand and multiple listings)
+Moo'd Up,Breakfast-ish,screened-reject (no organic or other named certification confirmed)
+Moonshot,Puffs+Crunch,"shortlisted (USDA Certified Organic + Kosher Certified, WBENC Certified Women-Owned)"
+More Than Matcha,Pantry,"screened-reject (brand not found in search, unverifiable)"
 Morning Made,Pantry,pending
 MOSH,Bites+Chews,pending
 Motif,Pantry,pending
