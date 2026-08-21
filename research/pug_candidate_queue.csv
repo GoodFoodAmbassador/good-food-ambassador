@@ -473,16 +473,16 @@ Oracle,Pantry,screened-reject (no matching food/beverage brand found)
 OSIA,Non-Alc,screened-reject (no matching brand found)
 Osmo Salt,Pantry,"screened-hold (site claims USDA Organic seal + Kosher on some SKUs, varies by product -- needs direct verify)"
 Oso Snacks,Bites+Chews,screened-reject (no matching brand found)
-Oswald Co,Saucy+Spicy,pending
-Otamot,Saucy+Spicy,pending
-Otherworld,Breakfast-ish,pending
-Otto's,Pantry,pending
-Outstanding Foods,Puffs+Crunch,pending
-OverEasy,Bites+Chews,pending
-Pan's,Bites+Chews,pending
-Papa's Pops,Puffs+Crunch,pending
-Paradise Squared,Sweets+Treats,pending
-PARCH,Non-Alc,pending
+Oswald Co,Saucy+Spicy,screened-reject (no information found on this brand)
+Otamot,Saucy+Spicy,shortlisted (USDA Organic + Non-GMO Project Verified + Certified Vegan)
+Otherworld,Breakfast-ish,screened-reject (no information found on this brand)
+Otto's,Pantry,shortlisted (Otto's Naturals Cassava Flour: Certified Non-GMO / Non-GMO Project Verified)
+Outstanding Foods,Puffs+Crunch,"shortlisted (Non-GMO Project Verified + Certified Gluten Free + Certified Kosher, PigOut Pigless Pork Rinds)"
+OverEasy,Bites+Chews,"screened-reject (organic ingredient claims only, no named certifying body)"
+Pan's,Bites+Chews,screened-reject (no matching brand found)
+Papa's Pops,Puffs+Crunch,"screened-reject (Non-GMO/Kosher claimed, no named certifying body confirmed)"
+Paradise Squared,Sweets+Treats,"screened-reject (Non-GMO claimed, no named certifying body confirmed)"
+PARCH,Non-Alc,screened-reject (no information found on this brand)
 Pari,Non-Alc,pending
 Paro,Puffs+Crunch,pending
 Partake Foods,Sweets+Treats,pending
