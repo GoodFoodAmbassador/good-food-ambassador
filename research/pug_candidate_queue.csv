@@ -503,16 +503,16 @@ pi00a,Pantry,screened-reject (no information found on this brand)
 Pikora,Pantry,screened-reject (no information found on this brand)
 Pili Hunters,Saucy+Spicy,screened-reject (explicitly not certified organic per brand's own marketing -- 'better than organic')
 Pinch,Pantry,shortlisted (Pinch Spice Market: Certified Organic + Fair Trade + Non-GMO)
-Pineapple Collaborative,Pantry,pending
-Pink Panda,Sweets+Treats,pending
-Pink Salt,Saucy+Spicy,pending
-Pipcorn,Puffs+Crunch,pending
-Pisqueya,Pantry,pending
-Pistakio,Pantry,pending
-Pixsea,Puffs+Crunch,pending
-pnuff,Puffs+Crunch,pending
-Poi Dog,Saucy+Spicy,pending
-Pop Zero,Puffs+Crunch,pending
+Pineapple Collaborative,Pantry,screened-reject (no matching brand found)
+Pink Panda,Sweets+Treats,screened-reject (no matching brand found; distinct from Nature's Path Panda Puffs)
+Pink Salt,Saucy+Spicy,"screened-reject (generic product term, no specific matching brand confirmed)"
+Pipcorn,Puffs+Crunch,shortlisted (Non-GMO Project Verified + Certified Gluten-Free + Certified Vegan + Certified Kosher)
+Pisqueya,Pantry,"screened-reject (Non-GMO claimed, no named certifying body confirmed)"
+Pistakio,Pantry,screened-reject (no matching brand found)
+Pixsea,Puffs+Crunch,"screened-reject (Non-GMO/vegan/kosher sourcing claims, no named certifying body confirmed)"
+pnuff,Puffs+Crunch,"screened-reject (Non-GMO claimed, no named certifying body confirmed; only one ingredient organic)"
+Poi Dog,Saucy+Spicy,screened-reject (no matching brand found)
+Pop Zero,Puffs+Crunch,"screened-reject (Non-GMO/organic-oil claimed, no named certifying body confirmed for the product overall)"
 Popadelics,Puffs+Crunch,pending
 Popcorn for the People,Puffs+Crunch,pending
 Poppy Handcrafted Popcorn,Puffs+Crunch,pending
