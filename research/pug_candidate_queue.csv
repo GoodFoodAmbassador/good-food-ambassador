@@ -593,16 +593,16 @@ Seven Sundays,Breakfast-ish,shortlisted (Certified USDA Organic + Non-GMO Projec
 SHAMAN RAMAN,Pantry,"screened-hold (site claims '100% organic', certifying body not named -- needs direct verify)"
 She's The Sauce,Pantry,screened-reject (no certification confirmed)
 Shinzo Matcha,Pantry,screened-reject (no matching brand found)
-Shooka Sauce,Saucy+Spicy,pending
-Siesta Co,Pantry,pending
-Simple Mills,Puffs+Crunch,pending
-Simple Trail,Breakfast-ish,pending
-Simrancooks,Saucy+Spicy,pending
-Sip Solo,Pantry,pending
-SipClean,Non-Alc,pending
-SIPPL Mixology,Non-Alc,pending
-Sky High Farm Goods,Pantry,pending
-Slingshot Coffee Co.,Breakfast-ish,pending
+Shooka Sauce,Saucy+Spicy,screened-reject (explicitly not certified organic per brand's own description)
+Siesta Co,Pantry,"screened-reject (organic olive oil ingredient claim only, no named certifying body for the product)"
+Simple Mills,Puffs+Crunch,shortlisted (USDA Organic Certified + Non-GMO Project Verified + Regenerative Organic Certified on select lines)
+Simple Trail,Breakfast-ish,screened-reject (no matching brand found; distinct from Simple Truth Organic private label)
+Simrancooks,Saucy+Spicy,screened-reject (no matching brand found; distinct from Simran Feeds/Agritech animal feed)
+Sip Solo,Pantry,screened-reject (no certification confirmed)
+SipClean,Non-Alc,screened-reject (no information found on this brand)
+SIPPL Mixology,Non-Alc,screened-reject (no certification confirmed)
+Sky High Farm Goods,Pantry,screened-reject (explicitly not accredited/certified organic per brand's own description)
+Slingshot Coffee Co.,Breakfast-ish,"shortlisted (100% Certified Organic + Certified Kosher, direct-trade cold brew coffee)"
 Smart Sweets,Sweets+Treats,pending
 SMPL,Bites+Chews,pending
 SNACKLINS,Puffs+Crunch,pending
