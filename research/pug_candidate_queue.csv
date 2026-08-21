@@ -553,16 +553,16 @@ Rhus,Pantry,screened-reject (no information found on this brand)
 RightRice,Pantry,screened-reject (explicitly not organic per brand's own FAQ; Non-GMO claimed without named certifying body)
 RIND Snacks,"Bites+Chews, Puffs+Crunch","shortlisted (Non-GMO Project Verified, dried fruit snacks)"
 RISE Brewing Co.,Breakfast-ish,"shortlisted (USDA Organic + Certified Organic by CCOF + Non-GMO, nitro cold brew coffee)"
-Rise With Apollo,Pantry,pending
-Rishi Tea & Botanicals,Pantry,pending
-Ritual Zero Proof,Non-Alc,pending
-Rivalz Snacks,Puffs+Crunch,pending
-RIVR,Non-Alc,pending
-Rogue Jerky,Bites+Chews,pending
-root foods,Puffs+Crunch,pending
-Rootless,Bites+Chews,pending
-Roots In Rice,Sweets+Treats,pending
-Rotten,Sweets+Treats,pending
+Rise With Apollo,Pantry,"screened-reject ('organic' claimed at ingredient level, no named certifying body confirmed)"
+Rishi Tea & Botanicals,Pantry,shortlisted (USDA Organic Certified since 2002 + Non-GMO)
+Ritual Zero Proof,Non-Alc,"screened-hold (some SKUs listed as 'Certified Organic' by retailers, inconsistent across line -- needs direct verify)"
+Rivalz Snacks,Puffs+Crunch,shortlisted (Non-GMO Project Verified)
+RIVR,Non-Alc,screened-reject (no matching brand found)
+Rogue Jerky,Bites+Chews,screened-hold (USDA Organic + GMO-Free referenced but not clearly verified as brand-wide certification -- needs direct verify)
+root foods,Puffs+Crunch,"screened-reject (Non-GMO claimed, no named certifying body confirmed, not certified organic)"
+Rootless,Bites+Chews,screened-reject (no information found on this brand)
+Roots In Rice,Sweets+Treats,screened-reject (no matching brand found; distinct from TruRoots)
+Rotten,Sweets+Treats,screened-reject (no information found on this brand)
 Rowdy,Bites+Chews,pending
 Rowe's Macaroons,Sweets+Treats,pending
 RSRV Collective,Non-Alc,pending
