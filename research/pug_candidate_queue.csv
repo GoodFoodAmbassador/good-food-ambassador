@@ -563,16 +563,16 @@ root foods,Puffs+Crunch,"screened-reject (Non-GMO claimed, no named certifying b
 Rootless,Bites+Chews,screened-reject (no information found on this brand)
 Roots In Rice,Sweets+Treats,screened-reject (no matching brand found; distinct from TruRoots)
 Rotten,Sweets+Treats,screened-reject (no information found on this brand)
-Rowdy,Bites+Chews,pending
-Rowe's Macaroons,Sweets+Treats,pending
-RSRV Collective,Non-Alc,pending
-Rubirosa,Pantry,pending
-S'NOODS,Puffs+Crunch,pending
-Sababa Foods,Saucy+Spicy,pending
-Sakhar Jams,Pantry,pending
-Salad Sprinkles,Pantry,pending
-SANS Meal Bar,Bites+Chews,pending
-Santa Gula,Bites+Chews,pending
+Rowdy,Bites+Chews,"screened-reject (organic ingredient claims, Non-GMO, no named certifying body confirmed)"
+Rowe's Macaroons,Sweets+Treats,screened-reject (no certification confirmed)
+RSRV Collective,Non-Alc,screened-reject (no information found on this brand)
+Rubirosa,Pantry,screened-hold (pasta line described as '95%+ organic material' but certifying body not confirmed; sauce line not organic -- needs direct verify)
+S'NOODS,Puffs+Crunch,"screened-reject (Non-GMO/gluten-free claimed, not certified organic)"
+Sababa Foods,Saucy+Spicy,screened-reject (no confirmed organic hummus product found for this specific brand)
+Sakhar Jams,Pantry,screened-reject (no certification confirmed)
+Salad Sprinkles,Pantry,"screened-reject (Non-GMO/gluten-free claimed, no named certifying body confirmed)"
+SANS Meal Bar,Bites+Chews,"screened-reject (organic ingredient claims, GMO-free claimed, no named certifying body confirmed)"
+Santa Gula,Bites+Chews,screened-reject (no matching brand found)
 Santana Snacks,Puffs+Crunch,pending
 Sarilla,Non-Alc,pending
 Satya,Pantry,pending
