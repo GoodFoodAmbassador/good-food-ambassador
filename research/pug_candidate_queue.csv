@@ -383,16 +383,16 @@ Manou,Bites+Chews,"screened-reject ('all natural, non-GMO' claims only, no organ
 Marianne's,Pantry,shortlisted (already imported/live on site -- import-shortlist-batch4.mjs)
 Mary's Gone Crackers,Puffs+Crunch,shortlisted (already imported/live on site -- import-new-products.mjs)
 MASA Chips,Puffs+Crunch,"screened-hold (corn -- the primary ingredient of a 3-ingredient chip -- is '100% certified organic' per brand, but overall product explicitly not fully organic certified -- needs direct verify on scope)"
-MASAH,Sweets+Treats,pending
-Masala Gossip,Pantry,pending
-Matcha DNA,Pantry,pending
-Matchpoint,Pantry,pending
-Matriark Foods,Pantry,pending
-Maui Nui,Bites+Chews,pending
-Maven,Pantry,pending
-Maya Kaimal,Pantry,pending
-Meggo Sweets,Sweets+Treats,pending
-Mellody,Saucy+Spicy,pending
+MASAH,Sweets+Treats,screened-reject (brand name unverifiable / no matching company with named certification found)
+Masala Gossip,Pantry,"screened-reject (brand not found in search, unverifiable)"
+Matcha DNA,Pantry,shortlisted (USDA Certified Organic per brand and multiple retailer listings)
+Matchpoint,Pantry,"shortlisted (JAS + USDA Certified Organic per brand site, sourced direct from certified family tea farms)"
+Matriark Foods,Pantry,shortlisted (Non-GMO Project Verified (2022) + Upcycled Certified by Upcycled Food Association; not organic certified)
+Maui Nui,Bites+Chews,"screened-reject (only USDA meat inspection + ingredient-level Non-GMO claims, no qualifying organic/fair-trade/non-GMO product certification)"
+Maven,Pantry,screened-reject (brand unclear/not verifiably a snack bar company with certification)
+Maya Kaimal,Pantry,"shortlisted (Certified Organic + Non-GMO Project Verified on Everyday Dal/Chana lines, per brand and Amazon listings)"
+Meggo Sweets,Sweets+Treats,screened-hold (organic ingredients claimed but no confirmed third-party organic certification -- needs direct verify)
+Mellody,Saucy+Spicy,"screened-reject (no named third-party certification found, only general claims)"
 Melting Forest,Non-Alc,pending
 merri matcha,Pantry,pending
 Mez Foods,Sweets+Treats,pending
