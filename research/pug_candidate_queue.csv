@@ -463,16 +463,16 @@ Olyra Foods,Breakfast-ish,shortlisted (USDA Certified Organic + Non-GMO Project 
 Omsom,Saucy+Spicy,"screened-reject (Non-GMO claim only, not Non-GMO Project Verified)"
 One Trick Pony,Pantry,shortlisted (Certified Organic + Certified Non-GMO + Certified Gluten Free + Star-K Kosher)
 ONO,Breakfast-ish,screened-reject (no usable information found)
-ONOIN,Pantry,pending
-Onyx Coffee Lab,Breakfast-ish,pending
-Oobli,Sweets+Treats,pending
-Oodaalolly,Sweets+Treats,pending
-OOSO Sparkling Tea,Non-Alc,pending
-Opopop,Puffs+Crunch,pending
-Oracle,Pantry,pending
-OSIA,Non-Alc,pending
-Osmo Salt,Pantry,pending
-Oso Snacks,Bites+Chews,pending
+ONOIN,Pantry,screened-reject (no information found on this brand)
+Onyx Coffee Lab,Breakfast-ish,screened-reject (pays above Fair Trade minimum by choice but explicitly not Fair Trade certified; no organic cert confirmed)
+Oobli,Sweets+Treats,"screened-reject (organic/fair trade language is ingredient-level marketing, not a confirmed brand-level certification)"
+Oodaalolly,Sweets+Treats,screened-reject (explicitly not certified organic per brand's own FAQ)
+OOSO Sparkling Tea,Non-Alc,"screened-reject (organic tea/honey ingredient claims only, no named certifying body)"
+Opopop,Puffs+Crunch,"screened-reject (Non-GMO claimed, not certified organic)"
+Oracle,Pantry,screened-reject (no matching food/beverage brand found)
+OSIA,Non-Alc,screened-reject (no matching brand found)
+Osmo Salt,Pantry,"screened-hold (site claims USDA Organic seal + Kosher on some SKUs, varies by product -- needs direct verify)"
+Oso Snacks,Bites+Chews,screened-reject (no matching brand found)
 Oswald Co,Saucy+Spicy,pending
 Otamot,Saucy+Spicy,pending
 Otherworld,Breakfast-ish,pending
