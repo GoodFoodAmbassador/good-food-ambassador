@@ -533,16 +533,16 @@ Purely Pecans,Saucy+Spicy,"screened-reject (Non-GMO claimed without named certif
 Purposefuel,Bites+Chews,"screened-reject (Non-GMO claimed, no named certifying body confirmed)"
 pwrfuel,Bites+Chews,screened-reject (no information found on this brand)
 Quincy,Non-Alc,screened-reject (no matching branded food product found)
-R.E.D.D.,Bites+Chews,pending
-Raaka,Sweets+Treats,pending
-Racha Organics,Pantry,pending
-Ramp Up,Saucy+Spicy,pending
-Rare Breed Coffee,Pantry,pending
-Real Food From The Ground Up,Puffs+Crunch,pending
-RECIPE 33,Bites+Chews,pending
-Red Clay,Pantry,pending
-Redbloom,Saucy+Spicy,pending
-Reform Botanicals,Non-Alc,pending
+R.E.D.D.,Bites+Chews,"screened-reject (Non-GMO claimed, no named certifying body confirmed)"
+Raaka,Sweets+Treats,"shortlisted (Certified Organic + Kosher + Non-GMO + Fair Trade, bean-to-bar chocolate)"
+Racha Organics,Pantry,shortlisted (USDA Certified Organic sriracha)
+Ramp Up,Saucy+Spicy,screened-reject (no information found on this brand)
+Rare Breed Coffee,Pantry,"screened-hold (site claims '100% organic', certifying body not named -- needs direct verify)"
+Real Food From The Ground Up,Puffs+Crunch,shortlisted (Non-GMO Project Verified + Certified Vegan + Certified Gluten-Free)
+RECIPE 33,Bites+Chews,screened-reject (no information found on this brand)
+Red Clay,Pantry,"screened-reject (Non-GMO claimed, no named certifying body confirmed)"
+Redbloom,Saucy+Spicy,"screened-reject (organic ingredient-level claims only, no named certifying body for the product)"
+Reform Botanicals,Non-Alc,"screened-reject (USDA Organic hemp confirmed, but product is CBD/cannabis gummies -- outside catalog category scope)"
 Reframe Cannabis Spirit,Non-Alc,pending
 Renewal Mill,Sweets+Treats,pending
 Resist Nutrition,Bites+Chews,pending
