@@ -73,9 +73,31 @@ export default async function SeafoodPage() {
           Seafood — species, origin,<br />
           <strong style={{ fontWeight: 600 }}>and how it was caught.</strong>
         </h1>
-        <p style={{ fontSize: 17, lineHeight: 1.8, color: '#666', maxWidth: 560 }}>
+        <p style={{ fontSize: 17, lineHeight: 1.8, color: '#666', maxWidth: 560, marginBottom: 28 }}>
           We evaluated seafood against the Good Food Standard, looking at species accuracy, origin and fishing method disclosure, third-party certification, and supply chain transparency.
         </p>
+        <a href="#directory" style={{ display: 'inline-block', fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 12, fontWeight: 600, letterSpacing: '0.06em', textTransform: 'uppercase', color: T, textDecoration: 'none', borderBottom: `1.5px solid ${T}`, paddingBottom: 2 }}>
+          See the directory ↓
+        </a>
+      </section>
+
+      <section id="directory" className="gfa-section" style={{ borderTop: `1px solid ${MID}`, padding: '64px 60px' }}>
+        <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', marginBottom: 12 }}>
+          <div>
+            <p style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 11, fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#aaa', marginBottom: 12 }}>The Directory</p>
+            <h2 style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontWeight: 300, fontSize: 30 }}>
+              Seafood<br /><strong style={{ fontWeight: 600 }}>in the directory</strong>
+            </h2>
+          </div>
+          <Link href="/suggest" style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 12, fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#aaa', textDecoration: 'none', borderBottom: `1px solid #ddd`, paddingBottom: 2, whiteSpace: 'nowrap' }}>
+            Suggest a product →
+          </Link>
+        </div>
+        <p style={{ fontSize: 14, lineHeight: 1.8, color: '#999', marginBottom: 48, maxWidth: 600 }}>
+          Listed alphabetically. Products here have been evaluated against the Four Pillars using publicly available information. We look at what producers share — we look for the full picture, and we do not rank between products.
+        </p>
+        <AffiliateDisclosure style={{ marginBottom: 32 }} />
+        {products.length === 0 ? <EmptyState /> : <ProductList products={products} />}
       </section>
 
       <section className="gfa-section" style={{ borderTop: `1px solid ${MID}`, padding: '64px 60px' }}>
@@ -147,25 +169,6 @@ export default async function SeafoodPage() {
             </div>
           ))}
         </div>
-      </section>
-
-      <section className="gfa-section" style={{ borderTop: `1px solid ${MID}`, padding: '64px 60px' }}>
-        <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', marginBottom: 12 }}>
-          <div>
-            <p style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 11, fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#aaa', marginBottom: 12 }}>The Directory</p>
-            <h2 style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontWeight: 300, fontSize: 30 }}>
-              Seafood<br /><strong style={{ fontWeight: 600 }}>in the directory</strong>
-            </h2>
-          </div>
-          <Link href="/suggest" style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: 12, fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#aaa', textDecoration: 'none', borderBottom: `1px solid #ddd`, paddingBottom: 2, whiteSpace: 'nowrap' }}>
-            Suggest a product →
-          </Link>
-        </div>
-        <p style={{ fontSize: 14, lineHeight: 1.8, color: '#999', marginBottom: 48, maxWidth: 600 }}>
-          Listed alphabetically. Products here have been evaluated against the Four Pillars using publicly available information. We look at what producers share — we look for the full picture, and we do not rank between products.
-        </p>
-        <AffiliateDisclosure style={{ marginBottom: 32 }} />
-        {products.length === 0 ? <EmptyState /> : <ProductList products={products} />}
       </section>
 
       <footer className="gfa-section" style={{ borderTop: `1px solid ${MID}`, padding: '28px 60px' }}>
