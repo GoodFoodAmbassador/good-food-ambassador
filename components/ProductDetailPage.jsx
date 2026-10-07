@@ -3,6 +3,37 @@ import GFANav from '@/components/GFANav'
 import Pill from '@/components/Pill'
 import AffiliateDisclosure from '@/components/AffiliateDisclosure'
 import { W, T, LIGHT, MID, GREEN, CYAN, ORANGE, GRAY } from '@/lib/tokens'
+import { generateSlug } from '@/lib/airtable'
+
+const SITE = 'https://www.goodfoodambassador.com'
+
+// Search-engine data (schema.org) built from the same Airtable fields shown on
+// the page. Deliberately has NO rating, review, or price fields: we don't have
+// real ones, and inventing them would break Google's rules.
+function productJsonLd(product, categorySlug, categoryLabel) {
+  const url = `${SITE}/${categorySlug}/${generateSlug(product.name)}`
+  return [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'Product',
+      name: product.name,
+      url,
+      category: categoryLabel,
+      ...(product.description && { description: product.description }),
+      ...(product.producer && { brand: { '@type': 'Brand', name: product.producer } }),
+      ...(product.origin && { countryOfOrigin: product.origin }),
+    },
+    {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: SITE },
+        { '@type': 'ListItem', position: 2, name: categoryLabel, item: `${SITE}/${categorySlug}` },
+        { '@type': 'ListItem', position: 3, name: product.name, item: url },
+      ],
+    },
+  ]
+}
 
 // ── Pillar config ─────────────────────────────────────────────────────────────
 
@@ -20,6 +51,9 @@ export default function ProductDetailPage({ product, categorySlug, categoryLabel
 
   return (
     <div style={{ background: W, color: T, fontFamily: 'var(--font-mulish), Mulish, sans-serif', fontWeight: 300 }}>
+      {productJsonLd(product, categorySlug, categoryLabel).map((data, i) => (
+        <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />
+      ))}
       <GFANav />
 
       <div className="gfa-section" style={{ maxWidth: 860, padding: '64px 60px 0' }}>
