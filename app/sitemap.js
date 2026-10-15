@@ -49,5 +49,14 @@ export default async function sitemap() {
     })
   )
 
-  return [...staticEntries, ...categoryEntries, ...productResults.flat()]
+  // Several Airtable records can share a product name, which gives them the
+  // same slug (and the same page). List each URL only once.
+  const seen = new Set()
+  const productEntries = productResults.flat().filter((entry) => {
+    if (seen.has(entry.url)) return false
+    seen.add(entry.url)
+    return true
+  })
+
+  return [...staticEntries, ...categoryEntries, ...productEntries]
 }
