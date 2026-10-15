@@ -3,6 +3,7 @@
 import { useState, useMemo } from 'react'
 import Link from 'next/link'
 import Pill from '@/components/Pill'
+import AffiliateDisclosure from '@/components/AffiliateDisclosure'
 import { generateSlug, CATEGORIES } from '@/lib/airtable'
 import { T, W, LIGHT, MID, GRAY } from '@/lib/tokens'
 
@@ -106,6 +107,7 @@ export default function SearchResults({ initialProducts, initialQuery = '' }) {
         </div>
       ) : (
         <div>
+          <AffiliateDisclosure style={{ marginBottom: 20 }} />
           {results.map((product) => (
             <div
               key={`${product.category}-${product.id}`}
@@ -151,7 +153,7 @@ export default function SearchResults({ initialProducts, initialQuery = '' }) {
                       key={j}
                       href={link.url}
                       target="_blank"
-                      rel="noopener noreferrer"
+                      rel="sponsored noopener noreferrer"
                       style={{
                         fontFamily: 'var(--font-poppins), Poppins, sans-serif',
                         fontSize: 11,

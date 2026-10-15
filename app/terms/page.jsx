@@ -28,6 +28,14 @@ const SECTIONS = [
     body: [
       'Some "Where to buy" links on this site are affiliate links. If you click through and make a purchase, Good Food Ambassador may earn a small commission from the retailer, at no extra cost to you.',
       'This applies only to where a product can be bought. It never applies to whether a product is listed, how it is evaluated, or what we say about it. A product\'s presence in the Directory, and everything written about it, is independent of any affiliate relationship.',
+      'Retailers set their own prices, stock and terms, and these change without notice. Our links are a convenience, and the sale is between you and the retailer. Details are on our Affiliate Disclosure page (/affiliate-disclosure).',
+    ],
+  },
+  {
+    h: 'Consulting introductions',
+    body: [
+      'Good Food Ambassador may introduce you to an independent consultant from our network. We make the introduction only. The consultant is not our employee, and any engagement, scope, price and contract are agreed directly between you and the consultant. We are not a party to that contract and do not guarantee any outcome or the consultant\'s advice.',
+      'We do not charge companies for introductions. We may in future charge consultants a fee to be part of the network. If that happens we will say so on the Consulting page. Where we have a personal or business relationship with a consultant or company, we will tell you before the introduction.',
     ],
   },
   {
@@ -102,7 +110,7 @@ export default function TermsPage() {
           Terms of Use
         </h1>
         <p style={{ fontSize: 15, color: '#888', marginBottom: 60 }}>
-          Last updated: July 31, 2026
+          Last updated: October 15, 2026
         </p>
 
         <div style={{ background: LIGHT, padding: '28px 32px', marginBottom: 56, borderLeft: `3px solid ${T}` }}>
@@ -132,6 +140,8 @@ export default function TermsPage() {
             </a>
             {' · '}
             <Link href="/privacy" style={{ color: '#bbb', textDecoration: 'none' }}>Privacy</Link>
+            {' · '}
+            <Link href="/affiliate-disclosure" style={{ color: '#bbb', textDecoration: 'none' }}>Affiliate Disclosure</Link>
           </p>
           <Link
             href="/"

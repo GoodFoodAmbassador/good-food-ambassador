@@ -150,13 +150,14 @@ export default function ProductDetailPage({ product, categorySlug, categoryLabel
           >
             Where to buy
           </p>
+          <AffiliateDisclosure style={{ marginBottom: 16 }} />
           <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap' }}>
             {product.buyLinks.map((link, i) => (
               <a
                 key={i}
                 href={link.url}
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="sponsored noopener noreferrer"
                 style={{
                   fontFamily: 'var(--font-poppins), Poppins, sans-serif',
                   fontSize: 11,
@@ -175,7 +176,6 @@ export default function ProductDetailPage({ product, categorySlug, categoryLabel
               </a>
             ))}
           </div>
-          <AffiliateDisclosure style={{ marginTop: 16 }} />
         </section>
       )}
 
