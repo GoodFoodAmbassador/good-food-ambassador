@@ -11,30 +11,21 @@ export const metadata = {
 
 const SECTIONS = [
   {
-    h: "What we help with",
+    h: "How it works",
     body: [
-      "Market entry for food and drink brands, labelling and regulatory questions, sourcing and supply chain, packaging and branding, distribution and retail. If your need is not on this list, ask anyway."
-    ],
-  },
-  {
-    h: "How matching works",
-    body: [
-      "1. Email us a short note: who you are, what you make or sell, and what you need.",
-      "2. We read it and may ask a few questions.",
-      "3. If we know a good fit in our network, we introduce you by email.",
-      "4. You and the consultant decide together whether to work, and agree scope and price directly."
+      "Email us what you need. If we know a good fit in our network, we introduce you. You then agree scope and price directly with the consultant."
     ],
   },
   {
     h: "What it costs",
     body: [
-      "Nothing. We do not charge the companies we help. The consultant sets their own fees with you. We may in future charge consultants a fee to be in the network. If we do, we will say so here."
+      "Nothing for you. We do not charge companies for introductions. We may later charge consultants to be in the network, and will say so here."
     ],
   },
   {
-    h: "What we promise and what we do not",
+    h: "Good to know",
     body: [
-      "We only introduce people we think can help. We cannot guarantee a match, a result or a consultant's advice. The consultant is independent, not our employee, and we are not a party to your agreement. If we have a personal or business interest in an introduction, we will tell you first."
+      "Consultants are independent. We make the introduction only, and cannot guarantee a match or an outcome. If we have a personal or business interest in an introduction, we will tell you first."
     ],
   },
   {
@@ -76,12 +67,12 @@ export default function ConsultingPage() {
           Find a food consultant
         </h1>
         <p style={{ fontSize: 17, lineHeight: 1.7, color: '#555', marginBottom: 40 }}>
-          Building, importing or selling food is hard. Tell us what you need and we will match you with an independent consultant from our network who has done it before.
+          Tell us what you need. We will match you with an independent food consultant from our network.
         </p>
 
         <div style={{ background: LIGHT, padding: '28px 32px', marginBottom: 56, borderLeft: `3px solid ${T}` }}>
           <p style={{ fontSize: 15, lineHeight: 1.8, color: '#555' }}>
-            How it works: you write to us, we listen, and we introduce you to the right person. You then agree terms with them directly. We do not charge you for the introduction.
+            You write to us, we introduce you to the right person. No fee for you.
           </p>
         </div>
 

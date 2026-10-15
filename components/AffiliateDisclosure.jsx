@@ -15,8 +15,8 @@ export default function AffiliateDisclosure({ style }) {
         ...style,
       }}
     >
-      Ad disclosure: some buy links on this page are affiliate links. If you buy through them, we may earn a commission at no extra cost to you. This never affects which products are listed or how they are evaluated.{' '}
-      <Link href="/affiliate-disclosure" style={{ color: '#555', textDecoration: 'underline' }}>How this works</Link>
+      Affiliate links: we may earn a commission if you buy through them, at no cost to you. It never affects what we list or how we evaluate it.{' '}
+      <Link href="/affiliate-disclosure" style={{ color: '#555', textDecoration: 'underline' }}>Details</Link>
     </p>
   )
 }

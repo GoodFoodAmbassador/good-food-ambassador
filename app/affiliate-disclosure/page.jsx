@@ -11,39 +11,21 @@ export const metadata = {
 
 const SECTIONS = [
   {
-    h: "What an affiliate link is",
+    h: "Affiliate links",
     body: [
-      "Some buy links on this site are affiliate links. If you click one and buy something, the retailer may pay us a commission. You pay the same price either way."
+      "Some buy links on this site are affiliate links. If you buy through one, the retailer may pay us a commission. You pay the same price."
     ],
   },
   {
     h: "What it does not change",
     body: [
-      "Which products are listed, how they are evaluated, and what we write about them. Products are listed in alphabetical order, not ranked by commission. A product with no affiliate link is evaluated the same way as one with a link. No producer or retailer can pay to be listed or to change an evaluation."
+      "What we list or how we evaluate it. Products are listed alphabetically, not ranked by commission. Nobody can pay to be listed or to change an evaluation."
     ],
   },
   {
-    h: "How links are marked",
+    h: "Other sites",
     body: [
-      "Each page with buy links carries a disclosure above the links. In the page code, the links are tagged rel=\"sponsored\" so search engines know they may be paid."
-    ],
-  },
-  {
-    h: "Retailers and privacy",
-    body: [
-      "Clicking a buy link takes you to another site. The retailer or affiliate network may use cookies to track the referral. Read their policies for details. See our Privacy Policy for what we collect ourselves."
-    ],
-  },
-  {
-    h: "Consulting introductions",
-    body: [
-      "Separately from product links, we may introduce companies to independent consultants. We do not charge companies. We may in future charge consultants a fee to be in the network. We will say so on the Consulting page, and tell you of any relationship that matters before an introduction."
-    ],
-  },
-  {
-    h: "Questions",
-    body: [
-      "Write to hello@goodfoodambassador.com."
+      "Retailers and affiliate networks may use cookies once you click through. See their privacy policies. Questions: hello@goodfoodambassador.com."
     ],
   },
 ]
@@ -84,7 +66,7 @@ export default function AffiliateDisclosurePage() {
 
         <div style={{ background: LIGHT, padding: '28px 32px', marginBottom: 56, borderLeft: `3px solid ${T}` }}>
           <p style={{ fontSize: 15, lineHeight: 1.8, color: '#555' }}>
-            The short version: some buy links may pay us a commission. It costs you nothing and does not change what we list or how we evaluate it.
+            The short version: some buy links may pay us a commission. It costs you nothing and changes nothing about our evaluations.
           </p>
         </div>
 

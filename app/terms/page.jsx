@@ -28,14 +28,12 @@ const SECTIONS = [
     body: [
       'Some "Where to buy" links on this site are affiliate links. If you click through and make a purchase, Good Food Ambassador may earn a small commission from the retailer, at no extra cost to you.',
       'This applies only to where a product can be bought. It never applies to whether a product is listed, how it is evaluated, or what we say about it. A product\'s presence in the Directory, and everything written about it, is independent of any affiliate relationship.',
-      'Retailers set their own prices, stock and terms, and these change without notice. Our links are a convenience, and the sale is between you and the retailer. Details are on our Affiliate Disclosure page (/affiliate-disclosure).',
     ],
   },
   {
     h: 'Consulting introductions',
     body: [
-      'Good Food Ambassador may introduce you to an independent consultant from our network. We make the introduction only. The consultant is not our employee, and any engagement, scope, price and contract are agreed directly between you and the consultant. We are not a party to that contract and do not guarantee any outcome or the consultant\'s advice.',
-      'We do not charge companies for introductions. We may in future charge consultants a fee to be part of the network. If that happens we will say so on the Consulting page. Where we have a personal or business relationship with a consultant or company, we will tell you before the introduction.',
+      'We may introduce you to an independent consultant. We make the introduction only: any engagement and contract are between you and the consultant, and we are not a party to it. We do not charge companies for introductions. We may later charge consultants, and will disclose any relationship that matters.'
     ],
   },
   {
