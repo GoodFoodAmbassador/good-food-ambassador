@@ -10,7 +10,6 @@ const NAV_LINKS = [
   { label: 'The Pillars', href: '/pillars' },
   { label: 'The Directory', href: '/#categories' },
   { label: 'Ambassadors', href: '/ambassadors' },
-  { label: 'Consulting', href: '/consulting' },
   { label: 'Join', href: '/join' },
 ]
 
