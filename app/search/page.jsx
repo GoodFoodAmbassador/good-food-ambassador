@@ -3,7 +3,7 @@ import SearchResults from '@/components/SearchResults'
 import { getAllProducts } from '@/lib/airtable'
 import { W, T, MID } from '@/lib/tokens'
 
-export const revalidate = 3600
+export const revalidate = 86400
 
 export const metadata = {
   title: 'Search',

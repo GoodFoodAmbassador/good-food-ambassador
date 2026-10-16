@@ -5,7 +5,7 @@ import Pill from '@/components/Pill'
 import AffiliateDisclosure from '@/components/AffiliateDisclosure'
 import { getProductsByCategory, generateSlug } from '@/lib/airtable'
 import { W, T, LIGHT, MID, GREEN, CYAN, ORANGE, GRAY } from '@/lib/tokens'
-export const revalidate = 3600
+export const revalidate = 86400
 
 export const metadata = {
   title: 'Snacks & Pantry',
