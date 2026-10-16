@@ -377,7 +377,7 @@ function ProductList({ products }) {
                   key={j}
                   href={link.url}
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="sponsored noopener noreferrer"
                   style={{
                     fontFamily: 'var(--font-poppins), Poppins, sans-serif',
                     fontSize: 11,

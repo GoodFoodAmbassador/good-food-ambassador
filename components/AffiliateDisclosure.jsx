@@ -9,14 +9,14 @@ export default function AffiliateDisclosure({ style }) {
     <p
       style={{
         fontFamily: 'var(--font-poppins), Poppins, sans-serif',
-        fontSize: 11,
+        fontSize: 13,
         lineHeight: 1.6,
-        color: '#aaa',
+        color: '#555',
         ...style,
       }}
     >
-      Some links below are affiliate links — we may earn a small commission at no extra cost to you. It never affects which products are listed or how they're evaluated.{' '}
-      <Link href="/terms" style={{ color: '#aaa', textDecoration: 'underline' }}>Learn more</Link>
+      Affiliate links: we may earn a commission if you buy through them, at no cost to you. It never affects what we list or how we evaluate it.{' '}
+      <Link href="/affiliate-disclosure" style={{ color: '#555', textDecoration: 'underline' }}>Details</Link>
     </p>
   )
 }

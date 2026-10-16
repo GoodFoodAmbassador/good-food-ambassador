@@ -31,6 +31,12 @@ const SECTIONS = [
     ],
   },
   {
+    h: 'Consulting introductions',
+    body: [
+      'We may introduce you to an independent consultant. We make the introduction only: any engagement and contract are between you and the consultant, and we are not a party to it. We do not charge companies for introductions. We may later charge consultants, and will disclose any relationship that matters.'
+    ],
+  },
+  {
     h: 'Submitting a product or becoming an Ambassador',
     body: [
       'When you use the Suggest or Join forms, you confirm that the information you provide is accurate to the best of your knowledge, and that you have the right to share it — for example, you are not submitting a competitor\'s confidential information.',
@@ -102,7 +108,7 @@ export default function TermsPage() {
           Terms of Use
         </h1>
         <p style={{ fontSize: 15, color: '#888', marginBottom: 60 }}>
-          Last updated: July 31, 2026
+          Last updated: October 15, 2026
         </p>
 
         <div style={{ background: LIGHT, padding: '28px 32px', marginBottom: 56, borderLeft: `3px solid ${T}` }}>
@@ -132,6 +138,8 @@ export default function TermsPage() {
             </a>
             {' · '}
             <Link href="/privacy" style={{ color: '#bbb', textDecoration: 'none' }}>Privacy</Link>
+            {' · '}
+            <Link href="/affiliate-disclosure" style={{ color: '#bbb', textDecoration: 'none' }}>Affiliate Disclosure</Link>
           </p>
           <Link
             href="/"

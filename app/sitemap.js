@@ -9,9 +9,11 @@ const STATIC_PAGES = [
   { path: '', changeFrequency: 'weekly', priority: 1.0 },
   { path: '/pillars', changeFrequency: 'monthly', priority: 0.7 },
   { path: '/ambassadors', changeFrequency: 'monthly', priority: 0.6 },
+  { path: '/consulting', changeFrequency: 'monthly', priority: 0.6 },
   { path: '/join', changeFrequency: 'monthly', priority: 0.5 },
   { path: '/privacy', changeFrequency: 'yearly', priority: 0.2 },
   { path: '/terms', changeFrequency: 'yearly', priority: 0.2 },
+  { path: '/affiliate-disclosure', changeFrequency: 'yearly', priority: 0.2 },
 ]
 
 export default async function sitemap() {
